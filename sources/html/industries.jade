@@ -1,0 +1,43 @@
+include includes/header
+<body>
+
+include includes/toolbar
+.page
+	.page__header(style="background-image:url(/layout/images/header.jpg)")
+	.container
+		h1.page__title Отрасли
+		.page__divider
+		nav.nav
+			a.nav__item(href="#") Ключевые проекты
+			a.nav__item(href="#").nav__item--active Отрасли
+			a.nav__item(href="#") Виды деятельности
+			a.nav__item(href="#") Технологии
+			a.nav__item(href="#") Этапы проекта
+			a.nav__item(href="#") Карта проектов
+			a.nav__item(href="#") Референс
+			a.nav__item(href="#") Наши заказчики
+		p.highlight История нашей компании началась в 1928 году. Ключевую идею успеха, которая сопровождает нас на протяжении десятков лет, мы видим в приверженности к индивидуальному подходу к каждому из наших заказчиков. 
+		.row.xxl-margin-top.row--center.center.s-padding-top.m-padding-bottom.no-gutter
+			.col-xs-2.col-xs-offset-1
+				a.depth(href="#")
+					include ../../public_html/layout/images/svg/i-1.svg
+					| <br>Нефтедобыча
+			.col-xs-2
+				a.depth(href="#")
+					include ../../public_html/layout/images/svg/i-2.svg
+					| <br>Транспорт нефти и газа
+			.col-xs-2
+				a.depth(href="#")
+					include ../../public_html/layout/images/svg/i-3.svg
+					| <br>Нефтепереработка
+			.col-xs-2
+				a.depth(href="#")
+					include ../../public_html/layout/images/svg/i-4.svg
+					| <br>Газопереработка
+			.col-xs-2
+				a.depth(href="#")
+					include ../../public_html/layout/images/svg/i-5.svg
+					| <br>Нефтехимия
+		.xxl-margin-top.page__divider
+		p.bigger.l-line-height.xxl-margin-bottom История нашей компании началась в 1928 году. Ключевую идею успеха, которая сопровождает нас на протяжении десятков лет, мы видим в приверженности к индивидуальному подходу к каждому из наших заказчиков. Сочетание накопленного опыта и умения решать персональные инжиниринговые задачи, мастерство поиска и созидания комплексных высокотехнологичных решений сформировали философию компании «Инжиниринг как искусство», которая находит отражение в каждом нашем проекте. В нашем референс-листе более 4 000 технологических установок. Мы реализуем инжиниринговые проекты полного цикла – от проектирования до введения в эксплуатацию оборудования для объектов нефтегазодобычи, нефтегазопереработки и нефтехимии.
+include includes/footer

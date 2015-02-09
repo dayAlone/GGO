@@ -1,0 +1,41 @@
+include includes/header
+<body>
+
+include includes/toolbar
+.page
+	.page__header(style="background-image:url(/layout/images/header.jpg)")
+	.container
+		h1.page__title Истории успеха
+		.page__divider
+		nav.nav
+			a.nav__item(href="#") Почему «Гипрогазоочистка»?
+			a.nav__item(href="#") Профессиональное развитие
+			a.nav__item(href="#").nav__item--active Истории успеха
+			a.nav__item(href="#") Вакансии
+			a.nav__item(href="#") Подать заявку
+		.hidden
+			.arrow__prev
+				include ../../public_html/layout/images/svg/prev.svg
+			.arrow__next
+				include ../../public_html/layout/images/svg/next.svg
+		.success-story(data-nav="false", data-width="100%", data-height="490", data-autoplay="true")
+			.success-story__item(style="background-image: url(/layout/images/person.jpg)")
+				.success-story__content
+					.success-story__text
+						| Должность - не самое главное в жизни. Главное - найти людей, которые тебе доверяют,и которым ты доверяешь. Доверие - это то, чего никакая должность не даст и чего не купишь ни за какие деньги. Честные, доверительные, открытые отношения, как в жизни, так и в бизнесе, важнее всего.
+					.success-story__about
+						| Сергей Пахомов, <br>Первый заместитель ОАО "Гипрогазоочистка"<br><br>В компании с 2005 года
+			.success-story__item(style="background-image: url(/layout/images/person.jpg)")
+				.success-story__content
+					.success-story__text
+						| Должность - не самое главное в жизни. Главное - найти людей, которые тебе доверяют,и которым ты доверяешь. Доверие - это то, чего никакая должность не даст и чего не купишь ни за какие деньги. Честные, доверительные, открытые отношения, как в жизни, так и в бизнесе, важнее всего.
+					.success-story__about
+						| Сергей Пахомов, <br>Первый заместитель ОАО "Гипрогазоочистка"<br><br>В компании с 2005 года
+			.success-story__item(style="background-image: url(/layout/images/person.jpg)")
+				.success-story__content
+					.success-story__text
+						| Должность - не самое главное в жизни. Главное - найти людей, которые тебе доверяют,и которым ты доверяешь. Доверие - это то, чего никакая должность не даст и чего не купишь ни за какие деньги. Честные, доверительные, открытые отношения, как в жизни, так и в бизнесе, важнее всего.
+					.success-story__about
+						| Сергей Пахомов, <br>Первый заместитель ОАО "Гипрогазоочистка"<br><br>В компании с 2005 года
+		
+include includes/footer

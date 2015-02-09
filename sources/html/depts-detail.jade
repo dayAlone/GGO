@@ -1,0 +1,60 @@
+include includes/header
+<body>
+
+include includes/toolbar
+.page
+	.page__header(style="background-image:url(/layout/images/header.jpg)")
+	.container
+		h1.page__title Услуги
+		.page__divider
+		nav.nav
+			a.nav__item(href="#") Ключевые проекты
+			a.nav__item(href="#") Отрасли
+			a.nav__item(href="#").nav__item--active Виды деятельности
+			a.nav__item(href="#") Технологии
+			a.nav__item(href="#") Этапы проекта
+			a.nav__item(href="#") Карта проектов
+			a.nav__item(href="#") Референс
+			a.nav__item(href="#") Наши заказчики
+		h2.page__title.page__title--icon
+			include ../../public_html/layout/images/svg/s-3.svg
+			| Управление строительством
+		.row
+			.col-xs-9
+				p.highlight История нашей компании началась в 1928 году. Ключевую идею успеха, которая сопровождает нас на протяжении десятков лет, мы видим в приверженности к индивидуальному подходу к каждому из наших заказчиков. 
+				.page__divider.page__divider--small
+				p.bigger История нашей компании началась в 1928 году. Ключевую идею успеха, которая сопровождает нас на протяжении десятков лет, мы видим в приверженности к индивидуальному подходу к каждому из наших заказчиков. Сочетание накопленного опыта и умения решать персональные инжиниринговые задачи, мастерство поиска и созидания комплексных высокотехнологичных решений сформировали философию компании «Инжиниринг как искусство», которая находит отражение в каждом нашем проекте. В нашем референс-листе более 4 000 технологических установок. Мы реализуем инжиниринговые проекты полного цикла – от проектирования до введения в эксплуатацию оборудования для объектов нефтегазодобычи, нефтегазопереработки и нефтехимии.
+				.page__divider.page__divider--small
+			.col-xs-3
+				h5 другие отрасли
+				.page__divider.xl-margin-bottom
+				a.with-icon(href="#")
+					include ../../public_html/layout/images/svg/s-1.svg
+					span Проектирование
+				br
+				a.with-icon(href="#")
+					include ../../public_html/layout/images/svg/s-2.svg
+					span Поставка <br>оборудования
+				br
+				a.with-icon(href="#")
+					include ../../public_html/layout/images/svg/s-4.svg
+					span Строительно-<br >монтажные работы
+				br
+				a.with-icon(href="#")
+					include ../../public_html/layout/images/svg/s-5.svg
+					span Пуско-наладочные <br>работы
+		h3.l-margin-bottom Проекты данного вида деятальности
+		.projects
+			a.project(style="background-image: url(/layout/images/pb-1.jpg)" href="#")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-2.jpg)" href="#")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-3.jpg)" href="#")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-4.jpg)" href="#")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-5.jpg)" href="#")
+				span Очень длинное название проекта
+		p.xs-margin-top
+			a(href="#") Все проекты
+include includes/footer

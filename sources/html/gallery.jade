@@ -1,0 +1,58 @@
+include includes/header
+<body>
+
+include includes/toolbar
+.page
+	.page__header(style="background-image:url(/layout/images/header2.jpg)")
+	.container
+		h1.page__title Фотогалерея
+		.page__divider
+		nav.nav
+			a.nav__item(href="#") Новости
+			a.nav__item(href="#") Научно-технические публикации
+			a.nav__item(href="#").nav__item--active Фотогалерея
+
+		.projects
+			a.project(style="background-image: url(/layout/images/pb-1.jpg)" data-toggle="modal" data-target="#Gallery" href="#Gallery")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-2.jpg)" data-toggle="modal" data-target="#Gallery" href="#Gallery")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-3.jpg)" data-toggle="modal" data-target="#Gallery" href="#Gallery")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-4.jpg)" data-toggle="modal" data-target="#Gallery" href="#Gallery")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-5.jpg)" data-toggle="modal" data-target="#Gallery" href="#Gallery")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-1.jpg)" data-toggle="modal" data-target="#Gallery" href="#Gallery")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-2.jpg)" data-toggle="modal" data-target="#Gallery" href="#Gallery")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-3.jpg)" data-toggle="modal" data-target="#Gallery" href="#Gallery")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-4.jpg)" data-toggle="modal" data-target="#Gallery" href="#Gallery")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-5.jpg)" data-toggle="modal" data-target="#Gallery" href="#Gallery")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-1.jpg)" data-toggle="modal" data-target="#Gallery" href="#Gallery")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-2.jpg)" data-toggle="modal" data-target="#Gallery" href="#Gallery")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-3.jpg)" data-toggle="modal" data-target="#Gallery" href="#Gallery")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-4.jpg)" data-toggle="modal" data-target="#Gallery" href="#Gallery")
+				span Очень длинное название проекта
+			a.project(style="background-image: url(/layout/images/pb-5.jpg)" data-toggle="modal" data-target="#Gallery" href="#Gallery")
+				span Очень длинное название проекта
+
+.modal.fade(id="Gallery", tabindex="-1", role="dialog" aria-hidden="true", data-parsley-validate)
+	.modal-dialog.modal-lg
+		.modal-content
+			a.close(data-dismiss="modal", href="#")
+				include ../../public_html/layout/images/svg/close.svg
+			.fotorama.m-margin-top.xl-margin-bottom(data-nav="false")
+				img(src="/layout/images/img.jpg")
+				img(src="/layout/images/img.jpg")
+				img(src="/layout/images/img.jpg")
+			p.no-margin-bottom 
+				big Здесь выводим название проекта, над которым работала компания
+include includes/footer

@@ -1,0 +1,33 @@
+include includes/header
+<body>
+
+include includes/toolbar
+.page
+	.page__header(style="background-image:url(/layout/images/header.jpg)")
+	.container
+		h1.page__title Контакты
+		.page__divider
+		.row
+			.col-xs-7
+				h3.no-margin-top ОАО «Гипрогазоочистка»
+				p.xl-line-height
+					big
+						strong Адрес: 
+						| Россия, 105203, Москва, ул. Первомайская, 126 (
+						a(data-toggle="modal" data-target="#Map" href="#Map") на карте
+						|)<br>
+						strong Телефон:  
+						| +7 (495) 231-3052, 465-1742, 231-3040<br>
+						strong Факс:  
+						| +7 (499) 461-1741<br>
+						strong E-mail:  
+						a(href="mailto:ggo@ggo.ru") ggo@ggo.ru<br>
+			.col-xs-5.right
+				a.button(data-toggle="modal" data-target="#Feedback" href="#Feedback") НАПИШИТЕ НАМ
+.modal.fade(id="Map", tabindex="-1", role="dialog" aria-hidden="true", data-parsley-validate)
+	.modal-dialog.modal-lg
+		.modal-content
+			a.close(data-dismiss="modal", href="#")
+				include ../../public_html/layout/images/svg/close.svg
+			#contacts-map
+include includes/footer

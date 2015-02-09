@@ -1,0 +1,62 @@
+include includes/header
+<body>
+
+include includes/toolbar
+.page
+	.page__header(style="background-image:url(/layout/images/header.jpg)")
+	.container
+		h1.page__title Строительство резервной технологической линии установки производства серы в филиале ОАО АНК «Башнефть» «Башнефть-УНПЗ»
+		.page__divider
+		nav.nav
+			a.nav__item(href="#").nav__item--active Ключевые проекты
+			a.nav__item(href="#") Отрасли
+			a.nav__item(href="#") Виды деятельности
+			a.nav__item(href="#") Технологии
+			a.nav__item(href="#") Этапы проекта
+			a.nav__item(href="#") Карта проектов
+			a.nav__item(href="#") Референс
+			a.nav__item(href="#") Наши заказчики
+		.project__detail
+			.row
+				.col-xs-5
+					h4 Заказчик
+					p ОАО АНК "Башнефть" "Башнефть-УНПЗ" 
+					h4 Вид работ
+					p 5-я технологическая линия установки производства серы
+					h4 Основные технологические показатели
+					p 99,5%
+				.col-xs-3
+					h4 Сроки
+					p 2014 по н.в.
+					h4 Технология
+					p Производство серы по технологии Smartsulf
+					h4 Производительность
+					p 8760 часов в год
+				.col-xs-4
+					img(src="/layout/images/img2.jpg").max-width
+			.page__divider.page__divider--small
+			p История нашей компании началась в 1928 году. Ключевую идею успеха, которая сопровождает нас на протяжении десятков лет, мы видим в приверженности к индивидуальному подходу к каждому из наших заказчиков. Сочетание накопленного опыта и умения решать персональные инжиниринговые задачи, мастерство поиска и созидания комплексных высокотехнологичных решений сформировали философию компании «Инжиниринг как искусство», которая находит отражение в каждом нашем проекте. В нашем референс-листе более 4 000 технологических установок. Мы реализуем инжиниринговые проекты полного цикла – от проектирования до введения в эксплуатацию оборудования для объектов нефтегазодобычи, нефтегазопереработки и нефтехимии.
+			.page__divider.page__divider--small
+			h3 Технологии, использованные в проекте
+			.row
+				.col-xs-4
+					h4.page__title.page__title--small-icon
+						include ../../public_html/layout/images/svg/i-3.svg
+						| Нефтедобыча
+					ul.sections.sections--small
+						li
+							a.sections__item(href="#") Производство серы по технологии Smartsulf
+			.page__divider.page__divider--small
+			h3.l-margin-bottom Проекты с аналогичными технологиями
+			.projects
+				a.project(style="background-image: url(/layout/images/pb-1.jpg)" href="#")
+					span Очень длинное название проекта
+				a.project(style="background-image: url(/layout/images/pb-2.jpg)" href="#")
+					span Очень длинное название проекта
+				a.project(style="background-image: url(/layout/images/pb-3.jpg)" href="#")
+					span Очень длинное название проекта
+				a.project(style="background-image: url(/layout/images/pb-4.jpg)" href="#")
+					span Очень длинное название проекта
+				a.project(style="background-image: url(/layout/images/pb-5.jpg)" href="#")
+					span Очень длинное название проекта
+include includes/footer

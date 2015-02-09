@@ -1,0 +1,43 @@
+include includes/header
+<body>
+
+include includes/toolbar
+.page
+	.page__header(style="background-image:url(/layout/images/header.jpg)")
+	.container
+		h1.page__title Научно-технические публикации
+		.page__divider
+		nav.nav
+			a.nav__item(href="#") Новости
+			a.nav__item(href="#").nav__item--active Научно-технические публикации
+			a.nav__item(href="#") Фотогалерея
+			.dropdown
+				a.dropdown__trigger(href="#")
+					span.dropdown__text 2014
+					include ../../public_html/layout/images/svg/down.svg
+				span.dropdown__frame
+					a.dropdown__item(href="#", style="display:none") 2014
+					a.dropdown__item(href="#") 2013
+					a.dropdown__item(href="#") 2012
+				select.dropdown__select
+					option(value="2014") 2014
+					option(value="2013") 2013
+					option(value="2012") 2012
+		.news
+			.news__date ноябрь 2014
+			a.news__title(href="#") Применение GRAITEC Advance Steel при проектировании строительных конструкций для объектов нефтегазовой отрасли
+			.news__description Журнал «Rational Enterprice Management» (2009. №6. с.138-139) <br> Формат PDF. 156 Кб
+		.news
+			.news__date ноябрь 2014
+			a.news__title(href="#") Новый процесс получения серы из диоксида серы на примере очистки дымового газа металлургического завода Автор
+			.news__description Журнал «Rational Enterprice Management» (2009. №6. с.138-139) <br> Формат PDF. 156 Кб
+		.news
+			.news__date ноябрь 2014
+			a.news__title(href="#") В.Д. Любановский «Современные методы защиты строительных конструкций зданий, сооружений и технологического оборудования от коррозии»
+			.news__description Журнал «Rational Enterprice Management» (2009. №6. с.138-139) <br> Формат PDF. 156 Кб
+		.news
+			.news__date ноябрь 2014
+			a.news__title(href="#") «Деньги на воздух». Интервью с Михаилом Лебедским-Тамбиевым
+			.news__description Журнал «Rational Enterprice Management» (2009. №6. с.138-139) <br> Формат PDF. 156 Кб
+			
+include includes/footer

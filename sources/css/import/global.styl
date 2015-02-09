@@ -1,0 +1,1161 @@
+html, body
+	height 100%
+body
+	font-family 'PT Sans', 'Helvetica Neue', 'Arial', sans-serif
+	min-height 100%
+	color black
+	background white
+	-webkit-font-smoothing: subpixel-antialiased
+
+.container
+	min-width 980px
+
+svg
+	t fill
+	path, g
+		t fill
+
+.page
+	full-width()
+	&__header
+		height 200px
+		background-position: bottom center
+		background-size: cover
+		width 100%
+		margin-bottom -100px
+	
+				
+	&__content
+		&:after
+			content ""
+			position absolute
+			border-right 1px solid #dadada
+			top 0
+			left -21px
+			height 100%
+	&__side
+		&:after
+			content ""
+			position absolute
+			border-right 1px solid #dadada
+			top 0
+			right 20px
+			height 100%
+		&-divider
+			width 20%
+			height 3px
+			background blue
+			margin 30px 0
+		p 
+			font-size 15px
+			color #4c5760
+			max-width 84%
+			margin-bottom 20px
+	&__divider
+		border-bottom 1px solid #dadada
+		width 100%
+		margin-bottom 47px
+		&--small
+			width 50px
+			border-bottom 3px solid blue
+			margin 30px 0 33px
+		& + .nav
+			margin-top -30px
+			padding-bottom 17px
+			border-bottom 1px solid #dadada
+			margin-bottom 50px
+			&__item
+				font-size 15px
+				margin-right 20px
+	.container
+		background white
+		min-height 450px
+		max-width 1140px
+		padding 5px 60px 50px
+	h2
+		font-weight: bold
+	h3
+		font-size 24px
+		margin-bottom 20px
+	h4
+		font-size 20px
+	h5
+		text-transform: uppercase
+		font-size 10px
+		font-weight: bold
+		margin-bottom 5px
+	
+	a
+		& + .news__description
+			margin-top 5px
+		&.with-icon
+			display inline-block
+			position relative
+			padding-left 60px
+			line-height 17px
+			margin-bottom 15px
+			font-size 16px
+			color black
+			min-height 50px
+			width 100%
+			svg
+				position absolute
+				width 50px
+				height 50px
+			svg, span
+				top 50%
+				left 0
+				transform translateY(-50%)
+				margin-top -5px
+			span
+				position absolute
+				display inline
+				left 60px
+			&:hover
+				span
+					color #0082dc
+			
+		&.back
+			margin-left 20px
+			position relative
+			color blue
+			border-line alpha(@color,.4) 
+			svg
+				position absolute
+				left -17px
+				top 5px
+			&:hover
+				color black
+				border-line alpha(@color,.4) 
+				svg
+					path
+						fill black
+	img
+		&.max-width
+			max-width 100%
+	p
+		font-size 15px
+		color #4c5760
+		max-width 95%
+		margin-bottom 20px
+		a
+			color blue
+			border-line alpha(@color,.4) 
+			&:hover, &:focus
+				color #006fef
+				border-line alpha(@color,.4) 
+			
+		&.bigger
+			font-size 16px
+			line-height 25px
+			margin-bottom 30px
+		&.highlight
+			font-size 20px
+			color #717b84
+		&.blue
+			color blue
+		big
+			font-size 18px
+	.page
+		&__title
+			font-family 'Direct'
+			font-size 30px
+			padding-bottom 5px
+			font-weight: normal
+			&--icon
+				color #0e8ade
+				font-size 22px
+				margin-bottom 35px
+				svg
+					width 53px
+					height 53px
+					margin-right 20px
+					display inline-block
+					vertical-align: middle
+			&--small-icon
+				color #0e8ade
+				font-size 20px
+				margin-bottom 15px
+				font-weight: normal
+				font-family 'PT Sans'
+				color black
+				position relative
+				padding-left: 65px
+				svg
+					width 50px
+					height 50px
+					left 0
+					top 45%
+					transform translateY(-50%)
+					display inline-block
+					vertical-align: middle
+					position absolute
+	
+	.news
+		margin-bottom 35px
+		&__title
+			color black
+			font-family 'Direct'
+			font-size 21px
+			a&:hover
+				color blue
+				border-line alpha(@color, .4)
+		
+		&__description
+			width 100%
+			display inline-block
+			color #4c5760
+			font-size 15px
+			margin-top 20px
+		&__gallery
+			figure
+				display inline-block
+			a
+				display inline-block
+				width 121px
+				height 91px
+				margin 0 15px 15px 0
+				background-size cover
+				border 1px solid #ccc
+				t all
+				box-shadow inset 0 0 0 2px white
+				line-height 91px
+				text-align: center
+				img 
+					position relative
+					max-height 100%
+					opacity 0
+					z-index -1
+					vertical-align middle
+					margin-left 50%
+					transform translateX(-50%)
+				&:hover
+					border-color blue
+		&__date
+			text-transform: uppercase
+			color blue
+			font-size 10px
+			font-weight: bold
+			display inline-block
+			margin-bottom 10px
+			width 100%
+
+.button
+	min-width 190px
+	text-align: center
+	text-transform: uppercase
+	font-weight bold
+	font-size 11px
+	border 1px solid black
+	display inline-block
+	line-height: 31px
+	color black
+	letter-spacing: 3px
+	height 31px
+	padding 0 25px
+	t all
+	&.s-margin-top
+		margin-top 16px !important
+	&:focus
+		color black
+	&:hover
+		color blue
+		border-color blue
+		background transparent !important
+
+.depth
+	font-size 17px
+	color black
+	line-height 18px
+	&
+		font-size 19px
+	svg
+		transform-origin center center
+		t all
+		margin-bottom 10px
+	&--big
+		font-size 20px
+		svg
+			margin-bottom 15px
+	a
+		color #0082dc
+		font-size 14px
+		margin-top 10px
+		display inline-block
+		span
+			t color
+		&:first-of-type
+			margin-top 18px
+		&:hover
+			span 
+				color black
+				border-line alpha(@color, .4)
+		
+	a&:hover
+		color #1584d9
+		svg
+			transform scale(1.03)
+
+.projects
+	margin-right -7px
+	margin-left -7px
+	.project
+		display inline-block
+		width 20%
+		width calc(20% - 14px)
+		height 200px
+		margin 0 7px 10px 7px
+		background-size cover
+		text-align: center
+		position relative
+		&:after
+			width 100%
+			height 100%
+			position absolute
+			top 0
+			left 0
+			background alpha(black, .8)
+			content ""
+		&:after, span
+			t opacity
+			opacity 0
+		&:hover
+			&:after, span
+				opacity 1
+		span
+			z-index 2
+			line-height 16px
+			font-size 16px
+			padding 0 20px
+			position absolute
+			top 50%
+			transform translateY(-50%)
+			left 0
+			color white
+			width 100%
+
+.project
+	&__detail
+		p
+			font-size 16px
+			margin-bottom 30px
+
+.client
+	width (100/6)%
+	display inline-block
+	min-height 100px
+	line-height 100px
+	text-align center
+	@media (min-width: scr_lg)
+		width (100/7)%
+	&:hover
+		img
+			transform scale(1.1)
+	img
+		vertical-align: middle
+		max-width 70%
+		max-height 50%
+		t all
+	& + h3
+		margin-top 60px
+
+.cert
+	text-align: center
+	font-size 13px
+	color #272727
+	line-height 16px
+	margin-bottom 30px
+	&__picture
+		min-width 100%
+		border 1px solid #dadada
+		min-height 200px
+		display: inline-block
+		background-repeat no-repeat
+		background-position: center center
+		background-size auto 95%
+		margin-bottom 10px
+		t border
+		
+			
+		&:hover
+			border-color blue
+
+.sections
+	list-style: none
+	padding-left 65px
+	margin-top 0
+	&__item
+		color #0082dc
+		
+		&--active
+			color black
+			position relative
+			&:after
+				content ""
+				position absolute
+				height 17px
+				width 9px
+				background url(/layout/images/svg/arrow.svg) top left no-repeat
+				background-size cover
+				top -1px
+				left -18px
+		&:hover
+			color black
+			border-line alpha(@color, .4)
+	&--small
+		.sections__item
+			font-size 13px
+			color #0082dc
+			border-line alpha(@color, .4)
+	li
+		line-height 18px
+		margin-bottom 10px
+
+.scroll-fix
+	position fixed
+	width 100%
+	height 100%
+	top 0
+	left 0
+	z-index 300000
+	pointer-events none
+	&--on
+		pointer-events initial
+
+.dropdown
+	&__frame, &__select
+		display none
+
+.success-story
+	margin-bottom 50px
+	border-bottom 1px solid #dbdfe3
+	.fotorama
+		&__arr
+			background transparent
+			&--disabled
+				svg
+					path
+						fill #000
+			svg
+				max-width 100%
+		&__html
+			padding 0 75px
+	&__item
+		position relative
+		full-width()
+		height 490px
+		background-repeat no-repeat
+		background-size containt
+		background-position bottom right
+	&__content
+		position absolute
+		bottom 60px
+		max-width 55%
+	&__text
+		font-size 22px
+		line-height 30px
+		padding-bottom 30px
+		margin-bottom 30px
+		border-bottom 1px solid #dbdfe3
+	&__about
+		color #717b84
+		font-size 15px
+
+.slick
+	&-next
+		right 2px
+	&-prev
+		left 2px
+	&-disabled
+		svg
+			opacity .1
+			path
+				fill black
+	&-next, &-prev
+		width 25px
+		height 25px
+		top 19px
+		svg
+			width 24px
+			height 24px
+		&:before, &:after
+			display none
+
+.history
+	&__content
+		width 100%
+		border 1px solid #3393e1
+		margin-top -1px
+		min-height 100px
+		padding 40px 55px 20px
+		p
+			font-size 16px
+		&-block
+			display none
+			&--active
+				display block
+	&__slider
+		text-align: center
+		font-size 28px
+		padding 0 50px
+		margin-bottom 0
+		.slick-list
+			padding-bottom 50px
+		&-item
+			position relative
+			top 4px
+			display inline-block
+			&.slick-active:not(.last)
+				a:after
+					opacity 1
+			&:after, &:before
+				top 100%
+				content ""
+				height 30px
+				left 50%
+				position absolute
+				margin-top 20px
+				t all
+				opacity 0
+			&:after
+				border-right 1px solid #3393e1
+				transform skew(-50deg)
+				margin-left -18px
+			&:before
+				border-left 1px solid #3393e1
+				transform skew(50deg)
+				margin-left 18px
+			&.active
+				&:after, &:before
+					opacity 1
+				a
+					color #0082dc
+					&:before
+						opacity 1
+			a
+				color black
+				position relative
+				&:after, &:before
+					position absolute
+					t all
+					content ""
+					opacity 0
+				&:after	
+					width 70%
+					left 110%
+					top 15px
+					border-top 1px solid #96adbc
+				&:before
+					width 60px
+					bottom -50px
+					left 50%
+					margin-left -30px
+					border-bottom 2px solid white
+
+.structure
+	width 480px
+	height 480px
+	border-radius 50%
+	margin-bottom 100px
+	margin 0 auto
+	border 5px solid #717b84
+	text-align: center
+	padding 0px
+	position relative
+	.button
+		position absolute
+		bottom 45px
+		left 50%
+		transform translateX(-50%)
+		display none
+	&__link
+		position absolute
+		font-size 20px
+		border-line #0082dc
+		color black
+		white-space no-wrap
+		&:hover
+			color #1584da
+			&:after, &:before
+				transform scale(1.1)
+		strong
+			font-size 26px
+		&--open
+			color #0082dc
+			background transparent
+			&:after
+				box-shadow 0 0 0 6px #0082dc
+				transform scale(1.1)
+		&:after, &:before
+			display inline-block
+			content ""
+			position absolute
+			border-radius 50%
+			top -5px
+			t all
+		&:after
+			width 28px
+			height 28px
+			background #0082dc
+			margin 6px
+		&:before
+			width 40px
+			height 40px
+			border 1px solid black
+			
+		&--top
+			top 6%
+			&:after, &:before
+				top 15px
+		&--left
+			right 100%
+			margin-right -38px
+			&.structure__link--middle
+				margin-right 11px
+			&:after, &:before
+				right -55px
+		&--right
+			left 100%
+			margin-left -38px
+			&:after, &:before
+				left -55px
+				
+			&.structure__link--middle
+				margin-left 11px
+		&--middle
+			top 70%
+		&--bottom
+			bottom -60px
+			left 50%
+			transform translateX(-50%)
+			&:after, &:before
+				left 50%
+				top -50px
+			&:before
+				margin-left -20px
+			&:after
+				margin-left -14px
+			
+	&__intro, &__content
+		position absolute
+		top 50%
+		left 50%
+		transform translateY(-50%) translateX(-50%)
+		line-height 25px
+		width 100%
+		&:before, &:after
+			content ""
+			border-bottom 1px solid #000000
+			position absolute
+			width 30%
+			left 35%
+		&:before
+			top 0
+		&:after
+			bottom 0
+		padding 35px 0
+		h3
+			margin-top 0
+		h2 
+			font-size 34px
+			line-height 42px
+			margin-top 0
+			margin-bottom 20px
+			font-family 'Direct'
+			font-weight: bold
+		p
+			font-size 22px
+			line-height 28px
+			color #7e868e
+			margin-bottom 3px
+			font-family 'Direct'
+			max-width 95%
+			display inline-block
+		span
+			font-size 12px
+			position absolute
+			top 100%
+			width 100%
+			left 0
+			line-height 17px
+			margin-top 15px
+			color #98a4ac
+	&__content
+		display none
+		p
+			font-size 16px
+
+.steps
+	&__section
+		full-width()
+		border-bottom 1px solid #d4dbde
+		&--open
+			.steps__title
+				span
+					color #1584d9
+				&-arrow
+					svg
+						transform rotate(-180deg)
+						path
+							fill #becbd5
+	&__title
+		min-height 96px
+		max-height 96px
+		display inline-block
+		line-height 96px
+		position relative
+		width 100%
+		&:hover
+			span
+				
+				color #0082dc
+		span
+			t all
+			font-size 28px
+			color black
+			display inline-block
+			vertical-align: middle
+		&-arrow
+			position absolute
+			right 0
+			top 10px
+			opacity .6
+			svg
+				t all
+		&-icon
+			svg
+				display inline-block
+				vertical-align: middle
+				margin-right 20px
+				top -2px
+				height 53px
+				width 53px
+				position relative
+	&__content
+		border-top 1px solid #d4dbde
+		width 100%
+		width calc(100% - 75px)
+		float: right
+		padding 20px 0
+		display none
+	&__sub
+		&-title
+			padding-left 40px
+			font-size 22px
+			color black
+			position relative
+			&:hover
+				color #1584d9
+			svg
+				position absolute
+				width 24px
+				height 24px
+				left 0
+				top 1px
+				path
+					fill #96adbc
+		&-content
+			&--open
+				.steps__sub-title
+					color #0082dc
+					svg
+						transform rotate(90deg)
+						path
+							fill #0082dc
+				.steps__text
+					display block
+			full-width()
+			& + .steps__sub-content
+				margin-top 30px
+	&__text
+		float right
+		width 95%
+		display none
+		margin-top 20px
+		width calc(100% - 40px)
+		p
+			font-size 14px
+
+.nav-tabs
+	list-style: none
+	padding 0
+	li
+		float left
+		width 50%
+		display inline-block
+		font-size 28px
+		line-height 65px
+		padding 0 25px
+		height 65px
+		border 1px solid white
+		border-bottom-color #0082dc
+		text-align: center
+		a
+			color black
+		&.active
+			border 1px solid #0082dc
+			border-bottom-color white
+			a
+				color #0082dc
+
+.numbers
+	font-size 17px
+	color #4c5760
+	line-height 1.3
+	.border-right
+		position relative
+			
+		&:after
+			content ""
+			right 0
+			top 10%
+			height 80%
+			background #c3d5e3
+			width 1px
+			position absolute
+		&--small
+			&:after
+				right -8px
+		&--xl
+			&:after
+				height 300px
+	.col-xs-7.border-right.border-right--xl:after
+		right 0
+	big
+		font-size 21px
+		white-space no-wrap
+		&.bigger
+			font-size 28px
+	small
+		font-size 15px
+	em
+		font-style: normal
+		font-size 14px
+	u
+		font-style: normal
+		font-size 13px
+		text-decoration none
+	.page__divider
+		border-color #c3d5e3
+	.row--padding
+		margin-right -30px
+		margin-left -30px
+		& > [class*='col-']
+			padding-right 30px
+			padding-left 30px
+.number
+	&__small-position
+		margin-top -45px
+	&__position
+		margin-top -130px
+	&__value
+		font-size 68px
+		font-weight: bold
+		color black
+		line-height 1.1
+		white-space no-wrap
+		&--xxs
+			font-size 55px
+		&--xs
+			font-size 60px
+		&--s
+			font-size 66px
+		&--m
+			font-size 76px
+			line-height 1.2
+		
+		&--medium
+			font-size 85px
+			line-height 1.1
+			max-height 84px
+		&--big
+			font-size 99px
+			line-height .95
+			max-height 100px
+
+
+
+.tab-pane
+	display none
+	full-width()
+	&.active
+		display block
+
+.reference
+	margin-top 2px
+	border 1px solid #dfdfdf
+	&--open
+		.reference__trigger
+			color #0082dc
+			svg
+				transform rotate(90deg)
+	&__content
+		padding 10px 30px 0
+		display none
+		.table
+			td, th
+				padding 15px 10px
+			th
+				text-transform: uppercase
+				font-size 10px
+				letter-spacing 2px
+			td
+				color #233347
+				font-size 14px
+	&__trigger
+		display inline-block
+		width 100%
+		max-height 48px
+		line-height 51px
+		padding 0 20px
+		font-size 22px
+		color black
+		&:hover
+			color #0082dc
+		svg
+			position relative
+			t all
+			top -2px
+			width 24px
+			height 24px
+			margin-right 20px
+			display inline-block
+			vertical-align: middle
+.row
+	&--center
+		width (100 + 100/6)%
+		position relative
+		left -(100/12)%
+.geography
+	overflow hidden
+	position relative
+	width 100%
+	p
+		font-size 16px
+	
+	#map
+		width 100%
+		min-height 500px
+	&__popup
+		display none
+		position absolute
+		right 0
+		top 0px
+		width 260px
+		height 500px
+		background #f0f2f3
+		z-index 30
+		box-shadow 0 0 10px rgba(0, 0, 0, .75)
+		&_toolbar
+			background #00266d
+			color white
+			height 29px
+			line-height 28px
+			width 100%
+			padding 0 10px
+			text-align: right
+		&_gallery
+			margin-top 15px
+			a
+				display inline-block
+				width 100%
+				height 120px
+				background-size cover
+				background-position center center
+			a+a
+				margin-top 10px
+		&_content
+			padding 0px 25px 0
+			position relative
+			max-height 470px
+			full-width()
+			overflow: hidden;
+			.scroll
+				full-width()
+				padding 30px 0
+			&.ps-container>.ps-scrollbar-y-rail
+				background #c3d5e3
+				width 5px
+				border-radius 0
+				right 0
+				>.ps-scrollbar-y
+					width 5px
+					background #89a2b4
+					border-radius 0
+			h4
+				margin 0
+				padding 0
+				text-transform: uppercase
+				color #63b1ff 
+				font-size 10px
+				font-weight bold
+				margin-bottom 10px
+				border-line(#63b1ff, 2px)
+				span
+					background #f0f2f3
+					padding-right 4px
+					letter-spacing 2px
+			img
+				max-width 100%
+			h2 + h4, p + h4
+				margin-top 20px
+			h2
+				color black
+				font-size 18px
+				font-weight bold
+				margin-top 0
+			p
+				font-size 14px
+				line-height 23px
+			small
+				p
+					font-size 13px
+					line-height 18px
+			
+		&_close
+			font-size 10px
+			font-weight: bold
+			letter-spacing 2px
+			text-transform: uppercase
+			color #0082dc
+			&:hover
+				color white
+			svg
+				height 17px
+				position relative
+				top -1px
+				width 17px
+				display inline-block
+				vertical-align: middle
+				path
+					fill #0082dc
+
+#Feedback
+	.modal__content
+		padding-top 50px
+
+.modal
+	h3
+		font-weight: bold
+		font-size 26px
+		span
+			color blue
+			font-size 15px
+			width 100%
+			display: inline-block
+			font-weight: normal
+			margin-bottom 10px
+	#contacts-map
+		min-height 500px
+		width 100%
+		margin-top -10px
+	.form
+		margin 0 auto
+		max-width 80%
+	.success
+		display none
+	label
+		text-align: center
+		width 100%
+		letter-spacing 1px
+		font-size 10px
+		text-transform: uppercase
+		margin-bottom 7px
+	ul + label, input + label
+		margin-top 20px
+	.captcha
+		height 32px
+		background-position center center
+		background-repeat no-repeat
+		width 100%
+		&__refresh
+			background transparent !important
+			svg
+				width 30px
+				height 30px
+				position relative
+				left -15px
+				top 24px
+				path
+					fill blue
+	.captcha, input[type="text"], input[type="email"], input[type="password"], textarea
+		border 1px solid black
+		t border
+	input
+		&:focus
+			outline 0
+		&[type="text"], &[type="email"], &[type="password"]
+			height 32px
+			line-height 32px
+			width 100%
+			text-align: center
+			padding 0 10px
+			&:focus
+				border-color blue
+			&.parsley-error
+				border-color red
+				&:focus
+					border-color alpha(red,.7)
+		&[type="submit"]
+			appearance none
+			border 0
+			margin-bottom 0
+			font-size 13px
+			background blue
+			width 185px
+			height 43px
+			line-height 43.5px
+			font-weight: bold
+			text-transform: uppercase
+			color white
+			margin-top 40px
+			font-size 16px
+			&:hover
+				background #095bcb
+	textarea
+		&:focus
+			outline 0
+		min-height 80px
+		resize none
+		width 100%
+		text-align: center
+		padding 5px 10px
+		&.parsley-error
+			border-color red
+		&:focus
+			border-color blue
+	.close
+		position absolute
+		right -60px
+		top 0
+		background transparent !important
+		svg
+			width 40px
+			height 40px
+			path
+				fill white
+	&-content
+		border-radius 0
+		min-height 100px
+		padding 20px 40px 40px
+	&-frame
+		width 100%
+		border 2px solid black
+		min-height 100px
+		position relative
+		padding 30px
+		&:after
+			content attr(data-title)
+			position absolute
+			background white
+			text-transform: uppercase
+			font-weight: bold
+			padding 0 20px
+			top -8px
+			left 50%
+			font-size 13px
+			letter-spacing 6px
+			transform translateX(-50%)
+	&-backdrop
+		&.in
+			opacity .8

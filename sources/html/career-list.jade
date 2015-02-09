@@ -1,0 +1,125 @@
+include includes/header
+<body>
+
+include includes/toolbar
+.page
+	.page__header(style="background-image:url(/layout/images/header.jpg)")
+	.container
+		.row
+			.col-xs-7
+				h1.page__title Карьера
+			.col-xs-5.right
+				a.button(data-toggle="modal" data-target="#vacancyDetail" href="#vacancyDetail").s-margin-top Отправить резюме
+		.page__divider
+		nav.nav
+			a.nav__item(href="#") Почему «Гипрогазоочистка»?
+			a.nav__item(href="#") Профессиональное развитие
+			a.nav__item(href="#") Истории успеха
+			a.nav__item.nav__item--active(href="#") Вакансии
+			a.nav__item(data-toggle="modal" data-target="#vacancyDetail" href="#vacancyDetail") Подать заявку
+		.row
+			.col-xs-4.page__side
+				p Группа «Гипрогазоочистка» — это профессиональная команда, обладающая	высокими компетенциями и богатым опытом работы в сфере газоочистки и экологии воздуха. Инжиниринговая компания достигла международного признания за счет применения инновационных подходов, суперсовременных технологий и высокого качества выполняемых работ. Ваши развернутые резюме высылайте по адресу 
+					a(href="mailto:job@ggo.ru") job@ggo.ru
+				p С дополнительной информацией Вас ознакомят в Департаменте кадровых служб, по телефону +7 (495) 231-30-40.
+				.page__side-divider
+				p Уважаемые коллеги! Рады сообщить, что ОАО «Гипрогазоочистка» приглашает к сотрудничеству подрядчиков на выполнение проектных работ в удаленном доступе (freelance). Для участия в наборе заполните пожалуйста анкету по 
+					a(data-toggle="modal" data-target="#vacancyDetail" href="#vacancyDetail") ссылке.
+				p Заполненные анкеты отправляйте на e-mail: 
+					a(href="mailto:SDvornikov@ggo.ru") SDvornikov@ggo.ru
+			.col-xs-8.page__content
+				p.blue.xl-margin-bottom Сегодня в компаниях группы открыты следующие вакансии:
+				.vacancy
+					a.vacancy__title(href="#") Машинист-электрик бронепоезда “Московский метрополитен”
+					.vacancy__company Вакансия в компании ОАО “Гипрогазоочистка”
+				.vacancy
+					a.vacancy__title(href="#") Стажер-оператор электрического стула
+					.vacancy__company Вакансия в компании ОАО “Гипрогазоочистка”
+				.vacancy
+					a.vacancy__title(href="#") Инженер-наладчик котла для варки супа на 50000000 персон
+					.vacancy__company Вакансия в компании ООО “Гипрогазоочистка-инжиниринг”
+				.vacancy
+					a.vacancy__title(href="#") Копоративный кот для непринужденного скитания по компании
+					.vacancy__company Вакансия в компании ООО “Гипрогазоочистка-инжиниринг”
+				.vacancy
+					a.vacancy__title(href="#") Машинист-электрик бронепоезда “Московский метрополитен”
+					.vacancy__company Вакансия в компании ОАО “Гипрогазоочистка”
+				.vacancy
+					a.vacancy__title(href="#") Стажер-оператор электрического стула
+					.vacancy__company Вакансия в компании ОАО “Гипрогазоочистка”
+				.vacancy
+					a.vacancy__title(href="#") Инженер-наладчик котла для варки супа на 50000000 персон
+					.vacancy__company Вакансия в компании ООО “Гипрогазоочистка-инжиниринг”
+				.vacancy
+					a.vacancy__title(href="#") Копоративный кот для непринужденного скитания по компании
+					.vacancy__company Вакансия в компании ООО “Гипрогазоочистка-инжиниринг”
+#vacancyDetail.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+	.modal-dialog.modal-lg
+		.modal-content.modal-content--white
+			a.close(data-dismiss="modal", href="#")
+				include ../../public_html/layout/images/svg/close.svg
+			.vacancy-popup
+				.success
+					h3.center Ваша заявка успешно отправлена.
+					p.center
+						| В ближайшее время представители нашей компании свяжутся с вами. Благодарим за обращение.
+				form.form.visible(data-parsley-validate='', enctype='multipart/form-data')
+					h3 Отправка резюме в базу соискателей
+					input(type='hidden', name='group_id', value='6')
+					input(type='hidden', name='vacancy', value="")
+					label
+						| представьтесь, пожалуйста 
+						span *
+					input(name='name', type='text', required='')
+					.row
+						.col-xs-6
+							label
+								| номер телефона для связи с вами 
+								span *
+							input(name='phone', required='', type='text', data-parsley-pattern='/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}/', data-parsley-trigger='change')
+						.col-xs-6
+							label e-mail для связи с вами
+							input(name='email', type='email')
+					.row
+						.col-xs-6
+							label расскажите немного о себе, пожалуйста
+							textarea(name='message')
+						.col-xs-6
+							.row.file
+								.col-xs-6
+									label(for='file')
+										| приложите, пожалуйста, ваше резюме 
+										span *
+								.col-xs-6
+									input.hidden(type='file', name='resume', required='', accept='application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document')
+									a.file-trigger(href='#') Загрузить файл
+							.file-name
+							.file-description
+								| Обратите внимание, мы принимаем файлы в форматах PDF, DOC, DOCX, размером не более 5 Мб.
+								br
+								| Мы не рассматриваем заявки без резюме.
+					.form__footer
+						.row
+							.col-xs-3
+								span.required
+									| Поля, отмеченные
+									br
+									|	знаком 
+									span *
+									|	обязательны
+									br
+									|	к заполнению.
+							.col-xs-3
+								label.left введите данный код
+								.captcha(style='background-image:url(/include/captcha.php?captcha_sid=<?=$code?>)')
+								input(type='hidden', name='captcha_code', value='<?=$code?>')
+								a.captcha__refresh(href='#')
+									include ../../public_html/layout/images/svg/refresh.svg
+							.col-xs-3
+								label.right в это поле
+								input(name='captcha_word', type='text', required='')
+							.col-xs-3
+								input(type='submit', value='Отправить')
+
+
+include includes/footer

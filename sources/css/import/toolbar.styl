@@ -1,0 +1,132 @@
+.header
+	full-width()
+	height 120px
+	line-height 120px
+	//border-bottom 1px solid #dadada
+	&__box
+		display: inline-block
+		line-height 35px
+		vertical-align: middle
+		position relative
+		top -7px
+	.search
+		margin 0 30px 0 35px
+		svg
+			display: inline-block
+			vertical-align: middle
+	&__lang
+		&__item
+			text-transform: uppercase
+			font-weight: bold
+			color black
+			font-size 13px
+			text-align: center
+			margin 0 5px
+			&:hover
+				color blue
+			&--active
+				color blue
+				border-bottom 2px solid blue
+				padding-bottom 2px
+	&__social
+		margin-left 10px
+		svg
+			height 23px
+			width 23px
+			display: inline-block
+			vertical-align: middle
+			path
+				fill #a5d0ff
+	.logo
+		&:after
+			content ""
+			position: absolute
+			height 60%
+			background: #00387f
+			width 1px
+			right 10px
+			top 20%
+			@media (min-width: scr_lg)
+				right 55px
+		svg
+			display: inline-block
+			vertical-align: middle
+			max-width 90%
+
+.nav
+	&--big
+		position relative
+		@media (min-width: scr_lg)
+			left -25px
+		.nav__item
+			top 9px
+			position relative
+			font-size 20px
+			margin-right 20px
+			@media (min-width: scr_lg)
+				font-size 22px
+				margin-right 30px
+			&--active
+				padding-bottom 2px
+	&__item
+		color black
+		cursor pointer
+		font-size 13px
+		margin-right 15px
+		@media (min-width: scr_lg)
+			font-size 14px	
+			margin-right 19px
+		&:last-of-type
+			margin-right 0
+		&--active
+			color blue
+			border-bottom 3px solid blue
+			padding-bottom 3px
+		&:hover, &:focus
+			color blue
+		
+		
+	.dropdown
+		float: right
+		margin-top -5px
+		position relative
+		&:hover
+			.dropdown__trigger
+				background blue
+				border-color blue
+				color white
+				svg path
+					fill white
+		&__frame
+			position absolute
+			top 100%
+			left 0
+			background blue
+			
+			min-width 100%
+			
+		&__item
+			min-width 100%
+			color white
+			display inline-block
+			font-weight: bold
+			max-height 30px
+			line-height 31px
+			font-size 12px
+			padding 0 15px
+			&:hover
+				background #1d8cdb
+		&__trigger
+			display inline-block
+			padding 0 15px
+			min-width 95px
+			border 1px solid black
+			font-size 13px
+			color black
+			font-weight: bold
+			height 31px
+			line-height 31px
+			svg
+				float right
+				margin-top 12px
+			

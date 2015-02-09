@@ -1,0 +1,190 @@
+.index
+	h1
+		font-size 46px
+	.slider
+		full-width()
+		height 100vh
+		min-height 500px
+		&__frame
+			full-width()
+			position relative
+			width 100%
+		&__down
+			padding 25px 20px
+			line-height 15px
+			width 110px
+			height 110px
+			background #4381d9
+			top -200px
+			left 50%
+			margin-left -55px
+			text-align: center
+			display inline-block
+			position absolute
+			z-index 200
+			border-radius 50%
+			color white
+			font-size 13px
+			svg
+				margin-top 5px
+				width 30px
+				path
+					fill white
+		&__section
+			line-height 45px
+			font-size 19px
+			color #f0f2ee
+			svg
+				margin-right 20px
+				position relative
+				top -1px
+		&__item
+			height 100vh
+			min-height 500px
+			full-width()
+			background-size cover
+			background-position center center
+			h1
+				margin-top 0
+				font-weight: bold
+				font-family 'Direct'
+				color white
+				max-width 60%
+				display inline-block
+				font-size 40px
+				line-height 1.2
+				margin-bottom 30px
+			.button
+				border 0
+				background #e33842
+				color white
+				text-transform: none
+				font-size 14px
+				font-weight: normal
+				letter-spacing 0
+				min-width 0
+				height 35px
+				line-height 35px
+				padding 0 40px
+				&:hover
+					background blue !important
+			svg
+				display inline-block
+				vertical-align: middle
+				width 40px
+				height 40px
+				path
+					fill #f0f2ee
+			.page__divider
+				border-color #e5363d
+				min-width 76px
+				margin 20px 0
+				display inline-block
+			.container
+				padding 80px 40px
+	.sections
+		full-width()
+		padding 50px 0
+	.more
+		t all
+		font-size 14px
+		svg
+			transform rotate(-90deg)
+			width 45px
+			height 45px
+			border-radius 50%
+			border 2px solid black
+			padding 7px
+			path
+				stroke-width 1px
+				stroke black
+		color blue
+		&:hover
+			svg
+				t all
+				border-color blue
+				path
+					stroke blue
+	.numbers
+		background #052b6d
+		color #dde2ed
+		font-size 17px
+		full-width()
+		span
+			color #4382da
+			display inline-block
+			margin-bottom 5px
+		.page__divider
+			border-color #123a7e
+			&.page__divider--small
+				display inline-block
+				margin 10px 0 15px
+				border-color #4382da
+		h1
+			color white
+		.container
+			padding 60px 0
+		.number__value
+			color white
+		.more
+			opacity: .5
+			color white
+			svg
+				border-color white
+				path
+					stroke white
+			&:hover
+				opacity 1
+		
+	.map
+		full-width()
+		background #d6dbde url(/layout/images/map.jpg) center center no-repeat
+		background-size auto 90%
+		padding 80px 0
+		height 100vh
+		min-height 700px
+		background 
+		position relative
+		h1
+			margin-top -100px
+		&__text
+			font-size 17px
+			width 100%
+			.page__divider
+				margin 5px 0
+				display inline-block
+				float: none
+				min-width 60%
+				border-color #4783d4
+			.number__value
+				font-size 124px
+				line-height: .84
+		&__content, &__text
+			position absolute
+			left 50%
+			top 50%
+			transform translateX(-50%) translateY(-50%)
+		&__content
+			width 500px
+			height 500px
+			text-align: center
+			border-radius 50%
+			border 3px solid #4481d7
+			margin-top 25px
+		.more
+			position absolute
+			bottom -50px
+			transform translateX(-50%)
+			left 50%
+			svg
+				background #4783d4
+				border-color #4783d4
+				path
+					stroke white
+			&:hover
+				svg
+					background blue
+					border-color blue
+					
+			
+			

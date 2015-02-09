@@ -1,0 +1,124 @@
+include includes/header
+<body>
+
+include includes/toolbar
+.page
+	.page__header(style="background-image:url(/layout/images/header.jpg)")
+	.container
+		h1.page__title Референс
+		.page__divider
+		nav.nav
+			a.nav__item(href="#") Ключевые проекты
+			a.nav__item(href="#") Отрасли
+			a.nav__item(href="#") Виды деятельности
+			a.nav__item(href="#") Технологии
+			a.nav__item(href="#") Этапы проекта
+			a.nav__item(href="#") Карта проектов
+			a.nav__item(href="#").nav__item--active Референс
+			a.nav__item(href="#") Наши заказчики
+		div(role='tabpanel')
+			ul.nav.nav-tabs(role='tablist')
+				li.active(role='presentation')
+					a(href='#russia', aria-controls='home', role='tab', data-toggle='tab') Россия
+				li(role='presentation')
+					a(href='#sng', aria-controls='profile', role='tab', data-toggle='tab') Ближнее и дальнее зарубежье
+			.tab-content
+				#russia.tab-pane.active(role='tabpanel')
+					.reference
+						a.reference__trigger(href="#")
+							include ../../public_html/layout/images/svg/next.svg
+							| Роснефть
+						.reference__content
+							table.table(cellpadding="10")
+								thead
+									tr
+										th(width="25%") объект
+										th(width="15%") регион
+										th(width="15%") период
+										th(width="25%") проект
+										th(width="20%") вид работ
+								tbody
+									tr
+										td Газпромнефть-ОНПЗ
+										td Россия
+										td 2012 по н.в.
+										td АВТ-10. Техперевооружение. Модернизация тепловой системы. Реконструкция вакуумсоздающей системы
+										td Проектная и рабочая документация
+									tr
+										td Газпромнефть-ОНПЗ
+										td Россия
+										td 2012 по н.в.
+										td АВТ-10. Техперевооружение. Модернизация тепловой системы. Реконструкция вакуумсоздающей системы
+										td Проектная и рабочая документация
+									tr
+										td Газпромнефть-ОНПЗ
+										td Россия
+										td 2012 по н.в.
+										td АВТ-10. Техперевооружение. Модернизация тепловой системы. Реконструкция вакуумсоздающей системы
+										td Проектная и рабочая документация
+					.reference
+						a.reference__trigger(href="#")
+							include ../../public_html/layout/images/svg/next.svg
+							| Лукойл
+						.reference__content
+							table.table(cellpadding="10")
+								thead
+									tr
+										th(width="25%") объект
+										th(width="15%") регион
+										th(width="15%") период
+										th(width="25%") проект
+										th(width="20%") вид работ
+								tbody
+									tr
+										td Газпромнефть-ОНПЗ
+										td Россия
+										td 2012 по н.в.
+										td АВТ-10. Техперевооружение. Модернизация тепловой системы. Реконструкция вакуумсоздающей системы
+										td Проектная и рабочая документация
+									tr
+										td Газпромнефть-ОНПЗ
+										td Россия
+										td 2012 по н.в.
+										td АВТ-10. Техперевооружение. Модернизация тепловой системы. Реконструкция вакуумсоздающей системы
+										td Проектная и рабочая документация
+									tr
+										td Газпромнефть-ОНПЗ
+										td Россия
+										td 2012 по н.в.
+										td АВТ-10. Техперевооружение. Модернизация тепловой системы. Реконструкция вакуумсоздающей системы
+										td Проектная и рабочая документация
+				#sng.tab-pane(role='tabpanel')
+					.reference
+						a.reference__trigger(href="#")
+							include ../../public_html/layout/images/svg/next.svg
+							| Лукойл
+						.reference__content
+							table.table(cellpadding="10")
+								thead
+									tr
+										th(width="25%") объект
+										th(width="15%") регион
+										th(width="15%") период
+										th(width="25%") проект
+										th(width="20%") вид работ
+								tbody
+									tr
+										td Газпромнефть-ОНПЗ
+										td Россия
+										td 2012 по н.в.
+										td АВТ-10. Техперевооружение. Модернизация тепловой системы. Реконструкция вакуумсоздающей системы
+										td Проектная и рабочая документация
+									tr
+										td Газпромнефть-ОНПЗ
+										td Россия
+										td 2012 по н.в.
+										td АВТ-10. Техперевооружение. Модернизация тепловой системы. Реконструкция вакуумсоздающей системы
+										td Проектная и рабочая документация
+									tr
+										td Газпромнефть-ОНПЗ
+										td Россия
+										td 2012 по н.в.
+										td АВТ-10. Техперевооружение. Модернизация тепловой системы. Реконструкция вакуумсоздающей системы
+										td Проектная и рабочая документация
+include includes/footer

@@ -1,0 +1,88 @@
+include includes/header
+<body>
+
+include includes/toolbar
+.page
+	.page__header(style="background-image:url(/layout/images/header.jpg)")
+	.container
+		h1.page__title Технологии
+		.page__divider
+		nav.nav
+			a.nav__item(href="#") Ключевые проекты
+			a.nav__item(href="#") Отрасли
+			a.nav__item(href="#") Виды деятельности
+			a.nav__item(href="#").nav__item--active Технологии
+			a.nav__item(href="#") Этапы проекта
+			a.nav__item(href="#") Карта проектов
+			a.nav__item(href="#") Референс
+			a.nav__item(href="#") Наши заказчики
+		p.highlight История нашей компании началась в 1928 году. Ключевую идею успеха, которая сопровождает нас на протяжении десятков лет, мы видим в приверженности к индивидуальному подходу к каждому из наших заказчиков. 
+		.row.xxl-margin-top.s-padding-top.m-padding-bottom
+			.col-xs-4
+				.depth.depth--big(href="#")
+					include ../../public_html/layout/images/svg/i-1.svg
+					| <br>Технологии нефтедобычи <br>
+					a(href="#") 
+						span Установки подготовки нефти
+					| <br>
+					a(href="#") 
+						span Установки отдувки сероводорода от нефти
+					| <br>
+					a(href="#") 
+						span Установки газоразделения
+					| <br>
+					a(href="#") 
+						span Установки комплексной подготовки газа 
+					| <br>
+					a(href="#") 
+						span Компрессорные станции
+					| <br>
+					a(href="#") 
+						span Насосные станции
+					| <br>
+
+			.col-xs-4
+				.depth.depth--big(href="#")
+					include ../../public_html/layout/images/svg/i-3.svg
+					| <br>Технологии нефтепереработки 
+					| <br>
+					a(href="#") 
+						span Установки первичной переработки нефти 
+					| <br>
+					a(href="#") 
+						span Установки вторичной переработки нефти 
+					| <br>
+					a(href="#") 
+						span Установки производства водорода 
+					| <br>
+					a(href="#") 
+						span Комплексные установки производстваэлементарной серы 
+					| <br>
+					a(href="#") 
+						span Установки производства и регенерации серной кислоты 
+					| <br>
+					a(href="#") 
+						span Установки алкилирования 
+					| <br>
+					a(href="#") 
+						span Установки регенерации катализаторов 
+					| <br>
+
+			.col-xs-4
+				.depth.depth--big(href="#")
+					include ../../public_html/layout/images/svg/i-5.svg
+					| <br>Технологии нефтехимии 
+					| <br>
+					a(href="#") 
+						span Установки производства этилена/пропилена
+					| <br>
+					a(href="#") 
+						span Установки производства полиэтилена/полипропилена
+					| <br>
+					a(href="#") 
+						span Установки производства сомономеров (ЛАО)
+						| <br>
+					a(href="#") 
+						span Установки производства моноэтиленгликоля
+
+include includes/footer

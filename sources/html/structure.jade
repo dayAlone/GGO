@@ -1,0 +1,40 @@
+include includes/header
+<body>
+
+include includes/toolbar
+.page
+	.page__header(style="background-image:url(/layout/images/header.jpg)")
+	.container
+		h1.page__title Структура холдинга
+		.page__divider
+		nav.nav
+			a.nav__item(href="#").nav__item--active Структура холдинга
+			a.nav__item(href="#") ГГО в цифрах
+			a.nav__item(href="#") История
+			a.nav__item(href="#") Политика в области качества
+			a.nav__item(href="#") Сертификаты и свидетельства
+			a.nav__item(href="#") Патенты
+		.structure
+			.structure__intro
+				h2 Группа компаний «Гипрогазоочистка» 
+				p — это многопрофильный холдинг,<br>который объединяет<br>в своей структуре<br>5 компаний:
+				span Для получения информации<br>нажмите на название компании<br>на схеме
+			a.structure__link.structure__link--top.structure__link--left(href="#about-1")
+				strong ОАО «Гипрогазоочистка»
+			a.structure__link.structure__link--top.structure__link--right(href="#about-2") ООО «ГипроНефтеГаз Инжиниринг» 
+			a.structure__link.structure__link--middle.structure__link--left(href="#about-1") ООО «НЕФТЕХИМПРОЕКТ»   
+			a.structure__link.structure__link--middle.structure__link--right(href="#about-1") ЗАО «ДОС» 
+			a.structure__link.structure__link--bottom(href="#about-1") ООО «Гипрогазоочистка-инжиниринг» 
+			
+			#about-1.structure__content
+				h3 ООО «ГипроНефтеГаз Инжиниринг» 
+				p Разработка ТЭО, проектной и рабочей документации для объектов нефтегазовой добывающей отрасли
+			#about-2.structure__content
+				h3 ООО «ГипроНефтеГаз Инжиниринг2» 
+				p Разработка ТЭО, проектной и рабочей документации для объектов нефтегазовой добывающей отрасли
+			a.button(href="#") Закрыть
+		div.xxl-margin-bottom.xxl-margin-top.xxl-padding-top
+
+
+		
+include includes/footer
