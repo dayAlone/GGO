@@ -29387,7 +29387,7 @@ return function (global, window, document, undefined) {
           e.originalEvent.target.options.set({
             iconImageHref: '/layout/images/pin-open.png'
           });
-          showGeographyDetail("/ajax" + point.detail);
+          showGeographyDetail("/ajax" + point.url);
           $('.geography__popup_close').one('click', function() {
             $.each(open, function() {
               this.options.set({
@@ -29506,6 +29506,43 @@ return function (global, window, document, undefined) {
     }
     initPhotoSwipeFromDOM('.news__gallery');
     $('.slider').fotorama();
+    $('.project').click(function(e) {
+      var gallery, galleryOptions, items, pswpElement;
+      pswpElement = document.querySelectorAll('.pswp')[0];
+      items = $(this).data('pictures');
+      if (items.length > 0) {
+        galleryOptions = {
+          history: false,
+          focus: false,
+          shareEl: false
+        };
+        gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, galleryOptions);
+        gallery.init();
+        return e.preventDefault();
+      }
+    });
+    $('.cert').elem('picture').click(function(e) {
+      var gallery, galleryOptions, items, pswpElement;
+      pswpElement = document.querySelectorAll('.pswp')[0];
+      items = $(this).data('pictures');
+      galleryOptions = {
+        history: false,
+        focus: false,
+        shareEl: false
+      };
+      gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, galleryOptions);
+      gallery.init();
+      return e.preventDefault();
+    });
+    $('.slider__down').click(function(e) {
+      var offset;
+      offset = $(".sections").offset().top;
+      console.log(offset);
+      $('html, body').animate({
+        'scrollTop': offset
+      }, 300);
+      return e.preventDefault();
+    });
     $('.history__slider a').click(function(e) {
       var id;
       $('.history .slick-active.active').removeClass('active');

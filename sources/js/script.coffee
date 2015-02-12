@@ -346,7 +346,7 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 			console.log 
 			if $.inArray(e.originalEvent.target, open) == -1
 				e.originalEvent.target.options.set iconImageHref: '/layout/images/pin-open.png'
-				showGeographyDetail "/ajax#{point.detail}"
+				showGeographyDetail "/ajax#{point.url}"
 				$('.geography__popup_close').one 'click', ->
 					$.each open, ->
 						@options.set iconImageHref: '/layout/images/pin-white.png'
@@ -438,6 +438,35 @@ $(document).ready ->
 	initPhotoSwipeFromDOM('.news__gallery');
 
 	$('.slider').fotorama()
+	
+	$('.project').click (e)->
+		pswpElement = document.querySelectorAll('.pswp')[0];
+		items = $(this).data('pictures')
+		if items.length > 0
+			galleryOptions = 
+				history : false
+				focus   : false
+				shareEl : false
+			gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, galleryOptions);
+			gallery.init();
+			e.preventDefault()
+
+	$('.cert').elem('picture').click (e)->
+		pswpElement = document.querySelectorAll('.pswp')[0];
+		items = $(this).data('pictures')
+		galleryOptions = 
+			history : false
+			focus   : false
+			shareEl : false
+		gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, galleryOptions);
+		gallery.init();
+		e.preventDefault()
+
+	$('.slider__down').click (e)->
+		offset = $(".sections").offset().top
+		console.log offset
+		$('html, body').animate({'scrollTop' : offset },300)
+		e.preventDefault()
 
 	$('.history__slider a').click (e)->
 		$('.history .slick-active.active').removeClass 'active'

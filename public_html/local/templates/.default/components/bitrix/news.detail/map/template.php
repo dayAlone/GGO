@@ -1,0 +1,27 @@
+<?
+$item = $arResult;
+?>
+<div class="scroll">
+<? foreach(array('CUSTOMER') as $prop):
+  if(strlen($item['PROPERTIES'][$prop]['VALUE']['TEXT'])>0):
+  ?>
+  <h4><span><?=$item['PROPERTIES'][$prop]['NAME']?></span></h4>
+    <h2><?=html_entity_decode($item['PROPERTIES'][$prop]['VALUE']['TEXT'])?></h2>
+  <? 
+  endif;
+endforeach;?>
+<h4><span>Объект</span></h4>
+<p><?=html_entity_decode($item['NAME'])?></p>
+<? foreach(array('CUSTOMER', 'WORKTYPE', 'TIME', 'TECH', 'PERFOMANCE') as $prop):
+  if(strlen($item['PROPERTIES'][$prop]['VALUE']['TEXT'])>0):
+  ?>
+  <h4><span><?=$item['PROPERTIES'][$prop]['NAME']?></span></h4>
+  <p><?=html_entity_decode($item['PROPERTIES'][$prop]['VALUE']['TEXT'])?></p>
+  <? 
+  endif;
+endforeach;?>
+<?=$item["~DETAIL_TEXT"]?>
+<?if(strlen($item['PREVIEW_PICTURE']['SRC'])>0):?>
+<img src="<?=$item['PREVIEW_PICTURE']['SRC']?>" class="max-width">
+<?endif;?>
+</div>
