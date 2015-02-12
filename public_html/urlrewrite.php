@@ -31,6 +31,12 @@ $arUrlRewrite = array(
 		"PATH"      => "/works/depths/detail.php",
 	),
 	array(
+		"CONDITION" => "#^/works/technologies/([\\w-_]+)/.*#",
+		"RULE"      => "&ELEMENT_CODE=\$1&\$2",
+		"ID"        => "",
+		"PATH"      => "/works/technologies/detail.php",
+	),
+	array(
 		"CONDITION" => "#^/ajax/works/projects/([\\w-_]+)/.*#",
 		"RULE"      => "&ELEMENT_CODE=\$1&\$2",
 		"ID"        => "",

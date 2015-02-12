@@ -5578,13 +5578,14 @@ svg g {
 .depth--big svg {
   margin-bottom: 15px;
 }
-.depth a {
-  color: #0082dc;
+.depth > a,
+.depth > span {
   font-size: 14px;
   margin-top: 10px;
   display: inline-block;
 }
-.depth a span {
+.depth > a span,
+.depth > span span {
   -webkit-transition-property: color;
   -moz-transition-property: color;
   -o-transition-property: color;
@@ -5596,8 +5597,12 @@ svg g {
   -ms-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.depth a:first-of-type {
+.depth > a:first-of-type,
+.depth > span:first-of-type {
   margin-top: 18px;
+}
+.depth a {
+  color: #0082dc;
 }
 .depth a:hover span {
   color: #000;

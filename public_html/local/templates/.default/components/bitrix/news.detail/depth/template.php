@@ -1,6 +1,13 @@
 <?
 $item = $arResult;
 $item['ICON'] = file_get_contents($_SERVER['DOCUMENT_ROOT'].CFile::GetPath($item['PROPERTIES']['SVG']['VALUE']));
+if(strlen($item['ICON'])==0):
+	$arFilter = array('IBLOCK_ID' => $arResult['IBLOCK_ID'], 'ID'=>$item['IBLOCK_SECTION_ID']);
+	$rsSect = CIBlockSection::GetList(array('left_margin' => 'asc'), $arFilter, false, array('UF_SVG'));
+   	while ($arSect = $rsSect->Fetch()) {
+   		$item['ICON'] = file_get_contents($_SERVER['DOCUMENT_ROOT'].CFile::GetPath($arSect['UF_SVG']));
+   	}
+endif;
 ?>
 <h2 class="page__title page__title--icon"><?=$item['ICON']?><?=$item['NAME']?></h2>
 <div class="row">
@@ -9,40 +16,63 @@ $item['ICON'] = file_get_contents($_SERVER['DOCUMENT_ROOT'].CFile::GetPath($item
 		<div class="page__divider page__divider--small"></div>		
 	</div>
 	<div class="col-xs-3">
-		<?if($item['IBLOCK_ID']==4):?>
-		<h5>другие отрасли</h5>
-		<?else:?>
-		<h5>другие виды деятельности</h5>
-		<?endif;?>
-		<div class="page__divider xl-margin-bottom"></div>
-		<?
-			global $depthFilter;
-			$depthFilter = array('!ID'=>$item['ID']);
-			$APPLICATION->IncludeComponent("bitrix:news.list", "list", 
-	        array(
-	          "IBLOCK_ID"      => $item['IBLOCK_ID'],
-	          "NEWS_COUNT"     => "100",
-	          "FILTER_NAME"    => "depthFilter",
-	          "SORT_BY1"       => "SORT",
-	          "SORT_ORDER1"    => "ASC",
-	          "DETAIL_URL"     => $arParams["DETAIL_URL"],
-	          "CACHE_TYPE"     => "A",
-	          "SET_TITLE"      => "N",
-	          "PROPERTY_CODE"  => array('SVG')
-	        ),
-	        false
-	      );
-		?>
+		<?if($item['IBLOCK_ID']!=18):?>
+			<?if($item['IBLOCK_ID']==4):?>
+			<h5>другие отрасли</h5>
+			<?else:?>
+			<h5>другие виды деятельности</h5>
+			<?endif;?>
+			<div class="page__divider xl-margin-bottom"></div>
+			<?
+				global $depthFilter;
+				$depthFilter = array('!ID'=>$item['ID']);
+				$APPLICATION->IncludeComponent("bitrix:news.list", "list", 
+		        array(
+		          "IBLOCK_ID"      => $item['IBLOCK_ID'],
+		          "NEWS_COUNT"     => "100",
+		          "FILTER_NAME"    => "depthFilter",
+		          "SORT_BY1"       => "SORT",
+		          "SORT_ORDER1"    => "ASC",
+		          "DETAIL_URL"     => $arParams["DETAIL_URL"],
+		          "CACHE_TYPE"     => "A",
+		          "SET_TITLE"      => "N",
+		          "PROPERTY_CODE"  => array('SVG')
+		        ),
+		        false
+		      );
+			?>
+		<?else:
+			$APPLICATION->IncludeComponent("bitrix:news.list", "section", 
+		        array(
+		          "IBLOCK_ID"      => $item['IBLOCK_ID'],
+		          "NEWS_COUNT"     => "100",
+		          "SORT_BY1"       => "SORT",
+		          "SORT_ORDER1"    => "ASC",
+		          "PARENT_SECTION" => $item['IBLOCK_SECTION_ID'],
+		          "DETAIL_URL"     => $arParams["DETAIL_URL"],
+		          "CACHE_TYPE"     => "A",
+		          "SET_TITLE"      => "N",
+		          "CACHE_NOTES"    => $item['ID'],
+		          "PROPERTY_CODE"  => array('SVG')
+		        ),
+		        false
+		    );
+		endif;?>
 	</div>
 </div>
-<?if($item['IBLOCK_ID']==4):?>
-<h3 class="l-margin-bottom">Проекты данной отрасли</h3>
-<?else:?>
-<h3 class="l-margin-bottom">Проекты данного вида деятальности</h3>
+<?if($item['IBLOCK_ID']==4):
+	$prop = "PROPERTY_INDUSTRIES";?>
+	<h3 class="l-margin-bottom">Проекты данной отрасли</h3>
+<?elseif($item['IBLOCK_ID']==18):
+	$prop = "PROPERTY_TECH_ELEMENTS";?>
+	<h3 class="l-margin-bottom">Проекты c данной технологией</h3>
+<?else:
+	$prop = "PROPERTY_DEPTH";?>
+	<h3 class="l-margin-bottom">Проекты данного вида деятальности</h3>
 <?endif;?>
   <?
   	global $projectFilter;
-  	$projectFilter = array('PROPERTY_INDUSTRIES'=>$item['ID']);
+  	$projectFilter = array($prop=>$item['ID']);
   	$APPLICATION->IncludeComponent("bitrix:news.list", "projects", 
 		array(
 		  "IBLOCK_ID"      => 2,
