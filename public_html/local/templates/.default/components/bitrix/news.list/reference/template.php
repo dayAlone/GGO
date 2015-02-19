@@ -2,7 +2,8 @@
 <div role="tabpanel">
 	<ul role="tablist" class="nav nav-tabs">
 	<?
-	$first = array_keys($arResult['SECTIONS'])[0];
+	$s = array_keys($arResult['SECTIONS']);
+	$first = $s[0];
 	foreach ($arResult['SECTIONS'] as $key=>$section):?>
 	    <li role="presentation" <?=($key==$first?'class="active"':'')?>><a href="#<?=$section['CODE']?>" aria-controls="home" role="tab" data-toggle="tab"><?=$section['NAME']?></a></li>
 	<?endforeach;?>
