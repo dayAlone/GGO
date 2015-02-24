@@ -1456,8 +1456,8 @@ div.pp_default .pp_loaderIcon {
 .nav--big .nav__item {
   top: 9px;
   position: relative;
-  font-size: 20px;
-  margin-right: 20px;
+  font-size: 19px;
+  margin-right: 15px;
 }
 @media (min-width: 1200px) {
   .nav--big .nav__item {

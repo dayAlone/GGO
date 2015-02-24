@@ -30,8 +30,8 @@
 <header class="header">
   <div class="container">
     <div class="row">
-      <div class="col-xs-3 col-lg-4"><a href="/" class="logo"><?=svg('logo')?></a></div>
-      <div class="col-xs-4 col-lg-3">
+      <div class="col-xs-4"><a href="/" class="logo"><?=svg('logo')?></a></div>
+      <div class="col-xs-3">
         <?php
             $APPLICATION->IncludeComponent("bitrix:menu", "menu", 
             array(
