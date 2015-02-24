@@ -53,7 +53,7 @@
           <span class="search">
             <a href="#" class="search__trigger"><?=svg('seach')?></a>
             <form class="search__form" action="/search/">
-              <input type="text">
+              <input type="text" name="q">
               <button type="submit">
                 <?=svg('seach')?>
               </button>
