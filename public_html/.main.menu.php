@@ -2,22 +2,22 @@
 $aMenuLinks = Array(
 	Array(
 		"Отрасли", 
-		"/works/industries/", 
+		"/works/industries/index.php", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Услуги", 
-		"/works/depths/", 
+		"/works/depths/index.php", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Проекты", 
-		"/works/", 
-		Array(), 
+		"/works/index.php", 
+		Array("/works/projects/"), 
 		Array(), 
 		"" 
 	)

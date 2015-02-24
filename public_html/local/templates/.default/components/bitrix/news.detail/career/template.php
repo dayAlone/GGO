@@ -9,6 +9,7 @@ $item = $arResult;
  <a data-toggle="modal" data-target="#vacancyDetail" href="#vacancyDetail" class="xl-margin-top xl-margin-bottom button">Откликнуться на вакансию</a>
  <br><a href="#" class="back"><?=svg('back')?> К списку вакансий</a>
 </div>
+
 <?$this->SetViewTarget('title');?>
 <a data-toggle="modal" data-target="#vacancyDetail" href="#vacancyDetail" class="button s-margin-top">Отправить резюме</a>
 <?$this->EndViewTarget();?> 
