@@ -1810,6 +1810,7 @@ svg g {
   display: inline-block;
   margin-bottom: 5px;
   color: #4c5760;
+  width: 100%;
 }
 .page ul li:after {
   content: "—";
