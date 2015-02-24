@@ -29037,7 +29037,11 @@ return function (global, window, document, undefined) {
   };
 
   sizeAction = function() {
-    return autoHeight($('.certs'), '.cert');
+    autoHeight($('.certs'), '.cert');
+    $('.slider__item').height($(window).height() - $('.slider').offset().top);
+    return $('.slider').data('fotorama').resize({
+      height: $(window).height() - $('.slider').offset().top
+    });
   };
 
   autoHeight = function(el, selector, height_selector, use_padding, debug) {
@@ -29505,7 +29509,9 @@ return function (global, window, document, undefined) {
       });
     }
     initPhotoSwipeFromDOM('.news__gallery');
-    $('.slider').fotorama();
+    $('.slider').fotorama({
+      height: $(window).height() - $('.slider').offset().top
+    });
     $('.project').click(function(e) {
       var gallery, galleryOptions, items, pswpElement;
       pswpElement = document.querySelectorAll('.pswp')[0];

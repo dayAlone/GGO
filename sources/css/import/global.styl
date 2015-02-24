@@ -277,6 +277,8 @@ svg
 		transform-origin center center
 		t all
 		margin-bottom 10px
+		margin-top 4px
+		border-radius 100px
 	&--big
 		font-size 20px
 		svg
@@ -297,9 +299,12 @@ svg
 				border-line alpha(@color, .4)
 		
 	a&:hover
-		color #1584d9
+		color #0082dc
 		svg
-			transform scale(1.03)
+			background #0082dc
+			box-shadow 0 0 0 3px #0082dc
+			path
+				fill white
 
 .pages
 	width 100%

@@ -1,6 +1,6 @@
 <? $this->setFrameMode(true);?>
 <?if(count($arResult['ITEMS'])>0):?>
-<div data-width="100%" data-height="100%" data-nav="false" data-loop="true" data-transition="crossfade" data-click="false" data-keyboard="true" class="slider">
+<div data-width="100%" data-nav="false" data-loop="true" data-transition="crossfade" data-click="false" data-keyboard="true" class="slider">
 <?foreach ($arResult['ITEMS'] as $key=>$item):?>
 	<div style="background-image: url(<?=$item['PREVIEW_PICTURE']['SRC']?>)" class="slider__item">
 	    <div class="container right">

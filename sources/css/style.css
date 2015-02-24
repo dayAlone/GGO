@@ -1423,6 +1423,9 @@ div.pp_default .pp_loaderIcon {
 .header__social svg path {
   fill: #a5d0ff;
 }
+.header__social:hover svg path {
+  fill: #0057ce;
+}
 .header .logo:after {
   content: "";
   position: absolute;
@@ -1991,6 +1994,9 @@ svg g {
   -ms-transition-duration: 0.3s;
   transition-duration: 0.3s;
   margin-bottom: 10px;
+  margin-top: 4px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
 }
 .depth--big {
   font-size: 20px;
@@ -2041,14 +2047,15 @@ svg g {
   text-decoration: none;
 }
 a.depth:hover {
-  color: #1584d9;
+  color: #0082dc;
 }
 a.depth:hover svg {
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -o-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  transform: scale(1.03);
+  background: #0082dc;
+  -webkit-box-shadow: 0 0 0 3px #0082dc;
+  box-shadow: 0 0 0 3px #0082dc;
+}
+a.depth:hover svg path {
+  fill: #fff;
 }
 .pages {
   width: 100%;
@@ -3670,7 +3677,6 @@ a.depth:hover svg {
 .index .slider {
   float: left;
   width: 100%;
-  height: 100vh;
   min-height: 500px;
 }
 .index .slider__frame {
@@ -3685,7 +3691,7 @@ a.depth:hover svg {
   width: 110px;
   height: 110px;
   background: #4381d9;
-  top: -200px;
+  top: -150px;
   left: 50%;
   margin-left: -55px;
   text-align: center;
@@ -3715,7 +3721,8 @@ a.depth:hover svg {
   top: -1px;
 }
 .index .slider__item {
-  height: 100vh;
+  min-height: 600px;
+  height: 100%;
   min-height: 500px;
   float: left;
   width: 100%;
@@ -3749,7 +3756,8 @@ a.depth:hover svg {
   padding: 0 40px;
 }
 .index .slider__item .button:hover {
-  background: #0057ce !important;
+  background: #fff !important;
+  color: #f00;
 }
 .index .slider__item svg {
   display: inline-block;
