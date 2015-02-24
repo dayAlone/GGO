@@ -127,7 +127,7 @@
     <div class="row copyright">
       <div class="col-xs-3">© <?=date('Y')?> ОАО “Гипрогазоочистка”</div>
       <div class="col-xs-4">Россия, Москва, ул. Первомайская, 126<br><a href="mailto:info@ggo.ru">info@ggo.ru</a></div>
-      <div class="col-xs-4"><a href="#">Карта сайта</a></div>
+      <div class="col-xs-4"><a href="/sitemap/">Карта сайта</a></div>
     </div>
   </div>
 </footer>
