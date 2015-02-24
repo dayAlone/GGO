@@ -440,8 +440,9 @@ $(document).ready ->
 
 	initPhotoSwipeFromDOM('.news__gallery');
 
-	$('.slider').fotorama
-		height: $(window).height() - $('.slider').offset().top
+	if $('.slider').length > 0
+		$('.slider').fotorama
+			height: $(window).height() - $('.slider').offset().top
 	
 	$('.project').click (e)->
 		pswpElement = document.querySelectorAll('.pswp')[0];

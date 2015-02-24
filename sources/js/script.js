@@ -501,9 +501,11 @@
       });
     }
     initPhotoSwipeFromDOM('.news__gallery');
-    $('.slider').fotorama({
-      height: $(window).height() - $('.slider').offset().top
-    });
+    if ($('.slider').length > 0) {
+      $('.slider').fotorama({
+        height: $(window).height() - $('.slider').offset().top
+      });
+    }
     $('.project').click(function(e) {
       var gallery, galleryOptions, items, pswpElement;
       pswpElement = document.querySelectorAll('.pswp')[0];
