@@ -2548,6 +2548,9 @@ a.depth:hover svg path {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
+.structure__link:focus {
+  color: #1584da;
+}
 .structure__link--strong {
   font-size: 26px;
   font-weight: bold;
@@ -3210,7 +3213,7 @@ a.depth:hover svg path {
 .vacancy-popup #contacts-map {
   min-height: 500px;
   width: 100%;
-  margin-top: -10px;
+  margin-top: 20px;
 }
 .modal .form,
 .vacancy-popup .form {
