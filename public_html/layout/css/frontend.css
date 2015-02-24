@@ -5743,13 +5743,6 @@ a.depth:hover svg path {
     width: 14.285714285714286%;
   }
 }
-.client:hover img {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
 .client img {
   vertical-align: middle;
   max-width: 70%;
