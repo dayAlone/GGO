@@ -28,10 +28,12 @@
 
   sizeAction = function() {
     autoHeight($('.certs'), '.cert');
-    $('.slider__item').height($(window).height() - $('.slider').offset().top);
-    return $('.slider').data('fotorama').resize({
-      height: $(window).height() - $('.slider').offset().top
-    });
+    if ($('.slider').length > 0) {
+      $('.slider__item').height($(window).height() - $('.slider').offset().top);
+      return $('.slider').data('fotorama').resize({
+        height: $(window).height() - $('.slider').offset().top
+      });
+    }
   };
 
   autoHeight = function(el, selector, height_selector, use_padding, debug) {

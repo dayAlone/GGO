@@ -5168,9 +5168,6 @@ svg g {
 .page__header {
   height: 200px;
   background-position: bottom center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
   width: 100%;
   margin-bottom: -100px;
 }

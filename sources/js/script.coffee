@@ -22,9 +22,10 @@ delay = (ms, func) -> setTimeout func, ms
 
 sizeAction = ->
 	autoHeight $('.certs'), '.cert'
-	$('.slider__item').height $(window).height() - $('.slider').offset().top
-	$('.slider').data('fotorama').resize
-		height: $(window).height() - $('.slider').offset().top
+	if $('.slider').length > 0
+		$('.slider__item').height $(window).height() - $('.slider').offset().top
+		$('.slider').data('fotorama').resize
+			height: $(window).height() - $('.slider').offset().top
 	
 autoHeight = (el, selector='', height_selector = false, use_padding=false, debug=false)->
 	if el.length > 0

@@ -15,7 +15,6 @@
       		$data[] = array('id'=>$item['ID'], 'name'=>$item['NAME'], 'coords'=>$item['PROPERTIES']['COORDS']['VALUE'], 'url'=>$item['DETAIL_PAGE_URL']);
     		endforeach;
         $json = json_encode($data, JSON_UNESCAPED_UNICODE);
-        var_dump($json);
 	  ?>
 
       <script>mapItems = <?=(strlen($json)>0?$json:"")?></script>
