@@ -1,6 +1,7 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle('Ключевые проекты');
+$APPLICATION->SetPageProperty('hide_projects', true);
 if(isset($_REQUEST['ELEMENT_CODE'])):
     $APPLICATION->IncludeComponent("bitrix:news.detail","projects",Array(
       "IBLOCK_ID"     => 2,

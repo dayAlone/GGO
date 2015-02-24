@@ -2,6 +2,7 @@
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle('Ключевые проекты');
 $APPLICATION->SetPageProperty('page_title', 'Деятельность');
+$APPLICATION->SetPageProperty('hide_projects', true);
 ?>
 <p class="highlight xxl-margin-bottom">История нашей компании началась в 1928 году. Ключевую идею успеха, которая сопровождает нас на протяжении десятков лет, мы видим в приверженности к индивидуальному подходу к каждому из наших заказчиков. </p>
 <?
