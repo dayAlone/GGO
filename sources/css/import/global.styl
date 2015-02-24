@@ -872,12 +872,14 @@ svg
 		p
 			font-size 14px
 
-.nav-tabs
+ul.nav-tabs
 	list-style: none
 	padding 0
+	li:after
+		display none
 	li
 		float left
-		width 50%
+		width 50% !important
 		display inline-block
 		font-size 28px
 		line-height 65px
@@ -976,14 +978,9 @@ svg
 	full-width()
 	&.active
 		display block
-ul.nav-tabs
-	padding 0
-	li:after
-		display none
 .reference
 	margin-top 2px
 	border 1px solid #dfdfdf
-
 	&--open
 		.reference__trigger
 			color #0082dc
