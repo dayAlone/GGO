@@ -11,9 +11,38 @@
 		top -7px
 	.search
 		margin 0 30px 0 35px
+		position relative
 		svg
 			display: inline-block
 			vertical-align: middle
+		&__form
+			position absolute
+			right 100%
+			white-space no-wrap
+			background white
+			padding 0 10px
+			top -6px
+			opacity: 1
+			margin-right -31px
+			display none
+			input[type="text"]
+				min-width 180px
+				padding 0 20px
+				height 30px
+				line-height 30px
+				border 1px solid #dadada
+				border-radius 30px
+				position relative
+				top -4px
+			button
+				border 0
+				background white
+				height 30px
+				line-height 30px
+				svg
+					vertical-align: middle
+					position relative
+					top -4px
 	&__lang
 		&__item
 			text-transform: uppercase

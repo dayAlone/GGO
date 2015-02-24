@@ -52,6 +52,12 @@
           </span>
           <span class="search">
             <a href="#" class="search__trigger"><?=svg('seach')?></a>
+            <form class="search__form" action="/search/">
+              <input type="text">
+              <button type="submit">
+                <?=svg('seach')?>
+              </button>
+            </form>
           </span>
           <a href="#" class="header__social"><?=svg('fb')?></a><a href="#" class="header__social"><?=svg('li')?></a>
           <?php

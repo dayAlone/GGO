@@ -444,6 +444,18 @@ $(document).ready ->
 		$('.slider').fotorama
 			height: $(window).height() - $('.slider').offset().top
 	
+	$('.search a').click (e)->
+		$('.search').elem('form').velocity
+			properties: "transition.slideDownIn"
+			options:
+				duration: 300
+		$('.search').on 'mouseleave', ->
+			$('.search').elem('form').velocity
+				properties: "transition.slideUpOut"
+				options:
+					duration: 300
+		e.preventDefault()
+
 	$('.project').click (e)->
 		pswpElement = document.querySelectorAll('.pswp')[0];
 		items = $(this).data('pictures')

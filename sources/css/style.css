@@ -1390,10 +1390,46 @@ div.pp_default .pp_loaderIcon {
 }
 .header .search {
   margin: 0 30px 0 35px;
+  position: relative;
 }
 .header .search svg {
   display: inline-block;
   vertical-align: middle;
+}
+.header .search__form {
+  position: absolute;
+  right: 100%;
+  white-space: nowrap;
+  background: #fff;
+  padding: 0 10px;
+  top: -6px;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  margin-right: -31px;
+  display: none;
+}
+.header .search__form input[type="text"] {
+  min-width: 180px;
+  padding: 0 20px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #dadada;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  position: relative;
+  top: -4px;
+}
+.header .search__form button {
+  border: 0;
+  background: #fff;
+  height: 30px;
+  line-height: 30px;
+}
+.header .search__form button svg {
+  vertical-align: middle;
+  position: relative;
+  top: -4px;
 }
 .header__lang__item {
   text-transform: uppercase;

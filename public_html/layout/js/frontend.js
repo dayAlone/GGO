@@ -29516,6 +29516,23 @@ return function (global, window, document, undefined) {
         height: $(window).height() - $('.slider').offset().top
       });
     }
+    $('.search a').click(function(e) {
+      $('.search').elem('form').velocity({
+        properties: "transition.slideDownIn",
+        options: {
+          duration: 300
+        }
+      });
+      $('.search').on('mouseleave', function() {
+        return $('.search').elem('form').velocity({
+          properties: "transition.slideUpOut",
+          options: {
+            duration: 300
+          }
+        });
+      });
+      return e.preventDefault();
+    });
     $('.project').click(function(e) {
       var gallery, galleryOptions, items, pswpElement;
       pswpElement = document.querySelectorAll('.pswp')[0];
