@@ -3,11 +3,10 @@
 	<h3><?=$section['NAME']?></h3>
 	<div class="left">
 	<?foreach ($section['ELEMENTS'] as $item):
-		if(strlen($item['LINK'])>0):?>
-		<a href="<?=$item['LINK']?>" class="client"><img src="<?=$item['IMAGE']?>"></a>
-		<?else:?>
-		<span class="client"><img src="<?=$item['IMAGE']?>"></span>
-	<?
+		if(strlen($item['LINK'])>0):
+			?><a href="<?=$item['LINK']?>" class="client"><img src="<?=$item['IMAGE']?>"></a><?
+		else:
+			?><span class="client"><img src="<?=$item['IMAGE']?>"></span><?
 		endif;
 	endforeach;?>
 	</div>
