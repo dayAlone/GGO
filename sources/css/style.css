@@ -1799,6 +1799,23 @@ svg g {
 .page p big {
   font-size: 18px;
 }
+.page ul {
+  font-size: 16px;
+  line-height: 25px;
+  list-style: none;
+}
+.page ul li {
+  position: relative;
+}
+.page ul li:after {
+  content: "—";
+  position: absolute;
+  left: -20px;
+  top: 3px;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
 .page .page__title {
   font-family: 'Direct';
   font-size: 30px;

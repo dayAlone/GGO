@@ -153,6 +153,18 @@ svg
 			color blue
 		big
 			font-size 18px
+	ul
+		font-size 16px
+		line-height 25px
+		list-style: none
+		li
+			position relative
+			&:after
+				content "—"
+				position absolute
+				left -20px
+				top 3px
+				opacity .5
 	.page
 		&__title
 			font-family 'Direct'
