@@ -3088,15 +3088,15 @@ a.depth:hover svg path {
 .tab-pane.active {
   display: block;
 }
+ul.nav-tabs {
+  padding: 0;
+}
+ul.nav-tabs li:after {
+  display: none;
+}
 .reference {
   margin-top: 2px;
   border: 1px solid #dfdfdf;
-}
-.reference ul {
-  padding: 0;
-}
-.reference ul li:after {
-  display: none;
 }
 .reference--open .reference__trigger {
   color: #0082dc;
