@@ -15,7 +15,7 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Виды деятельности", 
+		"Услуги", 
 		"/works/depths/", 
 		Array(), 
 		Array(), 
