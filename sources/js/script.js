@@ -115,6 +115,7 @@
       iconImageSize: [30, 44],
       iconImageOffset: [15, -44]
     });
+    $('#Map').data('map', true);
     return myMap.geoObjects.add(myPlacemark);
   };
 
@@ -736,9 +737,11 @@
       }
     });
     $('#Map').on('show.bs.modal', function() {
-      return $.getScript('//api-maps.yandex.ru/2.1/?lang=ru_RU', function() {
-        return ymaps.ready(initContacts);
-      });
+      if (!$('#Map').data('map')) {
+        return $.getScript('//api-maps.yandex.ru/2.1/?lang=ru_RU', function() {
+          return ymaps.ready(initContacts);
+        });
+      }
     });
     initDropdown();
     x = void 0;

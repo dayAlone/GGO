@@ -86,7 +86,7 @@ initContacts = ->
 		iconImageSize: [30, 44],
 		iconImageOffset: [15, -44]
 	});
-
+	$('#Map').data('map', true)
 	myMap.geoObjects.add(myPlacemark);
 
 timer = false
@@ -645,8 +645,9 @@ $(document).ready ->
 				$('input[name="vacancy"]').val(false).removeAttr 'value'
 	$('#Map')
 		.on 'show.bs.modal', ->
-			$.getScript '//api-maps.yandex.ru/2.1/?lang=ru_RU', ->
-				ymaps.ready initContacts
+			if !$('#Map').data('map')
+				$.getScript '//api-maps.yandex.ru/2.1/?lang=ru_RU', ->
+					ymaps.ready initContacts
 
 
 
