@@ -20,7 +20,7 @@ endif;
 			<?if($item['IBLOCK_ID']==4):?>
 			<h5>другие отрасли</h5>
 			<?else:?>
-			<h5>другие виды деятельности</h5>
+			<h5>другие услуги</h5>
 			<?endif;?>
 			<div class="page__divider xl-margin-bottom"></div>
 			<?
