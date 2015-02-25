@@ -62,7 +62,7 @@ $APPLICATION->SetPageProperty('body_class', 'index')
         <div class="page__divider page__divider--small float-none"></div><br>выполненных проектов<br> со дня основания
       </div>
       <div class="col-xs-4"><span>Объем предоставляемых услуг</span>
-        <div class="number__value">2 млн.</div>
+        <div class="number__value">2 млн</div>
         <div class="page__divider page__divider--small float-none"></div><br>человеко-часов в год
       </div>
     </div>
