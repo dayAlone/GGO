@@ -46,10 +46,12 @@
       </div>
       <div class="col-xs-5 right">
         <div class="header__box">
+          <?/*
           <span class="header__lang">
             <a href="#" class="header__lang__item header__lang__item--active">RU</a>
             <a href="#" class="header__lang__item">EN</a>
           </span>
+          */?>
           <span class="search">
             <a href="#" class="search__trigger"><?=svg('seach')?></a>
             <form class="search__form" action="/search/">
