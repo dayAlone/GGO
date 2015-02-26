@@ -8,7 +8,7 @@
 	      	<?=$arResult['INDUSTRIES'][$item['PROPERTIES']['INDUSTRY']['VALUE']]['SVG']?><?=$arResult['INDUSTRIES'][$item['PROPERTIES']['INDUSTRY']['VALUE']]['NAME']?>
 	      </div>
 	      <div class="page__divider page__divider--small float-none"></div><br>
-	      <h1><?=$item['NAME']?></h1><br>
+	      <h1><?=html_entity_decode($item['NAME'])?></h1><br>
 	      <a href="<?=$item['PROPERTIES']['LINK']['VALUE']?>" <?=($item['PROPERTIES']['TARGET']['VALUE_XML_ID']=="Y"?'target="_black"':'')?> class="button">Подробнее</a>
 	    </div>
 	</div>
