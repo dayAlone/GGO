@@ -69,7 +69,7 @@ endif;
 		$title = "Проекты c данной технологией";
 	else:
 		$prop = "PROPERTY_DEPTH";
-		$title = "Проекты данного вида деятальности";
+		$title = "Проекты данного вида деятельности";
 	endif;
   	ob_start();
   	global $projectFilter;
