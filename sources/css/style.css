@@ -3931,12 +3931,11 @@ ul.nav-tabs li.active a {
 }
 .index .slider__item h1 {
   margin-top: 0;
-  font-weight: bold;
   font-family: 'Direct';
   color: #fff;
   max-width: 60%;
   display: inline-block;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 1.2;
   margin-bottom: 30px;
 }
