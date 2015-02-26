@@ -61,6 +61,16 @@ endif;
 	</div>
 </div>
 <?
+	if($item['IBLOCK_ID']==4):
+		$prop = "PROPERTY_INDUSTRIES";
+		$title = "Проекты данной отрасли";
+	elseif($item['IBLOCK_ID']==18):
+		$prop = "PROPERTY_TECH_ELEMENTS";
+		$title = "Проекты c данной технологией";
+	else:
+		$prop = "PROPERTY_DEPTH";
+		$title = "Проекты данного вида деятальности";
+	endif;
   	ob_start();
   	global $projectFilter;
   	$projectFilter = array($prop=>$item['ID']);
@@ -82,18 +92,10 @@ endif;
 	ob_end_clean();
 ?>
 <?if(strlen($items)>0):?>
-	<?if($item['IBLOCK_ID']==4):
-		$prop = "PROPERTY_INDUSTRIES";?>
-		<h3 class="l-margin-bottom">Проекты данной отрасли</h3>
-	<?elseif($item['IBLOCK_ID']==18):
-		$prop = "PROPERTY_TECH_ELEMENTS";?>
-		<h3 class="l-margin-bottom">Проекты c данной технологией</h3>
-	<?else:
-		$prop = "PROPERTY_DEPTH";?>
-		<h3 class="l-margin-bottom">Проекты данного вида деятальности</h3>
-	<?endif;?>
-
+	
+	<h3 class="l-margin-bottom"><?=$title?></h3>
 	<?=$items?>
-
+	<p class="xs-margin-top"><a href="/works/">Все проекты</a></p>
+	
 <?endif;?>
-<p class="xs-margin-top"><a href="/works/">Все проекты</a></p>
+
