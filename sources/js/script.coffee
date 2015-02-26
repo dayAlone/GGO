@@ -346,7 +346,6 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 	$.each mapItems, (key, point)->
 		points[i] = new (ymaps.Placemark)(point.coords.split(',').map((val)-> parseFloat(val)), { hintContent: '' }, icon)
 		points[i].events.add 'click', (e) ->
-			console.log 
 			if $.inArray(e.originalEvent.target, open) == -1
 				e.originalEvent.target.options.set iconImageHref: '/layout/images/pin-open.png'
 				showGeographyDetail "/ajax#{point.url}"

@@ -61,7 +61,8 @@
               </button>
             </form>
           </span>
-          <a href="#" class="header__social"><?=svg('fb')?></a><a href="#" class="header__social"><?=svg('li')?></a>
+          <a href="https://www.facebook.com/giprogazoochistka" class="header__social"><?=svg('fb')?></a>
+          <?/*<a href="#" class="header__social"><?=svg('li')?></a>*/?>
           <?php
             $APPLICATION->IncludeComponent("bitrix:menu", "menu", 
             array(
