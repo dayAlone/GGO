@@ -60,17 +60,8 @@ endif;
 		endif;?>
 	</div>
 </div>
-<?if($item['IBLOCK_ID']==4):
-	$prop = "PROPERTY_INDUSTRIES";?>
-	<h3 class="l-margin-bottom">Проекты данной отрасли</h3>
-<?elseif($item['IBLOCK_ID']==18):
-	$prop = "PROPERTY_TECH_ELEMENTS";?>
-	<h3 class="l-margin-bottom">Проекты c данной технологией</h3>
-<?else:
-	$prop = "PROPERTY_DEPTH";?>
-	<h3 class="l-margin-bottom">Проекты данного вида деятальности</h3>
-<?endif;?>
-  <?
+<?
+  	ob_start();
   	global $projectFilter;
   	$projectFilter = array($prop=>$item['ID']);
   	$APPLICATION->IncludeComponent("bitrix:news.list", "projects", 
@@ -87,5 +78,22 @@ endif;
 		),
 		false
 		);
-  ?>
+  		$items = ob_get_contents();
+	ob_end_clean();
+?>
+<?if(strlen($items)>0):?>
+	<?if($item['IBLOCK_ID']==4):
+		$prop = "PROPERTY_INDUSTRIES";?>
+		<h3 class="l-margin-bottom">Проекты данной отрасли</h3>
+	<?elseif($item['IBLOCK_ID']==18):
+		$prop = "PROPERTY_TECH_ELEMENTS";?>
+		<h3 class="l-margin-bottom">Проекты c данной технологией</h3>
+	<?else:
+		$prop = "PROPERTY_DEPTH";?>
+		<h3 class="l-margin-bottom">Проекты данного вида деятальности</h3>
+	<?endif;?>
+
+	<?=$items?>
+
+<?endif;?>
 <p class="xs-margin-top"><a href="/works/">Все проекты</a></p>
