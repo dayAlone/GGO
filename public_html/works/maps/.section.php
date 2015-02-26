@@ -1,3 +1,3 @@
 <?
-$sSectionName = 'Деятельность';
+$sSectionName = 'Карта проектов';
 ?>
