@@ -50,7 +50,7 @@ $APPLICATION->SetPageProperty('body_class', 'index')
 </div>
 <div class="numbers">
   <div class="container center">
-    <h1 class="m-padding-bottom">Гопрогазоочистка в цифрах</h1>
+    <h1 class="m-padding-bottom">Гипрогазоочистка в цифрах</h1>
     <div class="page__divider xxl-margin-top xxl-margin-bottom"></div>
     <div class="row">
       <div class="col-xs-4"><span>Уже</span>
