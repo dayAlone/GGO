@@ -1295,6 +1295,14 @@ a:hover {
     padding-left: 0;
   }
 }
+.row--center {
+  text-align: center;
+}
+.row--center > [class*='col-'] {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
 .fotorama__arr,
 .fotorama__fullscreen-icon,
 .fotorama__video-close,
@@ -1588,9 +1596,6 @@ body {
   color: #000;
   background: #fff;
   -webkit-font-smoothing: subpixel-antialiased;
-}
-.container {
-  min-width: 980px;
 }
 svg {
   -webkit-transition-property: fill;

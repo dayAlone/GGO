@@ -53,30 +53,32 @@ $APPLICATION->SetPageProperty('body_class', 'index')
     <h1 class="m-padding-bottom">Гипрогазоочистка в цифрах</h1>
     <div class="page__divider xxl-margin-top xxl-margin-bottom"></div>
     <div class="row">
-      <div class="col-xs-4"><span>Уже</span>
+      <div class="col-sm-6 col-md-4"><span>Уже</span>
         <div class="number__value">86</div>
         <div class="page__divider page__divider--small float-none"></div><br>лет успешной работы <br> в России и по всему миру
       </div>
-      <div class="col-xs-4"><span>Более</span>
+      <div class="visible-xs page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
+      <div class="col-sm-6 col-md-4"><span>Более</span>
         <div class="number__value">4 000</div>
         <div class="page__divider page__divider--small float-none"></div><br>выполненных проектов<br> со дня основания
       </div>
-      <div class="col-xs-4"><span>Объем предоставляемых услуг</span>
+      <div class="visible-xs visible-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
+      <div class="col-sm-6 col-md-4"><span>Объем предоставляемых услуг</span>
         <div class="number__value">2 млн</div>
         <div class="page__divider page__divider--small float-none"></div><br>человеко-часов в год
       </div>
-    </div>
-    <div class="page__divider xxl-margin-top xxl-margin-bottom"></div>
-    <div class="row">
-      <div class="col-xs-4"><span>Наши установки производят</span>
+      <div class="hidden-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
+      <div class="col-sm-6 col-md-4"><span>Наши установки производят</span>
         <div class="number__value">1,5 млн</div>
         <div class="page__divider page__divider--small float-none"></div><br>тонн серы в год
       </div>
-      <div class="col-xs-4"><span>Более</span>
+      <div class="visible-xs visible-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
+      <div class="col-sm-6 col-md-4"><span>Более</span>
         <div class="number__value">3 000</div>
         <div class="page__divider page__divider--small float-none"></div><br>тонн оборудования поставлено <br> нами за последние 3 года
       </div>
-      <div class="col-xs-4"><span>Более чем на</span>
+      <div class="visible-xs page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
+      <div class="col-sm-6 col-md-4"><span>Более чем на</span>
         <div class="number__value">60</div>
         <div class="page__divider page__divider--small float-none"></div><br>нефтегазовых объектах нами<br> проведены пуско-наладочные<br>работы
       </div>

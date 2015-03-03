@@ -32,6 +32,7 @@ $item = $arResult;
   <div class="page__divider page__divider--small"></div>
   	<?=$item["~DETAIL_TEXT"]?>
 
+  <?if(count($item['PROPERTIES']['DEPTH']['VALUE'])>0):?>
   <div class="page__divider page__divider--small"></div>
   <h3>Технологии, использованные в проекте</h3>
   <div class="row">
@@ -43,6 +44,7 @@ $item = $arResult;
       </ul>
     </div>
   </div>
+  <?endif;?>
   <?if(count($item['PROPERTIES']['PROJECTS']['VALUE'])>0&&$item['PROPERTIES']['PROJECTS']['VALUE']):?>
   <div class="page__divider page__divider--small"></div>
   <h3 class="l-margin-bottom">Проекты с аналогичными технологиями</h3>

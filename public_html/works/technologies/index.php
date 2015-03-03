@@ -2,7 +2,7 @@
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle('Технологии');
 ?> 
-<p class="highlight">История нашей компании началась в 1928 году. Ключевую идею успеха, которая сопровождает нас на протяжении десятков лет, мы видим в приверженности к индивидуальному подходу к каждому из наших заказчиков. </p>
+
 <?
 $APPLICATION->IncludeComponent("bitrix:news.list", "tech", 
 	array(

@@ -50,12 +50,12 @@
   <div class="container container--width">
     <div class="row">
       <?if($APPLICATION->GetCurDir()=="/" || $APPLICATION->GetPageProperty('hide_projects')==true):?>
-      <div class="col-xs-6">
+      <div class="col-xs-8 col-md-6">
         <h3>О компании</h3> 
         <p>История нашей компании началась в 1928 году. Ключевую идею успеха, которая сопровождает нас на протяжении десятков лет, мы видим в приверженности к индивидуальному подходу к каждому из наших заказчиков. Сочетание накопленного опыта и умения решать персональные инжиниринговые задачи, мастерство поиска и созидания комплексных высокотехнологичных решений сформировали философию компании «Инжиниринг как искусство», которая находит отражение в каждом нашем проекте. В нашем референс-листе более 4 000 технологических установок. Мы реализуем инжиниринговые проекты полного цикла – от проектирования до введения в эксплуатацию оборудования для объектов нефтегазодобычи, нефтегазопереработки и нефтехимии.</p> 
       </div>
       <?endif;?>
-      <div class="col-xs-4">
+      <div class="col-xs-4 col-md-4">
         <h3>Новости</h3>
         <?
           $APPLICATION->IncludeComponent("bitrix:news.list", "news", 
@@ -75,7 +75,7 @@
         <a href="/press/" class="news__more">К другим новостям</a>
       </div>
       <?if($APPLICATION->GetCurDir()!="/" && $APPLICATION->GetPageProperty('hide_projects')!=true):?>
-      <div class="col-xs-6">
+      <div class="col-xs-8 col-md-6">
         <h3>Ключевые проекты</h3>
         <?
           $APPLICATION->IncludeComponent("bitrix:news.list", "projects", 
@@ -95,31 +95,32 @@
         <a href="/works/" class="projects__more">К другим проектам</a>
       </div>
       <?endif;?>
-      <div class="col-xs-2">
+      <div class="visible-md visible-lg col-xs-12 col-md-2">
         <h3>Навигация</h3>
-        <?php
-            $APPLICATION->IncludeComponent("bitrix:menu", "menu", 
-            array(
-                "ALLOW_MULTI_SELECT" => "Y",
-                "MENU_CACHE_TYPE"    => "A",
-                "ROOT_MENU_TYPE"     => "main",
-                "MAX_LEVEL"          => "1",
-                "DIVIDER"            => "<br>"
-                ),
-            false);
-        ?>
-        <div class="nav__divider"></div>
-        <?php
-            $APPLICATION->IncludeComponent("bitrix:menu", "menu", 
-            array(
-                "ALLOW_MULTI_SELECT" => "Y",
-                "MENU_CACHE_TYPE"    => "A",
-                "ROOT_MENU_TYPE"     => "top",
-                "MAX_LEVEL"          => "1",
-                "DIVIDER"            => "<br>"
-                ),
-            false);
-        ?>
+            <?php
+                $APPLICATION->IncludeComponent("bitrix:menu", "menu", 
+                array(
+                    "ALLOW_MULTI_SELECT" => "Y",
+                    "MENU_CACHE_TYPE"    => "A",
+                    "ROOT_MENU_TYPE"     => "main",
+                    "MAX_LEVEL"          => "1",
+                    "DIVIDER"            => "<br>"
+                    ),
+                false);
+            ?>
+          <div class="visible-lg nav__divider"></div>
+         
+            <?php
+                $APPLICATION->IncludeComponent("bitrix:menu", "menu", 
+                array(
+                    "ALLOW_MULTI_SELECT" => "Y",
+                    "MENU_CACHE_TYPE"    => "A",
+                    "ROOT_MENU_TYPE"     => "top",
+                    "MAX_LEVEL"          => "1",
+                    "DIVIDER"            => "<br>"
+                    ),
+                false);
+            ?>
       </div>
     </div>
   </div>

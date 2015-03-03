@@ -1,13 +1,6 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Структура холдинга", 
-		"/company/index.php", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"ГГО в цифрах", 
 		"/company/numbers/", 
 		Array(), 
@@ -17,13 +10,6 @@ $aMenuLinks = Array(
 	Array(
 		"История", 
 		"/company/history/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Политика в области качества", 
-		"/company/quality/", 
 		Array(), 
 		Array(), 
 		"" 
