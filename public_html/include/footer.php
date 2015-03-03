@@ -81,8 +81,8 @@
           $APPLICATION->IncludeComponent("bitrix:news.list", "projects", 
             array(
               "IBLOCK_ID"      => 2,
-              "NEWS_COUNT"     => "6",
-              "SORT_BY1"       => "SORT",
+              "NEWS_COUNT"     => "8",
+              "SORT_BY1"       => "RAND",
               "SORT_ORDER1"    => "ASC",
               "DETAIL_URL"     => "/works/projects/#ELEMENT_CODE#/",
               "CACHE_TYPE"     => "A",

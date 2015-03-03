@@ -1297,6 +1297,10 @@ a:hover {
 }
 .row--center {
   text-align: center;
+  margin: 0;
+  width: 116.66666666666667%;
+  position: relative;
+  left: -8.333333333333334%;
 }
 .row--center > [class*='col-'] {
   display: inline-block;
@@ -2314,7 +2318,7 @@ a.depth:hover svg path {
 }
 @media (min-width: 1200px) {
   .client {
-    width: 14.285714285714286%;
+    width: 12.5%;
   }
 }
 .client img {
@@ -3246,11 +3250,6 @@ ul.nav-tabs li.active a {
   margin-right: 20px;
   display: inline-block;
   vertical-align: middle;
-}
-.row--center {
-  width: 116.66666666666667%;
-  position: relative;
-  left: -8.333333333333334%;
 }
 .geography {
   overflow: hidden;
