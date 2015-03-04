@@ -52,8 +52,8 @@ $item = $arResult;
       <?endif;?>
       <div class="row">
         <div class="col-xs-4"><?=$row['t0']?></div>
-        <div class="col-xs-4"><?=$row['t1']?></div>
-        <div class="col-xs-4"><?=$row['t2']?></div>
+        <div class="col-xs-4 project__cell--grey"><?=$row['t1']?></div>
+        <div class="col-xs-4 project__cell--grey"><?=$row['t2']?></div>
       </div>
     <?endforeach;?>
     <div class="project__divider project__divider--blue"></div>
