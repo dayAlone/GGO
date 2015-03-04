@@ -7,7 +7,7 @@ foreach ($arResult['ITEMS'] as $key=>&$item)
 
 $raw = CFile::GetList(array(), array('@ID'=>implode($images,',')));
 while($img = $raw->Fetch()):
-	$small = CFile::ResizeImageGet(CFile::GetFileArray($img['ID']), Array("width" => 400, "height" => 400), BX_RESIZE_IMAGE_PROPORTIONAL, false, Array("name" => "sharpen", "precision" => 15), false, 75);
+	$small = CFile::ResizeImageGet(CFile::GetFileArray($img['ID']), Array("width" => 800, "height" => 800), BX_RESIZE_IMAGE_PROPORTIONAL, false, Array("name" => "sharpen", "precision" => 15), false, 75);
 	$arResult['IMAGES'][$img['ID']] = array('small'=>$small['src'], 'src'=>"/upload/".$img['SUBDIR']."/".$img['FILE_NAME'], 'h'=>$img['HEIGHT'], 'w'=>$img['WIDTH']);
 endwhile;
 foreach ($arResult['ITEMS'] as &$item)
