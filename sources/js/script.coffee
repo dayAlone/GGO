@@ -267,6 +267,7 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 			index: index
 			galleryUID: galleryElement.getAttribute('data-pswp-uid')
 			getThumbBoundsFn: (index) ->
+				return
 				# See Options -> getThumbBoundsFn section of documentation for more info
 				thumbnail = items[index].el.getElementsByTagName('img')[0]
 				pageYScroll = window.pageYOffset or document.documentElement.scrollTop

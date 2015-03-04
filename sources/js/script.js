@@ -314,6 +314,7 @@
         galleryUID: galleryElement.getAttribute('data-pswp-uid'),
         getThumbBoundsFn: function(index) {
           var data, pageYScroll, rect, thumbnail;
+          return;
           thumbnail = items[index].el.getElementsByTagName('img')[0];
           pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
           rect = thumbnail.getBoundingClientRect();
@@ -379,7 +380,6 @@
         hintContent: ''
       }, icon);
       points[i].events.add('click', function(e) {
-        console.log;
         if ($.inArray(e.originalEvent.target, open) === -1) {
           e.originalEvent.target.options.set({
             iconImageHref: '/layout/images/pin-open.png'
