@@ -45,7 +45,7 @@ $APPLICATION->SetPageProperty('body_class', 'index')
     ?>
     
     <div class="page__divider xxl-margin-top"></div>
-    <div class="xs-padding-top"><a href="#" class="more"><?=svg('steps-arrow')?><br>Подробнее</a></div>
+    <div class="xs-padding-top"><a href="/works/industries/index.php" class="more"><?=svg('steps-arrow')?><br>Подробнее</a></div>
   </div>
 </div>
 <div class="numbers">
@@ -84,7 +84,7 @@ $APPLICATION->SetPageProperty('body_class', 'index')
       </div>
     </div>
     <div class="page__divider xxl-margin-top xxl-margin-bottom"></div>
-    <div class="m-padding-top"><a href="#" class="more"><?=svg('steps-arrow')?><br>Подробнее</a></div>
+    <div class="m-padding-top"><a href="/company/numbers/" class="more"><?=svg('steps-arrow')?><br>Подробнее</a></div>
   </div>
 </div>
 <div class="map">
@@ -96,7 +96,7 @@ $APPLICATION->SetPageProperty('body_class', 'index')
         <div class="number__value">4000</div>технологических установок<br>
         <div class="page__divider page__divider--small"></div><br>в
         <div class="number__value">16</div>странах мира
-      </div><a href="#" class="more"><?=svg('steps-arrow')?><br>Подробнее</a>
+      </div><a href="/works/index.php" class="more"><?=svg('steps-arrow')?><br>Подробнее</a>
     </div>
   </div>
 </div>
