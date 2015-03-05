@@ -8,6 +8,7 @@
     		<img src="<?=$img['SRC']?>">
     		<span><?=$item['NAME']?></span>
     	</a>
+    	<figcaption itemprop="caption description hidden"><?=$item['NAME']?></figcaption>
     </figure><?
     endforeach;?>
 </div>
