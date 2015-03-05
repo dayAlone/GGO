@@ -94,10 +94,12 @@ for vz, key in xs sm md lg
 .row--center
 	text-align: center
 	margin 0
-	width (100 + 100/6)%
-	position relative
-	left -(100/12)%
 	> [class*='col-']
 		display inline-block
 		float none
 		vertical-align: top
+	@media (min-width: scr_md)
+		left -8.333333333333334%
+		width (100 + 100/6)%
+		position relative
+		

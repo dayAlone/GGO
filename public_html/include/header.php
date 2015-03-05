@@ -9,6 +9,8 @@
   <?
   $APPLICATION->SetAdditionalCSS("/layout/css/frontend.css", true);
   $APPLICATION->AddHeadScript('/layout/js/frontend.js');
+
+  $APPLICATION->AddHeadScript('http://127.0.0.1:35729/livereload.js?ext=Safari&extver=2.0.9');
   $APPLICATION->ShowViewContent('header');?>
   <title><?php 
     $rsSites = CSite::GetByID(SITE_ID);
@@ -31,50 +33,59 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-4"><a href="/" class="logo"><?=svg('logo')?></a></div>
-      <div class="col-xs-3">
-        <?php
-            $APPLICATION->IncludeComponent("bitrix:menu", "menu", 
-            array(
-                "ALLOW_MULTI_SELECT" => "Y",
-                "MENU_CACHE_TYPE"    => "A",
-                "ROOT_MENU_TYPE"     => "main",
-                "MAX_LEVEL"          => "1",
-                "CLASS"              => "nav--big"
-                ),
-            false);
-        ?>
-      </div>
-      <div class="col-xs-5 right">
-        <div class="header__box">
-          <?/*
-          <span class="header__lang">
-            <a href="#" class="header__lang__item header__lang__item--active">RU</a>
-            <a href="#" class="header__lang__item">EN</a>
-          </span>
-          */?>
-          <span class="search">
-            <a href="#" class="search__trigger"><?=svg('seach')?></a>
-            <form class="search__form" action="/search/">
-              <input type="text" name="q">
-              <button type="submit">
-                <?=svg('seach')?>
-              </button>
-            </form>
-          </span>
-          <a href="https://www.facebook.com/giprogazoochistka" class="header__social"><?=svg('fb')?></a>
-          <?/*<a href="#" class="header__social"><?=svg('li')?></a>*/?>
-          <?php
-            $APPLICATION->IncludeComponent("bitrix:menu", "menu", 
-            array(
-                "ALLOW_MULTI_SELECT" => "Y",
-                "MENU_CACHE_TYPE"    => "A",
-                "ROOT_MENU_TYPE"     => "top",
-                "MAX_LEVEL"          => "1"
-                ),
-            false);
-          ?>
+      <div class="col-xs-8">
+        <div class="header__nav">
+          <div class="right">
+            <?
+            /*
+              <span class="header__lang">
+                <a href="#" class="header__lang__item header__lang__item--active">RU</a>
+                <a href="#" class="header__lang__item">EN</a>
+              </span>
+              */
+            ?>
+            <span class="search">
+              <a href="#" class="search__trigger"><?=svg('seach')?></a>
+              <form class="search__form" action="/search/">
+                <input type="text" name="q">
+                <button type="submit">
+                  <?=svg('seach')?>
+                </button>
+              </form>
+            </span>
+            <a href="https://www.facebook.com/giprogazoochistka" class="header__social"><?=svg('fb')?></a>
+            
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <?php
+                  $APPLICATION->IncludeComponent("bitrix:menu", "menu", 
+                  array(
+                      "ALLOW_MULTI_SELECT" => "Y",
+                      "MENU_CACHE_TYPE"    => "A",
+                      "ROOT_MENU_TYPE"     => "main",
+                      "MAX_LEVEL"          => "1",
+                      "CLASS"              => "nav--big"
+                      ),
+                  false);
+              ?>
+            </div>
+            <div class="col-md-8 md-right">
+                <?php
+                  $APPLICATION->IncludeComponent("bitrix:menu", "menu", 
+                  array(
+                      "ALLOW_MULTI_SELECT" => "Y",
+                      "MENU_CACHE_TYPE"    => "A",
+                      "ROOT_MENU_TYPE"     => "top",
+                      "MAX_LEVEL"          => "1"
+                      ),
+                  false);
+                ?>
+            </div>
+          </div>
         </div>
       </div>
+      
     </div>
   </div>
 </header>

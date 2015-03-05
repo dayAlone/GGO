@@ -29525,6 +29525,16 @@ return function (global, window, document, undefined) {
           duration: 300
         }
       });
+      delay(10000, function() {
+        if ($('.search input').val() === '') {
+          return $('.search').elem('form').velocity({
+            properties: "transition.slideUpOut",
+            options: {
+              duration: 300
+            }
+          });
+        }
+      });
       $('.search').on('mouseleave', function() {
         return $('.search').elem('form').velocity({
           properties: "transition.slideUpOut",

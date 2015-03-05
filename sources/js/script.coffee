@@ -450,6 +450,13 @@ $(document).ready ->
 			properties: "transition.slideDownIn"
 			options:
 				duration: 300
+				
+		delay 10000, ->
+			if $('.search input').val() == ''
+				$('.search').elem('form').velocity
+					properties: "transition.slideUpOut"
+					options:
+						duration: 300
 		$('.search').on 'mouseleave', ->
 			$('.search').elem('form').velocity
 				properties: "transition.slideUpOut"

@@ -28,13 +28,14 @@ svg
 			left -21px
 			height 100%
 	&__side
-		&:after
-			content ""
-			position absolute
-			border-right 1px solid #dadada
-			top 0
-			right 20px
-			height 100%
+		@media (min-width: scr_md)
+			&:after
+				content ""
+				position absolute
+				border-right 1px solid #dadada
+				top 0
+				right 20px
+				height 100%
 		&-divider
 			width 20%
 			height 3px
@@ -54,13 +55,20 @@ svg
 			border-bottom 3px solid blue
 			margin 30px 0 33px
 		& + .nav
-			margin-top -30px
+			margin-top -28px
 			padding-bottom 17px
 			border-bottom 1px solid #dadada
-			margin-bottom 50px
-			&__item
-				font-size 15px
+			margin-bottom 30px
+			@media (min-width: scr_md)
+				margin-bottom 50px
+			.nav__item
 				margin-right 20px
+				display inline-block
+				&--active
+					@media (min-width: scr_md)
+						margin-bottom -5px
+				@media (min-width: scr_md)
+					margin-right 25px
 	.container
 		background white
 		min-height 450px
@@ -85,17 +93,23 @@ svg
 		&.with-icon
 			display inline-block
 			position relative
-			padding-left 60px
 			line-height 17px
 			margin-bottom 15px
-			font-size 16px
 			color black
 			min-height 50px
 			width 100%
+			font-size 14px
+			padding-left 40px
+			@media (min-width: scr_md)
+				font-size 16px
+				padding-left 60px
 			svg
 				position absolute
-				width 50px
-				height 50px
+				width 35px
+				height 35px
+				@media (min-width: scr_md)
+					width 50px
+					height 50px
 			svg, span
 				top 50%
 				left 0
@@ -104,7 +118,9 @@ svg
 			span
 				position absolute
 				display inline
-				left 60px
+				left 45px
+				@media (min-width: scr_md)
+					left 60px
 			&:hover
 				span
 					color #0082dc
@@ -292,8 +308,19 @@ svg
 	font-size 17px
 	color black
 	line-height 18px
+	margin-bottom 40px
+	display inline-block
+	@media (min-width: scr_md)
+		margin-bottom 0
 	&
 		font-size 19px
+		&--small
+			font-size 15px
+			margin-bottom 0
+			padding 0 20px
+			svg
+				width 80px
+				height 80px
 	svg
 		transform-origin center center
 		t all
@@ -367,8 +394,19 @@ svg
 	.project
 		display inline-block
 		width 20%
-		width calc(20% - 14px)
 		height 200px
+		width 100%
+		@media (min-width: scr_xs)
+			width calc(50% - 14px)
+		@media (min-width: scr_sm)
+			width calc(33.3333333% - 14px)
+			
+		@media (min-width: scr_md)
+			width calc(25% - 14px)
+			
+		@media (min-width: scr_lg)
+			width calc(20% - 14px)
+			
 		margin 0 7px 10px 7px
 		background-size cover
 		text-align: center
@@ -424,8 +462,10 @@ svg
 			border-bottom-color blue
 			border-bottom-width 3px
 	&__table
-		font-size 15px
+		font-size 14px
 		color #233347
+		@media (min-width: scr_md)
+			font-size 15px
 		.project__divider
 			margin 15px 0
 		&-title
@@ -517,10 +557,9 @@ svg
 .sections
 	list-style: none
 	padding-left 65px
-	margin-top 0
+	margin-top 25px
 	&__item
 		color #0082dc
-		
 		&--active
 			color black
 			position relative
@@ -531,7 +570,7 @@ svg
 				width 9px
 				background url(/layout/images/svg/arrow.svg) top left no-repeat
 				background-size cover
-				top -1px
+				top 1px
 				left -18px
 		&:hover
 			color black
@@ -544,6 +583,8 @@ svg
 	li
 		line-height 18px
 		margin-bottom 10px
+		&:before, &:after
+			display none
 
 .scroll-fix
 	position fixed
@@ -573,7 +614,8 @@ svg
 			svg
 				max-width 100%
 		&__html
-			padding 0 75px
+			@media (min-width: scr_md)
+				padding 0 75px
 	&__item
 		position relative
 		full-width()
@@ -586,11 +628,14 @@ svg
 		bottom 60px
 		max-width 55%
 	&__text
-		font-size 22px
-		line-height 30px
+		font-size 17px
+		line-height 25px
 		padding-bottom 30px
 		margin-bottom 30px
 		border-bottom 1px solid #dbdfe3
+		@media (min-width: scr_md)
+			font-size 22px
+			line-height 30px
 	&__about
 		color #717b84
 		font-size 15px
@@ -964,13 +1009,17 @@ ul.nav-tabs
 		float left
 		width 50% !important
 		display inline-block
-		font-size 28px
-		line-height 65px
+		line-height 55px
 		padding 0 25px
-		height 65px
+		height 55px
 		border 1px solid white
 		border-bottom-color #0082dc
 		text-align: center
+		font-size 19px
+		@media (min-width: scr_md)
+			font-size 28px
+			height 65px
+			line-height 65px
 		a
 			color black
 		&.active
@@ -1081,7 +1130,10 @@ ul.nav-tabs
 				letter-spacing 2px
 			td
 				color #233347
-				font-size 14px
+				font-size 12px
+				@media (min-width: scr_md)
+					font-size 14px
+				
 	&__trigger
 		display inline-block
 		width 100%

@@ -11,11 +11,11 @@ endif;
 ?>
 <h2 class="page__title page__title--icon"><?=$item['ICON']?><?=$item['NAME']?></h2>
 <div class="row">
-	<div class="col-xs-9">
+	<div class="col-md-9">
 		<?=$item['~DETAIL_TEXT']?>
 		<div class="page__divider page__divider--small"></div>		
 	</div>
-	<div class="col-xs-3">
+	<div class="col-md-3 visible-md visible-lg">
 		<?if($item['IBLOCK_ID']!=18):?>
 			<?if($item['IBLOCK_ID']==4):?>
 			<h5>другие отрасли</h5>
@@ -93,9 +93,61 @@ endif;
 ?>
 <?if(strlen($items)>0):?>
 	
-	<h3 class="l-margin-bottom"><?=$title?></h3>
+	<h3 class="l-margin-bottom no-margin-top"><?=$title?></h3>
 	<?=$items?>
 	<p class="xs-margin-top"><a href="/works/">Все проекты</a></p>
 	
 <?endif;?>
+
+<div class="hidden-md hidden-lg">
+	<?if($item['IBLOCK_ID']!=18):?>
+		<?if($item['IBLOCK_ID']==4):
+			$title = "Другие отрасли";
+		else:
+			$title = "Другие услуги";
+		endif;?>
+		<div class="page__divider page__divider--small"></div>	
+		<h3 class="l-margin-bottom"><?=$title?></h3>
+		<?
+			global $depthFilter;
+			$depthFilter = array('!ID'=>$item['ID']);
+			$APPLICATION->IncludeComponent("bitrix:news.list", "depth", 
+	        array(
+	          "IBLOCK_ID"      => $item['IBLOCK_ID'],
+	          "NEWS_COUNT"     => "100",
+	          "FILTER_NAME"    => "depthFilter",
+	          "SORT_BY1"       => "SORT",
+	          "SORT_ORDER1"    => "ASC",
+	          "DETAIL_URL"     => $arParams["DETAIL_URL"],
+	          "CACHE_TYPE"     => "A",
+	          "SET_TITLE"      => "N",
+	          "SMALL"          => "Y",
+	          "PROPERTY_CODE"  => array('SVG')
+	        ),
+	        false
+	      );
+		?>
+	<?else:?>
+		<div class="xxl-margin-top">
+		<div class="page__divider page__divider--small l-margin-top xxl-margin-bottom"></div>	
+		
+		<?
+		$APPLICATION->IncludeComponent("bitrix:news.list", "section", 
+	        array(
+	          "IBLOCK_ID"      => $item['IBLOCK_ID'],
+	          "NEWS_COUNT"     => "100",
+	          "SORT_BY1"       => "SORT",
+	          "SORT_ORDER1"    => "ASC",
+	          "PARENT_SECTION" => $item['IBLOCK_SECTION_ID'],
+	          "DETAIL_URL"     => $arParams["DETAIL_URL"],
+	          "CACHE_TYPE"     => "A",
+	          "SET_TITLE"      => "N",
+	          "CACHE_NOTES"    => $item['ID'],
+	          "PROPERTY_CODE"  => array('SVG')
+	        ),
+	        false
+	    );?>
+	    </div><?
+	endif;?>
+</div>
 
