@@ -256,11 +256,11 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 
 	openPhotoSwipe = (index, galleryElement, disableAnimation) ->
 		pswpElement = document.querySelectorAll('.pswp')[0]
+
 		gallery = undefined
 		options = undefined
 		items = undefined
 		items = parseThumbnailElements(galleryElement)
-
 		# define options (if needed)
 		options =
 			showAnimationDuration: 100
@@ -439,6 +439,7 @@ $(document).ready ->
 			ymaps.ready(initGeography);
 
 	initPhotoSwipeFromDOM('.news__gallery');
+	initPhotoSwipeFromDOM('.gallery');
 
 	if $('.slider').length > 0
 		$('.slider').fotorama
@@ -456,6 +457,7 @@ $(document).ready ->
 					duration: 300
 		e.preventDefault()
 
+	###
 	$('.project').click (e)->
 		pswpElement = document.querySelectorAll('.pswp')[0];
 		items = $(this).data('pictures')
@@ -467,7 +469,7 @@ $(document).ready ->
 			gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, galleryOptions);
 			gallery.init();
 			e.preventDefault()
-
+	###
 	$('.cert').elem('picture').click (e)->
 		pswpElement = document.querySelectorAll('.pswp')[0];
 		items = $(this).data('pictures')

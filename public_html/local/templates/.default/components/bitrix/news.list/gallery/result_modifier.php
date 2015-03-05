@@ -1,17 +1,6 @@
 <?
-$images = array();
-
-foreach ($arResult['ITEMS'] as $key=>&$item)
-	foreach ($item['PROPERTIES']['IMAGES']['VALUE'] as $img)
-		$images[] = $img;
-
-$raw = CFile::GetList(array(), array('@ID'=>implode($images,',')));
-while($img = $raw->Fetch()):
-	$small = CFile::ResizeImageGet(CFile::GetFileArray($img['ID']), Array("width" => 800, "height" => 800), BX_RESIZE_IMAGE_PROPORTIONAL, false, Array("name" => "sharpen", "precision" => 15), false, 75);
-	$arResult['IMAGES'][$img['ID']] = array('small'=>$small['src'], 'src'=>"/upload/".$img['SUBDIR']."/".$img['FILE_NAME'], 'h'=>$img['HEIGHT'], 'w'=>$img['WIDTH']);
-endwhile;
-foreach ($arResult['ITEMS'] as &$item)
-	foreach ($item['PROPERTIES']['IMAGES']['VALUE'] as &$img)
-		$img = array_merge($arResult['IMAGES'][$img], array('title'=>$item['OLD_NAME']));
-
+foreach ($arResult['ITEMS'] as $key=>&$item):
+	$small = CFile::ResizeImageGet(CFile::GetFileArray($item['PREVIEW_PICTURE']['ID']), Array("width" => 700, "height" => 700), BX_RESIZE_IMAGE_PROPORTIONAL, false, Array("name" => "sharpen", "precision" => 15), false, 75);
+	$item['PREVIEW_PICTURE']['SMALL'] = $small['src'];
+endforeach;
 ?>

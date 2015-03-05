@@ -1,10 +1,14 @@
 <? $this->setFrameMode(true);?>
 <?if(count($arResult['ITEMS'])>0):?>
-<div class="projects">
+<div class="projects gallery">
 <?foreach ($arResult['ITEMS'] as $key=>$item):
-	?>
-	<a style="background-image: url(<?=$item['PROPERTIES']['IMAGES']['VALUE'][0]['small']?>)" data-pictures='<?=json_encode($item['PROPERTIES']['IMAGES']['VALUE'])?>' href="#" class="project"><span><?=$item['NAME']?></span></a>
-	
-<?endforeach;?>
+	$img = $item['PREVIEW_PICTURE'];
+	?><figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+    	<a href="<?=$img['SRC']?>" class="project" itemprop="contentUrl" data-size="<?=$img['WIDTH']."x".$img['HEIGHT']?>" style="background-image:url(<?=$img['SMALL']?>)">
+    		<img src="<?=$img['SRC']?>">
+    		<span><?=$item['NAME']?></span>
+    	</a>
+    </figure><?
+    endforeach;?>
 </div>
 <?endif;?>
