@@ -7506,6 +7506,9 @@ ul.nav-tabs li.active a {
   -ms-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+.footer .radia__content span {
+  text-transform: uppercase;
+}
 .footer .radia:hover {
   background: transparent !important;
 }
