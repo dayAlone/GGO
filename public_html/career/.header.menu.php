@@ -1,8 +1,15 @@
 <?
 $aMenuLinks = Array(
-	Array(
+	/*Array(
 		"Почему «Гипрогазоочистка»?", 
 		"/career/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),*/
+	Array(
+		"Вакансии", 
+		"/career/vacancies/", 
 		Array(), 
 		Array(), 
 		"" 
@@ -17,13 +24,6 @@ $aMenuLinks = Array(
 	Array(
 		"Истории успеха", 
 		"/career/success/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Вакансии", 
-		"/career/vacancies/", 
 		Array(), 
 		Array(), 
 		"" 
