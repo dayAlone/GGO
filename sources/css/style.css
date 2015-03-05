@@ -2160,12 +2160,21 @@ a.depth:hover svg path {
 .pages .pages__item--active:hover {
   color: #fff;
 }
+.pswp__caption__center {
+  text-align: center;
+}
 .projects {
   margin-right: -7px;
   margin-left: -7px;
 }
 .footer .projects {
   margin-left: 0;
+}
+.projects figcaption {
+  display: none;
+}
+.projects figure {
+  display: inline;
 }
 .projects figure img {
   max-width: 100%;
