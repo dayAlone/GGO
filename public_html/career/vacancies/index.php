@@ -4,7 +4,7 @@ $APPLICATION->SetTitle('Вакансии');
 ?> 
 <div class="row">
   
-  <div class="col-md-8 col-md-pull-4">
+  <div class="col-md-8 col-md-push-4">
   	<?
   		if(!isset($_REQUEST['ELEMENT_CODE'])):
 		    $APPLICATION->SetTitle('Вакансии');
@@ -39,7 +39,7 @@ $APPLICATION->SetTitle('Вакансии');
 		endif;
 	?>
   </div>
-  <div class="col-md-4 col-md-push-8 page__side">
+  <div class="col-md-4 col-md-pull-8 page__side">
     <div class="page__side-divider hidden-md hidden-lg"></div>
     <p>Группа «Гипрогазоочистка» — это профессиональная команда, обладающая	высокими компетенциями и богатым опытом работы в сфере газоочистки и экологии воздуха. Инжиниринговая компания достигла международного признания за счет применения инновационных подходов, суперсовременных технологий и высокого качества выполняемых работ. Ваши развернутые резюме высылайте по адресу <a href="mailto:job@ggo.ru">job@ggo.ru</a></p>
     <p>С дополнительной информацией Вас ознакомят в Департаменте кадровых служб, по телефону +7 (495) 231-30-40.</p>

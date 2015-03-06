@@ -4723,10 +4723,10 @@ ul.nav-tabs li.active a {
 .geography__popup_content {
   padding: 0px 25px 0;
   position: relative;
-  max-height: 470px;
   float: left;
   width: 100%;
   overflow: hidden;
+  max-height: 470px;
 }
 .geography__popup_content .scroll {
   float: left;
