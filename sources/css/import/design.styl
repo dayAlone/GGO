@@ -35,7 +35,7 @@ for vx in left center right
 
 value = 0px 5px 10px 15px 20px 25px 30px
 value_sm = 5px 10px 15px 20px 25px 30px 35px
-sizes = scr_xs scr_sm scr_md scr_lg
+sizes = scr_xs scr_sm scr_md scr_lg 19000
 
 for vx in margin padding
 	.no-{vx}
@@ -47,10 +47,6 @@ for vx in margin padding
 	for vy in top left bottom right
 		.no-{vx}-{vy}
 			{vx}-{vy} 0 !important
-		for vq, key in xs sm md lg
-			@media (min-width: sizes[key])
-				.no-{vx}-{vy}-{vq}
-					{vx}-{vy} 0 !important
 		for vz, key in xxs xs s m l xl xxl
 			/.{vz}-{vx}-{vy}
 				{vx}-{vy}: value[key] !important
@@ -60,6 +56,15 @@ for vx in margin padding
 				{vx}-{vy}: - value[key] !important
 				@media (min-width: scr_sm)
 					{vx}-{vy}: - value_sm[key] !important
+		for vq, key in xs sm md lg
+			@media (min-width: sizes[key])
+				.no-{vx}-{vy}-{vq}
+					{vx}-{vy} 0 !important
+		for vz, key2 in xxs xs s m l xl xxl
+			for vq, key in xs sm md lg
+				@media (min-width: sizes[key])
+					/.{vz}-{vx}-{vy}-{vq}
+						{vx}-{vy}: value[key2] !important
 
 for vx in center right left
 	for vz, key in xs sm md lg

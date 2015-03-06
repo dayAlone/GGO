@@ -1029,12 +1029,28 @@ ul.nav-tabs
 				color #0082dc
 
 .numbers
-	font-size 17px
+	&.hidden-md	
+		#n
+			&-4 svg
+				max-height 32px
+				width 32px
+			&-7 svg
+				max-height 48px
+				
+	#n
+		&-3 svg, &-5 svg
+			max-width 50px	
+			max-height 43px
+			@media (min-width: scr_lg)
+				max-width none
 	color #4c5760
 	line-height 1.3
+	font-size 14px
+	@media (min-width: scr_lg)
+		font-size 17px
 	.border-right
 		position relative
-			
+		
 		&:after
 			content ""
 			right 0
@@ -1046,63 +1062,100 @@ ul.nav-tabs
 		&--small
 			&:after
 				right -8px
+		&--medium
+			&:after
+				right 0px
+				top 6%
+				height 47%
+		&--padding
+			&:after
+				right 30px
 		&--xl
 			&:after
 				height 300px
 	.col-xs-7.border-right.border-right--xl:after
 		right 0
 	big
-		font-size 21px
+		font-size 17px
 		white-space no-wrap
 		&.bigger
-			font-size 28px
+			font-size 25px
+			@media (min-width: scr_lg)
+				font-size 28px
+		@media (min-width: scr_lg)
+			font-size 21px
 	small
-		font-size 15px
+		font-size 12px
+		@media (min-width: scr_lg)
+			font-size 15px
 	em
 		font-style: normal
-		font-size 14px
+		font-size 12px
+		@media (min-width: scr_lg)
+			font-size 14px
 	u
 		font-style: normal
-		font-size 13px
+		font-size 11px
 		text-decoration none
+		@media (min-width: scr_lg)
+			font-size 13px
 	.page__divider
 		border-color #c3d5e3
 	.row--padding
-		margin-right -30px
-		margin-left -30px
-		& > [class*='col-']
-			padding-right 30px
-			padding-left 30px
+		@media (min-width: scr_lg)
+			margin-right -30px
+			margin-left -30px
+			& > [class*='col-']
+				padding-right 30px
+				padding-left 30px
 .number
 	&__small-position
 		margin-top -45px
 	&__position
-		margin-top -130px
+		margin-top -100px
+		@media (min-width: scr_lg)
+			margin-top -130px
 	&__value
-		font-size 68px
 		font-weight: bold
 		color black
-		line-height 1.1
 		white-space no-wrap
-		&--xxs
-			font-size 55px
-		&--xs
-			font-size 60px
-		&--s
-			font-size 66px
-		&--m
-			font-size 76px
-			line-height 1.2
-		
-		&--medium
-			font-size 85px
+		font-size 60px
+		line-height 1.2
+		@media (min-width: scr_lg)
+			font-size 68px	
 			line-height 1.1
+		&--xxs
+			font-size 45px
+			@media (min-width: scr_lg)
+				font-size 55px
+		&--xs
+			font-size 47px
+			@media (min-width: scr_lg)
+				font-size 60px
+		&--s
+			font-size 53px
+			@media (min-width: scr_lg)
+				font-size 66px
+		&--m
+			font-size 70px
+			line-height 1.3
+			@media (min-width: scr_lg)
+				font-size 76px
+				line-height 1.2
+		&--medium
+			font-size 65px
+			line-height 1
 			max-height 84px
+			@media (min-width: scr_lg)
+				font-size 85px
+				line-height 1.1
 		&--big
-			font-size 99px
-			line-height .95
 			max-height 100px
-
+			font-size 80px
+			line-height .95
+			@media (min-width: scr_lg)
+				font-size 99px
+				line-height .95
 
 
 .tab-pane
