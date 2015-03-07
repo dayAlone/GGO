@@ -217,7 +217,15 @@ svg
 			&--icon
 				color #0e8ade
 				font-size 22px
-				margin-bottom 35px
+				margin-bottom 25px
+				margin-top 10px
+				@media (min-width: scr_sm)
+					margin-bottom 35px
+					margin-top 0
+				span
+					display inline-block
+					vertical-align: middle
+					max-width 70%
 				svg
 					width 53px
 					height 53px
@@ -336,8 +344,13 @@ svg
 			font-size 19px
 		&--small
 			font-size 15px
-			margin-bottom 0
 			padding 0 20px
+			margin-bottom 20px
+			min-height 134px
+			@media (min-width: scr_xs)
+				min-height none
+			@media (min-width: scr_sm)
+				margin-bottom 0px
 			svg
 				width 80px
 				height 80px

@@ -6721,7 +6721,19 @@ svg g {
 .page .page__title--icon {
   color: #0e8ade;
   font-size: 22px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .page .page__title--icon {
+    margin-bottom: 35px;
+    margin-top: 0;
+  }
+}
+.page .page__title--icon span {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 70%;
 }
 .page .page__title--icon svg {
   width: 53px;
@@ -6906,8 +6918,19 @@ svg g {
 }
 .depth--small {
   font-size: 15px;
-  margin-bottom: 0;
   padding: 0 20px;
+  margin-bottom: 20px;
+  min-height: 134px;
+}
+@media (min-width: 480px) {
+  .depth--small {
+    min-height: none;
+  }
+}
+@media (min-width: 768px) {
+  .depth--small {
+    margin-bottom: 0px;
+  }
 }
 .depth--small svg {
   width: 80px;

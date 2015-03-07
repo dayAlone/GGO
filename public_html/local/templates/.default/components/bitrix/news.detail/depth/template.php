@@ -9,7 +9,7 @@ if(strlen($item['ICON'])==0):
    	}
 endif;
 ?>
-<h2 class="page__title page__title--icon"><?=$item['ICON']?><?=$item['NAME']?></h2>
+<h2 class="page__title page__title--icon"><?=$item['ICON']?><span><?=$item['NAME']?></span></h2>
 <div class="row">
 	<div class="col-md-9">
 		<?=$item['~DETAIL_TEXT']?>
