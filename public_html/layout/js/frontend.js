@@ -29501,7 +29501,7 @@ return function (global, window, document, undefined) {
   };
 
   $(document).ready(function() {
-    var scrollTimer, x;
+    var sHeight, scrollTimer, x;
     if ($('.geography').length > 0) {
       $('.geography__popup_content').spin(spinOptions);
       $.getScript('http://api-maps.yandex.ru/2.1/?lang=ru_RU', function() {
@@ -29756,10 +29756,16 @@ return function (global, window, document, undefined) {
       checkStructure(true);
       return e.preventDefault();
     });
+    sHeight = 490;
+    if ($(window).width() <= 375) {
+      sHeight = 420;
+    }
     $('.success-story').on('fotorama:ready', function() {
       $('.fotorama__arr--prev').html($('.arrow__prev').html());
       return $('.fotorama__arr--next').html($('.arrow__next').html());
-    }).fotorama();
+    }).fotorama({
+      height: sHeight
+    });
     $('.file-trigger').click(function(e) {
       $(this).parent().find('input[type=file]').trigger('click');
       return e.preventDefault();

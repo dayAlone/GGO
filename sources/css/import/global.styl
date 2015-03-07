@@ -680,26 +680,34 @@ svg
 	&__item
 		position relative
 		full-width()
-		height 490px
+		height 420px
 		background-repeat no-repeat
-		background-size containt
+		background-size 50% auto
 		background-position bottom right
+		@media (min-width: scr_xs)
+			background-size contain
+			height 490px
 	&__content
 		position absolute
 		bottom 60px
 		max-width 55%
 	&__text
-		font-size 17px
-		line-height 25px
+		font-size 13px
+		line-height 18px
 		padding-bottom 30px
 		margin-bottom 30px
 		border-bottom 1px solid #dbdfe3
+		@media (min-width: scr_xs)
+			font-size 17px
+			line-height 25px
 		@media (min-width: scr_md)
 			font-size 22px
 			line-height 30px
 	&__about
 		color #717b84
-		font-size 15px
+		font-size 11px
+		@media (min-width: scr_xs)
+			font-size 15px
 
 .slick
 	&-next

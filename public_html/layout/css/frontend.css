@@ -7495,12 +7495,20 @@ a.depth:hover svg path {
   position: relative;
   float: left;
   width: 100%;
-  height: 490px;
+  height: 420px;
   background-repeat: no-repeat;
-  -webkit-background-size: containt;
-  -moz-background-size: containt;
-  background-size: containt;
+  -webkit-background-size: 50% auto;
+  -moz-background-size: 50% auto;
+  background-size: 50% auto;
   background-position: bottom right;
+}
+@media (min-width: 480px) {
+  .success-story__item {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    height: 490px;
+  }
 }
 .success-story__content {
   position: absolute;
@@ -7508,11 +7516,17 @@ a.depth:hover svg path {
   max-width: 55%;
 }
 .success-story__text {
-  font-size: 17px;
-  line-height: 25px;
+  font-size: 13px;
+  line-height: 18px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: 1px solid #dbdfe3;
+}
+@media (min-width: 480px) {
+  .success-story__text {
+    font-size: 17px;
+    line-height: 25px;
+  }
 }
 @media (min-width: 992px) {
   .success-story__text {
@@ -7522,7 +7536,12 @@ a.depth:hover svg path {
 }
 .success-story__about {
   color: #717b84;
-  font-size: 15px;
+  font-size: 11px;
+}
+@media (min-width: 480px) {
+  .success-story__about {
+    font-size: 15px;
+  }
 }
 .slick-next {
   right: 2px;

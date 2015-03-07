@@ -649,13 +649,20 @@ $(document).ready ->
 	$('.structure .button').on 'click', (e)->
 		checkStructure(true)
 		e.preventDefault()
+
+	sHeight = 490
+	if $(window).width() <= 375
+		sHeight = 420
+
 	$('.success-story')
 	.on('fotorama:ready',->
 		$('.fotorama__arr--prev').html $('.arrow__prev').html()
 		$('.fotorama__arr--next').html $('.arrow__next').html()
 	)
-	.fotorama()
-
+	.fotorama
+		height: sHeight
+	
+	
 	$('.file-trigger').click (e)->
 		$(this).parent().find('input[type=file]').trigger 'click'
 		e.preventDefault()
