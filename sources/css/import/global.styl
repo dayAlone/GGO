@@ -73,7 +73,8 @@ svg
 		background white
 		min-height 450px
 		max-width 1140px
-		padding 5px 60px 50px
+		@media (min-width: scr_sm)
+			padding 5px 60px 50px
 	h2
 		font-weight: bold
 	h3
@@ -1029,6 +1030,11 @@ ul.nav-tabs
 				color #0082dc
 
 .numbers
+	&.visible-xs
+		max-width 300px
+		margin 0 auto
+		#n-7 svg
+			max-height 45px
 	&.hidden-md	
 		#n
 			&-4 svg
