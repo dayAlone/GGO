@@ -4,14 +4,14 @@
   <div class="container">
   <?if(!strstr($APPLICATION->GetCurDir(),"/works/projects/")):?>
   <div class="row">
-    <div class="col-xs-7">
+    <div class="col-sm-7">
       <h1 class="page__title">
         <?
           $APPLICATION->AddBufferContent("page_title");
         ?>
       </h1>
     </div>
-    <div class="col-xs-5 right">
+    <div class="col-sm-5 right">
       <?$APPLICATION->ShowViewContent('title');?>
     </div>
   </div>

@@ -754,8 +754,7 @@ svg
 					border-bottom 2px solid white
 
 .structure
-	width 480px
-	height 480px
+	
 	border-radius 50%
 	margin-bottom 100px
 	margin 0 auto
@@ -763,6 +762,12 @@ svg
 	text-align: center
 	padding 0px
 	position relative
+	@media (min-width: scr_md)
+		width 380px
+		height 380px
+	@media (min-width: scr_lg)
+		width 480px
+		height 480px
 	.button
 		position absolute
 		bottom 45px
@@ -775,6 +780,10 @@ svg
 		border-line #0082dc
 		color black
 		white-space no-wrap
+		@media (min-width: scr_md)
+			font-size 17px
+		@media (min-width: scr_lg)
+			font-size 20px
 		&:hover
 			color #1584da
 			&:after, &:before
@@ -784,6 +793,10 @@ svg
 		&--strong
 			font-size 26px
 			font-weight: bold
+			@media (min-width: scr_md)
+				font-size 23px
+			@media (min-width: scr_lg)
+				font-size 26px
 		&--open
 			color #0082dc
 			background transparent
@@ -810,14 +823,20 @@ svg
 		&--top
 			top 6%
 			&:after, &:before
-				top 15px
+				@media (min-width: scr_md)
+					top -5px
+				@media (min-width: scr_lg)
+					top 15px
 		&--left
 			right 100%
 			margin-right -38px
 			&.structure__link--middle
 				margin-right 11px
 			&:after, &:before
-				right -55px
+				@media (min-width: scr_md)
+					right -50px
+				@media (min-width: scr_lg)
+					right -55px
 		&--right
 			left 100%
 			margin-left -38px
@@ -858,6 +877,12 @@ svg
 		&:after
 			bottom 0
 		padding 35px 0
+		@media (min-width: scr_md)
+			margin-top -20px
+			padding 25px 0
+		@media (min-width: scr_lg)
+			margin-top 0
+			padding 35px 0
 		h3
 			margin-top 0
 		h2 
@@ -867,6 +892,12 @@ svg
 			margin-bottom 20px
 			font-family 'Direct'
 			font-weight: bold
+			@media (min-width: scr_md)
+				font-size 27px
+				line-height 32px
+			@media (min-width: scr_lg)
+				font-size 34px
+				line-height 42px
 		p
 			font-size 22px
 			line-height 28px
@@ -875,6 +906,12 @@ svg
 			font-family 'Direct'
 			max-width 95%
 			display inline-block
+			@media (min-width: scr_md)
+				font-size 17px
+				line-height 24px
+			@media (min-width: scr_lg)
+				font-size 22px
+				line-height 28px
 		span
 			font-size 12px
 			position absolute
@@ -886,8 +923,13 @@ svg
 			color #98a4ac
 	&__content
 		display none
+		
 		p
 			font-size 16px
+			@media (min-width: scr_md)
+				font-size 14px
+			@media (min-width: scr_lg)
+				font-size 16px
 
 .steps
 	&__section
@@ -1435,19 +1477,33 @@ ul.nav-tabs
 		&:focus
 			border-color blue
 	.close
-		position absolute
-		right -60px
-		top 0
+		position fixed
 		background transparent !important
+		right 15px
+		top 0px
+		@media (min-width: scr_sm)
+			right -60px
+			position absolute
+			top 0
 		svg
-			width 40px
-			height 40px
+			width 25px
+			height 25px
 			path
-				fill white
+				fill blue
+			@media (min-width: scr_sm)
+				width 40px
+				height 40px
+				path
+					fill white
 	&-content
 		border-radius 0
 		min-height 100px
-		padding 20px 40px 40px
+		padding 30px 15px 15px
+		@media (max-width: scr_sm)
+			box-shadow none
+			border 0
+		@media (min-width: scr_sm)
+			padding 20px 40px 40px
 	&-frame
 		width 100%
 		border 2px solid black
@@ -1467,8 +1523,13 @@ ul.nav-tabs
 			letter-spacing 6px
 			transform translateX(-50%)
 	&-backdrop
+		background white
 		&.in
-			opacity .8
+			opacity 1
+		@media (min-width: scr_sm)
+			background black
+			&.in
+				opacity .8
 
 .vacancy-popup
 	@extends .modal

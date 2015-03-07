@@ -46,6 +46,23 @@
     </div>
   </div>
 </div>
+<div id="Nav" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade overlay">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <a data-dismiss="modal" href="#" class="close"><?=svg('close')?></a>
+      <?php
+          $APPLICATION->IncludeComponent("bitrix:main.map", ".default", Array(
+            "LEVEL" =>  "2",
+            "COL_NUM" =>  "1",
+            "SHOW_DESCRIPTION"  =>  "Y",
+            "SET_TITLE" =>  "Y",
+            "CACHE_TIME"  =>  "36000000"
+            )
+          );
+      ?>
+    </div>
+  </div>
+</div>
 <footer class="footer">
   <div class="container container--width">
     <div class="row">

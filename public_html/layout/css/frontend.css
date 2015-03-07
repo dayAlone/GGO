@@ -6103,6 +6103,24 @@ div.pp_default .pp_loaderIcon {
     line-height: 120px;
   }
 }
+.header__trigger {
+  width: 33px;
+  height: 31px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 30px;
+  text-align: center;
+}
+.header__trigger svg {
+  max-width: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.header__trigger svg path {
+  fill: #0057ce;
+}
 .header__box {
   display: inline-block;
   line-height: 35px;
@@ -7591,8 +7609,6 @@ a.depth:hover svg path {
   border-bottom: 2px solid #fff;
 }
 .structure {
-  width: 480px;
-  height: 480px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   margin-bottom: 100px;
@@ -7601,6 +7617,18 @@ a.depth:hover svg path {
   text-align: center;
   padding: 0px;
   position: relative;
+}
+@media (min-width: 992px) {
+  .structure {
+    width: 380px;
+    height: 380px;
+  }
+}
+@media (min-width: 1200px) {
+  .structure {
+    width: 480px;
+    height: 480px;
+  }
 }
 .structure .button {
   position: absolute;
@@ -7632,6 +7660,16 @@ a.depth:hover svg path {
 .structure__link:hover {
   text-decoration: none;
 }
+@media (min-width: 992px) {
+  .structure__link {
+    font-size: 17px;
+  }
+}
+@media (min-width: 1200px) {
+  .structure__link {
+    font-size: 20px;
+  }
+}
 .structure__link:hover {
   color: #1584da;
 }
@@ -7649,6 +7687,16 @@ a.depth:hover svg path {
 .structure__link--strong {
   font-size: 26px;
   font-weight: bold;
+}
+@media (min-width: 992px) {
+  .structure__link--strong {
+    font-size: 23px;
+  }
+}
+@media (min-width: 1200px) {
+  .structure__link--strong {
+    font-size: 26px;
+  }
 }
 .structure__link--open {
   color: #0082dc;
@@ -7696,9 +7744,17 @@ a.depth:hover svg path {
 .structure__link--top {
   top: 6%;
 }
-.structure__link--top:after,
-.structure__link--top:before {
-  top: 15px;
+@media (min-width: 992px) {
+  .structure__link--top:after,
+  .structure__link--top:before {
+    top: -5px;
+  }
+}
+@media (min-width: 1200px) {
+  .structure__link--top:after,
+  .structure__link--top:before {
+    top: 15px;
+  }
 }
 .structure__link--left {
   right: 100%;
@@ -7707,9 +7763,17 @@ a.depth:hover svg path {
 .structure__link--left.structure__link--middle {
   margin-right: 11px;
 }
-.structure__link--left:after,
-.structure__link--left:before {
-  right: -55px;
+@media (min-width: 992px) {
+  .structure__link--left:after,
+  .structure__link--left:before {
+    right: -50px;
+  }
+}
+@media (min-width: 1200px) {
+  .structure__link--left:after,
+  .structure__link--left:before {
+    right: -55px;
+  }
 }
 .structure__link--right {
   left: 100%;
@@ -7777,6 +7841,20 @@ a.depth:hover svg path {
 .structure__content:after {
   bottom: 0;
 }
+@media (min-width: 992px) {
+  .structure__intro,
+  .structure__content {
+    margin-top: -20px;
+    padding: 25px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .structure__intro,
+  .structure__content {
+    margin-top: 0;
+    padding: 35px 0;
+  }
+}
 .structure__intro h3,
 .structure__content h3 {
   margin-top: 0;
@@ -7790,6 +7868,20 @@ a.depth:hover svg path {
   font-family: 'Direct';
   font-weight: bold;
 }
+@media (min-width: 992px) {
+  .structure__intro h2,
+  .structure__content h2 {
+    font-size: 27px;
+    line-height: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .structure__intro h2,
+  .structure__content h2 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+}
 .structure__intro p,
 .structure__content p {
   font-size: 22px;
@@ -7799,6 +7891,20 @@ a.depth:hover svg path {
   font-family: 'Direct';
   max-width: 95%;
   display: inline-block;
+}
+@media (min-width: 992px) {
+  .structure__intro p,
+  .structure__content p {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .structure__intro p,
+  .structure__content p {
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
 .structure__intro span,
 .structure__content span {
@@ -7816,6 +7922,16 @@ a.depth:hover svg path {
 }
 .structure__content p {
   font-size: 16px;
+}
+@media (min-width: 992px) {
+  .structure__content p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .structure__content p {
+    font-size: 16px;
+  }
 }
 .steps__section {
   float: left;
@@ -8635,26 +8751,59 @@ ul.nav-tabs li.active a {
 }
 .modal .close,
 .vacancy-popup .close {
-  position: absolute;
-  right: -60px;
-  top: 0;
+  position: fixed;
   background: transparent !important;
+  right: 15px;
+  top: 0px;
+}
+@media (min-width: 768px) {
+  .modal .close,
+  .vacancy-popup .close {
+    right: -60px;
+    position: absolute;
+    top: 0;
+  }
 }
 .modal .close svg,
 .vacancy-popup .close svg {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
 }
 .modal .close svg path,
 .vacancy-popup .close svg path {
-  fill: #fff;
+  fill: #0057ce;
+}
+@media (min-width: 768px) {
+  .modal .close svg,
+  .vacancy-popup .close svg {
+    width: 40px;
+    height: 40px;
+  }
+  .modal .close svg path,
+  .vacancy-popup .close svg path {
+    fill: #fff;
+  }
 }
 .modal-content,
 .vacancy-popup-content {
   -webkit-border-radius: 0;
   border-radius: 0;
   min-height: 100px;
-  padding: 20px 40px 40px;
+  padding: 30px 15px 15px;
+}
+@media (max-width: 768px) {
+  .modal-content,
+  .vacancy-popup-content {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+  }
+}
+@media (min-width: 768px) {
+  .modal-content,
+  .vacancy-popup-content {
+    padding: 20px 40px 40px;
+  }
 }
 .modal-frame,
 .vacancy-popup-frame {
@@ -8682,11 +8831,27 @@ ul.nav-tabs li.active a {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+.modal-backdrop,
+.vacancy-popup-backdrop {
+  background: #fff;
+}
 .modal-backdrop.in,
 .vacancy-popup-backdrop.in {
-  opacity: 0.8;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: alpha(opacity=80);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+@media (min-width: 768px) {
+  .modal-backdrop,
+  .vacancy-popup-backdrop {
+    background: #000;
+  }
+  .modal-backdrop.in,
+  .vacancy-popup-backdrop.in {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+  }
 }
 .vacancy-popup label {
   margin-top: 20px;

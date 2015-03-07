@@ -33,7 +33,10 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-9 col-sm-4"><a href="/" class="logo"><?=svg('logo')?></a></div>
-      <div class="col-sm-8">
+      <div class="col-xs-3 right visible-xs">
+        <a href="#Nav" data-toggle="modal" data-target="#Nav" class="header__trigger"><?=svg('nav')?></a>
+      </div>
+      <div class="hidden-xs col-sm-8">
         <div class="header__nav">
           <div class="right">
             <?

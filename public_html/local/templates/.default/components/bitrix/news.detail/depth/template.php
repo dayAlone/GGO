@@ -106,7 +106,9 @@ endif;
 		else:
 			$title = "Другие услуги";
 		endif;?>
-		<div class="page__divider page__divider--small"></div>	
+		<?if(strlen($items)>0):?>
+			<div class="page__divider page__divider--small l-margin-top xxl-margin-bottom"></div>	
+		<?endif;?>
 		<h3 class="l-margin-bottom"><?=$title?></h3>
 		<?
 			global $depthFilter;
