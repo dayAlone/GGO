@@ -3980,7 +3980,7 @@ a.depth:hover svg path {
   border: 1px solid #3393e1;
   margin-top: -1px;
   min-height: 100px;
-  padding: 20px 25px 15px;
+  padding: 30px 25px 10px;
 }
 @media (min-width: 768px) {
   .history__content {
