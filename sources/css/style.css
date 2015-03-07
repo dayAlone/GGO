@@ -4869,13 +4869,17 @@ ul.nav-tabs li.active a {
 }
 .reference__content .list small {
   display: inline-block;
-  margin-top: 6px;
+  margin-top: 8px;
   font-size: 10px;
   text-transform: uppercase;
   font-weight: bold;
 }
+.reference__content .list .row {
+  font-size: 11px;
+}
 .reference__content .list .row small {
   margin-top: 0;
+  font-size: 8;
 }
 @media (min-width: 480px) {
   .reference__content .list {
