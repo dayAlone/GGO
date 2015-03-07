@@ -3691,11 +3691,25 @@ a.depth:hover svg path {
   text-decoration: none;
 }
 .client {
-  width: 16.666666666666668%;
   display: inline-block;
   min-height: 100px;
   line-height: 100px;
   text-align: center;
+}
+@media (min-width: 480px) {
+  .client {
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .client {
+    width: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .client {
+    width: 16.666666666666668%;
+  }
 }
 @media (min-width: 1200px) {
   .client {

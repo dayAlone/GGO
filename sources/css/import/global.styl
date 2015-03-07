@@ -545,11 +545,17 @@ svg
 			color blue
 			border-line alpha(@color, .4)
 .client
-	width (100/6)%
+	
 	display inline-block
 	min-height 100px
 	line-height 100px
 	text-align center
+	@media (min-width: scr_xs)
+		width (100/4)%
+	@media (min-width: scr_sm)
+		width (100/5)%
+	@media (min-width: scr_md)
+		width (100/6)%
 	@media (min-width: scr_lg)
 		width (100/8)%
 	img
