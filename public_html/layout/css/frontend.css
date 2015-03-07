@@ -8849,8 +8849,8 @@ ul.nav-tabs li.active a {
 .footer .projects .project {
   display: inline-block;
   width: 33.333333333333336%;
-  width: calc((100 / 3 %) - 14px);
-  height: 90px;
+  width: calc(33.333333333333336% - 14px);
+  height: 70px;
   margin: 5px 7px 13px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
