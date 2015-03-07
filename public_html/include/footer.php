@@ -50,12 +50,12 @@
   <div class="container container--width">
     <div class="row">
       <?if($APPLICATION->GetCurDir()=="/" || $APPLICATION->GetPageProperty('hide_projects')==true):?>
-      <div class="col-sm-8 col-md-6">
+      <div class="col-sm-8 col-md-6 footer__about">
         <h3>О компании</h3> 
         <p>История нашей компании началась в 1928 году. Ключевую идею успеха, которая сопровождает нас на протяжении десятков лет, мы видим в приверженности к индивидуальному подходу к каждому из наших заказчиков. Сочетание накопленного опыта и умения решать персональные инжиниринговые задачи, мастерство поиска и созидания комплексных высокотехнологичных решений сформировали философию компании «Инжиниринг как искусство», которая находит отражение в каждом нашем проекте. В нашем референс-листе более 4 000 технологических установок. Мы реализуем инжиниринговые проекты полного цикла – от проектирования до введения в эксплуатацию оборудования для объектов нефтегазодобычи, нефтегазопереработки и нефтехимии.</p> 
       </div>
       <?endif;?>
-      <div class="col-sm-4 col-md-4">
+      <div class="col-sm-4 col-md-4 footer__news">
         <h3>Новости</h3>
         <?
           $APPLICATION->IncludeComponent("bitrix:news.list", "news", 
@@ -75,7 +75,7 @@
         <a href="/press/" class="news__more">К другим новостям</a>
       </div>
       <?if($APPLICATION->GetCurDir()!="/" && $APPLICATION->GetPageProperty('hide_projects')!=true):?>
-      <div class="col-sm-8 col-md-6">
+      <div class="col-sm-8 col-md-6 footer__projects">
         <h3>Ключевые проекты</h3>
         <?
           $APPLICATION->IncludeComponent("bitrix:news.list", "projects", 

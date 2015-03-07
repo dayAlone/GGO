@@ -1,6 +1,10 @@
 .footer
 	full-width()
 	background: #f0f2f3
+	&__projects, &__about + .footer__news
+		margin-top 50px
+		@media (min-width: scr_sm)
+			margin-top 0
 	.index &
 		background white
 	min-height 100px
@@ -71,9 +75,14 @@
 				border-line alpha(@color,.3) 
 		.project
 			display: inline-block
-			width 97px
-			height 97px
-			margin 5px 18px 13px 0
+			width (100/3)%
+			width calc((100/3)% - 14px)
+			height 90px
+			margin 5px 7px 13px
+			@media (min-width: scr_sm)
+				width 97px
+				height 97px
+				margin 5px 18px 13px 0
 			background-size cover
 			background-position: center center
 			t all
