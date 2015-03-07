@@ -2,7 +2,9 @@
 $item = $arResult;
 ?>
 <div class="project__detail">
-  
+  <?if(strlen($item['PREVIEW_PICTURE']['SRC'])>0):?>
+    <img src="<?=$item['PREVIEW_PICTURE']['SRC']?>" alt="" class="max-width">
+  <?endif;?>
   <div class="row">
     <div class="col-sm-8">
       <? foreach(array('CUSTOMER') as $prop):
@@ -31,7 +33,7 @@ $item = $arResult;
         <h5>Показатели</h5>
       <?endif;?>
     </div>
-    <div class="col-xs-4 right">
+    <div class="col-xs-4 hidden-xs right">
     	<?if(strlen($item['PREVIEW_PICTURE']['SRC'])>0):?>
       <div class="project__picture" style="background-image:url(<?=$item['PREVIEW_PICTURE']['SRC']?>)"></div>
     	<?endif;?>
@@ -39,21 +41,34 @@ $item = $arResult;
   </div>
   <?if($item['PROPERTIES']['TABLE']['VALUE']):?>
   <div class="project__table">
-    <div class="row project__table-title">
+    <div class="row project__table-title hidden-xs">
       <div class="col-xs-4">Технологии проекта</div>
       <div class="col-xs-4">Производительность</div>
-      <div class="col-xs-4">Основные технологические показатели</div>
+      <div class="col-xs-4">Технологические показатели</div>
     </div>
     <? foreach($item['PROPERTIES']['TABLE']['VALUE'] as $row):?>
       <?if(strlen($row['t0'])>0):?>
         <div class="project__divider project__divider--blue"></div>
         <?else:?>
-        <div class="row"><div class="col-xs-8 col-xs-offset-4"><div class="project__divider"></div></div></div>
+        <div class="row"><div class="col-sm-8 col-sm-offset-4"><div class="project__divider"></div></div></div>
       <?endif;?>
       <div class="row">
-        <div class="col-xs-4"><?=$row['t0']?></div>
-        <div class="col-xs-4 project__cell--grey"><?=$row['t1']?></div>
-        <div class="col-xs-4 project__cell--grey"><?=$row['t2']?></div>
+        <div class="col-sm-4">
+        <small class="visible-xs">Технология</small>
+        <span class="project__table-tech"><?=$row['t0']?></span>
+        
+          <?if(strlen($row['t0'])>0):?>
+          <div class="visible-xs project__table-sub-title">
+            <div class="row">
+              <div class="col-xs-6">Производительность</div>
+              <div class="col-xs-6">Технологические показатели</div>
+            </div>
+            <div class="project__divider"></div>
+          </div>
+          <?endif;?>
+        </div>
+        <div class="col-xs-6 col-sm-4 project__cell--grey"><?=$row['t1']?></div>
+        <div class="col-xs-6 col-sm-4 project__cell--grey"><?=$row['t2']?></div>
       </div>
     <?endforeach;?>
     <div class="project__divider project__divider--blue"></div>

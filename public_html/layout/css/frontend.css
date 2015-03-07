@@ -6266,7 +6266,7 @@ div.pp_default .pp_loaderIcon {
   }
 }
 .nav--big .nav__item {
-  top: -3px;
+  top: -2px;
   position: relative;
   font-size: 19px;
   margin-right: 15px;
@@ -6714,9 +6714,19 @@ svg g {
 }
 .page .page__title {
   font-family: 'Direct';
-  font-size: 30px;
   padding-bottom: 5px;
   font-weight: normal;
+  font-size: 28px;
+}
+@media (max-width: 768px) {
+  .short_title .page .page__title {
+    font-size: 23px;
+  }
+}
+@media (min-width: 768px) {
+  .page .page__title {
+    font-size: 30px;
+  }
 }
 .page .page__title--icon {
   color: #0e8ade;
@@ -7188,8 +7198,13 @@ a.depth:hover svg path {
   border-bottom-width: 3px;
 }
 .project__table {
-  font-size: 14px;
+  font-size: 13px;
   color: #233347;
+}
+@media (min-width: 768px) {
+  .project__table {
+    font-size: 14px;
+  }
 }
 @media (min-width: 992px) {
   .project__table {
@@ -7199,10 +7214,22 @@ a.depth:hover svg path {
 .project__table .project__divider {
   margin: 15px 0;
 }
+@media (max-width: 768px) {
+  .project__table-tech {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+.project__table-sub-title {
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 20px;
+}
 .project__table-title {
   font-weight: bold;
   font-size: 18.4px;
-  white-space: nowrap;
+  line-height: 18px;
   margin-bottom: -5px;
 }
 .project__picture {
@@ -8886,8 +8913,8 @@ ul.nav-tabs li.active a {
 .vacancy-popup .close {
   position: fixed;
   background: transparent !important;
-  right: 15px;
-  top: 0px;
+  right: 10px;
+  top: 10px;
 }
 @media (min-width: 768px) {
   .modal .close,
@@ -8922,7 +8949,7 @@ ul.nav-tabs li.active a {
   -webkit-border-radius: 0;
   border-radius: 0;
   min-height: 100px;
-  padding: 30px 15px 15px;
+  padding: 20px 15px 15px;
 }
 @media (max-width: 768px) {
   .modal-content,

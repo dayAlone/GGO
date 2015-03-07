@@ -211,9 +211,14 @@ svg
 	.page
 		&__title
 			font-family 'Direct'
-			font-size 30px
 			padding-bottom 5px
 			font-weight: normal
+			font-size 28px
+			@media (max-width: scr_sm)
+				.short_title &
+					font-size 23px
+			@media (min-width: scr_sm)
+				font-size 30px
 			&--icon
 				color #0e8ade
 				font-size 22px
@@ -502,16 +507,27 @@ svg
 			border-bottom-color blue
 			border-bottom-width 3px
 	&__table
-		font-size 14px
+		font-size 13px
 		color #233347
+		@media (min-width: scr_sm)
+			font-size 14px
 		@media (min-width: scr_md)
 			font-size 15px
 		.project__divider
 			margin 15px 0
+		&-tech
+			@media (max-width: scr_sm)
+				font-size 18px
+				font-weight: bold
+				margin-bottom 10px
+		&-sub-title
+			font-weight: bold
+			font-size 12px
+			margin-top 20px
 		&-title
 			font-weight: bold
 			font-size 18.4px
-			white-space no-wrap
+			line-height 18px
 			margin-bottom -5px
 	&__picture
 		background-size cover
@@ -1549,8 +1565,8 @@ ul.nav-tabs
 	.close
 		position fixed
 		background transparent !important
-		right 15px
-		top 0px
+		right 10px
+		top 10px
 		@media (min-width: scr_sm)
 			right -60px
 			position absolute
@@ -1568,7 +1584,7 @@ ul.nav-tabs
 	&-content
 		border-radius 0
 		min-height 100px
-		padding 30px 15px 15px
+		padding 20px 15px 15px
 		@media (max-width: scr_sm)
 			box-shadow none
 			border 0
