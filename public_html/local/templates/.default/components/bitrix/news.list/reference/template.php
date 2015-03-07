@@ -32,9 +32,9 @@
 		                    <td>
 		                    	<small class="visible-xs"><?=$info['period']?></small>
 		                    	<?=$info['object']?>
-		                    	<div class="visible-xs">
-									<?=$info['region']?>
-								</div>
+		                    	<small class="visible-xs">
+									<strong>регион:</strong> <?=$info['region']?>
+								</small>
 		                    </td>
 		                    <td class="hidden-xs"><?=$info['region']?></td>
 		                    <td class="hidden-xs"><?=$info['period']?></td>
