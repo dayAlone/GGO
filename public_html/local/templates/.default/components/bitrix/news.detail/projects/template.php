@@ -3,7 +3,9 @@ $item = $arResult;
 ?>
 <div class="project__detail">
   <?if(strlen($item['PREVIEW_PICTURE']['SRC'])>0):?>
+  <div class="xxl-margin-bottom visible-xs">
     <img src="<?=$item['PREVIEW_PICTURE']['SRC']?>" alt="" class="max-width">
+  </div>
   <?endif;?>
   <div class="row">
     <div class="col-sm-8">
