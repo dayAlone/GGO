@@ -50,12 +50,12 @@
   <div class="container container--width">
     <div class="row">
       <?if($APPLICATION->GetCurDir()=="/" || $APPLICATION->GetPageProperty('hide_projects')==true):?>
-      <div class="col-xs-8 col-md-6">
+      <div class="col-sm-8 col-md-6">
         <h3>О компании</h3> 
         <p>История нашей компании началась в 1928 году. Ключевую идею успеха, которая сопровождает нас на протяжении десятков лет, мы видим в приверженности к индивидуальному подходу к каждому из наших заказчиков. Сочетание накопленного опыта и умения решать персональные инжиниринговые задачи, мастерство поиска и созидания комплексных высокотехнологичных решений сформировали философию компании «Инжиниринг как искусство», которая находит отражение в каждом нашем проекте. В нашем референс-листе более 4 000 технологических установок. Мы реализуем инжиниринговые проекты полного цикла – от проектирования до введения в эксплуатацию оборудования для объектов нефтегазодобычи, нефтегазопереработки и нефтехимии.</p> 
       </div>
       <?endif;?>
-      <div class="col-xs-4 col-md-4">
+      <div class="col-sm-4 col-md-4">
         <h3>Новости</h3>
         <?
           $APPLICATION->IncludeComponent("bitrix:news.list", "news", 
@@ -75,7 +75,7 @@
         <a href="/press/" class="news__more">К другим новостям</a>
       </div>
       <?if($APPLICATION->GetCurDir()!="/" && $APPLICATION->GetPageProperty('hide_projects')!=true):?>
-      <div class="col-xs-8 col-md-6">
+      <div class="col-sm-8 col-md-6">
         <h3>Ключевые проекты</h3>
         <?
           $APPLICATION->IncludeComponent("bitrix:news.list", "projects", 
@@ -127,10 +127,10 @@
   </div>
   <div class="container">
     <div class="row copyright">
-      <div class="col-xs-3">© <?=date('Y')?> ОАО “Гипрогазоочистка”</div>
-      <div class="col-xs-4">Россия, Москва, ул. Первомайская, 126<br><a href="mailto:info@ggo.ru">info@ggo.ru</a></div>
-      <div class="col-xs-2"><a href="/sitemap/">Карта сайта</a></div>
-      <div class="col-xs-3 right">
+      <div class="col-xs-6 col-sm-3">© <?=date('Y')?> ОАО “Гипрогазоочистка”</div>
+      <div class="col-xs-6 col-sm-4">Россия, Москва, ул. Первомайская, 126<br><a href="mailto:info@ggo.ru">info@ggo.ru</a></div>
+      <div class="col-xs-2 hidden-xs"><a href="/sitemap/">Карта сайта</a></div>
+      <div class="col-xs-3 hidden-xs right">
         <a href="http://radia.ru" target="_blank" class="radia"><?=svg('radia')?><div class="radia__content">Разработка сайта <br>RADIA Interactive</div></a>
       </div>
     </div>

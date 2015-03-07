@@ -44,7 +44,7 @@ $APPLICATION->SetPageProperty('body_class', 'index')
       );
     ?>
     
-    <div class="page__divider xxl-margin-top"></div>
+    <div class="page__divider xxl-margin-top-sm"></div>
     <div class="xs-padding-top"><a href="/works/industries/index.php" class="more"><?=svg('steps-arrow')?><br>Подробнее</a></div>
   </div>
 </div>
@@ -83,7 +83,7 @@ $APPLICATION->SetPageProperty('body_class', 'index')
         <div class="page__divider page__divider--small float-none"></div><br>нефтегазовых объектах нами<br> проведены пуско-наладочные<br>работы
       </div>
     </div>
-    <div class="page__divider xxl-margin-top xxl-margin-bottom"></div>
+    <div class="page__divider xxl-margin-top xxs-margin-bottom-xs xxl-margin-bottom-sm"></div>
     <div class="m-padding-top"><a href="/company/numbers/" class="more"><?=svg('steps-arrow')?><br>Подробнее</a></div>
   </div>
 </div>

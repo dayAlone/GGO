@@ -1,7 +1,11 @@
 .header
 	full-width()
-	height 120px
-	line-height 120px
+	height 70px
+	line-height 70px
+	@media (min-width: scr_sm)
+		height 120px
+		line-height 120px
+	
 	//border-bottom 1px solid #dadada
 	&__box
 		display: inline-block
@@ -10,12 +14,15 @@
 		position relative
 		top -7px
 	&__nav
-		display inline-block
+		
 		vertical-align: middle
 		line-height 25px
 		width 100%
 		position relative
 		top -4px
+		display none
+		@media (min-width: scr_sm)
+			display inline-block
 		@media (min-width: scr_md)
 			
 			line-height 35px
@@ -90,16 +97,17 @@
 				path
 					fill blue
 	.logo
-		&:after
-			content ""
-			position: absolute
-			height 60%
-			background: #00387f
-			width 1px
-			right 10px
-			top 20%
-			@media (min-width: scr_lg)
-				right 55px
+		@media (min-width: scr_sm)
+			&:after
+				content ""
+				position: absolute
+				height 60%
+				background: #00387f
+				width 1px
+				right 10px
+				top 20%
+				@media (min-width: scr_lg)
+					right 55px
 		svg
 			display: inline-block
 			vertical-align: middle

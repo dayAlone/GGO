@@ -1,31 +1,44 @@
 .index
 	h1
-		font-size 40px
+		font-size 25px
+		padding 0 25px
+		@media (min-width: scr_sm)
+			font-size 40px
 		@media (min-width: scr_md)
 			font-size 46px
 	.slider
 		full-width()
-		min-height 500px
+		&, .fotorama__stage
+			min-height 500px
 		&__frame
 			full-width()
 			position relative
 			width 100%
 		&__down
-			padding 25px 20px
-			line-height 15px
-			width 110px
-			height 110px
 			background #4381d9
-			top -150px
-			left 50%
-			margin-left -55px
 			text-align: center
 			display inline-block
 			position absolute
 			z-index 200
 			border-radius 50%
 			color white
-			font-size 13px
+			top -100px
+			font-size 10px
+			left 50%
+			margin-left -40px
+			width 80px
+			height 80px
+			padding 15px 10px
+			line-height 11px
+			@media (min-width: scr_sm)
+				line-height 15px
+				padding 25px 20px
+				font-size 13px
+				top -150px
+				left 50%
+				margin-left -55px
+				width 110px
+				height 110px
 			svg
 				margin-top 5px
 				width 30px
@@ -33,15 +46,19 @@
 					fill white
 
 		&__section
-			line-height 45px
-			font-size 19px
 			color #f0f2ee
+			line-height 30px
+			font-size 14px
+			@media (min-width: scr_sm)
+				line-height 45px
+				font-size 19px
 			svg
-				margin-right 20px
 				position relative
 				top -1px
+				margin-right 10px
+				@media (min-width: scr_sm)
+					margin-right 20px
 		&__item
-			min-height 600px
 			height 100%
 			min-height 500px
 			full-width()
@@ -49,13 +66,17 @@
 			background-position center center
 			h1
 				margin-top 0
+				padding 0
 				font-family 'Direct'
 				color white
-				max-width 60%
 				display inline-block
-				font-size 35px
-				line-height 1.2
 				margin-bottom 30px
+				font-size 20px
+				line-height 1.2
+				@media (min-width: scr_sm)
+					font-size 35px
+					max-width 60%
+					
 			.button
 				border 0
 				background #e33842
@@ -74,20 +95,27 @@
 			svg
 				display inline-block
 				vertical-align: middle
-				width 40px
-				height 40px
+				width 30px
+				height 30px
+				@media (min-width: scr_sm)
+					width 40px
+					height 40px
 				path
 					fill #f0f2ee
 			.page__divider
 				border-color #e5363d
 				min-width 76px
-				margin 20px 0
+				margin 10px 0
 				display inline-block
+				@media (min-width: scr_sm)
+					margin 20px 0
 			.container
 				padding 80px 40px
 	.sections
 		full-width()
-		padding 50px 0
+		padding 20px 0
+		@media (min-width: scr_sm)
+			padding 50px 0
 		overflow: hidden
 	.more
 		t all
@@ -113,6 +141,7 @@
 		background #052b6d
 		color #dde2ed
 		font-size 17px
+		overflow hidden
 		full-width()
 		span
 			color #4382da
@@ -127,7 +156,9 @@
 		h1
 			color white
 		.container
-			padding 60px 0
+			padding 20px 0
+			@media (min-width: scr_sm)
+				padding 60px 0
 		.number__value
 			color white
 		.more
@@ -142,18 +173,25 @@
 		
 	.map
 		full-width()
+		overflow hidden
 		background #d6dbde url(/layout/images/map.jpg) center center no-repeat
 		background-size auto 90%
 		padding 80px 0
-		height 100vh
-		min-height 700px
+		min-height 500px
+		@media (min-width: scr_sm)
+			min-height 700px
+			height 100vh
 		background 
 		position relative
 		h1
-			margin-top -100px
+			margin-top -80px
+			@media (min-width: scr_sm)
+				margin-top -100px
 		&__text
-			font-size 17px
+			
 			width 100%
+			@media (min-width: scr_sm)
+				font-size 17px
 			.page__divider
 				margin 5px 0
 				display inline-block
@@ -161,7 +199,9 @@
 				min-width 60%
 				border-color #4783d4
 			.number__value
-				font-size 124px
+				font-size 80px
+				@media (min-width: scr_sm)
+					font-size 124px
 				line-height: .84
 		&__content, &__text
 			position absolute
@@ -169,8 +209,11 @@
 			top 50%
 			transform translateX(-50%) translateY(-50%)
 		&__content
-			width 500px
-			height 500px
+			width 300px
+			height 300px
+			@media (min-width: scr_sm)
+				width 500px
+				height 500px
 			text-align: center
 			border-radius 50%
 			border 3px solid #4481d7
