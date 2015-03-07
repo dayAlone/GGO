@@ -30,10 +30,10 @@
 		                <?foreach ($item['INFORMATION'] as $info):?>
 		                  <tr>
 		                    <td>
-		                    	<small class="visible-xs"><?=$info['period']?></small>
+		                    	<small class="visible-xs"><strong><?=$info['period']?></strong></small>
 		                    	<?=$info['object']?>
 		                    	<small class="visible-xs">
-									<strong>регион:</strong> <?=$info['region']?>
+									<strong>Регион:</strong> <?=$info['region']?>
 								</small>
 		                    </td>
 		                    <td class="hidden-xs"><?=$info['region']?></td>
