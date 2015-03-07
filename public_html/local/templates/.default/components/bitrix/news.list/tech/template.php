@@ -4,7 +4,7 @@
 foreach ($arResult['SECTIONS'] as $section):
 	?>
 	
-      <div class="col-xs-4">
+      <div class="col-sm-4">
         <div href="#" class="depth depth--big"><?=$section['ICON']?><br><?=$section['NAME']?> <br>
         	<?foreach ($section['ELEMENTS'] as $key=>$item):?>
 				<?if(strlen($item["TEXT"])>0):?><a href="<?=$item['DETAIL_PAGE_URL']?>"><?endif;?>
