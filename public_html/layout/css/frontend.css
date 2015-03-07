@@ -8456,7 +8456,7 @@ ul.nav-tabs li.active a {
 }
 .reference__content .list .row {
   font-size: 11px;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 .reference__content .list .row > [class*='col-'] {
   padding: 0 10px;
