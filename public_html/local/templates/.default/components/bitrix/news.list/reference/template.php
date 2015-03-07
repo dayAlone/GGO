@@ -12,10 +12,35 @@
 	
 	<?foreach ($arResult['SECTIONS'] as $key=>$section):?>
 		<div id="<?=$section['CODE']?>" role="tabpanel" class="tab-pane <?=($key==$first?'active':'')?>">
+
 			<?foreach ($section['ELEMENTS'] as $item):?>
 				<div class="reference">
 		          	<a href="#" class="reference__trigger"><?=svg('next')?><?=$item['NAME']?></a>
 		            <div class="reference__content">
+		            	<div class="list">
+			            	<?foreach ($item['INFORMATION'] as $key=>$info):?>
+			            		<?if($key>0):?>
+			            			<div class="list__divider"></div>
+			            		<?endif;?>
+								<div class="row">
+									<div class="col-xs-6">
+										<small>период:</small> <br><?=$info['period']?><br>
+									</div>
+									<div class="col-xs-6">										
+										<small>регион:</small> <br><?=$info['region']?><br>
+									</div>
+								</div>
+								<small>объект:</small> <br><?=$info['object']?><br>
+								<small>проект:</small> <br><?=$info['project']?><br>
+								<small>вид работ:</small><br> <?=$info['works']?><br>
+								
+			                <?endforeach;?>
+		            		
+		            		
+							
+							
+							
+		            	</div>
 		              <table cellpadding="10" class="table">
 		                <thead>
 		                  <tr>

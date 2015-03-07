@@ -1266,7 +1266,24 @@ ul.nav-tabs
 	&__content
 		padding 10px 30px 0
 		display none
+		.list
+			font-size 13px
+			padding-bottom 20px
+			&__divider
+				margin 10px 0
+				border-bottom 1px solid #dfdfdf
+			small
+				display inline-block
+				margin-top 4px
+				font-size 10px
+				text-transform: uppercase
+				font-weight: bold
+			@media (min-width: scr_xs)
+				display none
 		.table
+			display none
+			@media (min-width: scr_xs)
+				display: inline-table
 			td, th
 				padding 15px 10px
 			th

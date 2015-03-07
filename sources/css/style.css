@@ -4854,6 +4854,34 @@ ul.nav-tabs li.active a {
   padding: 10px 30px 0;
   display: none;
 }
+.reference__content .list {
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+.reference__content .list__divider {
+  margin: 10px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+.reference__content .list small {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media (min-width: 480px) {
+  .reference__content .list {
+    display: none;
+  }
+}
+.reference__content .table {
+  display: none;
+}
+@media (min-width: 480px) {
+  .reference__content .table {
+    display: inline-table;
+  }
+}
 .reference__content .table td,
 .reference__content .table th {
   padding: 15px 10px;
