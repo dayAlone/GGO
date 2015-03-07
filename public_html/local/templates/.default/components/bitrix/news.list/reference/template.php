@@ -23,13 +23,14 @@
 			            			<div class="list__divider"></div>
 			            		<?endif;?>
 								<div class="row">
+									<div class="col-xs-6"><small>объект:</small> <br><?=$info['object']?><br></div>
 									<div class="col-xs-3">
 										<small>период:</small> <br><?=str_replace("по н.в.", "<nobr>по н.в.</nobr>", $info['period'])?><br>
 									</div>
 									<div class="col-xs-3">										
 										<small>регион:</small> <br><?=$info['region']?><br>
 									</div>
-									<div class="col-xs-6"><small>объект:</small> <br><?=$info['object']?><br></div>
+									
 								</div>
 								
 								<small>проект:</small> <br><?=$info['project']?><br>
