@@ -8458,8 +8458,13 @@ ul.nav-tabs li.active a {
   max-height: 48px;
   line-height: 51px;
   padding: 0 20px;
-  font-size: 22px;
+  font-size: 17px;
   color: #000;
+}
+@media (min-width: 480px) {
+  .reference__trigger {
+    font-size: 22px;
+  }
 }
 .reference__trigger:hover {
   color: #0082dc;
