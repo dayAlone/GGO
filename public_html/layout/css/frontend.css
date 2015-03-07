@@ -8431,8 +8431,13 @@ ul.nav-tabs li.active a {
   transform: rotate(90deg);
 }
 .reference__content {
-  padding: 10px 30px 0;
+  padding: 10px 15px 0;
   display: none;
+}
+@media (min-width: 480px) {
+  .reference__content {
+    padding: 10px 30px 0;
+  }
 }
 .reference__content .list {
   font-size: 13px;
