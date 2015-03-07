@@ -618,7 +618,30 @@
       slidesToShow: 8,
       slidesToScroll: 1,
       nextArrow: "<button type=\"button\" class=\"slick-next\">" + ($('.arrow__next').html()) + "</button>",
-      prevArrow: "<button type=\"button\" class=\"slick-prev\">" + ($('.arrow__prev').html()) + "</button>"
+      prevArrow: "<button type=\"button\" class=\"slick-prev\">" + ($('.arrow__prev').html()) + "</button>",
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 7
+          }
+        }, {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 5
+          }
+        }, {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4
+          }
+        }, {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
     });
     $('.steps').elem('title').click(function(e) {
       var section;

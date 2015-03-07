@@ -20,8 +20,8 @@
 		                <thead>
 		                  <tr>
 		                    <th width="25%">объект</th>
-		                    <th width="15%">регион</th>
-		                    <th width="15%">период</th>
+		                    <th width="15%" class="hidden-xs">регион</th>
+		                    <th width="15%" class="hidden-xs">период</th>
 		                    <th width="25%">проект</th>
 		                    <th width="20%">вид работ</th>
 		                  </tr>
@@ -29,9 +29,15 @@
 		                <tbody>
 		                <?foreach ($item['INFORMATION'] as $info):?>
 		                  <tr>
-		                    <td><?=$info['object']?></td>
-		                    <td><?=$info['region']?></td>
-		                    <td><?=$info['period']?></td>
+		                    <td>
+		                    	<small class="visible-xs"><?=$info['period']?></small>
+		                    	<?=$info['object']?>
+		                    	<div class="visible-xs">
+									<?=$info['region']?>
+								</div>
+		                    </td>
+		                    <td class="hidden-xs"><?=$info['region']?></td>
+		                    <td class="hidden-xs"><?=$info['period']?></td>
 		                    <td><?=$info['project']?></td>
 		                    <td><?=$info['works']?></td>
 		                  </tr>

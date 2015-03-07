@@ -11,7 +11,7 @@
         ?>
       </h1>
     </div>
-    <div class="col-sm-5 right">
+    <div class="col-sm-5 right-sm">
       <?$APPLICATION->ShowViewContent('title');?>
     </div>
   </div>
