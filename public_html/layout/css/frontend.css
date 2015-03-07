@@ -8685,11 +8685,16 @@ ul.nav-tabs li.active a {
   width: 100%;
   background: #f0f2f3;
   min-height: 100px;
-  padding-top: 45px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 .index .footer {
   background: #fff;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding-top: 45px;
+  }
 }
 .footer .container--width {
   max-width: 1140px;

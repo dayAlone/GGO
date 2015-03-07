@@ -129,8 +129,9 @@ endif;
 		?>
 	<?else:?>
 		<div class="xxl-margin-top">
-		<div class="page__divider page__divider--small l-margin-top xxl-margin-bottom"></div>	
-		
+		<?if(strlen($items)>0):?>
+			<div class="page__divider page__divider--small l-margin-top xxl-margin-bottom"></div>	
+		<?endif;?>
 		<?
 		$APPLICATION->IncludeComponent("bitrix:news.list", "section", 
 	        array(
