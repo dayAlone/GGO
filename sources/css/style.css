@@ -3270,6 +3270,7 @@ svg g {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  display: none;
   z-index: -1;
   vertical-align: middle;
   margin-left: 50%;
