@@ -2911,6 +2911,11 @@ svg g {
     margin-bottom: 20px;
   }
 }
+@media (min-width: 768px) {
+  .page a[href="#vacancyDetail"] {
+    margin-top: 16px;
+  }
+}
 .page .container {
   background: #fff;
   min-height: 450px;
