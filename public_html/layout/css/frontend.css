@@ -8127,10 +8127,14 @@ a.depth:hover svg path {
 .steps__content {
   border-top: 1px solid #d4dbde;
   width: 100%;
-  width: calc(100% - 75px);
   float: right;
   padding: 20px 0;
   display: none;
+}
+@media (min-width: 768px) {
+  .steps__content {
+    width: calc(100% - 75px);
+  }
 }
 .steps__sub-title {
   padding-left: 40px;
@@ -8179,7 +8183,13 @@ a.depth:hover svg path {
   width: 95%;
   display: none;
   margin-top: 20px;
-  width: calc(100% - 40px);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .steps__text {
+    width: 95%;
+    width: calc(100% - 40px);
+  }
 }
 .steps__text p {
   font-size: 14px;

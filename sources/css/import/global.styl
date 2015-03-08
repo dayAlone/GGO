@@ -1037,10 +1037,12 @@ svg
 	&__content
 		border-top 1px solid #d4dbde
 		width 100%
-		width calc(100% - 75px)
+		
 		float: right
 		padding 20px 0
 		display none
+		@media (min-width: scr_sm)
+			width calc(100% - 75px)
 	&__sub
 		&-title
 			padding-left 40px
@@ -1075,7 +1077,10 @@ svg
 		width 95%
 		display none
 		margin-top 20px
-		width calc(100% - 40px)
+		width 100%
+		@media (min-width: scr_sm)
+			width 95%
+			width calc(100% - 40px)
 		p
 			font-size 14px
 
