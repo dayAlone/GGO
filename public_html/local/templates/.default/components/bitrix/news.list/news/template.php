@@ -30,7 +30,7 @@
 endif;?>
 <?if($arParams['SHOW_VACANCY']=="Y"):
 	$this->SetViewTarget('title');
-	?><a data-toggle="modal" data-target="#vacancyDetail" href="#vacancyDetail" class="button s-margin-top-sm">Отправить резюме</a><?
+	?><a data-toggle="modal" data-target="#vacancyDetail" href="#vacancyDetail" class="button">Отправить резюме</a><?
 	$this->EndViewTarget();
 endif;?>
 <?=($arParams["DISPLAY_BOTTOM_PAGER"]=="Y" ? $arResult["NAV_STRING"]:"")?>
