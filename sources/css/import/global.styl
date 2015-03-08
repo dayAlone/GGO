@@ -1504,8 +1504,10 @@ ul.nav-tabs
 	.modal__content
 		padding-top 50px
 
-
-
+.parsley-errors-list
+	display none
+	&.filled + a.file-trigger
+		background red !important
 .modal
 	h3
 		font-weight: bold
@@ -1539,6 +1541,7 @@ ul.nav-tabs
 		height 32px
 		background-position center center
 		background-repeat no-repeat
+		background-size contain
 		width 100%
 		&__refresh
 			background transparent !important
@@ -1553,6 +1556,9 @@ ul.nav-tabs
 	.captcha, input[type="text"], input[type="email"], input[type="password"], textarea
 		border 1px solid black
 		t border
+		appearance none
+		&.parsley-error
+			border-color red !important
 	input
 		&:focus
 			outline 0

@@ -5214,6 +5214,12 @@ ul.nav-tabs li.active a {
 #Feedback .modal__content {
   padding-top: 50px;
 }
+.parsley-errors-list {
+  display: none;
+}
+.parsley-errors-list.filled + a.file-trigger {
+  background: #f00 !important;
+}
 .modal h3,
 .vacancy-popup h3 {
   font-weight: bold;
@@ -5263,6 +5269,9 @@ ul.nav-tabs li.active a {
   height: 32px;
   background-position: center center;
   background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
   width: 100%;
 }
 .modal .captcha__refresh,
@@ -5302,6 +5311,21 @@ ul.nav-tabs li.active a {
   -o-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.modal .captcha.parsley-error,
+.vacancy-popup .captcha.parsley-error,
+.modal input[type="text"].parsley-error,
+.vacancy-popup input[type="text"].parsley-error,
+.modal input[type="email"].parsley-error,
+.vacancy-popup input[type="email"].parsley-error,
+.modal input[type="password"].parsley-error,
+.vacancy-popup input[type="password"].parsley-error,
+.modal textarea.parsley-error,
+.vacancy-popup textarea.parsley-error {
+  border-color: #f00 !important;
 }
 .modal input:focus,
 .vacancy-popup input:focus {

@@ -21,13 +21,14 @@ $aMenuLinks = Array(
 		Array(), 
 		"" 
 	),
+	/*
 	Array(
 		"Истории успеха", 
 		"/career/success/", 
 		Array(), 
 		Array(), 
 		"" 
-	),
+	),*/
 	Array(
 		"Подать заявку", 
 		"#vacancyDetail", 

@@ -809,7 +809,7 @@
         }
       });
     });
-    $('a.captcha_refresh').click(function(e) {
+    $('a.captcha_refresh, a.captcha__refresh').click(function(e) {
       getCaptcha();
       return e.preventDefault();
     });

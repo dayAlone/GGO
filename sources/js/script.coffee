@@ -709,7 +709,7 @@ $(document).ready ->
 	        		$('input[name=captcha_word]').addClass('parsley-error')
 	        		getCaptcha()
 	
-	$('a.captcha_refresh').click (e)->
+	$('a.captcha_refresh, a.captcha__refresh').click (e)->
 		getCaptcha()
 		e.preventDefault()	
 
