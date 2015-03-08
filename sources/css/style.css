@@ -3893,6 +3893,28 @@ a.depth:hover svg path {
 .dropdown__select {
   display: none;
 }
+.feedback__dialog {
+  max-width: 500px;
+}
+.feedback__form .captcha_refresh {
+  background: transparent !important;
+}
+.feedback__form .captcha_refresh svg {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: -15px;
+  top: 24px;
+}
+.feedback__form .captcha_refresh svg path {
+  fill: #000;
+}
+.feedback__form .captcha_refresh:hover svg path {
+  fill: #0057ce;
+}
+.feedback__success {
+  display: none;
+}
 .success-story {
   margin-bottom: 50px;
   border-bottom: 1px solid #dbdfe3;

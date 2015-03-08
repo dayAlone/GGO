@@ -490,6 +490,18 @@
     }
   };
 
+  this.getCaptcha = function() {
+    return $.get('/include/captcha.php', function(data) {
+      console.log(data);
+      return setCaptcha(data);
+    });
+  };
+
+  this.setCaptcha = function(code) {
+    $('input[name=captcha_sid]').val(code);
+    return $('.captcha').css('background-image', "url(/include/captcha.php?captcha_sid=" + code + ")");
+  };
+
   $(document).ready(function() {
     var sHeight, scrollTimer, x;
     if ($('.geography').length > 0) {
@@ -781,6 +793,25 @@
           return ymaps.ready(initContacts);
         });
       }
+    });
+    $('.feedback').elem('form').submit(function(e) {
+      var data;
+      e.preventDefault();
+      data = $(this).serialize();
+      return $.post('/include/send.php', data, function(data) {
+        data = $.parseJSON(data);
+        if (data.status === "ok") {
+          $('.feedback').elem('form').hide().addClass('hidden');
+          return $('.feedback').elem('success').show().removeClass('hidden');
+        } else if (data.status === "error") {
+          $('input[name=captcha_word]').addClass('parsley-error');
+          return getCaptcha();
+        }
+      });
+    });
+    $('a.captcha_refresh').click(function(e) {
+      getCaptcha();
+      return e.preventDefault();
     });
     initDropdown();
     x = void 0;

@@ -424,6 +424,14 @@ checkStructure = (hide = false)->
 			properties: "transition.fadeIn"
 			options:
 				duration: 300
+@getCaptcha = ()->
+	$.get '/include/captcha.php', (data)->
+		console.log data
+		setCaptcha data
+
+@setCaptcha = (code)->
+	$('input[name=captcha_sid]').val(code)
+	$('.captcha').css 'background-image', "url(/include/captcha.php?captcha_sid=#{code})"
 
 $(document).ready ->
 	#$('#vacancyDetail').modal()
@@ -688,7 +696,22 @@ $(document).ready ->
 					ymaps.ready initContacts
 
 
-
+	$('.feedback').elem('form').submit (e)->
+		e.preventDefault()
+		data = $(this).serialize()
+		$.post '/include/send.php', data,
+	        (data) ->
+	        	data = $.parseJSON(data)
+	        	if data.status == "ok"
+	        		$('.feedback').elem('form').hide().addClass 'hidden'
+	        		$('.feedback').elem('success').show().removeClass 'hidden'
+	        	else if data.status == "error"
+	        		$('input[name=captcha_word]').addClass('parsley-error')
+	        		getCaptcha()
+	
+	$('a.captcha_refresh').click (e)->
+		getCaptcha()
+		e.preventDefault()	
 
 	initDropdown()
 
