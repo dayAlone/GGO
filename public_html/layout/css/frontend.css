@@ -6850,7 +6850,6 @@ svg g {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
-  display: none;
   z-index: -1;
   vertical-align: middle;
   margin-left: 50%;
@@ -7089,6 +7088,7 @@ a.depth:hover svg path {
   max-width: 100%;
   position: absolute;
   z-index: -1;
+  display: none;
 }
 .projects .project {
   display: inline-block;
