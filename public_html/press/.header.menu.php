@@ -20,6 +20,6 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
-	),
+	)
 );
 ?>
