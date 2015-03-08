@@ -2907,12 +2907,12 @@ svg g {
   }
 }
 @media (max-width: 768px) {
-  .page a[href="#vacancyDetail"] {
+  .page a.button[href="#vacancyDetail"] {
     margin-bottom: 20px;
   }
 }
 @media (min-width: 768px) {
-  .page a[href="#vacancyDetail"] {
+  .page a.button[href="#vacancyDetail"] {
     margin-top: 16px;
   }
 }
