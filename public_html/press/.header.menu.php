@@ -7,13 +7,14 @@ $aMenuLinks = Array(
 		Array(), 
 		"" 
 	),
+	/*
 	Array(
 		"Научно-технические публикации", 
 		"/press/publications/", 
 		Array(), 
 		Array(), 
 		"" 
-	),
+	),*/
 	Array(
 		"Фотогалерея", 
 		"/press/gallery/", 

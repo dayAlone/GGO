@@ -7121,7 +7121,7 @@ a.depth:hover svg path {
     width: calc(20% - 14px);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .projects .project {
     margin: 0 7px 10px 7px;
   }
