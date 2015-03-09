@@ -41,7 +41,7 @@
         <div class="row">
           <div class="col-sm-3 hidden-xs"><span class="required">Поля, отмеченные<br>	знаком <span>*</span>	обязательны<br>	к заполнению.</span></div>
           <div class="col-sm-3">
-            <label class="left">введите данный код</label>
+            <label class="left">введите <span class="hidden-xs">данный</span> код</label>
             <?
 	        include_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/classes/general/captcha.php");
 	        $cpt = new CCaptcha();

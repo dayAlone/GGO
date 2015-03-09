@@ -15,7 +15,7 @@
   <textarea required name="message"></textarea>
   <div class="row">
     <div class="col-xs-5">
-      <label class="left">введите данный код</label>
+      <label class="left">введите <span class="hidden-xs">данный</span> код</label>
       <?
           include_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/classes/general/captcha.php");
           $cpt = new CCaptcha();
