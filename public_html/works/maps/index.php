@@ -25,7 +25,7 @@ $APPLICATION->IncludeComponent("bitrix:news.list", "reference_map",
 		  "SORT_ORDER1"    => "ASC",
 		  "SORT_BY2"       => "SORT",
 		  "SORT_ORDER2"    => "ASC",
-		  "DETAIL_URL"     => "/",
+		  "DETAIL_URL"     => "/works/reference/#ELEMENT_CODE#/",
 		  "CACHE_TYPE"     => "A",
 		  "SET_TITLE"      => "N",
 		  "PROPERTY_CODE" => array("INFORMATION")
