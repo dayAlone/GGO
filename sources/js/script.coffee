@@ -344,8 +344,9 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 		]
 	
 	i = 0
+	console.log mapItems.concat(mapRefItems)
 	$.each mapItems.concat(mapRefItems), (key, point)->
-		points[i] = new (ymaps.Placemark)(point.coords.split(',').map((val)-> parseFloat(val)), { hintContent: '' }, icon)
+		points[i] = new (ymaps.Placemark)(point.coords.split(',').map((val)->parseFloat(val)), { hintContent: '' }, icon)
 		points[i].events.add 'click', (e) ->
 			if $.inArray(e.originalEvent.target, open) == -1
 				e.originalEvent.target.options.set iconImageHref: '/layout/images/pin-open.png'

@@ -31467,7 +31467,8 @@ return function (global, window, document, undefined) {
       iconImageOffset: [-10, -31]
     };
     i = 0;
-    $.each(mapItems, function(key, point) {
+    console.log(mapItems.concat(mapRefItems));
+    $.each(mapItems.concat(mapRefItems), function(key, point) {
       points[i] = new ymaps.Placemark(point.coords.split(',').map(function(val) {
         return parseFloat(val);
       }), {
