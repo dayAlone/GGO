@@ -367,8 +367,6 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 	myMap.geoObjects.add clusterer
 	
 @showGeographyDetail = (url)->
-	console.log url
-
 	if !$('.geography__popup').is ':visible'
 		$('.geography__popup').velocity
 				properties: "transition.slideRightIn"

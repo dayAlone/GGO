@@ -408,7 +408,6 @@
   };
 
   this.showGeographyDetail = function(url) {
-    console.log(url);
     if (!$('.geography__popup').is(':visible')) {
       $('.geography__popup').velocity({
         properties: "transition.slideRightIn",
