@@ -57,7 +57,7 @@ $item = $arResult;
       <div class="row">
         <div class="col-sm-4">
         <small class="visible-xs">Технология</small>
-        <span class="project__table-tech"><?=$row['t0']?></span>
+        <span class="project__table-tech"><?=html_entity_decode($row['t0'])?></span>
         
           <?if(strlen($row['t0'])>0):?>
           <div class="visible-xs project__table-sub-title">
@@ -69,8 +69,8 @@ $item = $arResult;
           </div>
           <?endif;?>
         </div>
-        <div class="col-xs-6 col-sm-4 project__cell--grey"><?=$row['t1']?></div>
-        <div class="col-xs-6 col-sm-4 project__cell--grey"><?=$row['t2']?></div>
+        <div class="col-xs-6 col-sm-4 project__cell--grey"><?=html_entity_decode($row['t1'])?></div>
+        <div class="col-xs-6 col-sm-4 project__cell--grey"><?=html_entity_decode($row['t2'])?></div>
       </div>
     <?endforeach;?>
     <div class="project__divider project__divider--blue"></div>
