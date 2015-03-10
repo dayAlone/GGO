@@ -599,30 +599,34 @@
       $('.history .slick-active:first').addClass('active');
       return $('.history button').off('click').on('click', function(e) {
         var id, index;
-        if (!$(this).hasClass('slick-disabled')) {
-          index = $('.history .slick-active.active').data('slick-index');
-          if ($(this).hasClass('slick-next')) {
-            index += 2;
-            if ($('.history .slick-active:last').hasClass('active')) {
-              $('.history').elem('slider').slick('slickNext');
+        if (!$('.history').elem('slider').data('action')) {
+          if (!$(this).hasClass('slick-disabled')) {
+            index = $('.history .slick-active.active').data('slick-index');
+            if ($(this).hasClass('slick-next')) {
+              index += 2;
+              if ($('.history .slick-active:last').hasClass('active')) {
+                $('.history').elem('slider').slick('slickNext');
+              }
+            } else if ($(this).hasClass('slick-prev')) {
+              if ($('.history .slick-active:first').hasClass('active')) {
+                $('.history').elem('slider').slick('slickPrev');
+              }
             }
-          } else if ($(this).hasClass('slick-prev')) {
-            if ($('.history .slick-active:first').hasClass('active')) {
-              $('.history').elem('slider').slick('slickPrev');
-            }
+            $('.history .slick-active.active').removeClass('active');
+            $(".history .slick-slide:nth-child(" + index + ")").addClass('active');
+            $('.history__content-block').mod('active', false);
+            id = $('.history .slick-active.active a').attr('href');
+            $(id).addClass('history__content-block--active');
           }
-          $('.history .slick-active.active').removeClass('active');
-          $(".history .slick-slide:nth-child(" + index + ")").addClass('active');
-          $('.history__content-block').mod('active', false);
-          id = $('.history .slick-active.active a').attr('href');
-          $(id).addClass('history__content-block--active');
+          checkArrows();
         }
-        checkArrows();
         return e.preventDefault();
       });
     }).on('beforeChange', function(event, slick, direction) {
+      $('.history').elem('slider').data('action', true);
       return $('.history .slick-active.last').removeClass('last');
     }).on('afterChange', function(event, slick, direction) {
+      $('.history').elem('slider').data('action', false);
       $('.history .slick-active:last').addClass('last');
       return false;
     }).slick({

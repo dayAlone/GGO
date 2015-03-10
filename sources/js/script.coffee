@@ -522,32 +522,37 @@ $(document).ready ->
 			$('.history .slick-active:first').addClass 'active'
 			
 			$('.history button').off('click').on 'click', (e)->
-				if !$(this).hasClass 'slick-disabled'
-					index = $('.history .slick-active.active').data('slick-index')
-					
-					if $(this).hasClass 'slick-next'
-						index += 2
-						if $('.history .slick-active:last').hasClass 'active'
-							$('.history').elem('slider').slick('slickNext')
-					else if $(this).hasClass 'slick-prev'
-						if $('.history .slick-active:first').hasClass 'active'
-							$('.history').elem('slider').slick('slickPrev')
+				if !$('.history').elem('slider').data 'action'
+					if !$(this).hasClass 'slick-disabled'
+						index = $('.history .slick-active.active').data('slick-index')
+						
+						if $(this).hasClass 'slick-next'
+							index += 2
+							if $('.history .slick-active:last').hasClass 'active'
+								$('.history').elem('slider').slick('slickNext')
+						else if $(this).hasClass 'slick-prev'
+							if $('.history .slick-active:first').hasClass 'active'
+								$('.history').elem('slider').slick('slickPrev')
 
-					$('.history .slick-active.active').removeClass 'active'
-					$(".history .slick-slide:nth-child(#{index})").addClass 'active'
+						$('.history .slick-active.active').removeClass 'active'
+						$(".history .slick-slide:nth-child(#{index})").addClass 'active'
+						
+						$('.history__content-block').mod 'active', false
+						id = $('.history .slick-active.active a').attr 'href'
+						$(id).addClass 'history__content-block--active'
 					
-					$('.history__content-block').mod 'active', false
-					id = $('.history .slick-active.active a').attr 'href'
-					$(id).addClass 'history__content-block--active'
-
-				checkArrows()
+					checkArrows()
 
 				e.preventDefault()
 		)
 		.on('beforeChange', (event, slick, direction)->
+			
+			$('.history').elem('slider').data 'action', true
+
 			$('.history .slick-active.last').removeClass 'last'
 		
 		).on('afterChange', (event, slick, direction)->
+			$('.history').elem('slider').data 'action', false
 			$('.history .slick-active:last').addClass 'last'
 			
 			return false
