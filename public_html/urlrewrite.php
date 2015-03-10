@@ -42,6 +42,12 @@ $arUrlRewrite = array(
 		"ID"        => "",
 		"PATH"      => "/ajax/works/projects/index.php",
 	),
+	array(
+		"CONDITION" => "#^/ajax/works/reference/([\\w-_]+)/([\\w-_]+)/.*#",
+		"RULE"      => "&ELEMENT_ID=\$1&ROW=\$2&\$3",
+		"ID"        => "",
+		"PATH"      => "/ajax/works/reference/index.php",
+	),
 );
 
 ?>

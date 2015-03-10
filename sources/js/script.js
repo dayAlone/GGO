@@ -373,7 +373,6 @@
       iconImageOffset: [-10, -31]
     };
     i = 0;
-    console.log(mapItems.concat(mapRefItems));
     $.each(mapItems.concat(mapRefItems), function(key, point) {
       points[i] = new ymaps.Placemark(point.coords.split(',').map(function(val) {
         return parseFloat(val);
@@ -409,6 +408,7 @@
   };
 
   this.showGeographyDetail = function(url) {
+    console.log(url);
     if (!$('.geography__popup').is(':visible')) {
       $('.geography__popup').velocity({
         properties: "transition.slideRightIn",

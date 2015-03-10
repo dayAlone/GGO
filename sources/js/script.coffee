@@ -344,7 +344,6 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 		]
 	
 	i = 0
-	console.log mapItems.concat(mapRefItems)
 	$.each mapItems.concat(mapRefItems), (key, point)->
 		points[i] = new (ymaps.Placemark)(point.coords.split(',').map((val)->parseFloat(val)), { hintContent: '' }, icon)
 		points[i].events.add 'click', (e) ->
@@ -368,6 +367,8 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 	myMap.geoObjects.add clusterer
 	
 @showGeographyDetail = (url)->
+	console.log url
+
 	if !$('.geography__popup').is ':visible'
 		$('.geography__popup').velocity
 				properties: "transition.slideRightIn"
