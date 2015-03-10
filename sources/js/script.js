@@ -362,7 +362,8 @@
           offset: [-20, -20]
         }
       ],
-      clusterNumbers: [20]
+      clusterNumbers: [20],
+      gridSize: 100
     });
     open = [];
     points = [];
