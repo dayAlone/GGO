@@ -344,7 +344,7 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 		]
 	
 	i = 0
-	$.each mapItems, (key, point)->
+	$.each mapItems.concat(mapRefItems), (key, point)->
 		points[i] = new (ymaps.Placemark)(point.coords.split(',').map((val)-> parseFloat(val)), { hintContent: '' }, icon)
 		points[i].events.add 'click', (e) ->
 			if $.inArray(e.originalEvent.target, open) == -1
