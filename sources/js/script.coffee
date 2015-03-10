@@ -326,7 +326,7 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 			]
 		} ]
 		clusterNumbers: [ 20 ]
-		gridSize: 100
+		gridSize: 200
 	)
 	
 	open	 = []

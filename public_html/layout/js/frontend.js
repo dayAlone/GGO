@@ -31457,7 +31457,7 @@ return function (global, window, document, undefined) {
         }
       ],
       clusterNumbers: [20],
-      gridSize: 100
+      gridSize: 200
     });
     open = [];
     points = [];
