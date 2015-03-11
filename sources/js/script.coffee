@@ -304,7 +304,7 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 			72.07521800
 		]
 		zoom: 3
-		type: 'yandex#hybrid'
+		type: 'yandex#map'
 		controls: [
 			'geolocationControl'
 			'fullscreenControl'

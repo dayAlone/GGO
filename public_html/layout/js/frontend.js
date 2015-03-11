@@ -31443,7 +31443,7 @@ return function (global, window, document, undefined) {
     myMap = new ymaps.Map('map', {
       center: [57.59224209, 72.07521800],
       zoom: 3,
-      type: 'yandex#hybrid',
+      type: 'yandex#map',
       controls: ['geolocationControl', 'fullscreenControl', 'zoomControl']
     });
     MyIconContentLayout = ymaps.templateLayoutFactory.createClass('<div style="color: #FFFFFF; font-family: PT Sans; font-size: 20px;line-height:41px;">{{ properties.geoObjects.length }}</div>');
