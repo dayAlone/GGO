@@ -1197,7 +1197,11 @@ ul.nav-tabs
 				width 32px
 			&-7 svg
 				max-height 48px
-				
+	#w
+		&-4 svg
+			max-width 35px
+			@media (min-width: scr_lg)
+				max-width 50px
 	#n
 		&-3 svg, &-5 svg
 			max-width 50px	
@@ -1220,6 +1224,9 @@ ul.nav-tabs
 			background #c3d5e3
 			width 1px
 			position absolute
+		&--xs
+			&:after
+				right 8px
 		&--small
 			&:after
 				right -8px
@@ -1231,6 +1238,9 @@ ul.nav-tabs
 		&--padding
 			&:after
 				right 30px
+		&--l
+			&:after
+				height 250px
 		&--xl
 			&:after
 				height 300px
@@ -1249,6 +1259,10 @@ ul.nav-tabs
 		font-size 12px
 		@media (min-width: scr_lg)
 			font-size 15px
+		&.bigger
+			font-size 14px
+			@media (min-width: scr_lg)
+				font-size 16px
 	em
 		font-style: normal
 		font-size 12px

@@ -1,22 +1,23 @@
 <?
 $aMenuLinks = Array(
-	/*Array(
+	Array(
 		"Почему «Гипрогазоочистка»?", 
 		"/career/index.php", 
 		Array(), 
 		Array(), 
 		"" 
-	),*/
+	),
+	
 	Array(
-		"Вакансии", 
-		"/career/vacancies/", 
+		"Профессиональное развитие", 
+		"/career/evolution/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Профессиональное развитие", 
-		"/career/evolution/", 
+		"Вакансии", 
+		"/career/vacancies/", 
 		Array(), 
 		Array(), 
 		"" 
