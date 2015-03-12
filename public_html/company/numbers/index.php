@@ -202,7 +202,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
               </div>
             </div>
             <div class="col-xs-9">
-              <big class="xs-margin-left bigger xs-line-height">тонн серы в год </big>
+              <big class="l-margin-left bigger xs-line-height">тонн серы в год </big>
             </div>
           </div>
         </div>
@@ -384,7 +384,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
           </div>
         </div>
         <div class="col-sm-4 col-lg-3">
-          <div class="number__value s-margin-left-sm xxs-margin-left-lg">86</div>
+          <div class="number__value s-margin-left-sm no-margin-left-lg">86</div>
         </div>
         <div class="col-sm-6 col-lg-7">
           <div class="xs-margin-top-sm no-margin-top-lg xs-margin-left-lg no-margin-left-sm">лет успешной работы <nobr>в России</nobr> <nobr>и по всему</nobr> миру</div>
