@@ -2,7 +2,7 @@
 $aMenuLinks = Array(
 	Array(
 		"Почему «Гипрогазоочистка»?", 
-		"/career/index.php", 
+		"/career/why/", 
 		Array(), 
 		Array(), 
 		"" 
