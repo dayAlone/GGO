@@ -71,7 +71,7 @@ $APPLICATION->SetTitle('Карьера');
       </div>
       <div class="page__divider l-margin-top l-margin-bottom"> </div>
       <div class="row">
-        <div class="col-xs-3 m-margin-top"><?=svg('w-7')?>
+        <div class="col-xs-3 m-margin-top"><?=svg('w-10')?>
         </div>
         <div class="col-xs-3 xs-margin-top"><small class="bigger">Более</small>
           <div class="number__value">10</div>
@@ -183,7 +183,7 @@ $APPLICATION->SetTitle('Карьера');
       <div class="row">
         <div class="col-xs-8 border-right border-right--xs">
           <div class="row">
-            <div class="col-xs-2 s-margin-top"><?=svg('w-7')?>
+            <div class="col-xs-2 s-margin-top"><?=svg('w-10')?>
             </div>
             <div class="col-xs-3 xs--margin-top"><small class="bigger">Более</small>
               <div class="number__value number__value--big">10</div>
@@ -275,7 +275,7 @@ $APPLICATION->SetTitle('Карьера');
                 <div class="col-xs-6">
                   <div class="row m-margin-top">
                     <div class="col-xs-3 col-lg-4"><small class="bigger">Более</small>
-                      <div id="w-4"><?=svg('w-7')?>
+                      <div id="w-4"><?=svg('w-10')?>
                       </div>
                     </div>
                     <div class="col-xs-7">
