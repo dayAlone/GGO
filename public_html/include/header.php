@@ -7,6 +7,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <?
+  $APPLICATION->SetAdditionalCSS("http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic", true);
   $APPLICATION->SetAdditionalCSS("/layout/css/frontend.css", true);
   $APPLICATION->AddHeadScript('/layout/js/frontend.js');
 
