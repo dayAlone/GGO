@@ -4065,11 +4065,12 @@ svg g {
   border-radius: 100px;
   width: 80px;
   height: 80px;
+  display: inline-block;
 }
 @media (min-width: 768px) {
   .depth svg {
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 100px;
   }
 }
 .depth--big {
