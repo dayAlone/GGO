@@ -3999,9 +3999,10 @@ svg g {
   background: transparent !important;
 }
 .depth {
-  font-size: 17px;
+  font-size: 16px;
   color: #000;
   line-height: 18px;
+  padding: 0 5px;
   display: inline-block;
   margin-bottom: 20px;
 }
