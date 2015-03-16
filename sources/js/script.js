@@ -104,7 +104,6 @@
 
   initContacts = function() {
     var myMap, myPlacemark;
-    console.log(1);
     myMap = new ymaps.Map('contacts-map', {
       center: [55.79331828, 37.82019650],
       zoom: 15
@@ -493,7 +492,6 @@
 
   this.getCaptcha = function() {
     return $.get('/include/captcha.php', function(data) {
-      console.log(data);
       return setCaptcha(data);
     });
   };
@@ -578,7 +576,6 @@
     $('.slider__down').click(function(e) {
       var offset;
       offset = $(".sections").offset().top;
-      console.log(offset);
       $('html, body').animate({
         'scrollTop': offset
       }, 300);
@@ -685,7 +682,6 @@
     $('.steps').elem('sub-title').click(function(e) {
       var section;
       section = $(this).parents('.steps__sub-content');
-      console.log(section);
       if (!section.hasMod('open')) {
         section.mod('open', true);
         section.find('.steps__text').velocity({

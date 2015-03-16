@@ -74,7 +74,6 @@ autoHeight = (el, selector='', height_selector = false, use_padding=false, debug
 			i += step
 
 initContacts = ->
-	console.log 1
 	myMap = new ymaps.Map 'contacts-map', {
 		center : [55.79331828, 37.82019650],
 		zoom	 : 15
@@ -427,7 +426,6 @@ checkStructure = (hide = false)->
 				duration: 300
 @getCaptcha = ()->
 	$.get '/include/captcha.php', (data)->
-		console.log data
 		setCaptcha data
 
 @setCaptcha = (code)->
@@ -499,7 +497,6 @@ $(document).ready ->
 
 	$('.slider__down').click (e)->
 		offset = $(".sections").offset().top
-		console.log offset
 		$('html, body').animate({'scrollTop' : offset },300)
 		e.preventDefault()
 
@@ -606,7 +603,6 @@ $(document).ready ->
 
 	$('.steps').elem('sub-title').click (e)->
 		section = $(this).parents('.steps__sub-content')
-		console.log section
 		if !section.hasMod 'open'
 			section.mod 'open', true
 
