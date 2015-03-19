@@ -31103,7 +31103,7 @@ return function (global, window, document, undefined) {
     corners: 0,
     rotate: 0,
     direction: 1,
-    color: '#cf1237',
+    color: '#0d5bcb',
     speed: 1,
     trail: 68,
     shadow: false,
