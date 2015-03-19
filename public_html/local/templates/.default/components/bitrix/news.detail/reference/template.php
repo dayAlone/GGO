@@ -1,7 +1,7 @@
 <?
 $item = $arResult;
 foreach ($item['PROPERTIES']['INFORMATION']['VALUE'] as $key=>$info)
-  if($key == $_REQUEST['ROW'])
+  if($key == $arParams['CACHE_NOTES'])
     $element = $info;
 if(isset($element)):
 ?>

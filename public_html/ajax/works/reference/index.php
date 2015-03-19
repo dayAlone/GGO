@@ -8,5 +8,6 @@ $APPLICATION->IncludeComponent("bitrix:news.detail","reference",Array(
   "SET_TITLE"     => "N",
   "PROPERTY_CODE" => array('INFORMATION'),
   "CACHE_TYPE"    => "A",
+  "CACHE_NOTES"    => $_REQUEST['ROW']
 ));
 ?>
