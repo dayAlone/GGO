@@ -158,10 +158,10 @@ $APPLICATION->SetTitle('ГГО в цифрах');
   <div class="page__divider m-margin-top m-margin-bottom"></div>
   <div class="row">
     <div class="col-xs-9">
-      <u>За период действия Постановления правительства РФ № 87 от 16.02.2008<br> такое заключение получили более<br> наших проектов.</u>
+      <u>За период действия Постановления правительства РФ № 87 от 16.02.2008<br> такое заключение получили <big style="font-weight:bold;color:black;">более</big> наших проектов.</u>
     </div>
     <div class="col-xs-3">
-      <div class="number__value number__value--m float-right s--margin-top">10</div>
+      <div class="number__value number__value--m float-right s--margin-top">20</div>
     </div>
   </div>
   <div class="page__divider m-margin-top l-margin-bottom"></div>
@@ -350,11 +350,11 @@ $APPLICATION->SetTitle('ГГО в цифрах');
         <div class="row">
           <div class="col-xs-9">
             <div class="s-margin-left">
-              <u>За период действия Постановления правительства РФ № 87 от 16.02.2008<br> такое заключение получили более<br> наших проектов.</u>
+              <u>За период действия Постановления правительства РФ № 87 от 16.02.2008<br> такое заключение получили <big style="font-weight:bold;color:black;">более</big><br> наших проектов.</u>
             </div>
           </div>
           <div class="col-xs-3">
-            <div class="number__value number__value--m float-right s--margin-top">10</div>
+            <div class="number__value number__value--m float-right s--margin-top">20</div>
           </div>
         </div>
       </div>
@@ -551,8 +551,8 @@ $APPLICATION->SetTitle('ГГО в цифрах');
             <div class="row">
               <div class="col-xs-9"></div>
             </div>
-            <u>За период действия Постановления правительства РФ № 87 от 16.02.2008 такое заключение<br> получили более<br> наших<br> проектов.</u>
-            <div class="number__value number__value--m float-right xl--margin-top">10</div>
+            <u>За период действия Постановления правительства РФ № 87 от 16.02.2008 такое заключение<br> получили <big style="font-weight:bold;color:black;">более</big><br>наших<br> проектов.</u>
+            <div class="number__value number__value--m float-right xl--margin-top">20</div>
           </div>
         </div>
       </div>
