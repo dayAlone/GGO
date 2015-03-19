@@ -449,7 +449,12 @@ $(document).ready ->
 	initPhotoSwipeFromDOM('.gallery');
 
 	if $('.slider').length > 0
-		$('.slider').fotorama
+		$('.slider')
+		.on( 'fotorama:ready', ()->
+			$('.slider .fotorama__arr--prev').load('/layout/images/svg/slider-arrow-left.svg')
+			$('.slider .fotorama__arr--next').load('/layout/images/svg/slider-arrow-right.svg')
+		)
+		.fotorama
 			height: $(window).height() - $('.slider').offset().top
 	
 	$('.search a').click (e)->

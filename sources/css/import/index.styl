@@ -6,6 +6,21 @@
 			font-size 40px
 		@media (min-width: scr_md)
 			font-size 46px
+	.fotorama
+		&__arr
+			background transparent
+			top 0
+			width 30px
+			height 100%
+			@media (min-width: scr_sm)
+				width 50px
+			svg
+				position absolute
+				top 50%
+				left 50%
+				margin-top 55px
+				max-width 70%
+				transform translateY(-50%) translateX(-50%)
 	.slider
 		full-width()
 		&, .fotorama__stage

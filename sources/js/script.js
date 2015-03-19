@@ -514,7 +514,10 @@
     initPhotoSwipeFromDOM('.news__gallery');
     initPhotoSwipeFromDOM('.gallery');
     if ($('.slider').length > 0) {
-      $('.slider').fotorama({
+      $('.slider').on('fotorama:ready', function() {
+        $('.slider .fotorama__arr--prev').load('/layout/images/svg/slider-arrow-left.svg');
+        return $('.slider .fotorama__arr--next').load('/layout/images/svg/slider-arrow-right.svg');
+      }).fotorama({
         height: $(window).height() - $('.slider').offset().top
       });
     }

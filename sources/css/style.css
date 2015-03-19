@@ -6495,6 +6495,29 @@ ul.nav-tabs li.active a {
     font-size: 46px;
   }
 }
+.index .fotorama__arr {
+  background: transparent;
+  top: 0;
+  width: 30px;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .index .fotorama__arr {
+    width: 50px;
+  }
+}
+.index .fotorama__arr svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 55px;
+  max-width: 70%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
 .index .slider {
   float: left;
   width: 100%;
