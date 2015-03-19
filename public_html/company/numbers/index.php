@@ -350,7 +350,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
         <div class="row">
           <div class="col-xs-9">
             <div class="s-margin-left">
-              <u>За период действия Постановления правительства РФ № 87 от 16.02.2008<br> такое заключение получили <big style="font-weight:bold;color:black;">более</big><br> наших проектов.</u>
+              <u>За период действия Постановления правительства РФ № 87 от 16.02.2008<br> такое заключение получили <br><big style="font-weight:bold;color:black;">более</big> наших проектов.</u>
             </div>
           </div>
           <div class="col-xs-3">
@@ -551,7 +551,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
             <div class="row">
               <div class="col-xs-9"></div>
             </div>
-            <u>За период действия Постановления правительства РФ № 87 от 16.02.2008 такое заключение<br> получили <big style="font-weight:bold;color:black;">более</big><br>наших<br> проектов.</u>
+            <u>За период действия Постановления правительства РФ № 87 от 16.02.2008 такое заключение<br> получили <br><big style="font-weight: bold; color: black; font-size: 30px; padding-top: 4px; display: inline-block;">более</big> <br>наших<br> проектов.</u>
             <div class="number__value number__value--m float-right xl--margin-top">20</div>
           </div>
         </div>
