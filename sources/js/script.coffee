@@ -333,7 +333,7 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 
 	icon =
 		iconLayout: 'default#image'
-		iconImageHref: '/layout/images/pin-white.png'
+		iconImageHref: '/layout/images/pin-open.png'
 		iconImageSize: [
 			20
 			29
@@ -348,16 +348,16 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 		points[i] = new (ymaps.Placemark)(point.coords.split(',').map((val)->parseFloat(val)), { hintContent: '' }, icon)
 		points[i].events.add 'click', (e) ->
 			if $.inArray(e.originalEvent.target, open) == -1
-				e.originalEvent.target.options.set iconImageHref: '/layout/images/pin-open.png'
+				e.originalEvent.target.options.set iconImageHref: '/layout/images/pin-white.png'
 				showGeographyDetail "/ajax#{point.url}"
 				$('.geography__popup_close').one 'click', ->
 					$.each open, ->
-						@options.set iconImageHref: '/layout/images/pin-white.png'
+						@options.set iconImageHref: '/layout/images/pin-open.png'
 						return
 					open = []
 					return
 				$.each open, ->
-					@options.set iconImageHref: '/layout/images/pin-white.png'
+					@options.set iconImageHref: '/layout/images/pin-open.png'
 					return
 				open = [ e.originalEvent.target ]
 			return

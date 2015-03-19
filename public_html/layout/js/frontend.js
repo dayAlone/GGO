@@ -31462,7 +31462,7 @@ return function (global, window, document, undefined) {
     points = [];
     icon = {
       iconLayout: 'default#image',
-      iconImageHref: '/layout/images/pin-white.png',
+      iconImageHref: '/layout/images/pin-open.png',
       iconImageSize: [20, 29],
       iconImageOffset: [-10, -31]
     };
@@ -31476,20 +31476,20 @@ return function (global, window, document, undefined) {
       points[i].events.add('click', function(e) {
         if ($.inArray(e.originalEvent.target, open) === -1) {
           e.originalEvent.target.options.set({
-            iconImageHref: '/layout/images/pin-open.png'
+            iconImageHref: '/layout/images/pin-white.png'
           });
           showGeographyDetail("/ajax" + point.url);
           $('.geography__popup_close').one('click', function() {
             $.each(open, function() {
               this.options.set({
-                iconImageHref: '/layout/images/pin-white.png'
+                iconImageHref: '/layout/images/pin-open.png'
               });
             });
             open = [];
           });
           $.each(open, function() {
             this.options.set({
-              iconImageHref: '/layout/images/pin-white.png'
+              iconImageHref: '/layout/images/pin-open.png'
             });
           });
           open = [e.originalEvent.target];
