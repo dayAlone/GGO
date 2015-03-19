@@ -10098,6 +10098,9 @@ ul.nav-tabs li.active a {
   -ms-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
 }
+.index .fotorama__arr svg path {
+  fill: #fff;
+}
 .index .slider {
   float: left;
   width: 100%;
