@@ -361,10 +361,10 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 					return
 				open = [ e.originalEvent.target ]
 			return
-		#myMap.geoObjects.add points[key]
+		myMap.geoObjects.add points[i]
 		i++
-	clusterer.add points
-	myMap.geoObjects.add clusterer
+	#clusterer.add points
+	#myMap.geoObjects.add clusterer
 	
 @showGeographyDetail = (url)->
 	if !$('.geography__popup').is ':visible'

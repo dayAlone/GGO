@@ -120,7 +120,7 @@
   <div class="container">
     <div class="row copyright">
       <div class="col-xs-6 col-sm-3">© <?=date('Y')?> ОАО “Гипрогазоочистка”</div>
-      <div class="col-xs-6 col-sm-4">Россия, Москва, ул. Первомайская, 126<br><a href="mailto:info@ggo.ru">info@ggo.ru</a></div>
+      <div class="col-xs-6 col-sm-4">Россия, Москва, ул. Первомайская, 126<br><a href="mailto:ggo@ggo.ru">ggo@ggo.ru</a></div>
       <div class="col-xs-2 hidden-xs"><a href="/sitemap/">Карта сайта</a></div>
       <div class="col-xs-3 hidden-xs right">
         <a href="http://radia.ru" target="_blank" class="radia"><?=svg('radia')?><div class="radia__content">Разработка сайта <br>RADIA Interactive</div></a>

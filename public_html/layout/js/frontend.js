@@ -31467,7 +31467,7 @@ return function (global, window, document, undefined) {
       iconImageOffset: [-10, -31]
     };
     i = 0;
-    $.each(mapItems.concat(mapRefItems), function(key, point) {
+    return $.each(mapItems.concat(mapRefItems), function(key, point) {
       points[i] = new ymaps.Placemark(point.coords.split(',').map(function(val) {
         return parseFloat(val);
       }), {
@@ -31495,10 +31495,9 @@ return function (global, window, document, undefined) {
           open = [e.originalEvent.target];
         }
       });
+      myMap.geoObjects.add(points[i]);
       return i++;
     });
-    clusterer.add(points);
-    return myMap.geoObjects.add(clusterer);
   };
 
   this.showGeographyDetail = function(url) {
