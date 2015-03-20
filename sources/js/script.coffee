@@ -302,7 +302,7 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 			57.59224209
 			72.07521800
 		]
-		zoom: 3
+		zoom: 4
 		type: 'yandex#map'
 		controls: [
 			'geolocationControl'
@@ -310,22 +310,22 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 			'zoomControl'
 		])
 
-	MyIconContentLayout = ymaps.templateLayoutFactory.createClass '<div style="color: #FFFFFF; font-family: PT Sans; font-size: 20px;line-height:41px;">{{ properties.geoObjects.length }}</div>'
+	MyIconContentLayout = ymaps.templateLayoutFactory.createClass '<div style="color: #FFFFFF; font-family: PT Sans; font-size: 12px;line-height:21px;">{{ properties.geoObjects.length }}</div>'
 	clusterer = new (ymaps.Clusterer)(
 		clusterIconContentLayout: MyIconContentLayout
 		clusterIcons: [ {
 			href: '/layout/images/cluster.png'
 			size: [
-				40
-				40
+				20
+				20
 			]
 			offset: [
-				-20
-				-20
+				-10
+				-10
 			]
 		} ]
-		clusterNumbers: [ 20 ]
-		gridSize: 200
+		clusterNumbers: [ 100 ]
+		gridSize: 12
 	)
 	
 	open	 = []
