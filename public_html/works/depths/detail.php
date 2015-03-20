@@ -1,6 +1,6 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle('Виды деятельности');
+$APPLICATION->SetTitle('Услуги');
 if(isset($_REQUEST['ELEMENT_CODE'])):
     $APPLICATION->SetPageProperty('page_title', 'Виды деятельности');
     $APPLICATION->IncludeComponent("bitrix:news.detail","depth",Array(
