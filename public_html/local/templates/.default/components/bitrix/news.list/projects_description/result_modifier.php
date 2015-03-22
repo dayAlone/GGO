@@ -16,6 +16,6 @@
 		$item['PROPERTIES']['TIME']['VALUE']['TEXT'] = html_entity_decode($arResult['SECTION']['PATH']['UF_DATE']);
 
 	if(strlen($arResult['SECTION']['PATH']['UF_CLIENT']) > 0)
-		$item['PROPERTIES']['CUSTOMER']['VALUE']['TEXT'] = html_entity_decode($arResult['SECTION']['PATH']['UF_DATE']);
+		$item['PROPERTIES']['CUSTOMER']['VALUE']['TEXT'] = html_entity_decode($arResult['SECTION']['PATH']['UF_CLIENT']);
 
 ?>
