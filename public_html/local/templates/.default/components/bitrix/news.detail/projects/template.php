@@ -76,6 +76,7 @@ $item = $arResult;
     <div class="project__divider project__divider--blue"></div>
   </div>
   <?endif;?>
+
   <div class="page__divider page__divider--small"></div>
     <h3>Особенности проекта</h3>
   	<?=$item["~DETAIL_TEXT"]?>
@@ -102,5 +103,9 @@ $item = $arResult;
   		);
     ?>
   <?endif;?>
+  <?
+  if(strlen($item['PROPERTIES']['TITLE']['VALUE'])>0)
+    $APPLICATION->SetPageProperty('sub_title', html_entity_decode($item['PROPERTIES']['TITLE']['VALUE']));
+  ?>
 </div>
 <a href="/works/projects/" class="back"><?=svg('back')?> К списку проектов</a>

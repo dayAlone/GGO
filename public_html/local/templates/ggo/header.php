@@ -21,6 +21,7 @@
         $APPLICATION->AddBufferContent("page_title");
       ?>
     </h1>
+    <? $APPLICATION->AddBufferContent("sub_title"); ?>
   <?endif;?>
   <div class="page__divider"></div>
     <?php

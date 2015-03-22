@@ -3,8 +3,27 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle('Ключевые проекты');
 $APPLICATION->SetPageProperty('hide_projects', true);
 $APPLICATION->SetPageProperty('body_class', 'short_title');
+$APPLICATION->SetPageProperty('section', array('IBLOCK' => 2));
+require($_SERVER['DOCUMENT_ROOT'].'/include/section.php');
 if(isset($_REQUEST['ELEMENT_CODE'])):
-    $APPLICATION->IncludeComponent("bitrix:news.detail","projects",Array(
+  if(intval($_GLOBALS['currentCatalogSection'])>0):
+    $APPLICATION->IncludeComponent("bitrix:news.list", "projects_description", 
+      array(
+        "IBLOCK_ID"            => 2,
+        "NEWS_COUNT"           => "100",
+        "SORT_BY1"             => "SORT",
+        "SORT_ORDER1"          => "ASC",
+        "DETAIL_URL"           => "/works/projects/#ELEMENT_CODE#/",
+        "CACHE_TYPE"           => "A",
+        "SET_TITLE"            => "N",
+        "PARENT_SECTION"       => $_GLOBALS['currentCatalogSection'],
+        "PROPERTY_CODE"         => array('CUSTOMER', 'WORKTYPE', 'TIME', 'TECH', 'PERFOMANCE', 'PROJECTS', 'TECH_ELEMENTS'),
+        "DISPLAY_BOTTOM_PAGER" => "N"
+      ),
+      false
+    );
+  else:
+    $APPLICATION->IncludeComponent("bitrix:news.detail", "projects", Array(
       "IBLOCK_ID"     => 2,
       "ELEMENT_CODE"  => $_REQUEST['ELEMENT_CODE'],
       "CHECK_DATES"   => "N",
@@ -12,9 +31,10 @@ if(isset($_REQUEST['ELEMENT_CODE'])):
       "SET_TITLE"     => "Y",
       "CACHE_TYPE"    => "A",
       "FIELD_CODE"    => array("PREVIEW_PICTURE"),
-      "PROPERTY_CODE" => array('CUSTOMER', 'WORKTYPE', 'TIME', 'TECH', 'PERFOMANCE', 'PROJECTS', 'TECH_ELEMENTS'),
+      "PROPERTY_CODE" => array('CUSTOMER', 'WORKTYPE', 'TIME', 'TECH', 'PERFOMANCE', 'PROJECTS', 'TECH_ELEMENTS', 'TITLE'),
     
     ));
+  endif;
 else:
 	LocalRedirect("/works/");
 endif;

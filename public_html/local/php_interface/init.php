@@ -11,6 +11,11 @@ function page_title() {
 	else
 		return $APPLICATION->GetTitle();
 }
+function sub_title() {
+	global $APPLICATION;
+	if($APPLICATION->GetPageProperty('sub_title'))
+		return "<h3 class='page__sub-title'>".$APPLICATION->GetPageProperty('sub_title')."</h3>";
+}
 function body_class()
 {
 	global $APPLICATION;

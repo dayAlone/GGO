@@ -7146,6 +7146,11 @@ svg g {
     margin-right: 25px;
   }
 }
+h3.page__sub-title {
+  color: #0057ce;
+  font-size: 20px !important;
+  font-family: 'Direct', 'PT Sans', 'Helvetica Neue', 'Arial', sans-serif;
+}
 @media (max-width: 768px) {
   .page a.button[href="#vacancyDetail"] {
     margin-bottom: 20px;
@@ -7378,7 +7383,7 @@ svg g {
   width: 100%;
 }
 .page .page__title {
-  font-family: 'Direct';
+  font-family: 'Direct', 'PT Sans', 'Helvetica Neue', 'Arial', sans-serif;
   padding-bottom: 5px;
   font-weight: normal;
   font-size: 28px;
@@ -7446,7 +7451,7 @@ svg g {
 }
 .page .news__title {
   color: #000;
-  font-family: 'Direct';
+  font-family: 'Direct', 'PT Sans', 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 21px;
 }
 .page .news > a:hover {
@@ -7852,6 +7857,11 @@ a.depth:hover svg path {
   text-transform: none;
   margin-bottom: 35px;
   margin-top: 25px;
+}
+.project__detail + .project__detail {
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 3px solid #0057ce;
 }
 .project__divider {
   width: 100%;
@@ -8672,7 +8682,7 @@ a.depth:hover svg path {
   line-height: 42px;
   margin-top: 0;
   margin-bottom: 20px;
-  font-family: 'Direct';
+  font-family: 'Direct', 'PT Sans', 'Helvetica Neue', 'Arial', sans-serif;
   font-weight: bold;
 }
 @media (min-width: 992px) {
@@ -8695,7 +8705,7 @@ a.depth:hover svg path {
   line-height: 28px;
   color: #7e868e;
   margin-bottom: 3px;
-  font-family: 'Direct';
+  font-family: 'Direct', 'PT Sans', 'Helvetica Neue', 'Arial', sans-serif;
   max-width: 95%;
   display: inline-block;
 }
@@ -8900,7 +8910,7 @@ a.depth:hover svg path {
   font-size: 14px;
 }
 .search-page__title {
-  font-family: 'Direct';
+  font-family: 'Direct', 'PT Sans', 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 22px;
   margin-bottom: 8px;
   display: inline-block;
