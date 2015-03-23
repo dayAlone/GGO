@@ -31,19 +31,13 @@ $APPLICATION->SetTitle('ГГО в цифрах');
   </div>
   <div class="page__divider l-margin-top l-margin-bottom"> </div>
   <div class="row center">
-    <div class="col-xs-12">
-      <big>Наши установки производят</big>
-      <div class="number__value number__value--big s-margin-bottom xs-margin-top">1,5 млн</div>
-      <div class="row">
-        <div class="col-xs-4 right"><svg width="49" height="48" viewBox="0 0 49 48" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="n-4" transform="translate(.401)" fill="#0082DC"><path d="M47.39 48H.61c-.337 0-.61-.273-.61-.61V.61C0 .273.273 0 .61 0h46.78c.337 0 .61.273.61.61v46.78c0 .337-.273.61-.61.61zM1.22 46.78h45.56V1.22H1.22v45.56z" id="Fill-1"/><path d="M30.132 16.204c-.78-2.773-1.906-5.762-5.676-5.762-3.336 0-4.81 2.426-4.81 4.765 0 3.163 2.08 4.636 5.504 6.413 3.38 1.732 7.494 3.77 7.494 8.62 0 4.55-3.855 8.19-9.617 8.19-1.777 0-3.163-.347-4.246-.65-1.082-.39-1.732-.693-2.122-.91-.347-.91-.91-4.636-1.17-6.715l1.257-.303c.693 2.642 2.642 7.018 7.104 7.018 3.25 0 5.2-2.036 5.2-5.2 0-3.205-2.384-4.722-5.634-6.455-2.772-1.472-7.148-3.64-7.148-8.534 0-4.16 3.336-7.71 8.925-7.71 1.992 0 3.812.475 5.46.995.172 1.56.39 3.25.735 5.98l-1.256.26" id="Fill-2"/></g></g></svg>
-        </div>
-        <div class="col-xs-8 left">
-          <div class="m--margin-left xs-line-height">
-            <big class="bigger">тонн серы в год </big>
-          </div>
+    <div class="row">
+        <div class="col-xs-12">
+          <big class="m-line-height">Более</big>
+          <div class="number__value number__value--m">700 км</div>
+          <em class="left bigger">трубопроводов,  разработаны с помощью инструментов трехмерного проектирования</em>
         </div>
       </div>
-    </div>
   </div>
   <div class="page__divider xl-margin-top l-margin-bottom"></div>
   <div class="row">
@@ -193,19 +187,13 @@ $APPLICATION->SetTitle('ГГО в цифрах');
       </div>
       <div class="page__divider m-margin-top l-margin-bottom"> </div>
       <div class="row">
-        <div class="col-xs-12 border-right border-right--padding">
-          <big>Наши установки производят</big>
-          <div class="number__value number__value--m">1,5 млн</div>
-          <div class="row">
-            <div class="col-xs-1">
-              <div id="n-4"><svg width="49" height="48" viewBox="0 0 49 48" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="n-4" transform="translate(.401)" fill="#0082DC"><path d="M47.39 48H.61c-.337 0-.61-.273-.61-.61V.61C0 .273.273 0 .61 0h46.78c.337 0 .61.273.61.61v46.78c0 .337-.273.61-.61.61zM1.22 46.78h45.56V1.22H1.22v45.56z" id="Fill-1"/><path d="M30.132 16.204c-.78-2.773-1.906-5.762-5.676-5.762-3.336 0-4.81 2.426-4.81 4.765 0 3.163 2.08 4.636 5.504 6.413 3.38 1.732 7.494 3.77 7.494 8.62 0 4.55-3.855 8.19-9.617 8.19-1.777 0-3.163-.347-4.246-.65-1.082-.39-1.732-.693-2.122-.91-.347-.91-.91-4.636-1.17-6.715l1.257-.303c.693 2.642 2.642 7.018 7.104 7.018 3.25 0 5.2-2.036 5.2-5.2 0-3.205-2.384-4.722-5.634-6.455-2.772-1.472-7.148-3.64-7.148-8.534 0-4.16 3.336-7.71 8.925-7.71 1.992 0 3.812.475 5.46.995.172 1.56.39 3.25.735 5.98l-1.256.26" id="Fill-2"/></g></g></svg>
-              </div>
-            </div>
-            <div class="col-xs-9">
-              <big class="l-margin-left bigger xs-line-height">тонн серы в год </big>
-            </div>
-          </div>
+        <div class="row">
+        <div class="col-xs-12">
+          <big class="m-line-height">Более</big>
+          <div class="number__value number__value--m">700 км</div>
+          <em class="left bigger">трубопроводов,  разработаны с помощью инструментов трехмерного проектирования</em>
         </div>
+      </div>
       </div>
     </div>
     <div class="col-xs-8 col-sm-6">
@@ -393,17 +381,9 @@ $APPLICATION->SetTitle('ГГО в цифрах');
       <div class="page__divider m-margin-top l-margin-bottom"> </div>
       <div class="row">
         <div class="col-xs-12">
-          <big>Наши установки производят</big>
-          <div class="number__value number__value--m">1,5 млн</div>
-          <div class="row">
-            <div class="col-xs-2">
-              <div id="n-4"><svg width="49" height="48" viewBox="0 0 49 48" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="n-4" transform="translate(.401)" fill="#0082DC"><path d="M47.39 48H.61c-.337 0-.61-.273-.61-.61V.61C0 .273.273 0 .61 0h46.78c.337 0 .61.273.61.61v46.78c0 .337-.273.61-.61.61zM1.22 46.78h45.56V1.22H1.22v45.56z" id="Fill-1"/><path d="M30.132 16.204c-.78-2.773-1.906-5.762-5.676-5.762-3.336 0-4.81 2.426-4.81 4.765 0 3.163 2.08 4.636 5.504 6.413 3.38 1.732 7.494 3.77 7.494 8.62 0 4.55-3.855 8.19-9.617 8.19-1.777 0-3.163-.347-4.246-.65-1.082-.39-1.732-.693-2.122-.91-.347-.91-.91-4.636-1.17-6.715l1.257-.303c.693 2.642 2.642 7.018 7.104 7.018 3.25 0 5.2-2.036 5.2-5.2 0-3.205-2.384-4.722-5.634-6.455-2.772-1.472-7.148-3.64-7.148-8.534 0-4.16 3.336-7.71 8.925-7.71 1.992 0 3.812.475 5.46.995.172 1.56.39 3.25.735 5.98l-1.256.26" id="Fill-2"/></g></g></svg>
-              </div>
-            </div>
-            <div class="col-xs-9">
-              <big class="xs-margin-left bigger xs-line-height">тонн серы в год </big>
-            </div>
-          </div>
+          <big class="m-line-height">Более</big>
+          <div class="number__value number__value--m">700 км</div>
+          <em class="left bigger">трубопроводов,  разработаны с помощью инструментов трехмерного проектирования</em>
         </div>
       </div>
     </div>
