@@ -68,9 +68,9 @@ $APPLICATION->SetPageProperty('body_class', 'index')
         <div class="page__divider page__divider--small float-none"></div><br>человеко-часов в год
       </div>
       <div class="hidden-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
-      <div class="col-sm-6 col-md-4"><span>Наши установки производят</span>
-        <div class="number__value">1,5 млн</div>
-        <div class="page__divider page__divider--small float-none"></div><br>тонн серы в год
+      <div class="col-sm-6 col-md-4"><span>Более</span>
+        <div class="number__value">700 км</div>
+        <div class="page__divider page__divider--small float-none"></div><br>трубопроводов,  разработаны с помощью инструментов трехмерного проектирования
       </div>
       <div class="visible-xs visible-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Более</span>
