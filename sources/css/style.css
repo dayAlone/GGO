@@ -3757,6 +3757,9 @@ h3.page__sub-title {
   font-size: 18px;
   color: #717b84;
 }
+.page p.highlight svg path {
+  fill: #1d8cdb;
+}
 @media (min-width: 768px) {
   .page p.highlight {
     font-size: 20px;

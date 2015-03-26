@@ -148,5 +148,15 @@ function OnBeforeIBlockElementAddHandler(&$arFields)
 	return true;
 }
 
-
+AddEventHandler("main", "OnEndBufferContent", "OnEndBufferContentHandler");
+function OnEndBufferContentHandler(&$content)
+{
+	if(!strstr($_SERVER['SCRIPT_NAME'], 'bitrix/admin')):
+	   $pattern = '/{ICON:(.*?)}/i';
+	   if(preg_match_all($pattern, $content, $matches, false, false)):
+	   	foreach ($matches[0] as $key => $val)
+	   		$content = str_replace($val, svg($matches[1][$key]), $content);
+	   endif;
+	endif;
+}
 ?>
