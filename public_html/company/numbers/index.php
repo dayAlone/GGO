@@ -243,7 +243,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
     <div class="col-sm-8">
       <div class="row">
         <div class="col-xs-4 border-right center s-padding-top">
-          <div class="number__value number__value--medium">75</div><small>лицензиаров     </small>
+          <div class="number__value number__value--medium">158</div><small>партнеров</small>
         </div>
         <div class="col-xs-7">
           <div class="row">
@@ -406,7 +406,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
           <div class="page__divider l-margin-top m-margin-bottom"> </div>
           <div class="row row--padding">
             <div class="col-xs-5 border-right border-right--xl center">
-              <div class="number__value number__value--medium">75</div><small>лицензиаров</small>
+              <div class="number__value number__value--medium">158</div><small>партнеров</small>
             </div>
             <div class="col-xs-7 xs-margin-top">
               <div class="row">
