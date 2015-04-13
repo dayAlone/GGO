@@ -34,7 +34,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
     <div class="row">
         <div class="col-xs-12">
           <big class="m-line-height">Более</big>
-          <div class="number__value number__value--m">700 км</div>
+          <div class="number__value number__value--m">700 <small>тыс. км</small></div>
           <em class="left bigger">трубопроводов,  разработаны с помощью инструментов трехмерного проектирования</em>
         </div>
       </div>
@@ -43,10 +43,10 @@ $APPLICATION->SetTitle('ГГО в цифрах');
   <div class="row">
     <div class="col-xs-7 border-right border-right--small">
       <div class="right">
-        <div class="m--margin-bottom s-line-height"><em>Объем предоставленных<br>услуг</em></div>
+        <div class="m--margin-bottom s-line-height"><em>Более</em></div>
       </div>
       <div class="number__value number__value--s">2 млн</div>
-      <div class="s--margin-top"><em>человеко-часов в год</em></div>
+      <div class="s--margin-top xs-line-height"><em>предоставленных заказчикам инженерных человеко-часов в год</em></div>
     </div>
     <div class="col-xs-5 center">
       <div class="number__value number__value--medium">58</div>партнеров
@@ -187,13 +187,12 @@ $APPLICATION->SetTitle('ГГО в цифрах');
       </div>
       <div class="page__divider m-margin-top l-margin-bottom"> </div>
       <div class="row">
-        <div class="row">
         <div class="col-xs-12">
           <big class="m-line-height">Более</big>
-          <div class="number__value number__value--m">700 км</div>
+          <div class="number__value number__value--m">700 <small>тыс. км</small></div>
           <em class="left bigger">трубопроводов,  разработаны с помощью инструментов трехмерного проектирования</em>
+        
         </div>
-      </div>
       </div>
     </div>
     <div class="col-xs-8 col-sm-6">
@@ -214,10 +213,10 @@ $APPLICATION->SetTitle('ГГО в цифрах');
       <div class="row">
         <div class="col-xs-7 border-right border-right--small xs--margin-left">
           <div class="right">
-            <div class="xs--margin-bottom s-line-height"><em>Объем предоставленных<br>услуг</em></div>
+            <div class="xs--margin-bottom s-line-height"><em>Более</em></div>
           </div>
           <div class="number__value number__value--s">2 млн</div>
-          <div class="xxs--margin-top"><em>человеко-часов в год</em></div>
+          <div class="xxs--margin-top xs-line-height"><em>предоставленных заказчикам инженерных человеко-часов в год</em></div>
         </div>
         <div class="col-xs-5 center">
           <div class="number__value number__value--medium">58</div>партнеров
@@ -243,7 +242,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
     <div class="col-sm-8">
       <div class="row">
         <div class="col-xs-4 border-right center s-padding-top">
-          <div class="number__value number__value--medium">158</div><small>партнеров</small>
+          <div class="number__value number__value--xxs">158</div><small>партнеров</small>
         </div>
         <div class="col-xs-7">
           <div class="row">
@@ -382,7 +381,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
       <div class="row">
         <div class="col-xs-12">
           <big class="m-line-height">Более</big>
-          <div class="number__value number__value--m">700 км</div>
+          <div class="number__value number__value--m">700 <small>тыс. км</small></div>
           <em class="left bigger">трубопроводов,  разработаны с помощью инструментов трехмерного проектирования</em>
         </div>
       </div>
@@ -406,7 +405,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
           <div class="page__divider l-margin-top m-margin-bottom"> </div>
           <div class="row row--padding">
             <div class="col-xs-5 border-right border-right--xl center">
-              <div class="number__value number__value--medium">158</div><small>партнеров</small>
+              <div class="number__value number__value--xxs">158</div><small>партнеров</small>
             </div>
             <div class="col-xs-7 xs-margin-top">
               <div class="row">
@@ -427,10 +426,10 @@ $APPLICATION->SetTitle('ГГО в цифрах');
           <div class="row">
             <div class="col-xs-7 border-right border-right--small">
               <div class="right">
-                <div class="xs--margin-bottom s-line-height"><em>Объем предоставленных<br>услуг</em></div>
+                <div class="xs--margin-bottom s-line-height"><em>Более</em></div>
               </div>
               <div class="number__value number__value--s">2 млн</div>
-              <div class="xxs--margin-top"><em>человеко-часов в год</em></div>
+              <div class="xxs--margin-top xs-line-height"><em>предоставленных заказчикам инженерных человеко-часов в год</em></div>
             </div>
             <div class="col-xs-5 center">
               <div class="number__value number__value--medium">58</div>партнеров

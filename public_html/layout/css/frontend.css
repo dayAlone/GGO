@@ -9160,6 +9160,9 @@ ul.nav-tabs li.active a {
   font-size: 60px;
   line-height: 1.2;
 }
+.number__value small {
+  font-size: 65%;
+}
 @media (min-width: 1200px) {
   .number__value {
     font-size: 68px;

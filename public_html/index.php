@@ -60,16 +60,16 @@ $APPLICATION->SetPageProperty('body_class', 'index')
       <div class="visible-xs page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Более</span>
         <div class="number__value">4 000</div>
-        <div class="page__divider page__divider--small float-none"></div><br>выполненных проектов<br> со дня основания
+        <div class="page__divider page__divider--small float-none"></div><br>выполненных проектов
       </div>
       <div class="visible-xs visible-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
-      <div class="col-sm-6 col-md-4"><span>Объем предоставляемых услуг</span>
+      <div class="col-sm-6 col-md-4"><span>Более</span>
         <div class="number__value">2 млн</div>
-        <div class="page__divider page__divider--small float-none"></div><br>человеко-часов в год
+        <div class="page__divider page__divider--small float-none"></div><br>предоставленных Заказчикам инженерных человеко-часов в год
       </div>
       <div class="hidden-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Более</span>
-        <div class="number__value">700 км</div>
+        <div class="number__value">700 тыс. км</div>
         <div class="page__divider page__divider--small float-none"></div><br>трубопроводов,  разработаны с помощью инструментов трехмерного проектирования
       </div>
       <div class="visible-xs visible-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
@@ -78,9 +78,9 @@ $APPLICATION->SetPageProperty('body_class', 'index')
         <div class="page__divider page__divider--small float-none"></div><br>тонн оборудования поставлено <br> нами за последние 3 года
       </div>
       <div class="visible-xs page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
-      <div class="col-sm-6 col-md-4"><span>Более чем на</span>
-        <div class="number__value">60</div>
-        <div class="page__divider page__divider--small float-none"></div><br>нефтегазовых объектах нами<br> проведены пуско-наладочные<br>работы
+      <div class="col-sm-6 col-md-4"><span>Наши установки производят более</span>
+        <div class="number__value">10 тонн</div>
+        <div class="page__divider page__divider--small float-none"></div><br>готовой товарной продукции
       </div>
     </div>
     <div class="page__divider xxl-margin-top xxs-margin-bottom-xs xxl-margin-bottom-sm"></div>
