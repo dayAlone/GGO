@@ -26,7 +26,7 @@ $APPLICATION->SetPageProperty('body_class', 'index')
 </div>
 <div class="sections">
   <div class="container center">
-    <h1 class="m-padding-bottom">Мы осуществляем свою деятельность<br>в следующих отраслях:</h1>
+    <h1 class="m-padding-bottom">Работаем в следующих отраслях:</h1>
     <?
       $APPLICATION->IncludeComponent("bitrix:news.list", "depth", 
         array(

@@ -8,22 +8,31 @@ $APPLICATION->SetTitle('Вакансии');
   	<?
   		if(!isset($_REQUEST['ELEMENT_CODE'])):
 		    $APPLICATION->SetTitle('Вакансии');
-			?><p class="blue xl-margin-bottom">Сегодня в компаниях группы открыты следующие вакансии:</p><?
-		    $APPLICATION->IncludeComponent("bitrix:news.list", "news", 
-			array(
-				"IBLOCK_ID"            => 13,
-				"NEWS_COUNT"           => "20",
-				"SORT_BY1"             => "ACTIVE_FROM",
-				"SORT_ORDER1"          => "DESC",
-				"DETAIL_URL"           => "/career/vacancies/#ELEMENT_CODE#/",
-				"CACHE_TYPE"           => "A",
-				"SET_TITLE"            => "N",
-				"SHOW_DESCRIPTION"     => "Y",
-				"DISPLAY_BOTTOM_PAGER" => "Y",
-				"SHOW_VACANCY"           => "Y"
-			),
-			false
-			);
+			ob_start();
+			    $APPLICATION->IncludeComponent("bitrix:news.list", "news", 
+				array(
+					"IBLOCK_ID"            => 13,
+					"NEWS_COUNT"           => "20",
+					"SORT_BY1"             => "ACTIVE_FROM",
+					"SORT_ORDER1"          => "DESC",
+					"DETAIL_URL"           => "/career/vacancies/#ELEMENT_CODE#/",
+					"CACHE_TYPE"           => "A",
+					"SET_TITLE"            => "N",
+					"SHOW_DESCRIPTION"     => "Y",
+					"DISPLAY_BOTTOM_PAGER" => "Y",
+					"SHOW_VACANCY"         => "Y"
+				),
+				false
+				);
+			$vacancies = ob_get_contents();
+			ob_end_clean();
+			if(strlen($vacancies)>0):?>
+				<p class="blue xl-margin-bottom">Сегодня в компаниях группы открыты следующие вакансии:</p>
+				<?=$vacancies?>
+			<?
+			else:?>
+				<p class="blue xl-margin-bottom">В настоящий момент нет открытых вакансий.</p>
+			<?endif;
 		else:
 		    $APPLICATION->SetPageProperty('page_title', 'Вакансии');
 		    $APPLICATION->IncludeComponent("bitrix:news.detail","career",Array(
