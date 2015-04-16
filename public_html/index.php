@@ -70,7 +70,7 @@ $APPLICATION->SetPageProperty('body_class', 'index')
       <div class="hidden-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Более</span>
         <div class="number__value">700 тыс. км</div>
-        <div class="page__divider page__divider--small float-none"></div><br>трубопроводов,  разработаны с помощью инструментов трехмерного проектирования
+        <div class="page__divider page__divider--small float-none"></div><br>трубопроводов разработаны ГГО с помощью инструментов трехмерного проектирования
       </div>
       <div class="visible-xs visible-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Более</span>

@@ -50,7 +50,7 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Наши заказчики", 
+		"Заказчики и партнеры", 
 		"/works/clients/", 
 		Array(), 
 		Array(), 

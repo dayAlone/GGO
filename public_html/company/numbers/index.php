@@ -35,7 +35,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
         <div class="col-xs-12">
           <big class="m-line-height">Более</big>
           <div class="number__value number__value--m">700 <small>тыс. км</small></div>
-          <em class="left bigger">трубопроводов,  разработаны с помощью инструментов трехмерного проектирования</em>
+          <em class="left bigger">трубопроводов, ГГО разработаны с помощью инструментов трехмерного проектирования</em>
         </div>
       </div>
   </div>
@@ -85,7 +85,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
   <div class="row">
     <div class="col-xs-8 border-right">
       <div class="number__value number__value--xxs">10,5 млн</div>
-      <div class="xs-line-height"><em>тонн сырья перерабатывается на предприятиях нефтепереработки, нефтехимии и нефтедобычи</em></div>
+      <div class="xs-line-height"><em>тонн сырья перерабатывается на установках, спроектированных ГГО</em></div>
     </div>
     <div class="col-xs-4 center">
       <div class="number__value number__value--xs">125</div>
@@ -190,7 +190,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
         <div class="col-xs-12">
           <big class="m-line-height">Более</big>
           <div class="number__value number__value--m">700 <small>тыс. км</small></div>
-          <em class="left bigger">трубопроводов,  разработаны с помощью инструментов трехмерного проектирования</em>
+          <em class="left bigger">трубопроводов разработаны ГГО с помощью инструментов трехмерного проектирования</em>
         
         </div>
       </div>
@@ -262,7 +262,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
   <div class="row">
     <div class="col-xs-4 border-right">
       <div class="number__value number__value--xxs">10,5 млн</div>
-      <div class="s-line-height"><em>тонн сырья перерабатывается на предприятиях нефтепереработки, нефтехимии и нефтедобычи</em></div>
+      <div class="s-line-height"><em>тонн сырья перерабатывается на установках, спроектированных ГГО</em></div>
       <div class="page__divider m-margin-top m-margin-bottom"></div>
       <div class="row">
         <div class="col-xs-5">
@@ -382,7 +382,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
         <div class="col-xs-12">
           <big class="m-line-height">Более</big>
           <div class="number__value number__value--m">700 <small>тыс. км</small></div>
-          <em class="left bigger">трубопроводов,  разработаны с помощью инструментов трехмерного проектирования</em>
+          <em class="left bigger">трубопроводов разработаны ГГО с помощью инструментов трехмерного проектирования</em>
         </div>
       </div>
     </div>
@@ -461,7 +461,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
       <div class="row row--padding">
         <div class="col-xs-6 border-right">
           <div class="number__value number__value--xxs">10,5 млн</div>
-          <div class="s-line-height"><em>тонн сырья перерабатывается на предприятиях нефтепереработки, нефтехимии и нефтедобычи</em></div>
+          <div class="s-line-height"><em>тонн сырья перерабатывается на установках, спроектированных ГГО</em></div>
           <div class="page__divider m-margin-top m-margin-bottom"></div>
           <div class="row">
             <div class="col-xs-6">
