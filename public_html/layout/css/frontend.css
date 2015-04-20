@@ -7843,9 +7843,11 @@ a.depth:hover svg path {
   color: #fff;
   width: 100%;
 }
-.projects--big .project {
-  width: 25%;
-  min-height: 250px;
+@media (min-width: 992px) {
+  .projects--big .project {
+    width: calc(25% - 14px);
+    min-height: 250px;
+  }
 }
 .icon svg path {
   fill: #000;

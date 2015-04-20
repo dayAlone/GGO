@@ -493,8 +493,9 @@ svg
 			color white
 			width 100%
 	&--big .project
-		width 25%
-		min-height 250px
+		@media (min-width: scr_md)
+			width calc(25% - 14px)
+			min-height 250px
 .icon
 	svg
 		path
