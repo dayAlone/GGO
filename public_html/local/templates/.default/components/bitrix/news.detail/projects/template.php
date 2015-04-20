@@ -1,5 +1,6 @@
 <?
 $item = $arResult;
+
 ?>
 <div class="project__detail">
   <?if(strlen($item['PREVIEW_PICTURE']['SRC'])>0):?>
