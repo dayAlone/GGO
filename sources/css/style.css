@@ -3608,6 +3608,9 @@ h3.page__sub-title {
   font-weight: bold;
   margin-bottom: 5px;
 }
+.page h5.top {
+  margin-top: -15px;
+}
 .page a + .news__description {
   margin-top: 5px;
 }

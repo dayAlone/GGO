@@ -18,9 +18,9 @@ endif;
 	<div class="col-md-3 visible-md visible-lg">
 		<?if($item['IBLOCK_ID']!=18):?>
 			<?if($item['IBLOCK_ID']==4):?>
-			<h5>другие отрасли</h5>
+			<h5 class="top">другие отрасли</h5>
 			<?else:?>
-			<h5>другие услуги</h5>
+			<h5 class="top">другие услуги</h5>
 			<?endif;?>
 			<div class="page__divider xl-margin-bottom"></div>
 			<?
