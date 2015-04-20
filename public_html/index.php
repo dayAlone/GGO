@@ -79,7 +79,7 @@ $APPLICATION->SetPageProperty('body_class', 'index')
       </div>
       <div class="visible-xs page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Наши установки производят более</span>
-        <div class="number__value">10 тонн</div>
+        <div class="number__value">10 млн. тонн</div>
         <div class="page__divider page__divider--small float-none"></div><br>готовой товарной продукции
       </div>
     </div>

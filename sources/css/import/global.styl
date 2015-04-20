@@ -446,6 +446,7 @@ svg
 			position absolute
 			z-index -1
 			display none
+	
 	.project
 		display inline-block
 		width 20%
@@ -461,7 +462,6 @@ svg
 			
 		@media (min-width: scr_lg)
 			width calc(20% - 14px)
-		
 		@media (min-width: scr_xs)
 			margin 0 7px 10px 7px
 		background-size cover
@@ -492,7 +492,13 @@ svg
 			left 0
 			color white
 			width 100%
-
+	&--big .project
+		width 25%
+		min-height 250px
+.icon
+	svg
+		path
+			fill black
 .project
 	
 	&__cell

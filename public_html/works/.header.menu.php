@@ -29,13 +29,6 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Этапы проекта", 
-		"/works/steps/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"Карта проектов", 
 		"/works/maps/", 
 		Array(), 

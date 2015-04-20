@@ -15,7 +15,9 @@ array(
   "CACHE_TYPE"     => "A",
   "noSections"    => "Y",
   "SET_TITLE"      => "N",
+  "BIG" => "Y",
   "DISPLAY_BOTTOM_PAGER" => "N"
+
 ),
 false
 );

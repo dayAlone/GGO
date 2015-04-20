@@ -155,7 +155,7 @@ function OnEndBufferContentHandler(&$content)
 	   $pattern = '/{ICON:(.*?)}/i';
 	   if(preg_match_all($pattern, $content, $matches, false, false)):
 	   	foreach ($matches[0] as $key => $val)
-	   		$content = str_replace($val, svg($matches[1][$key]), $content);
+	   		$content = str_replace($val, "<div class='icon'>".svg($matches[1][$key])."</div>", $content);
 	   endif;
 	endif;
 }

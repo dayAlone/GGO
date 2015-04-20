@@ -12,8 +12,7 @@ if(isset($_REQUEST['ELEMENT_CODE'])):
       "CACHE_TYPE"    => "A",
       "FIELD_CODE"    => array("PREVIEW_PICTURE"),
       "PROPERTY_CODE" => array('ICON'),
-      "CACHE_TIME" => "3600",
-    
+      "CACHE_TIME"    => "3600",
     ));
 else:
   LocalRedirect("/works/industries/");

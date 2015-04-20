@@ -4263,6 +4263,13 @@ a.depth:hover svg path {
   color: #fff;
   width: 100%;
 }
+.projects--big .project {
+  width: 25%;
+  min-height: 250px;
+}
+.icon svg path {
+  fill: #000;
+}
 .project__cell--grey {
   opacity: 0.7;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";

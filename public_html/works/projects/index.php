@@ -16,6 +16,7 @@ if(isset($_REQUEST['ELEMENT_CODE'])):
         "DETAIL_URL"           => "/works/projects/#ELEMENT_CODE#/",
         "CACHE_TYPE"           => "A",
         "SET_TITLE"            => "N",
+        "BIG"           => "Y",
         "PARENT_SECTION"       => $_GLOBALS['currentCatalogSection'],
         "PROPERTY_CODE"         => array('CUSTOMER', 'WORKTYPE', 'TIME', 'TECH', 'PERFOMANCE', 'PROJECTS', 'TECH_ELEMENTS'),
         "DISPLAY_BOTTOM_PAGER" => "N"
@@ -29,6 +30,7 @@ if(isset($_REQUEST['ELEMENT_CODE'])):
       "CHECK_DATES"   => "N",
       "IBLOCK_TYPE"   => "content",
       "SET_TITLE"     => "Y",
+
       "CACHE_TYPE"    => "A",
       "FIELD_CODE"    => array("PREVIEW_PICTURE"),
       "PROPERTY_CODE" => array('CUSTOMER', 'WORKTYPE', 'TIME', 'TECH', 'PERFOMANCE', 'PROJECTS', 'TECH_ELEMENTS', 'TITLE'),
