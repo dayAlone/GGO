@@ -49,7 +49,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
       <div class="s--margin-top xs-line-height"><em>предоставленных заказчикам инженерных человеко-часов в год</em></div>
     </div>
     <div class="col-xs-5 center">
-      <div class="number__value number__value--medium">58</div>партнеров
+      <div class="number__value number__value--medium">158</div>партнеров
     </div>
   </div>
   <div class="page__divider l-margin-top xl-margin-bottom"> </div>
@@ -219,7 +219,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
           <div class="xxs--margin-top xs-line-height"><em>предоставленных заказчикам инженерных человеко-часов в год</em></div>
         </div>
         <div class="col-xs-5 center">
-          <div class="number__value number__value--medium">58</div>партнеров
+          <div class="number__value number__value--medium">158</div>партнеров
         </div>
       </div>
     </div>
@@ -242,7 +242,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
     <div class="col-sm-8">
       <div class="row">
         <div class="col-xs-4 border-right center s-padding-top">
-          <div class="number__value number__value--xxs">158</div><small>партнеров</small>
+          <div class="number__value number__value--xxs">75</div><small>лицензиаров</small>
         </div>
         <div class="col-xs-7">
           <div class="row">
@@ -405,7 +405,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
           <div class="page__divider l-margin-top m-margin-bottom"> </div>
           <div class="row row--padding">
             <div class="col-xs-5 border-right border-right--xl center">
-              <div class="number__value number__value--xxs">158</div><small>партнеров</small>
+              <div class="number__value number__value--xxs">75</div><small>лицензиаров</small>
             </div>
             <div class="col-xs-7 xs-margin-top">
               <div class="row">
@@ -432,7 +432,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
               <div class="xxs--margin-top xs-line-height"><em>предоставленных заказчикам инженерных человеко-часов в год</em></div>
             </div>
             <div class="col-xs-5 center">
-              <div class="number__value number__value--medium">58</div>партнеров
+              <div class="number__value number__value--medium">158</div>партнеров
             </div>
           </div>
           <div class="page__divider m-margin-top m-margin-bottom"> </div>
