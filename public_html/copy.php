@@ -7,7 +7,7 @@ if(intval($_REQUEST["IBLOCK_ID_FIELDS"])>0){
     $ib = new CIBlock;
     $arFields = CIBlock::GetArrayByID($IBLOCK_ID);
     $arFields["GROUP_ID"] = CIBlock::GetGroupPermissions($IBLOCK_ID);
-    $arFields["NAME"] = $arFields["NAME"]."_new";
+    $arFields["NAME"] = $arFields["NAME"];
     unset($arFields["ID"]);
     if($_REQUEST["IBLOCK_TYPE_ID"]!="empty")
         $arFields["IBLOCK_TYPE_ID"]=$_REQUEST["IBLOCK_TYPE_ID"];
