@@ -1,0 +1,25 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Industries", 
+		"/en/works/industries/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Services", 
+		"/en/works/depths/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Projects", 
+		"/en/works/index.php", 
+		Array("/works/projects/"), 
+		Array(), 
+		"" 
+	)
+);
+?>

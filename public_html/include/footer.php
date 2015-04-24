@@ -38,6 +38,7 @@
     </div>
   </div>
 </div>
+<? if(LANGUAGE_ID == "ru"): ?>
 <footer class="footer">
   <div class="container container--width">
     <div class="row">
@@ -131,6 +132,101 @@
     </div>
   </div>
 </footer>
+<? else: ?>
+<footer class="footer">
+  <div class="container container--width">
+    <div class="row">
+      <?if($APPLICATION->GetCurDir()=="/" || $APPLICATION->GetPageProperty('hide_projects')==true):?>
+      <div class="col-sm-8 col-md-6 footer__about">
+        <h3>О компании</h3> 
+        <p>ОАО «Гипрогазоочистка»  является одним из лидеров рынка инжиниринговых услуг. Компания работает для ключевых отраслей промышленности и реализует проекты от проектирования до ввода в эксплуатацию технологических установок объектов нефте-газопереработки, нефте-газохимии и нефте-газодобычи.  </p>
+        <p>Деятельность компании, как государственного проектного института, началась в 1928 году.  Сегодня «Гипрогазоочистка» постоянно развивает технологии, наращивает объемы и расширяет виды работ. </p>
+        <p>Высокий уровень технических решений подтвержден большим набором патентов и изобретений. Компания разрабатывает техническую документацию по собственным базовым проектам в области газоочистки и процессов нефте- и газопереработки, а также использует лицензионные технологии ведущих зарубежных партнеров.  </p>
+        <p>Полная автоматизации процессов и высочайший уровень производительности труда являются ключевыми показателями эффективности деятельности компании.</p> 
+      </div>
+      <?endif;?>
+      <div class="col-sm-4 col-md-4 footer__news">
+        <h3>News</h3>
+        <?
+          $APPLICATION->IncludeComponent("bitrix:news.list", "news", 
+            array(
+              "IBLOCK_ID"      => 19,
+              "NEWS_COUNT"     => "2",
+              "SORT_BY1"       => "ACTIVE_FROM",
+              "SORT_ORDER1"    => "DESC",
+              "DETAIL_URL"     => "/en/press/news/#ELEMENT_CODE#/",
+              "CACHE_TYPE"     => "A",
+              "SET_TITLE"      => "N",
+              "DISPLAY_BOTTOM_PAGER" => "N"
+            ),
+            false
+          );
+        ?>
+        <a href="/en/press/" class="news__more">Other news</a>
+      </div>
+      <?if($APPLICATION->GetCurDir()!="/" && $APPLICATION->GetPageProperty('hide_projects')!=true):?>
+      <div class="col-sm-8 col-md-6 footer__projects">
+        <h3>Ключевые проекты</h3>
+        <?
+          $APPLICATION->IncludeComponent("bitrix:news.list", "projects", 
+            array(
+              "IBLOCK_ID"      => 2,
+              "NEWS_COUNT"     => "8",
+              "SORT_BY1"       => "RAND",
+              "SORT_ORDER1"    => "ASC",
+              "DETAIL_URL"     => "/works/projects/#ELEMENT_CODE#/",
+              "CACHE_TYPE"     => "A",
+              "CACHE_NOTES"    => $APPLICATION->GetCurDir(),
+              "SET_TITLE"      => "N",
+              "DISPLAY_BOTTOM_PAGER" => "N"
+            ),
+            false
+          );
+        ?>
+        <a href="/works/" class="projects__more">К другим проектам</a>
+      </div>
+      <?endif;?>
+      <div class="visible-md visible-lg col-xs-12 col-md-2">
+        <h3>Site navigation </h3>
+            <?php
+                $APPLICATION->IncludeComponent("bitrix:menu", "menu", 
+                array(
+                    "ALLOW_MULTI_SELECT" => "Y",
+                    "MENU_CACHE_TYPE"    => "A",
+                    "ROOT_MENU_TYPE"     => "main",
+                    "MAX_LEVEL"          => "1",
+                    "DIVIDER"            => "<br>"
+                    ),
+                false);
+            ?>
+          <div class="visible-lg nav__divider"></div>
+         
+            <?php
+                $APPLICATION->IncludeComponent("bitrix:menu", "menu", 
+                array(
+                    "ALLOW_MULTI_SELECT" => "Y",
+                    "MENU_CACHE_TYPE"    => "A",
+                    "ROOT_MENU_TYPE"     => "top",
+                    "MAX_LEVEL"          => "1",
+                    "DIVIDER"            => "<br>"
+                    ),
+                false);
+            ?>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row copyright">
+      <div class="col-xs-6 col-sm-3">© <?=date('Y')?> JSC Giprogazoochistka</div>
+      <div class="col-xs-6 col-sm-4">126, Pervomayskaya St., Moscow, Russia <br><a href="mailto:ggo@ggo.ru">ggo@ggo.ru</a></div>
+      <div class="col-xs-2 hidden-xs"><a href="/sitemap/">Site map</a></div>
+      <div class="col-xs-3 hidden-xs right">
+        <a href="http://radia.ru" target="_blank" class="radia"><?=svg('radia')?><div class="radia__content">Website developed by <br>RADIA Interactive</div></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<? endif;?>
 <div tabindex="-1" role="dialog" aria-hidden="true" class="pswp">
   <div class="pswp__bg"></div>
   <div class="pswp__scroll-wrap">
