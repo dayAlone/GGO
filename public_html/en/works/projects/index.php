@@ -3,13 +3,13 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle('Key projects');
 $APPLICATION->SetPageProperty('hide_projects', true);
 $APPLICATION->SetPageProperty('body_class', 'short_title');
-$APPLICATION->SetPageProperty('section', array('IBLOCK' => 2));
+$APPLICATION->SetPageProperty('section', array('IBLOCK' => 21));
 require($_SERVER['DOCUMENT_ROOT'].'/include/section.php');
 if(isset($_REQUEST['ELEMENT_CODE'])):
   if(intval($_GLOBALS['currentCatalogSection'])>0):
     $APPLICATION->IncludeComponent("bitrix:news.list", "projects_description", 
       array(
-        "IBLOCK_ID"            => 2,
+        "IBLOCK_ID"            => 21,
         "NEWS_COUNT"           => "100",
         "SORT_BY1"             => "SORT",
         "SORT_ORDER1"          => "ASC",
@@ -25,7 +25,7 @@ if(isset($_REQUEST['ELEMENT_CODE'])):
     );
   else:
     $APPLICATION->IncludeComponent("bitrix:news.detail", "projects", Array(
-      "IBLOCK_ID"     => 2,
+      "IBLOCK_ID"     => 21,
       "ELEMENT_CODE"  => $_REQUEST['ELEMENT_CODE'],
       "CHECK_DATES"   => "N",
       "IBLOCK_TYPE"   => "content",
