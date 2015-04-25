@@ -1,6 +1,6 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle("Отрасли");
+$APPLICATION->SetTitle("Industries");
 ?> 
 <p class="highlight">ОАО «Гипрогазоочистка» - инжиниринговая компания, которая работает для ключевых 
 отраслей промышленности и реализует проекты от проектирования до введения в эксплуатацию технологических 

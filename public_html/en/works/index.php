@@ -1,7 +1,7 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle("Ключевые проекты");
-$APPLICATION->SetPageProperty('page_title', 'Деятельность');
+$APPLICATION->SetTitle("Key projects");
+$APPLICATION->SetPageProperty('page_title', 'What we do');
 $APPLICATION->SetPageProperty('hide_projects', true);
 ?>
 <?

@@ -1,6 +1,6 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle('Ключевые проекты');
+$APPLICATION->SetTitle('Key projects');
 $APPLICATION->SetPageProperty('hide_projects', true);
 $APPLICATION->SetPageProperty('body_class', 'short_title');
 $APPLICATION->SetPageProperty('section', array('IBLOCK' => 2));

@@ -1,50 +1,50 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Ключевые проекты", 
-		"/works/index.php", 
+		"Key projects", 
+		"/en/works/index.php", 
 		Array('/works/projects/'), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Отрасли", 
-		"/works/industries/", 
+		"Industries", 
+		"/en/works/industries/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Услуги", 
-		"/works/depths/", 
+		"Services", 
+		"/en/works/depths/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Технологии", 
-		"/works/technologies/", 
+		"Technologies", 
+		"/en/works/technologies/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Карта проектов", 
-		"/works/maps/", 
+		"Map of projects", 
+		"/en/works/maps/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Референс", 
-		"/works/reference/", 
+		"Reference list", 
+		"/en/works/reference/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Заказчики и партнеры", 
-		"/works/clients/", 
+		"Our clients and partners", 
+		"/en/works/clients/", 
 		Array(), 
 		Array(), 
 		"" 

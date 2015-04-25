@@ -1,3 +1,3 @@
 <?
-$sSectionName = 'Деятельность';
+$sSectionName = 'What we do ';
 ?>
