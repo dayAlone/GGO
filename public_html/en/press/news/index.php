@@ -1,10 +1,10 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetPageProperty('section', array('IBLOCK'=>1, 'CODE'=>'news', "NOEMPTY"=>true));
+$APPLICATION->SetPageProperty('section', array('IBLOCK'=>20, 'CODE'=>'news', "NOEMPTY"=>true));
 require($_SERVER['DOCUMENT_ROOT'].'/include/section.php');
-$APPLICATION->SetTitle('Пресс-центр');
+$APPLICATION->SetTitle('Press center');
 if(!isset($_REQUEST['ELEMENT_CODE'])||intval($_GLOBALS['currentCatalogSection'])>0):
-    $APPLICATION->SetTitle('Пресс-центр');
+    $APPLICATION->SetTitle('Press center');
     $APPLICATION->IncludeComponent("bitrix:news.list", "news", 
 	array(
 		"IBLOCK_ID"            => 20,
@@ -22,7 +22,7 @@ if(!isset($_REQUEST['ELEMENT_CODE'])||intval($_GLOBALS['currentCatalogSection'])
 	false
 	);
   else:
-    $APPLICATION->SetPageProperty('page_title', 'Пресс-центр');
+    $APPLICATION->SetPageProperty('page_title', 'Press center');
     $APPLICATION->IncludeComponent("bitrix:news.detail","detail",Array(
       "IBLOCK_ID"     => 20,
       "ELEMENT_CODE"  => $_REQUEST['ELEMENT_CODE'],

@@ -1,3 +1,3 @@
 <?
-$sSectionName = 'Пресс-центр';
+$sSectionName = 'Press center';
 ?>

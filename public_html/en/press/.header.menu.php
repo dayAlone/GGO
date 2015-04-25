@@ -1,8 +1,8 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Новости", 
-		"/press/news/", 
+		"News", 
+		"/en/press/news/", 
 		Array(), 
 		Array(), 
 		"" 
