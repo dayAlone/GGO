@@ -54,7 +54,7 @@
             
             <span class="search">
               <a href="#" class="search__trigger"><?=svg('seach')?></a>
-              <form class="search__form" action="/search/">
+              <form class="search__form" action="<?=(LANGUAGE_ID == "ru"?"":"/en")?>/search/">
                 <input type="text" name="q">
                 <button type="submit">
                   <?=svg('seach')?>
