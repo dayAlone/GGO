@@ -1,12 +1,12 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle('Технологии');
+$APPLICATION->SetTitle('Technologies');
 ?> 
 
 <?
 $APPLICATION->IncludeComponent("bitrix:news.list", "tech", 
 	array(
-	  "IBLOCK_ID"      => 18,
+	  "IBLOCK_ID"      => 25,
 	  "NEWS_COUNT"     => "6123123123123",
 	  "SORT_BY1"       => "IBLOCK_SECTION_ID",
 	  "SORT_ORDER1"    => "ASC",

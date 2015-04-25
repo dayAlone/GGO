@@ -1,3 +1,3 @@
 <?
-$sSectionName = 'Карта проектов';
+$sSectionName = 'Map of project';
 ?>

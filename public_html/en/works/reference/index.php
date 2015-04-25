@@ -1,9 +1,9 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle('Референс');
+$APPLICATION->SetTitle('Reference list');
 $APPLICATION->IncludeComponent("bitrix:news.list", "reference", 
 		array(
-		  "IBLOCK_ID"      => 15,
+		  "IBLOCK_ID"      => 26,
 		  "NEWS_COUNT"     => "6123123123123",
 		  "SORT_BY1"       => "IBLOCK_SECTION_ID",
 		  "SORT_ORDER1"    => "ASC",

@@ -1,10 +1,10 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle('Услуги');
+$APPLICATION->SetTitle('Services');
 if(isset($_REQUEST['ELEMENT_CODE'])):
-    $APPLICATION->SetPageProperty('page_title', 'Услуги');
+    $APPLICATION->SetPageProperty('page_title', 'Services');
     $APPLICATION->IncludeComponent("bitrix:news.detail","depth",Array(
-      "IBLOCK_ID"     => 17,
+      "IBLOCK_ID"     => 24,
       "ELEMENT_CODE"  => $_REQUEST['ELEMENT_CODE'],
       "CHECK_DATES"   => "N",
       "IBLOCK_TYPE"   => "content",

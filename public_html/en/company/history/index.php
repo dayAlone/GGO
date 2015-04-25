@@ -5,7 +5,7 @@ $APPLICATION->SetTitle('Our history');
 <?
       $APPLICATION->IncludeComponent("bitrix:news.list", "history", 
         array(
-          "IBLOCK_ID"      => 8,
+          "IBLOCK_ID"      => 29,
           "NEWS_COUNT"     => "100",
           "SORT_BY1"       => "NAME",
           "SORT_ORDER1"    => "DESC",

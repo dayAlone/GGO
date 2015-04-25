@@ -4,7 +4,7 @@ $APPLICATION->SetTitle('Patents');
       
       $APPLICATION->IncludeComponent("bitrix:news.list", "certificates", 
         array(
-          "IBLOCK_ID"      => 9,
+          "IBLOCK_ID"      => 28,
           "NEWS_COUNT"     => "100",
           "SORT_BY1"       => "NAME",
           "SORT_ORDER1"    => "DESC",

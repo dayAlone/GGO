@@ -1,3 +1,3 @@
 <?
-$sSectionName = 'Референс';
+$sSectionName = 'Reference list';
 ?>
