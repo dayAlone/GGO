@@ -136,7 +136,7 @@
 <footer class="footer">
   <div class="container container--width">
     <div class="row">
-      <?if($APPLICATION->GetCurDir()=="/" || $APPLICATION->GetPageProperty('hide_projects')==true):?>
+      <?if($APPLICATION->GetCurDir()=="/en/" || $APPLICATION->GetPageProperty('hide_projects')==true):?>
       <div class="col-sm-8 col-md-6 footer__about">
         <h3>About the Сompany </h3> 
         <p>JSC Giprogazoochistka is among the leaders in the engineering services market. The Company provides services for key industrial sectors and implements projects from design engineering through to commissioning of process units at oil and gas processing, petrochemical and oil and gas production facilities. </p>
