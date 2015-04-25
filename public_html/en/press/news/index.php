@@ -7,7 +7,7 @@ if(!isset($_REQUEST['ELEMENT_CODE'])||intval($_GLOBALS['currentCatalogSection'])
     $APPLICATION->SetTitle('Пресс-центр');
     $APPLICATION->IncludeComponent("bitrix:news.list", "news", 
 	array(
-		"IBLOCK_ID"            => 1,
+		"IBLOCK_ID"            => 20,
 		"NEWS_COUNT"           => "20",
 		"SORT_BY1"             => "ACTIVE_FROM",
 		"SORT_ORDER1"          => "DESC",
@@ -24,10 +24,10 @@ if(!isset($_REQUEST['ELEMENT_CODE'])||intval($_GLOBALS['currentCatalogSection'])
   else:
     $APPLICATION->SetPageProperty('page_title', 'Пресс-центр');
     $APPLICATION->IncludeComponent("bitrix:news.detail","detail",Array(
-      "IBLOCK_ID"     => 1,
+      "IBLOCK_ID"     => 20,
       "ELEMENT_CODE"  => $_REQUEST['ELEMENT_CODE'],
       "CHECK_DATES"   => "N",
-      "IBLOCK_TYPE"   => "content",
+      "IBLOCK_TYPE"   => "content_en",
       "SET_TITLE"     => "Y",
       "CACHE_TYPE"    => "A",
       "PROPERTY_CODE" => array("GALLERY"),
