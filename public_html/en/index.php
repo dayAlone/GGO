@@ -6,7 +6,7 @@ $APPLICATION->SetPageProperty('body_class', 'index')
 <?
   $APPLICATION->IncludeComponent("bitrix:news.list", "slider", 
     array(
-      "IBLOCK_ID"      => 5,
+      "IBLOCK_ID"      => 23,
       "NEWS_COUNT"     => "10000000000",
       "SORT_BY1"       => "SORT",
       "SORT_ORDER1"    => "ASC",
@@ -92,12 +92,12 @@ $APPLICATION->SetPageProperty('body_class', 'index')
 <div class="map">
   <div class="container center">
     <div class="map__content">
-      <h1 class="m-padding-bottom">Карта проектов</h1>
+      <h1 class="m-padding-bottom">Map of projects </h1>
       <div class="map__text">
-        <div class="xs-margin-bottom">Более</div>
-        <div class="number__value">4000</div>технологических установок<br>
-        <div class="page__divider page__divider--small"></div><br>в
-        <div class="number__value">16</div>странах мира
+        <div class="xs-margin-bottom">Over </div>
+        <div class="number__value">4000</div>000 process units <br>
+        <div class="page__divider page__divider--small"></div><br>in
+        <div class="number__value">16</div>countries across the globe 
       </div><a href="/en/works/index.php" class="more"><?=svg('steps-arrow')?><br>Read more</a>
     </div>
   </div>

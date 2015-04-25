@@ -138,11 +138,11 @@
     <div class="row">
       <?if($APPLICATION->GetCurDir()=="/" || $APPLICATION->GetPageProperty('hide_projects')==true):?>
       <div class="col-sm-8 col-md-6 footer__about">
-        <h3>О компании</h3> 
-        <p>ОАО «Гипрогазоочистка»  является одним из лидеров рынка инжиниринговых услуг. Компания работает для ключевых отраслей промышленности и реализует проекты от проектирования до ввода в эксплуатацию технологических установок объектов нефте-газопереработки, нефте-газохимии и нефте-газодобычи.  </p>
-        <p>Деятельность компании, как государственного проектного института, началась в 1928 году.  Сегодня «Гипрогазоочистка» постоянно развивает технологии, наращивает объемы и расширяет виды работ. </p>
-        <p>Высокий уровень технических решений подтвержден большим набором патентов и изобретений. Компания разрабатывает техническую документацию по собственным базовым проектам в области газоочистки и процессов нефте- и газопереработки, а также использует лицензионные технологии ведущих зарубежных партнеров.  </p>
-        <p>Полная автоматизации процессов и высочайший уровень производительности труда являются ключевыми показателями эффективности деятельности компании.</p> 
+        <h3>About the Сompany </h3> 
+        <p>JSC Giprogazoochistka is among the leaders in the engineering services market. The Company provides services for key industrial sectors and implements projects from design engineering through to commissioning of process units at oil and gas processing, petrochemical and oil and gas production facilities. </p>
+        <p>Our company started out as a state design institute back in 1928. Today Giprogazoochistka remains committed to developing new technologies while increasing the scope and expanding the range of services and works it offers. </p>
+        <p>The quality of technical solutions developed in the Company is evidenced by its many patents and inventions. The Company develops technical documentation based on its own basic design packages for gas treatment and oil and gas processing facilities and also uses licensed technologies from its leading overseas partners. </p>
+        <p>All-around automation of work processes and top notch productivity of the Company's personnel are the key factors that drive the Company's performance.</p> 
       </div>
       <?endif;?>
       <div class="col-sm-4 col-md-4 footer__news">
@@ -170,7 +170,7 @@
         <?
           $APPLICATION->IncludeComponent("bitrix:news.list", "projects", 
             array(
-              "IBLOCK_ID"      => 2,
+              "IBLOCK_ID"      => 21,
               "NEWS_COUNT"     => "8",
               "SORT_BY1"       => "RAND",
               "SORT_ORDER1"    => "ASC",

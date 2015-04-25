@@ -1,14 +1,14 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"What we do", 
+		"Who we are", 
 		"/en/company/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Who we are", 
+		"What we do", 
 		"/en/works/", 
 		Array(), 
 		Array(), 
