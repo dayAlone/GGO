@@ -164,9 +164,9 @@
         ?>
         <a href="/en/press/" class="news__more">Other news</a>
       </div>
-      <?if($APPLICATION->GetCurDir()!="/" && $APPLICATION->GetPageProperty('hide_projects')!=true):?>
+      <?if($APPLICATION->GetCurDir()!="/en/" && $APPLICATION->GetPageProperty('hide_projects')!=true):?>
       <div class="col-sm-8 col-md-6 footer__projects">
-        <h3>Ключевые проекты</h3>
+        <h3>Key projects </h3>
         <?
           $APPLICATION->IncludeComponent("bitrix:news.list", "projects", 
             array(
@@ -183,7 +183,7 @@
             false
           );
         ?>
-        <a href="/works/" class="projects__more">К другим проектам</a>
+        <a href="/works/" class="projects__more">Other projects</a>
       </div>
       <?endif;?>
       <div class="visible-md visible-lg col-xs-12 col-md-2">
