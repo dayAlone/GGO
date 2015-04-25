@@ -1,29 +1,29 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"ГГО в цифрах", 
-		"/company/numbers/", 
+		"GGO in figures", 
+		"/en/company/numbers/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"История", 
-		"/company/history/", 
+		"Our history", 
+		"/en/company/history/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Сертификаты и свидетельства", 
-		"/company/certificates/", 
+		"Licenses and Certificates", 
+		"/en/company/certificates/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Патенты", 
-		"/company/patents/", 
+		"Patents", 
+		"/en/company/patents/", 
 		Array(), 
 		Array(), 
 		"" 

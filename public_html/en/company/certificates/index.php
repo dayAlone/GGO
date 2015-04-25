@@ -1,6 +1,6 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle('Сертификаты и свидетельства');
+$APPLICATION->SetTitle('Licenses and Certificates');
 
       $APPLICATION->IncludeComponent("bitrix:news.list", "certificates", 
         array(
