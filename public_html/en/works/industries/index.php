@@ -8,7 +8,7 @@ $APPLICATION->SetTitle("Industries");
 <?
       $APPLICATION->IncludeComponent("bitrix:news.list", "depth", 
         array(
-          "IBLOCK_ID"      => 4,
+          "IBLOCK_ID"      => 30,
           "NEWS_COUNT"     => "10",
           "SORT_BY1"       => "SORT",
           "SORT_ORDER1"    => "ASC",

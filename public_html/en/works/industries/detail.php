@@ -4,7 +4,7 @@ $APPLICATION->SetTitle('Industries');
 if(isset($_REQUEST['ELEMENT_CODE'])):
     $APPLICATION->SetPageProperty('page_title', 'Industries');
     $APPLICATION->IncludeComponent("bitrix:news.detail","depth",Array(
-      "IBLOCK_ID"     => 4,
+      "IBLOCK_ID"     => 30,
       "ELEMENT_CODE"  => $_REQUEST['ELEMENT_CODE'],
       "CHECK_DATES"   => "N",
       "IBLOCK_TYPE"   => "content",
