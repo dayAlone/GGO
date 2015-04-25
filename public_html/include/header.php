@@ -39,21 +39,19 @@
 <header class="header">
   <div class="container">
     <div class="row">
-      <div class="col-xs-9 col-sm-4"><a href="/" class="logo"><?=svg('logo')?></a></div>
+      <div class="col-xs-9 col-sm-4"><a href="<?=(LANGUAGE_ID == "ru"?"/":"/")?>" class="logo"><?=svg('logo'.(LANGUAGE_ID == "ru"?"":"-en"))?></a></div>
       <div class="col-xs-3 right visible-xs">
         <a href="#Nav" data-toggle="modal" data-target="#Nav" class="header__trigger"><?=svg('nav')?></a>
       </div>
       <div class="hidden-xs col-sm-8">
         <div class="header__nav">
           <div class="right">
-            <?
-            /*
+            
               <span class="header__lang">
-                <a href="#" class="header__lang__item header__lang__item--active">RU</a>
-                <a href="#" class="header__lang__item">EN</a>
+                <a href="/" class="header__lang__item <? if(LANGUAGE_ID == "ru"): ?>header__lang__item--active<?endif;?>">RU</a>
+                <a href="/en/" class="header__lang__item <? if(LANGUAGE_ID == "en"): ?>header__lang__item--active<?endif;?>">EN</a>
               </span>
-              */
-            ?>
+            
             <span class="search">
               <a href="#" class="search__trigger"><?=svg('seach')?></a>
               <form class="search__form" action="/search/">
