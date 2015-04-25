@@ -7,7 +7,7 @@ $APPLICATION->SetPageProperty('hide_projects', true);
 <?
 $APPLICATION->IncludeComponent("bitrix:news.list", "projects", 
 array(
-  "IBLOCK_ID"      => 2,
+  "IBLOCK_ID"      => 21,
   "NEWS_COUNT"     => "100",
   "SORT_BY1"       => "SORT",
   "SORT_ORDER1"    => "ASC",
