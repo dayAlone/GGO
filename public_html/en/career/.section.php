@@ -1,3 +1,3 @@
 <?
-$sSectionName = 'Карьера';
+$sSectionName = 'Career';
 ?>
