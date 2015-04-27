@@ -15,7 +15,7 @@ $APPLICATION->SetTitle('Вакансии');
 					"NEWS_COUNT"           => "20",
 					"SORT_BY1"             => "ACTIVE_FROM",
 					"SORT_ORDER1"          => "DESC",
-					"DETAIL_URL"           => "/career/vacancies/#ELEMENT_CODE#/",
+					"DETAIL_URL"           => "/en/career/vacancies/#ELEMENT_CODE#/",
 					"CACHE_TYPE"           => "A",
 					"SET_TITLE"            => "N",
 					"SHOW_DESCRIPTION"     => "Y",

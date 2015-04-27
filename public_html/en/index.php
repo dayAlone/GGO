@@ -34,7 +34,7 @@ $APPLICATION->SetPageProperty('body_class', 'index')
           "NEWS_COUNT"     => "10",
           "SORT_BY1"       => "SORT",
           "SORT_ORDER1"    => "ASC",
-          "DETAIL_URL"     => "/works/industries/#ELEMENT_CODE#/",
+          "DETAIL_URL"     => "/en/works/industries/#ELEMENT_CODE#/",
           "CACHE_TYPE"     => "A",
           "SET_TITLE"      => "N",
           "PROPERTY_CODE"  => array('SVG'),
