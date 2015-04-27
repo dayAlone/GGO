@@ -1,4 +1,8 @@
-<? $this->setFrameMode(true);?>
+<? $this->setFrameMode(true);
+use Bitrix\Main\Localization\Loc;
+use Bitrix\Sale\Location;
+Loc::loadMessages(__FILE__);
+?>
 <?foreach ($arResult['ITEMS'] as $key=>$item):?>
 <div class="news">
 <?if(isset($item['ACTIVE_FROM'])):?>
@@ -30,7 +34,7 @@
 endif;?>
 <?if($arParams['SHOW_VACANCY']=="Y"):
 	$this->SetViewTarget('title');
-	?><a data-toggle="modal" data-target="#vacancyDetail" href="#vacancyDetail" class="button">Отправить резюме</a><?
+	?><a data-toggle="modal" data-target="#vacancyDetail" href="#vacancyDetail" class="button"><?=Loc::getMessage('RESUME')?></a><?
 	$this->EndViewTarget();
 endif;?>
 <?=($arParams["DISPLAY_BOTTOM_PAGER"]=="Y" ? $arResult["NAV_STRING"]:"")?>

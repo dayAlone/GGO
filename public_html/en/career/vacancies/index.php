@@ -31,7 +31,7 @@ $APPLICATION->SetTitle('Vacancies');
 				<?=$vacancies?>
 			<?
 			else:?>
-				<p class="blue xl-margin-bottom">В настоящий момент нет открытых вакансий.</p>
+				<p class="blue xl-margin-bottom">At present there are no open vacancies.</p>
 			<?endif;
 		else:
 		    $APPLICATION->SetPageProperty('page_title', 'Вакансии');
@@ -50,11 +50,11 @@ $APPLICATION->SetTitle('Vacancies');
   </div>
   <div class="col-md-4 col-md-pull-8 page__side">
     <div class="page__side-divider hidden-md hidden-lg"></div>
-    <p>Группа «Гипрогазоочистка» — это профессиональная команда, обладающая	высокими компетенциями и богатым опытом работы в сфере газоочистки и экологии воздуха. Инжиниринговая компания достигла международного признания за счет применения инновационных подходов, суперсовременных технологий и высокого качества выполняемых работ. Ваши развернутые резюме высылайте по адресу <a href="mailto:job@ggo.ru">job@ggo.ru</a></p>
-    <p>С дополнительной информацией Вас ознакомят в Департаменте кадровых служб, по телефону +7 (495) 231-30-40.</p>
-    <div class="page__side-divider"></div>
-    <p>Уважаемые коллеги! Рады сообщить, что ОАО «Гипрогазоочистка» приглашает к сотрудничеству подрядчиков на выполнение проектных работ в удаленном доступе (freelance). Для участия в наборе заполните пожалуйста анкету по <a data-toggle="modal" data-target="#vacancyDetail" href="#vacancyDetail">ссылке.</a></p>
-    <p>Заполненные анкеты отправляйте на e-mail: <a href="mailto:SDvornikov@ggo.ru">SDvornikov@ggo.ru</a></p>
+    <p>Giprogazoochistka Group is a team of professionals with strong competencies and a wealth of experience in gas purification and ecology of air. The engineering company has attained international acclaim through the use of innovative approaches, cutting edge technologies and high quality of works it performs. Please send your detailed résumés at job@ggo.ru </p>
+	<p>For additional information, please contact our Human Resource Department at +7 (495) 231-30-40. </p>
+	<div class="page__side-divider"></div>
+	<p>Dear colleagues! We are pleased to announce that JSC Giprogazoochistka is seeking to contract out some design and engineering works to freelance engineering professionals. To be considered for a freelance position, please open the <a data-toggle="modal" data-target="#vacancyDetail" href="#vacancyDetail">link</a> and fill out the application form. </p>
+	<p>Filled out applications shall be sent at the following email: <a href="mailto:SDvornikov@ggo.ru">SDvornikov@ggo.ru</a> </p>
   </div>
 </div>
 <?
