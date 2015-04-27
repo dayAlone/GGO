@@ -1,4 +1,7 @@
 <?
+use Bitrix\Main\Localization\Loc;
+use Bitrix\Sale\Location;
+Loc::loadMessages(__FILE__);
 $item = $arResult;
 $item['ICON'] = file_get_contents($_SERVER['DOCUMENT_ROOT'].CFile::GetPath($item['PROPERTIES']['SVG']['VALUE']));
 if(strlen($item['ICON'])==0):
@@ -18,9 +21,9 @@ endif;
 	<div class="col-md-3 visible-md visible-lg">
 		<?if($item['IBLOCK_ID']!=18):?>
 			<?if($item['IBLOCK_ID']==4):?>
-			<h5 class="top">другие отрасли</h5>
+			<h5 class="top"><?=Loc::getMessage('MORE_DEPTHS')?></h5>
 			<?else:?>
-			<h5 class="top">другие услуги</h5>
+			<h5 class="top"><?=Loc::getMessage('MORE_SERVICES')?></h5>
 			<?endif;?>
 			<div class="page__divider xl-margin-bottom"></div>
 			<?
@@ -95,7 +98,7 @@ endif;
 	
 	<h3 class="l-margin-bottom no-margin-top"><?=$title?></h3>
 	<?=$items?>
-	<p class="xs-margin-top"><a href="/works/">Все проекты</a></p>
+	<p class="xs-margin-top"><a href="/works/"><?=Loc::getMessage('ALL_PROJECTS')?></a></p>
 	
 <?endif;?>
 

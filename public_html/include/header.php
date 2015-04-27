@@ -39,7 +39,7 @@
 <header class="header">
   <div class="container">
     <div class="row">
-      <div class="col-xs-9 col-sm-4"><a href="<?=(LANGUAGE_ID == "ru"?"/":"/")?>" class="logo"><?=svg('logo'.(LANGUAGE_ID == "ru"?"":"-en"))?></a></div>
+      <div class="col-xs-9 col-sm-4"><a href="<?=(LANGUAGE_ID == "ru"?"/":"/en/")?>" class="logo"><?=svg('logo'.(LANGUAGE_ID == "ru"?"":"-en"))?></a></div>
       <div class="col-xs-3 right visible-xs">
         <a href="#Nav" data-toggle="modal" data-target="#Nav" class="header__trigger"><?=svg('nav')?></a>
       </div>
