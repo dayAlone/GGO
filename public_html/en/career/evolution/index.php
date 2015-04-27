@@ -1,6 +1,6 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle("Профессиональное развитие");
+$APPLICATION->SetTitle("Professional development");
 ?><p class="highlight">
 	В 2010 году <strong>создан Корпоративный университет инжиниринга</strong> - механизм системного формирования профессиональных компетенций и личностных качеств сотрудников в соответствии с корпоративной культурой и стратегией развития группы компаний.
 </p>

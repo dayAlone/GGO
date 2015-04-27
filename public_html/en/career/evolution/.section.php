@@ -1,3 +1,3 @@
 <?
-$sSectionName = 'Профессиональное развитие';
+$sSectionName = 'Professional development';
 ?>

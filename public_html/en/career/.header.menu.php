@@ -1,23 +1,23 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Почему «Гипрогазоочистка»?", 
-		"/career/why/", 
+		"Why work at Giprogazoochistka?", 
+		"/en/career/why/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	
 	Array(
-		"Профессиональное развитие", 
-		"/career/evolution/", 
+		"Professional development", 
+		"/en/career/evolution/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Вакансии", 
-		"/career/vacancies/", 
+		"Vacancies", 
+		"/en/career/vacancies/", 
 		Array(), 
 		Array(), 
 		"" 
@@ -31,7 +31,7 @@ $aMenuLinks = Array(
 		"" 
 	),*/
 	Array(
-		"Подать заявку", 
+		"Apply here", 
 		"#vacancyDetail", 
 		Array(), 
 		Array("MORE"=>'data-toggle="modal" data-target="#vacancyDetail"'), 

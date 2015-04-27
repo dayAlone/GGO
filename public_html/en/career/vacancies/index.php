@@ -1,13 +1,13 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle('Вакансии');
+$APPLICATION->SetTitle('Vacancies');
 ?> 
 <div class="row">
   
   <div class="col-md-8 col-md-push-4">
   	<?
   		if(!isset($_REQUEST['ELEMENT_CODE'])):
-		    $APPLICATION->SetTitle('Вакансии');
+		    $APPLICATION->SetTitle('Vacancies');
 			ob_start();
 			    $APPLICATION->IncludeComponent("bitrix:news.list", "news", 
 				array(
