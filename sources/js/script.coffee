@@ -706,10 +706,8 @@ $(document).ready ->
 	$('.feedback').elem('form').submit (e)->
 		e.preventDefault()
 		data = $(this).serialize()
-		console.log(data)
 		$.post '/include/send.php', data,
 	        (data) ->
-	        	console.log(data)
 	        	data = $.parseJSON(data)
 	        	if data.status == "ok"
 	        		$('.feedback').elem('form').hide().addClass 'hidden'
