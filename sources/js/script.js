@@ -802,7 +802,9 @@
       var data;
       e.preventDefault();
       data = $(this).serialize();
+      console.log(data);
       return $.post('/include/send.php', data, function(data) {
+        console.log(data);
         data = $.parseJSON(data);
         if (data.status === "ok") {
           $('.feedback').elem('form').hide().addClass('hidden');
