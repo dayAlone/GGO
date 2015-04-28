@@ -1,7 +1,7 @@
 <div class="vacancy-popup">
     <div class="success">
-      <h3 class="center">Ваша заявка успешно отправлена.</h3>
-      <p class="center">В ближайшее время представители нашей компании свяжутся с вами. Благодарим за обращение.</p>
+      <h3 class="center">Your application has been submitted successfully.</h3>
+      <p class="center">A representative of our company will contact you shortly. Thank you for applying.</p>
     </div>
     <form data-parsley-validate="" enctype="multipart/form-data" class="form visible">
       <h3>To submit your résumé to be included in our prospective employee database, please fill out the fields below: </h3>
