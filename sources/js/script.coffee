@@ -688,6 +688,9 @@ $(document).ready ->
 
 	$('#vacancyDetail')
 		.on 'show.bs.modal', (e)->
+			$('#vacancyDetail .form').show()
+			$('#vacancyDetail .success').hide()
+			
 			if $(e.relatedTarget).parents('.vacancy').length > 0
 				$('#vacancyDetail h3').text $(e.relatedTarget).parents('.vacancy').elem('title').text()
 				$('#vacancyDetail h3').prepend "<span>Отклик на вакансию</span>"
@@ -716,6 +719,29 @@ $(document).ready ->
 	        		$('input[name=captcha_word]').addClass('parsley-error')
 	        		getCaptcha()
 	
+	$('#vacancyDetail .form').submit (e)->
+		data = new FormData(this)
+		
+		$.ajax 
+			type        : 'POST'
+			url         : '/include/send.php'
+			data        : data
+			cache       : false
+			contentType : false
+			processData : false
+			mimeType    : 'multipart/form-data'
+			success     : (data) ->
+				data = $.parseJSON(data)
+				if data.status == "ok"
+					$('#vacancyDetail .form').hide()
+					$('#vacancyDetail .success').show()
+				else if data.status == "error"
+					$('#vacancyDetail input[name=captcha_word]').addClass('parsley-error')
+					getCaptcha()
+
+		e.preventDefault()
+
+
 	$('a.captcha_refresh, a.captcha__refresh').click (e)->
 		getCaptcha()
 		e.preventDefault()	

@@ -781,6 +781,8 @@
       return $('.file-name').text($(this).val().replace(/.+[\\\/]/, ""));
     });
     $('#vacancyDetail').on('show.bs.modal', function(e) {
+      $('#vacancyDetail .form').show();
+      $('#vacancyDetail .success').hide();
       if ($(e.relatedTarget).parents('.vacancy').length > 0) {
         $('#vacancyDetail h3').text($(e.relatedTarget).parents('.vacancy').elem('title').text());
         $('#vacancyDetail h3').prepend("<span>Отклик на вакансию</span>");
@@ -812,6 +814,30 @@
           return getCaptcha();
         }
       });
+    });
+    $('#vacancyDetail .form').submit(function(e) {
+      var data;
+      data = new FormData(this);
+      $.ajax({
+        type: 'POST',
+        url: '/include/send.php',
+        data: data,
+        cache: false,
+        contentType: false,
+        processData: false,
+        mimeType: 'multipart/form-data',
+        success: function(data) {
+          data = $.parseJSON(data);
+          if (data.status === "ok") {
+            $('#vacancyDetail .form').hide();
+            return $('#vacancyDetail .success').show();
+          } else if (data.status === "error") {
+            $('#vacancyDetail input[name=captcha_word]').addClass('parsley-error');
+            return getCaptcha();
+          }
+        }
+      });
+      return e.preventDefault();
     });
     $('a.captcha_refresh, a.captcha__refresh').click(function(e) {
       getCaptcha();
