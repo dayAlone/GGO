@@ -8,7 +8,7 @@
           
         </div>
       </div>
-      <div id="map"></div>
+      <div id="map" data-lang="<?=(LANGUAGE_ID == "ru"?"ru_RU":"en_EN")?>"></div>
       <?	
       	$data = array();
       	foreach ($arResult['ITEMS'] as $key=>$item):

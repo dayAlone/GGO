@@ -439,7 +439,7 @@ $(document).ready ->
 
 		$('.geography__popup_content').spin spinOptions
 
-		$.getScript 'http://api-maps.yandex.ru/2.1/?lang=ru_RU', ->
+		$.getScript 'http://api-maps.yandex.ru/2.1/?lang=' + $('.geography #map').data('lang'), ->
 			if(window.location.hash)
 				$('.geography-filter a[href^="'+window.location.hash+'"]').trigger('click')
 			

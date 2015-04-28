@@ -505,7 +505,7 @@
     var sHeight, scrollTimer, x;
     if ($('.geography').length > 0) {
       $('.geography__popup_content').spin(spinOptions);
-      $.getScript('http://api-maps.yandex.ru/2.1/?lang=ru_RU', function() {
+      $.getScript('http://api-maps.yandex.ru/2.1/?lang=' + $('.geography #map').data('lang'), function() {
         if (window.location.hash) {
           $('.geography-filter a[href^="' + window.location.hash + '"]').trigger('click');
         }
