@@ -48,8 +48,8 @@ if($result['status'] == 'ok') {
 		$body .= "<br /><hr><br />";
 
 		$mail->Subject = "Сообщение с сайта ".$_SERVER['HTTP_HOST']; 
-		$email->From = "ggo@ggo.ru";
-		$email->FromName = "Сайт ГГО";
+		$mail->From = "ggo@ggo.ru";
+		$mail->FromName = "Сайт ГГО";
 
 		if ($result['status'] == 'ok') {
 			$rs_user = CUser::GetList(
