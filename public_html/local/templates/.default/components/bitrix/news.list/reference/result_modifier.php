@@ -8,10 +8,10 @@
 			'CODE'   => $item['CODE'],
 			'SORT'   => $item['SORT'],
 			'client' => $item['PROPERTIES']['CLIENT']['VALUE'],
-			'object' => $item['PROPERTIES']['OBJECT']['VALUE'],
+			'object' => $item['PROPERTIES']['OBJECT']['VALUE']['TEXT'],
 			'region' => $item['PROPERTIES']['REGION']['VALUE'],
 			'period' => $item['PROPERTIES']['PERIOD']['VALUE'],
-			'works'  => $item['PROPERTIES']['WORKS']['VALUE'],
+			'works'  => $item['PROPERTIES']['WORKS']['VALUE']['TEXT'],
 			'epscm'  => $item['PROPERTIES']['EPSCM']['VALUE'],
 			'coords' => $item['PROPERTIES']['COORDS']['VALUE'],
 			);
