@@ -26,16 +26,15 @@
 			            		<?endif;?>
 			            		<small>заказчик:</small> <br><?=$info['client']?><br>
 								<div class="row xs-margin-top">
-									<div class="col-xs-6"><small>объект:</small> <br><?=$info['object']?><br></div>
-									<div class="col-xs-3">
+									<div class="col-xs-6">
 										<small>период:</small> <br><?=str_replace("по н.в.", "<nobr>по н.в.</nobr>", $info['period'])?><br>
 									</div>
-									<div class="col-xs-3">										
+									<div class="col-xs-6">										
 										<small>страна, регион:</small> <br><?=$info['region']?><br>
 									</div>
 									
 								</div>
-								<small>проект:</small> <br><?=$info['project']?><br>
+								<small>наименование проекта, объект:</small> <br><?=$info['object']?><br>
 								<small>вид работ:</small><br> <?=$info['works']?><br>
 								<small>Виды работ EPsCm:</small> <br><?=$info['epscm']?><br>
 			                <?endforeach;?>
@@ -62,7 +61,6 @@
 		                    <td class="hidden-xs"><?=$info['period']?></td>
 		                    <td>
 		                    	<small class="visible-xs"><strong><?=$info['period']?></strong></small>
-		                    	<?=$info['project']?><br>
 		                    	<?=$info['object']?>
 		                    	<div class="visible-xs">
 		                    		<small class=""><strong>Регион, страна:</strong> <?=$info['region']?></small>	
