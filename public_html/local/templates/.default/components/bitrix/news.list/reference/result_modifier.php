@@ -3,7 +3,18 @@
 	foreach ($arResult['ITEMS'] as $key=>$item):
 		if(!isset($arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']]))
 			$arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']] = array('ELEMENTS' => array());
-		$arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']]['ELEMENTS'][] = array('NAME'=>$item['NAME'],'CODE'=>$item['CODE'], 'INFORMATION'=>$item['PROPERTIES']['INFORMATION']['VALUE']);
+		$arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']]['ELEMENTS'][] = array(
+			'NAME'   => $item['NAME'],
+			'CODE'   => $item['CODE'],
+			'SORT'   => $item['SORT'],
+			'client' => $item['PROPERTIES']['CLIENT']['VALUE'],
+			'object' => $item['PROPERTIES']['OBJECT']['VALUE'],
+			'region' => $item['PROPERTIES']['REGION']['VALUE'],
+			'period' => $item['PROPERTIES']['PERIOD']['VALUE'],
+			'works'  => $item['PROPERTIES']['WORKS']['VALUE'],
+			'epscm'  => $item['PROPERTIES']['EPSCM']['VALUE'],
+			'coords' => $item['PROPERTIES']['COORDS']['VALUE'],
+			);
 	endforeach;
 	
 	$arFilter = array('IBLOCK_ID' => $arResult['ID'], 'ID'=>array_keys($arResult['SECTIONS']));
