@@ -1,5 +1,7 @@
 <? $this->setFrameMode(true);?>
+<?/*
 <div role="tabpanel">
+
 	<ul role="tablist" class="nav nav-tabs">
 	<?
 	$s = array_keys($arResult['SECTIONS']);
@@ -9,10 +11,10 @@
 	<?endforeach;?>
 	</ul>
 	<div class="tab-content">
-	
+	<?=($key==$first?'active':'')?>
+*/?>	
 	<?foreach ($arResult['SECTIONS'] as $key=>$section):?>
-		<div id="<?=$section['CODE']?>" role="tabpanel" class="tab-pane <?=($key==$first?'active':'')?>">
-
+		<div id="<?=$section['CODE']?>" role="tabpanel" class="tab-pane active ">
 			<?foreach ($section['ELEMENTS'] as $item):?>
 				<div class="reference">
 		          	<a href="#" class="reference__trigger"><?=svg('next')?><?=$item['NAME']?></a>
@@ -22,51 +24,53 @@
 			            		<?if($key>0):?>
 			            			<div class="list__divider"></div>
 			            		<?endif;?>
-								<div class="row">
+			            		<small>заказчик:</small> <br><?=$info['client']?><br>
+								<div class="row xs-margin-top">
 									<div class="col-xs-6"><small>объект:</small> <br><?=$info['object']?><br></div>
 									<div class="col-xs-3">
 										<small>период:</small> <br><?=str_replace("по н.в.", "<nobr>по н.в.</nobr>", $info['period'])?><br>
 									</div>
 									<div class="col-xs-3">										
-										<small>регион:</small> <br><?=$info['region']?><br>
+										<small>страна, регион:</small> <br><?=$info['region']?><br>
 									</div>
 									
 								</div>
-								
 								<small>проект:</small> <br><?=$info['project']?><br>
 								<small>вид работ:</small><br> <?=$info['works']?><br>
-								
+								<small>Виды работ EPsCm:</small> <br><?=$info['epscm']?><br>
 			                <?endforeach;?>
-		            		
-		            		
-							
-							
-							
+		            					
 		            	</div>
 		              <table cellpadding="10" class="table">
 		                <thead>
 		                  <tr>
-		                    <th width="25%">объект</th>
-		                    <th width="15%" class="hidden-xs">регион</th>
-		                    <th width="15%" class="hidden-xs">период</th>
-		                    <th width="25%">проект</th>
-		                    <th width="20%">вид работ</th>
+		                  	<th width="20%">заказчик</th>
+		                    <th width="10%" class="hidden-xs">регион, <br>страна</th>
+							<th width="10%" class="hidden-xs">период</th>
+		                    
+		                    <th width="25%">наименование проекта, <br>объект</th>
+		                    
+		                    <th width="25%">вид работ</th>
+		                    <th width="10%"><nobr>вид работ</nobr><br>EPsCm</th>
 		                  </tr>
 		                </thead>
 		                <tbody>
 		                <?foreach ($item['INFORMATION'] as $info):?>
 		                  <tr>
+		                  	<td><?=$info['client']?></td>
+		                  	<td class="hidden-xs"><?=$info['region']?></td>
+		                    <td class="hidden-xs"><?=$info['period']?></td>
 		                    <td>
 		                    	<small class="visible-xs"><strong><?=$info['period']?></strong></small>
+		                    	<?=$info['project']?><br>
 		                    	<?=$info['object']?>
-		                    	<small class="visible-xs">
-									<strong>Регион:</strong> <?=$info['region']?>
-								</small>
+		                    	<div class="visible-xs">
+		                    		<small class=""><strong>Регион, страна:</strong> <?=$info['region']?></small>	
+		                    	</div>
 		                    </td>
-		                    <td class="hidden-xs"><?=$info['region']?></td>
-		                    <td class="hidden-xs"><?=$info['period']?></td>
-		                    <td><?=$info['project']?></td>
+		                    
 		                    <td><?=$info['works']?></td>
+		                    <td><?=$info['epscm']?></td>
 		                  </tr>
 		                <?endforeach;?>
 		                </tbody>
@@ -74,7 +78,9 @@
 		            </div>
 		        </div>
 			<?endforeach;?>
+
 		</div>
-	<?endforeach;?>
+	<?endforeach;?><?/*
 	</div>
 </div>
+*/?>
