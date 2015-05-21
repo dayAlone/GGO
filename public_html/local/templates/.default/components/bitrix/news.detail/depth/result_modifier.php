@@ -39,4 +39,23 @@ foreach ($arResult["PROPERTIES"] as $key => $prop):
         break;
     endswitch;
 endforeach;
+if($arResult['CODE'] == "postavka-oborudovaniya"):
+    ob_start();
+
+    $APPLICATION->IncludeComponent("bitrix:news.list", "reference_equip", 
+        array(
+          "IBLOCK_ID"      => 20,
+          "NEWS_COUNT"     => "100",
+          "SORT_BY1"       => "SORT",
+          "SORT_ORDER1"    => "ASC",
+          "CACHE_TYPE"     => "A",
+          "SET_TITLE"      => "N",
+          "PROPERTY_CODE"  => array('SVG')
+        ),
+        false
+    );
+        $data = ob_get_contents();
+    ob_end_clean();
+    str_replace('#REFERENCE#', $data, $arResult['~DETAIL_TEXT']);
+endif;
 ?>
