@@ -43,7 +43,7 @@
                 <thead>
                   <tr>
                   	<th width="20%">заказчик</th>
-                    <th width="10%" class="hidden-xs">регион, <br>страна</th>
+                    <th width="7%" class="hidden-xs">регион, <br>страна</th>
 					<th width="10%" class="hidden-xs">период</th>
                     
                     <th width="25%">наименование проекта, <br>объект</th>

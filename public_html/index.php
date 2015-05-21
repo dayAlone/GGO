@@ -60,27 +60,27 @@ $APPLICATION->SetPageProperty('body_class', 'index')
       <div class="visible-xs page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Более</span>
         <div class="number__value">4 000</div>
-        <div class="page__divider page__divider--small float-none"></div><br>выполненных проектов
+        <div class="page__divider page__divider--small float-none"></div><br>объектов, введенных в эксплуатацию
       </div>
       <div class="visible-xs visible-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Более</span>
         <div class="number__value">2 млн</div>
-        <div class="page__divider page__divider--small float-none"></div><br>предоставленных Заказчикам инженерных человеко-часов в год
+        <div class="page__divider page__divider--small float-none"></div><br>инженерных человеко-часов в год предоставляются Заказчикам
       </div>
       <div class="hidden-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Более</span>
-        <div class="number__value">700 тыс. км</div>
-        <div class="page__divider page__divider--small float-none"></div><br>трубопроводов разработаны ГГО с помощью инструментов трехмерного проектирования
+        <div class="number__value">1 млн. км</div>
+        <div class="page__divider page__divider--small float-none"></div><br>трубопроводов спроектировано с помощью систем трехмерного проектирования
       </div>
       <div class="visible-xs visible-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Более</span>
-        <div class="number__value">3 000</div>
-        <div class="page__divider page__divider--small float-none"></div><br>тонн оборудования поставлено <br> нами за последние 3 года
+        <div class="number__value">30 000</div>
+        <div class="page__divider page__divider--small float-none"></div><br>онн технологического оборудования изготовлено <br>и поставлено Заказчикам за последние 3 года
       </div>
       <div class="visible-xs page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Наши установки производят более</span>
         <div class="number__value">10 млн. тонн</div>
-        <div class="page__divider page__divider--small float-none"></div><br>готовой товарной продукции
+        <div class="page__divider page__divider--small float-none"></div><br>готовой товарной продукции в год
       </div>
     </div>
     <div class="page__divider xxl-margin-top xxs-margin-bottom-xs xxl-margin-bottom-sm"></div>
@@ -93,7 +93,7 @@ $APPLICATION->SetPageProperty('body_class', 'index')
       <h1 class="m-padding-bottom">Карта проектов</h1>
       <div class="map__text">
         <div class="xs-margin-bottom">Более</div>
-        <div class="number__value">4000</div>технологических установок<br>
+        <div class="number__value">4000</div> объектов, введенных в эксплуатацию<br>
         <div class="page__divider page__divider--small"></div><br>в
         <div class="number__value">16</div>странах мира
       </div><a href="/works/index.php" class="more"><?=svg('steps-arrow')?><br>Подробнее</a>
