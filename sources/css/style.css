@@ -5868,6 +5868,8 @@ ul.nav-tabs li.active a {
   -o-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
   transform: rotate(-180deg);
+}
+.reference-wrap--open .reference-wrap__trigger svg path {
   fill: #dadada;
 }
 .geography {
