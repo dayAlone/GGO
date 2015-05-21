@@ -31,4 +31,4 @@
   	<?endforeach;?>
   </div>
 </div>
-<div class="page__divider page__divider--small"></div>
+<div class="page__divider xxl-margin-top m-margin-bottom page__divider--small"></div>
