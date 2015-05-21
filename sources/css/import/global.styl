@@ -1479,7 +1479,71 @@ ul.nav-tabs
 					transform rotate(-180deg)
 					path
 						fill #dadada
-				
+
+.partners
+	margin-right -10px
+	margin-left -10px
+partner-top()
+	padding-bottom 0
+	padding-top 60px
+	.partner__name
+		bottom auto
+		top 0
+partner-bottom()
+	padding-bottom 50px
+	padding-top 0px
+	.partner__name
+		top auto
+		bottom 0
+.partner
+	margin 10px
+	width calc(100% - 20px)
+	
+	float: left
+	padding-bottom 50px
+	position relative
+	
+	&__content
+		padding 0 0 0 10px
+		border-left 1px solid transparent
+		margin-bottom 10px
+		color #233347
+		line-height 1.8
+		min-height 165px
+	&__name
+		height 50px
+		line-height 51px
+		text-align: center
+		color white
+		font-weight: bold
+		font-size 14px
+		position absolute
+		bottom 0
+		left 0
+		width 100%
+		span
+			display inline-block
+			line-height 1.1
+	@media (min-width: scr_sm) and (max-width: scr_md)
+		width calc(50% - 20px)
+		&:nth-child(n+3)
+			partner-top()
+		&:nth-child(n+5)
+			partner-bottom()
+		&:nth-child(n+7)
+			partner-top()
+		&:nth-child(n+9)
+			partner-bottom()
+	@media (min-width: scr_md) and (max-width: scr_lg)
+		width calc(25% - 20px)
+		&:nth-child(n+5)
+			partner-top()
+		&:nth-child(n+9)
+			partner-bottom()
+	@media (min-width: scr_lg)
+		width calc(20% - 20px)
+		&:nth-child(n+6)
+			partner-top()
 .geography
 	overflow hidden
 	position relative

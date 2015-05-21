@@ -42,10 +42,10 @@
 			'CODE'   => $item['CODE'],
 			'sort'   => $item['SORT'],
 			'client' => $item['PROPERTIES']['CLIENT']['VALUE'],
-			'object' => $item['PROPERTIES']['OBJECT']['VALUE']['TEXT'],
+			'object' => html_entity_decode($item['PROPERTIES']['OBJECT']['VALUE']['TEXT']),
 			'region' => $item['PROPERTIES']['REGION']['VALUE'],
 			'period' => $item['PROPERTIES']['PERIOD']['VALUE'],
-			'works'  => $item['PROPERTIES']['WORKS']['VALUE']['TEXT'],
+			'works'  => html_entity_decode($item['PROPERTIES']['WORKS']['VALUE']['TEXT']),
 			'epscm'  => '<span data-toggle="tooltip" data-placement="top" title="'.$tooltip.'">'.$item['PROPERTIES']['EPSCM']['VALUE'].'</span>',
 			'coords' => $item['PROPERTIES']['COORDS']['VALUE'],
 			);

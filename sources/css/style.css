@@ -5872,6 +5872,112 @@ ul.nav-tabs li.active a {
 .reference-wrap--open .reference-wrap__trigger svg path {
   fill: #dadada;
 }
+.partners {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.partner {
+  margin: 10px;
+  width: calc(100% - 20px);
+  float: left;
+  padding-bottom: 50px;
+  position: relative;
+}
+.partner__content {
+  padding: 0 0 0 10px;
+  border-left: 1px solid transparent;
+  margin-bottom: 10px;
+  color: #233347;
+  line-height: 1.8;
+  min-height: 165px;
+}
+.partner__name {
+  height: 50px;
+  line-height: 51px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.partner__name span {
+  display: inline-block;
+  line-height: 1.1;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .partner {
+    width: calc(50% - 20px);
+  }
+  .partner:nth-child(n+3) {
+    padding-bottom: 0;
+    padding-top: 60px;
+  }
+  .partner:nth-child(n+3) .partner__name {
+    bottom: auto;
+    top: 0;
+  }
+  .partner:nth-child(n+5) {
+    padding-bottom: 50px;
+    padding-top: 0px;
+  }
+  .partner:nth-child(n+5) .partner__name {
+    top: auto;
+    bottom: 0;
+  }
+  .partner:nth-child(n+7) {
+    padding-bottom: 0;
+    padding-top: 60px;
+  }
+  .partner:nth-child(n+7) .partner__name {
+    bottom: auto;
+    top: 0;
+  }
+  .partner:nth-child(n+9) {
+    padding-bottom: 50px;
+    padding-top: 0px;
+  }
+  .partner:nth-child(n+9) .partner__name {
+    top: auto;
+    bottom: 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .partner {
+    width: calc(25% - 20px);
+  }
+  .partner:nth-child(n+5) {
+    padding-bottom: 0;
+    padding-top: 60px;
+  }
+  .partner:nth-child(n+5) .partner__name {
+    bottom: auto;
+    top: 0;
+  }
+  .partner:nth-child(n+9) {
+    padding-bottom: 50px;
+    padding-top: 0px;
+  }
+  .partner:nth-child(n+9) .partner__name {
+    top: auto;
+    bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .partner {
+    width: calc(20% - 20px);
+  }
+  .partner:nth-child(n+6) {
+    padding-bottom: 0;
+    padding-top: 60px;
+  }
+  .partner:nth-child(n+6) .partner__name {
+    bottom: auto;
+    top: 0;
+  }
+}
 .geography {
   overflow: hidden;
   position: relative;
