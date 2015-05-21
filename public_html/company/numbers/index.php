@@ -26,7 +26,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
     </div>
     <div class="col-xs-6">
       <div class="number__value number__value--big">4000</div>
-      <big>выполненных проектов</big>
+      <div class="s-line-height"><small>объектов, введенных <nobr>в эксплуатацию</nobr></small></div>
     </div>
   </div>
   <div class="page__divider l-margin-top l-margin-bottom"> </div>
@@ -34,8 +34,8 @@ $APPLICATION->SetTitle('ГГО в цифрах');
     <div class="row">
         <div class="col-xs-12">
           <big class="m-line-height">Более</big>
-          <div class="number__value number__value--m">700 <small>тыс. км</small></div>
-          <em class="left bigger">трубопроводов, ГГО разработаны с помощью инструментов трехмерного проектирования</em>
+          <div class="number__value number__value--m">1 <small>млн км</small></div>
+          <em class="left bigger">трубопроводов спроектировано с помощью систем трехмерного проектирования</em>
         </div>
       </div>
   </div>
@@ -46,7 +46,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
         <div class="m--margin-bottom s-line-height"><em>Более</em></div>
       </div>
       <div class="number__value number__value--s">2 млн</div>
-      <div class="s--margin-top xs-line-height"><em>предоставленных заказчикам инженерных человеко-часов в год</em></div>
+      <div class="s--margin-top xs-line-height"><em>инженерных человеко-часов в год предоставляются Заказчикам</em></div>
     </div>
     <div class="col-xs-5 center">
       <div class="number__value number__value--s">10</div><div class="s-line-height"><em>ВИНК среди наших клиентов</em></div>
@@ -106,11 +106,11 @@ $APPLICATION->SetTitle('ГГО в цифрах');
     <div class="col-xs-8">
       <div class="number__value">30000</div>
       <div class="xs--margin-top">
-        <big>тонн оборудования</big>
+        <div class="s-line-height"><small>тонн технологического<br> оборудования</small></div>
       </div>
     </div>
     <div class="col-xs-12 center">
-      <div class="s-margin-top s-line-height"><small>нами было поставлено только за последние 3 года, при этом самая крупная поставка составила 
+      <div class="s-margin-top s-line-height"><small>изготовлено и поставлено Заказчикам <nobr>за последние</nobr> 3 года, при этом самая крупная поставка составила
           <nobr><strong>716 </strong>тонн</nobr></small></div>
     </div>
   </div>
@@ -147,7 +147,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
   <div class="row">
     <div class="col-xs-2"><svg width="44" height="65" viewBox="0 0 44 65" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="n-8" fill="#0082DC"><path d="M22.01 43.806C10.13 43.806.47 34.056.47 22.068.47 10.082 10.13.33 22.01.33c11.876 0 21.54 9.752 21.54 21.738 0 11.987-9.664 21.738-21.54 21.738zm0-40.9c-10.472 0-18.99 8.596-18.99 19.162 0 10.567 8.518 19.164 18.99 19.164 10.47 0 18.988-8.597 18.988-19.163 0-10.567-8.518-19.165-18.99-19.165z" id="Fill-1"/><path d="M11.57 64.748c-.203 0-.41-.05-.596-.15-.418-.223-.68-.66-.68-1.137V45.603c0-.71.573-1.287 1.277-1.287.705 0 1.276.577 1.276 1.287V61.03l8.446-5.793c.433-.297 1-.297 1.434 0l8.447 5.793V45.602c0-.71.57-1.287 1.275-1.287.704 0 1.276.577 1.276 1.287v17.86c0 .476-.26.913-.68 1.137-.415.222-.92.194-1.312-.074l-9.723-6.668-9.723 6.668c-.215.147-.466.222-.716.222" id="Fill-2"/><path d="M22.733 32.476c-.704 0-1.275-.577-1.275-1.288V16.265l-3.053 2.183c-.576.412-1.37.273-1.778-.307-.408-.578-.272-1.382.303-1.793l5.066-3.622c.39-.278.9-.313 1.323-.093.422.22.69.66.69 1.143v17.413c0 .712-.572 1.288-1.277 1.288" id="Fill-3"/></g></g></svg>
     </div>
-    <div class="col-xs-10 right"><small>Наша проектная документация получает положительное заключение Главгосэкспертизы с первого раза. </small></div>
+    <div class="col-xs-10 right"><small>Наша проектная документация получает положительное заключение Главгосэкспертизы. </small></div>
   </div>
   <div class="page__divider m-margin-top m-margin-bottom"></div>
   <div class="row">
@@ -189,8 +189,8 @@ $APPLICATION->SetTitle('ГГО в цифрах');
       <div class="row">
         <div class="col-xs-12">
           <big class="m-line-height">Более</big>
-          <div class="number__value number__value--m">700 <small>тыс. км</small></div>
-          <em class="left bigger">трубопроводов разработаны ГГО с помощью инструментов трехмерного проектирования</em>
+          <div class="number__value number__value--m">1 <small>млн км</small></div>
+          <em class="left bigger">трубопроводов спроектировано с помощью систем трехмерного проектирования </em>
         
         </div>
       </div>
@@ -206,7 +206,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
         </div>
         <div class="col-xs-9">
           <div class="number__value number__value--big">4000</div>
-          <big>выполненных проектов</big>
+          <div class="s-line-height"><small>объектов, введенных <nobr>в эксплуатацию</nobr></small></div>
         </div>
       </div>
       <div class="page__divider xl-margin-top l-margin-bottom"> </div>
@@ -216,7 +216,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
             <div class="xs--margin-bottom s-line-height"><em>Более</em></div>
           </div>
           <div class="number__value number__value--s">2 млн</div>
-          <div class="xxs--margin-top xs-line-height"><em>предоставленных заказчикам инженерных человеко-часов в год</em></div>
+          <div class="xxs--margin-top xs-line-height"><em>инженерных человеко-часов в год предоставляются Заказчикам</em></div>
         </div>
         <div class="col-xs-5 center">
           <div class="number__value number__value--s">10</div><div class="s-line-height"><em>ВИНК среди наших клиентов</em></div>
@@ -311,11 +311,11 @@ $APPLICATION->SetTitle('ГГО в цифрах');
         <div class="col-xs-8">
           <div class="number__value number__value--xxs">30000</div>
           <div class="xs--margin-top">
-            <big>тонн <br>оборудования</big>
+            <div class="s-line-height"><small>тонн <br>технологического<br> оборудования</small></div>
           </div>
         </div>
         <div class="col-xs-12">
-          <div class="s-margin-top m-line-height"><small>нами было поставлено только за последние 3 года, при этом самая крупная поставка составила 
+          <div class="s-margin-top m-line-height"><small>изготовлено и поставлено Заказчикам <nobr>за последние</nobr> 3 года, при этом самая крупная поставка составила
               <nobr><strong>716 </strong>тонн</nobr></small></div>
         </div>
       </div>
@@ -328,7 +328,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
         <div class="col-xs-2"><svg width="44" height="65" viewBox="0 0 44 65" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="n-8" fill="#0082DC"><path d="M22.01 43.806C10.13 43.806.47 34.056.47 22.068.47 10.082 10.13.33 22.01.33c11.876 0 21.54 9.752 21.54 21.738 0 11.987-9.664 21.738-21.54 21.738zm0-40.9c-10.472 0-18.99 8.596-18.99 19.162 0 10.567 8.518 19.164 18.99 19.164 10.47 0 18.988-8.597 18.988-19.163 0-10.567-8.518-19.165-18.99-19.165z" id="Fill-1"/><path d="M11.57 64.748c-.203 0-.41-.05-.596-.15-.418-.223-.68-.66-.68-1.137V45.603c0-.71.573-1.287 1.277-1.287.705 0 1.276.577 1.276 1.287V61.03l8.446-5.793c.433-.297 1-.297 1.434 0l8.447 5.793V45.602c0-.71.57-1.287 1.275-1.287.704 0 1.276.577 1.276 1.287v17.86c0 .476-.26.913-.68 1.137-.415.222-.92.194-1.312-.074l-9.723-6.668-9.723 6.668c-.215.147-.466.222-.716.222" id="Fill-2"/><path d="M22.733 32.476c-.704 0-1.275-.577-1.275-1.288V16.265l-3.053 2.183c-.576.412-1.37.273-1.778-.307-.408-.578-.272-1.382.303-1.793l5.066-3.622c.39-.278.9-.313 1.323-.093.422.22.69.66.69 1.143v17.413c0 .712-.572 1.288-1.277 1.288" id="Fill-3"/></g></g></svg>
         </div>
         <div class="col-xs-10 right">
-          <div class="s-margin-right"><small>Наша проектная документация получает положительное заключение Главгосэкспертизы с первого раза. </small></div>
+          <div class="s-margin-right"><small>Наша проектная документация получает положительное заключение Главгосэкспертизы. </small></div>
         </div>
       </div>
     </div>
@@ -381,8 +381,8 @@ $APPLICATION->SetTitle('ГГО в цифрах');
       <div class="row">
         <div class="col-xs-12">
           <big class="m-line-height">Более</big>
-          <div class="number__value number__value--m">700 <small>тыс. км</small></div>
-          <em class="left bigger">трубопроводов разработаны ГГО с помощью инструментов трехмерного проектирования</em>
+          <div class="number__value number__value--m">1 <small>млн км</small></div>
+          <em class="left bigger">трубопроводов спроектировано с помощью систем трехмерного проектирования </em>
         </div>
       </div>
     </div>
@@ -399,7 +399,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
             </div>
             <div class="col-xs-9">
               <div class="number__value number__value--big">4000</div>
-              <big>выполненных проектов</big>
+              <div class="s-line-height"><small>объектов, введенных <nobr>в эксплуатацию</nobr></small></div>
             </div>
           </div>
           <div class="page__divider l-margin-top m-margin-bottom"> </div>
@@ -429,7 +429,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
                 <div class="xs--margin-bottom s-line-height"><em>Более</em></div>
               </div>
               <div class="number__value number__value--s">2 млн</div>
-              <div class="xxs--margin-top xs-line-height"><em>предоставленных заказчикам инженерных человеко-часов в год</em></div>
+              <div class="xxs--margin-top xs-line-height"><em>инженерных человеко-часов в год предоставляются Заказчикам</em></div>
             </div>
             <div class="col-xs-5 center">
               <div class="number__value number__value--s">10</div><div class="s-line-height"><em>ВИНК среди наших клиентов</em></div>
@@ -511,11 +511,11 @@ $APPLICATION->SetTitle('ГГО в цифрах');
             <div class="col-xs-9">
               <div class="number__value number__value--s">30000</div>
               <div class="xs--margin-top">
-                <big>тонн оборудования</big>
+                <div class="s-line-height"><small>тонн технологического<br> оборудования</small></div>
               </div>
             </div>
             <div class="col-xs-12">
-              <div class="s-margin-top m-line-height"><small>нами было поставлено только за последние 3 года, при этом самая крупная поставка составила 
+              <div class="s-margin-top m-line-height"><small>изготовлено и поставлено Заказчикам <nobr>за последние</nobr> 3 года, при этом самая крупная поставка составила
                   <nobr><strong>716 </strong>тонн</nobr></small></div>
             </div>
           </div>
@@ -524,7 +524,7 @@ $APPLICATION->SetTitle('ГГО в цифрах');
           <div class="row">
             <div class="col-xs-2"><svg width="44" height="65" viewBox="0 0 44 65" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="n-8" fill="#0082DC"><path d="M22.01 43.806C10.13 43.806.47 34.056.47 22.068.47 10.082 10.13.33 22.01.33c11.876 0 21.54 9.752 21.54 21.738 0 11.987-9.664 21.738-21.54 21.738zm0-40.9c-10.472 0-18.99 8.596-18.99 19.162 0 10.567 8.518 19.164 18.99 19.164 10.47 0 18.988-8.597 18.988-19.163 0-10.567-8.518-19.165-18.99-19.165z" id="Fill-1"/><path d="M11.57 64.748c-.203 0-.41-.05-.596-.15-.418-.223-.68-.66-.68-1.137V45.603c0-.71.573-1.287 1.277-1.287.705 0 1.276.577 1.276 1.287V61.03l8.446-5.793c.433-.297 1-.297 1.434 0l8.447 5.793V45.602c0-.71.57-1.287 1.275-1.287.704 0 1.276.577 1.276 1.287v17.86c0 .476-.26.913-.68 1.137-.415.222-.92.194-1.312-.074l-9.723-6.668-9.723 6.668c-.215.147-.466.222-.716.222" id="Fill-2"/><path d="M22.733 32.476c-.704 0-1.275-.577-1.275-1.288V16.265l-3.053 2.183c-.576.412-1.37.273-1.778-.307-.408-.578-.272-1.382.303-1.793l5.066-3.622c.39-.278.9-.313 1.323-.093.422.22.69.66.69 1.143v17.413c0 .712-.572 1.288-1.277 1.288" id="Fill-3"/></g></g></svg>
             </div>
-            <div class="col-xs-10 right"><small>Наша проектная документация получает положительное заключение Главгосэкспертизы с первого раза. </small></div>
+            <div class="col-xs-10 right"><small>Наша проектная документация получает положительное заключение Главгосэкспертизы. </small></div>
           </div>
           <div class="xl-margin-top s-line-height">
             <div class="row">
