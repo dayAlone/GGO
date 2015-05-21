@@ -30,7 +30,7 @@ $APPLICATION->IncludeComponent("bitrix:news.list", "reference_map",
 		  "DETAIL_URL"     => "/works/reference/#ELEMENT_ID#/",
 		  "CACHE_TYPE"     => "A",
 		  "SET_TITLE"      => "N",
-		  "PROPERTY_CODE" => array("INFORMATION")
+		  "PROPERTY_CODE" => array('CLIENT','OBJECT','REGION','PERIOD','WORKS','EPSCM','COORDS')
 		),
 		false
 );

@@ -6,7 +6,7 @@ $APPLICATION->IncludeComponent("bitrix:news.detail","reference",Array(
   "CHECK_DATES"   => "N",
   "IBLOCK_TYPE"   => "content",
   "SET_TITLE"     => "N",
-  "PROPERTY_CODE" => array('INFORMATION'),
+  "PROPERTY_CODE" => array('CLIENT','OBJECT','REGION','PERIOD','WORKS','EPSCM','COORDS'),
   "CACHE_TYPE"    => "A",
   "CACHE_NOTES"    => $_REQUEST['ROW']
 ));

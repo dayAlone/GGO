@@ -1,21 +1,17 @@
+
 <?
 $item = $arResult;
-foreach ($item['PROPERTIES']['INFORMATION']['VALUE'] as $key=>$info)
-  if($key == $arParams['CACHE_NOTES'])
-    $element = $info;
-if(isset($element)):
 ?>
 <div class="scroll">
   <h4><span>Клиент</span></h4>
-  <h2><?=html_entity_decode($item['NAME'])?></h2>
+  <h2><?=html_entity_decode($item['PROPERTIES']['CLIENT']['VALUE'])?></h2>
 
 <?
 $data = array(
-  'Объект' => $element['object'],
-  'Регион' => $element['region'],
-  'Период' => $element['period'],
-  'Проект' => $element['project'],
-  'Вид работ' => $element['works'],
+  'Объект'    => $item['PROPERTIES']['OBJECT']['VALUE']['TEXT'],
+  'Регион'    => $item['PROPERTIES']['REGION']['VALUE'],
+  'Период'    => $item['PROPERTIES']['PERIOD']['VALUE'],
+  'Вид работ' => $item['PROPERTIES']['WORKS']['VALUE']['TEXT'],
 );
 foreach ($data as $key=>$el):
   if(strlen($el)>0):
@@ -27,4 +23,3 @@ foreach ($data as $key=>$el):
 endforeach;?>
 
 </div>
-<?endif;?>

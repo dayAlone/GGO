@@ -12,7 +12,7 @@ $APPLICATION->IncludeComponent("bitrix:news.list", "reference",
 		  "DETAIL_URL"     => "/",
 		  "CACHE_TYPE"     => "A",
 		  "SET_TITLE"      => "N",
-		  "PROPERTY_CODE" => array('CLIENT','OBJECT','REGION','PERIOD','WORKS','EPSCM','COORDS',)
+		  "PROPERTY_CODE" => array('CLIENT','OBJECT','REGION','PERIOD','WORKS','EPSCM','COORDS')
 		),
 		false
 );
