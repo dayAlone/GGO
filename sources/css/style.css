@@ -5698,10 +5698,10 @@ ul.nav-tabs li.active a {
   background-image: -ms-linear-gradient(left, rgba(0,0,0,0.5) 70%, transparent 70%);
   background-image: linear-gradient(to right, rgba(0,0,0,0.5) 70%, transparent 70%);
   background-repeat: repeat-x;
-  -webkit-background-size: 12px 1px;
-  -moz-background-size: 12px 1px;
-  background-size: 12px 1px;
-  background-position: 0 calc(100% - 2px);
+  -webkit-background-size: 4px 1px;
+  -moz-background-size: 4px 1px;
+  background-size: 4px 1px;
+  background-position: 0 15px;
 }
 .reference__content [data-toggle="tooltip"]:hover {
   text-decoration: none;
