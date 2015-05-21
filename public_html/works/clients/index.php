@@ -1,6 +1,6 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle('Наши заказчики');
+$APPLICATION->SetTitle('Заказчики');
 $APPLICATION->IncludeComponent("bitrix:news.list", "clients", 
 		array(
 		  "IBLOCK_ID"      => 14,
