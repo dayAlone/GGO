@@ -75,7 +75,7 @@ $APPLICATION->SetPageProperty('body_class', 'index')
       <div class="visible-xs visible-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Более</span>
         <div class="number__value">30 000</div>
-        <div class="page__divider page__divider--small float-none"></div><br>онн технологического оборудования изготовлено <br>и поставлено Заказчикам за последние 3 года
+        <div class="page__divider page__divider--small float-none"></div><br>тонн технологического оборудования изготовлено <br>и поставлено Заказчикам за последние 3 года
       </div>
       <div class="visible-xs page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Наши установки производят более</span>
