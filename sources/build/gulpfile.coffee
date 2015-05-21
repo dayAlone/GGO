@@ -161,7 +161,7 @@ gulp.task 'img_mini', ->
 # System functions
 
 gulp.task 'reload', ->
-	livereload.changed()
+	livereload.reload(path.css.frontend)
 
 gulp.task 'ready', ->
 	sequence 'copy'

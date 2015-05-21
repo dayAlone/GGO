@@ -37,7 +37,7 @@
   };
 
   autoHeight = function(el, selector, height_selector, use_padding, debug) {
-    var count, heights, i, item, item_padding, items, loops, padding, step, x, _i, _ref, _results;
+    var count, heights, i, item, item_padding, items, j, loops, padding, ref, results, step, x;
     if (selector == null) {
       selector = '';
     }
@@ -70,10 +70,10 @@
       if (debug) {
         console.log(count, step, item_padding, padding, el.width(), item.width());
       }
-      _results = [];
+      results = [];
       while (i < count) {
         items = {};
-        for (x = _i = 0, _ref = step - 1; 0 <= _ref ? _i <= _ref : _i >= _ref; x = 0 <= _ref ? ++_i : --_i) {
+        for (x = j = 0, ref = step - 1; 0 <= ref ? j <= ref : j >= ref; x = 0 <= ref ? ++j : --j) {
           if (item[i + x]) {
             items[x] = item[i + x];
           }
@@ -96,9 +96,9 @@
             return $(this).height(Math.max.apply(Math, heights));
           }
         });
-        _results.push(i += step);
+        results.push(i += step);
       }
-      return _results;
+      return results;
     }
   };
 
@@ -192,7 +192,7 @@
   };
 
   initPhotoSwipeFromDOM = function(gallerySelector) {
-    var closest, galleryElements, i, l, onThumbnailsClick, openPhotoSwipe, parseThumbnailElements, photoswipeParseHash, _results;
+    var closest, galleryElements, i, l, onThumbnailsClick, openPhotoSwipe, parseThumbnailElements, photoswipeParseHash, results;
     parseThumbnailElements = function(el) {
       var figureEl, i, item, items, linkEl, numNodes, size, thumbElements;
       thumbElements = el.childNodes;
@@ -334,13 +334,13 @@
     galleryElements = document.querySelectorAll(gallerySelector);
     i = 0;
     l = galleryElements.length;
-    _results = [];
+    results = [];
     while (i < l) {
       galleryElements[i].setAttribute('data-pswp-uid', i + 1);
       galleryElements[i].onclick = onThumbnailsClick;
-      _results.push(i++);
+      results.push(i++);
     }
-    return _results;
+    return results;
   };
 
   this.initGeography = function() {
@@ -704,6 +704,7 @@
       }
       return e.preventDefault();
     });
+    $('[data-toggle="tooltip"]').tooltip();
     $('.reference').elem('trigger').click(function(e) {
       var block, content;
       block = $(this).block();

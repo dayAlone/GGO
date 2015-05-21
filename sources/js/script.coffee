@@ -624,6 +624,7 @@ $(document).ready ->
 					duration: 300
 		e.preventDefault()
 
+	$('[data-toggle="tooltip"]').tooltip()
 	$('.reference').elem('trigger').click (e)->
 		block = $(this).block()
 		content = $(this).block('content')
