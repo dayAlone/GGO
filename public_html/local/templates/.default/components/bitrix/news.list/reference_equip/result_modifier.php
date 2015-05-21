@@ -15,12 +15,12 @@
 	foreach ($arResult['ITEMS'] as $key=>$item):
 		if(!isset($arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']]))
 			$arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']] = array('ELEMENTS' => array());
-		$tooltip = "";
+
 		switch ($item['PROPERTIES']['EPSCM']['VALUE']) {
-			case 'E':
+			case 'Е':
 				$tooltip = "Проектирование";
 			break;
-			case 'EPs':
+			case 'ЕРs':
 				$tooltip = "Проектирование и сопровождение поставки";
 			break;
 			case 'ЕРsP':
@@ -32,7 +32,7 @@
 			case 'ЕРСm':
 				$tooltip = "Проектирование, поставка и управление строительством";
 			break;
-			case 'EPC':
+			case 'ЕРС':
 				$tooltip = "Проектирование, поставка и строительство полностью";
 			break;
 		}
