@@ -5854,11 +5854,12 @@ ul.nav-tabs li.active a {
 }
 .reference-wrap__trigger {
   padding-left: 0;
+  position: relative;
 }
 .reference-wrap__trigger svg {
   position: absolute;
   width: 37px;
-  right: 15px;
+  right: -18px;
   top: 14px;
 }
 .reference-wrap--open .reference-wrap__trigger svg {
