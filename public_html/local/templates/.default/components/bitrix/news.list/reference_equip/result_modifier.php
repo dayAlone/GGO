@@ -16,37 +16,12 @@
 		if(!isset($arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']]))
 			$arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']] = array('ELEMENTS' => array());
 
-		switch ($item['PROPERTIES']['EPSCM']['VALUE']) {
-			case 'Е':
-				$tooltip = "Проектирование";
-			break;
-			case 'ЕРs':
-				$tooltip = "Проектирование и сопровождение поставки";
-			break;
-			case 'ЕРsP':
-				$tooltip = "Проектирование, сопровождение поставки и частичная поставка";
-			break;
-			case 'ЕР':
-				$tooltip = "Проектирование и поставка полностью";
-			break;
-			case 'ЕРСm':
-				$tooltip = "Проектирование, поставка и управление строительством";
-			break;
-			case 'ЕРС':
-				$tooltip = "Проектирование, поставка и строительство полностью";
-			break;
-		}
 		$arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']]['ELEMENTS'][] = array(
-			'NAME'   => $item['NAME'],
+			'name'   => str_replace( "<br>", "<div class=\"page__divider xs-margin-top xs-margin-bottom\"></div>", html_entity_decode($item['PROPERTIES']['NAME']['VALUE']['TEXT'])),
 			'CODE'   => $item['CODE'],
 			'sort'   => $item['SORT'],
-			'client' => $item['PROPERTIES']['CLIENT']['VALUE'],
-			'object' => $item['PROPERTIES']['OBJECT']['VALUE']['TEXT'],
-			'region' => $item['PROPERTIES']['REGION']['VALUE'],
-			'period' => $item['PROPERTIES']['PERIOD']['VALUE'],
-			'works'  => $item['PROPERTIES']['WORKS']['VALUE']['TEXT'],
-			'epscm'  => '<span data-toggle="tooltip" data-placement="top" title="'.$tooltip.'">'.$item['PROPERTIES']['EPSCM']['VALUE'].'</span>',
-			'coords' => $item['PROPERTIES']['COORDS']['VALUE'],
+			'object' => str_replace( "<br>", "<div class=\"page__divider xs-margin-top xs-margin-bottom\"></div>", html_entity_decode($item['PROPERTIES']['OBJECT']['VALUE']['TEXT'])),
+			'period' => html_entity_decode($item['PROPERTIES']['PERIOD']['VALUE']),
 			);
 	endforeach;
 	

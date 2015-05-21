@@ -705,6 +705,33 @@
       return e.preventDefault();
     });
     $('[data-toggle="tooltip"]').tooltip();
+    $('.reference-wrap').elem('trigger').click(function(e) {
+      var block, content;
+      block = $(this).block();
+      content = $(this).block('content');
+      if (!block.hasMod('open')) {
+        content.velocity({
+          properties: "transition.fadeIn",
+          options: {
+            duration: 300,
+            complete: function() {
+              return block.mod('open', true);
+            }
+          }
+        });
+      } else {
+        content.velocity({
+          properties: "transition.fadeOut",
+          options: {
+            duration: 300,
+            complete: function() {
+              return block.mod('open', false);
+            }
+          }
+        });
+      }
+      return e.preventDefault();
+    });
     $('.reference').elem('trigger').click(function(e) {
       var block, content;
       block = $(this).block();

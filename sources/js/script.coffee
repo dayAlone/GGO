@@ -625,6 +625,25 @@ $(document).ready ->
 		e.preventDefault()
 
 	$('[data-toggle="tooltip"]').tooltip()
+	$('.reference-wrap').elem('trigger').click (e)->
+		block = $(this).block()
+		content = $(this).block('content')
+		if !block.hasMod 'open'
+			content.velocity
+				properties: "transition.fadeIn"
+				options:
+					duration: 300
+					complete: ->
+						block.mod 'open', true
+		else
+			content.velocity
+				properties: "transition.fadeOut"
+				options:
+					duration: 300
+					complete: ->
+						block.mod 'open', false
+		e.preventDefault()
+
 	$('.reference').elem('trigger').click (e)->
 		block = $(this).block()
 		content = $(this).block('content')

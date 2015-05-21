@@ -44,7 +44,7 @@ if($arResult['CODE'] == "postavka-oborudovaniya"):
 
     $APPLICATION->IncludeComponent("bitrix:news.list", "reference_equip", 
         array(
-          "IBLOCK_ID"      => 20,
+          "IBLOCK_ID"      => 31,
           "NEWS_COUNT"     => "100",
           "SORT_BY1"       => "SORT",
           "SORT_ORDER1"    => "ASC",
@@ -56,6 +56,6 @@ if($arResult['CODE'] == "postavka-oborudovaniya"):
     );
         $data = ob_get_contents();
     ob_end_clean();
-    str_replace('#REFERENCE#', $data, $arResult['~DETAIL_TEXT']);
+    $arResult['~DETAIL_TEXT'] = str_replace('#REFERENCE#', $data, $arResult['~DETAIL_TEXT']);
 endif;
 ?>

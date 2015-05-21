@@ -5672,6 +5672,30 @@ ul.nav-tabs li.active a {
   margin-top: 2px;
   border: 1px solid #dfdfdf;
 }
+.reference--small {
+  border: 0;
+  margin-top: 0;
+}
+.reference--small + .reference,
+.reference--small:first-of-type {
+  border-top: 1px solid #dfdfdf;
+}
+.reference-wrap--open .reference--small:first-of-type {
+  border-top-color: #63b1ff;
+}
+.reference--small .reference__trigger {
+  padding: 0;
+  font-size: 16px;
+}
+.reference--small .reference__content table td,
+.reference--small .reference__content table th {
+  border-color: rgba(0,0,0,0.6);
+  vertical-align: middle;
+}
+.reference--small .reference__content table td.year,
+.reference--small .reference__content table th.year {
+  text-align: center;
+}
 .reference--open .reference__trigger {
   color: #0082dc;
 }
@@ -5682,16 +5706,19 @@ ul.nav-tabs li.active a {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.reference__content {
+.reference__content,
+.reference-wrap__content {
   padding: 10px 15px 0;
   display: none;
 }
 @media (min-width: 480px) {
-  .reference__content {
+  .reference__content,
+  .reference-wrap__content {
     padding: 10px 30px 0;
   }
 }
-.reference__content [data-toggle="tooltip"] {
+.reference__content [data-toggle="tooltip"],
+.reference-wrap__content [data-toggle="tooltip"] {
   background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.5) 70%, transparent 70%);
   background-image: -moz-linear-gradient(left, rgba(0,0,0,0.5) 70%, transparent 70%);
   background-image: -o-linear-gradient(left, rgba(0,0,0,0.5) 70%, transparent 70%);
@@ -5703,67 +5730,83 @@ ul.nav-tabs li.active a {
   background-size: 4px 1px;
   background-position: 0 15px;
 }
-.reference__content [data-toggle="tooltip"]:hover {
+.reference__content [data-toggle="tooltip"]:hover,
+.reference-wrap__content [data-toggle="tooltip"]:hover {
   text-decoration: none;
 }
-.reference__content .list {
+.reference__content .list,
+.reference-wrap__content .list {
   font-size: 13px;
   padding-bottom: 20px;
 }
-.reference__content .list__divider {
+.reference__content .list__divider,
+.reference-wrap__content .list__divider {
   margin: 20px 0;
   border-bottom: 1px solid #dfdfdf;
 }
-.reference__content .list small {
+.reference__content .list small,
+.reference-wrap__content .list small {
   display: inline-block;
   margin-top: 8px;
   font-size: 10px;
   text-transform: uppercase;
   font-weight: bold;
 }
-.reference__content .list .row {
+.reference__content .list .row,
+.reference-wrap__content .list .row {
   font-size: 11px;
   padding: 0 5px;
 }
-.reference__content .list .row > [class*='col-'] {
+.reference__content .list .row > [class*='col-'],
+.reference-wrap__content .list .row > [class*='col-'] {
   padding: 0 10px;
 }
-.reference__content .list .row small {
+.reference__content .list .row small,
+.reference-wrap__content .list .row small {
   margin-top: 0;
   font-size: 8;
 }
 @media (min-width: 480px) {
-  .reference__content .list {
+  .reference__content .list,
+  .reference-wrap__content .list {
     display: none;
   }
 }
-.reference__content .table {
+.reference__content .table,
+.reference-wrap__content .table {
   display: none;
 }
 @media (min-width: 480px) {
-  .reference__content .table {
+  .reference__content .table,
+  .reference-wrap__content .table {
     display: inline-table;
   }
 }
 .reference__content .table td,
-.reference__content .table th {
+.reference-wrap__content .table td,
+.reference__content .table th,
+.reference-wrap__content .table th {
   padding: 15px 10px;
 }
-.reference__content .table th {
+.reference__content .table th,
+.reference-wrap__content .table th {
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 2px;
 }
-.reference__content .table td {
+.reference__content .table td,
+.reference-wrap__content .table td {
   color: #233347;
   font-size: 12px;
 }
 @media (min-width: 992px) {
-  .reference__content .table td {
+  .reference__content .table td,
+  .reference-wrap__content .table td {
     font-size: 14px;
   }
 }
-.reference__trigger {
+.reference__trigger,
+.reference-wrap__trigger {
   display: inline-block;
   width: 100%;
   max-height: 48px;
@@ -5773,14 +5816,17 @@ ul.nav-tabs li.active a {
   color: #000;
 }
 @media (min-width: 480px) {
-  .reference__trigger {
+  .reference__trigger,
+  .reference-wrap__trigger {
     font-size: 22px;
   }
 }
-.reference__trigger:hover {
+.reference__trigger:hover,
+.reference-wrap__trigger:hover {
   color: #0082dc;
 }
-.reference__trigger svg {
+.reference__trigger svg,
+.reference-wrap__trigger svg {
   position: relative;
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -5798,6 +5844,30 @@ ul.nav-tabs li.active a {
   margin-right: 20px;
   display: inline-block;
   vertical-align: middle;
+}
+.reference-wrap {
+  border: 1px solid #dadada;
+  padding: 0 15px;
+}
+.reference-wrap__content {
+  padding: 0;
+}
+.reference-wrap__trigger {
+  padding-left: 0;
+}
+.reference-wrap__trigger svg {
+  position: absolute;
+  width: 37px;
+  right: 15px;
+  top: 14px;
+}
+.reference-wrap--open .reference-wrap__trigger svg {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  fill: #dadada;
 }
 .geography {
   overflow: hidden;

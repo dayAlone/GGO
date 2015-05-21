@@ -1369,7 +1369,25 @@ ul.nav-tabs
 .reference
 	margin-top 2px
 	border 1px solid #dfdfdf
-	
+	&--small
+		border 0
+		& + .reference, &:first-of-type
+			border-top 1px solid #dfdfdf
+		
+		.reference-wrap--open &:first-of-type
+			border-top-color #63b1ff
+		margin-top 0
+		.reference
+			&__trigger
+				padding 0
+				font-size 16px
+			&__content
+				table
+					td, th
+						border-color alpha(black, .6)
+						vertical-align: middle
+						&.year
+							text-align: center
 	&--open
 		.reference__trigger
 			color #0082dc
@@ -1441,7 +1459,26 @@ ul.nav-tabs
 			margin-right 20px
 			display inline-block
 			vertical-align: middle
-
+	&-wrap
+		border 1px solid #dadada
+		padding 0 15px
+		&__content
+			@extends .reference__content
+			padding 0
+		&__trigger
+			@extends .reference__trigger
+			padding-left 0
+			
+				
+			svg
+				position absolute
+				width 37px
+				right 15px
+				top 14px
+				.reference-wrap--open &
+					transform rotate(-180deg)
+					fill #dadada
+				
 .geography
 	overflow hidden
 	position relative
