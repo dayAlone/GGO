@@ -1,6 +1,8 @@
 <?
 $item = $arResult;
-
+use Bitrix\Main\Localization\Loc;
+use Bitrix\Sale\Location;
+Loc::loadMessages(__FILE__);
 ?>
 <div class="project__detail">
   <?if(strlen($item['PREVIEW_PICTURE']['SRC'])>0):?>
@@ -14,7 +16,7 @@ $item = $arResult;
         if(strlen($item['PROPERTIES'][$prop]['VALUE']['TEXT'])>0):
         ?>
         <h4><?=$item['PROPERTIES'][$prop]['NAME']?></h4>
-          <p><?=html_entity_decode($item['PROPERTIES'][$prop]['VALUE']['TEXT'])?></p>
+        <p><?=html_entity_decode($item['PROPERTIES'][$prop]['VALUE']['TEXT'])?></p>
         <? 
         endif;
       endforeach;?>
@@ -33,7 +35,7 @@ $item = $arResult;
       </div>
       <?if($item['PROPERTIES']['TABLE']['VALUE']):?>
       <div class="project__divider project__divider--width"></div>
-        <h5>Показатели</h5>
+        <h5><?=Loc::getMessage('NUMBERS')?></h5>
       <?endif;?>
     </div>
     <div class="col-xs-4 hidden-xs right">
@@ -45,9 +47,9 @@ $item = $arResult;
   <?if($item['PROPERTIES']['TABLE']['VALUE']):?>
   <div class="project__table">
     <div class="row project__table-title hidden-xs">
-      <div class="col-xs-4">Технологии проекта</div>
-      <div class="col-xs-4">Производительность</div>
-      <div class="col-xs-4">Технологические показатели</div>
+      <div class="col-xs-4"><?=Loc::getMessage('TECH')?></div>
+      <div class="col-xs-4"><?=Loc::getMessage('SPEED')?></div>
+      <div class="col-xs-4"><?=Loc::getMessage('TOOLS')?></div>
     </div>
     <? foreach($item['PROPERTIES']['TABLE']['VALUE'] as $row):?>
       <?if(strlen($row['t0'])>0):?>
@@ -57,14 +59,14 @@ $item = $arResult;
       <?endif;?>
       <div class="row">
         <div class="col-sm-4">
-        <small class="visible-xs">Технология</small>
+        <small class="visible-xs"><?=Loc::getMessage('T')?>small>
         <span class="project__table-tech"><?=html_entity_decode($row['t0'])?></span>
         
           <?if(strlen($row['t0'])>0):?>
           <div class="visible-xs project__table-sub-title">
             <div class="row">
-              <div class="col-xs-6">Производительность</div>
-              <div class="col-xs-6">Технологические показатели</div>
+              <div class="col-xs-6"><?=Loc::getMessage('P')?></div>
+              <div class="col-xs-6"><?=Loc::getMessage('N')?></div>
             </div>
             <div class="project__divider"></div>
           </div>
@@ -79,7 +81,7 @@ $item = $arResult;
   <?endif;?>
 
   <div class="page__divider page__divider--small"></div>
-    <h3>Особенности проекта</h3>
+    <h3><?=Loc::getMessage('DETAILS')?></h3>
   	<?=$item["~DETAIL_TEXT"]?>
 
   <?if(count($item['PROPERTIES']['PROJECTS']['VALUE'])>0&&$item['PROPERTIES']['PROJECTS']['VALUE']):?>
@@ -109,4 +111,4 @@ $item = $arResult;
     $APPLICATION->SetPageProperty('sub_title', html_entity_decode($item['PROPERTIES']['TITLE']['VALUE']));
   ?>
 </div>
-<a href="/works/projects/" class="back"><?=svg('back')?> К списку проектов</a>
+<a href="/works/projects/" class="back"><?=svg('back')?> <?=Loc::getMessage('BACK')?></a>
