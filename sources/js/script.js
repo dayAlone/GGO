@@ -384,6 +384,7 @@
           e.originalEvent.target.options.set({
             iconImageHref: '/layout/images/pin-white.png'
           });
+          console.log(point.url);
           showGeographyDetail("/ajax" + point.url);
           $('.geography__popup_close').one('click', function() {
             $.each(open, function() {

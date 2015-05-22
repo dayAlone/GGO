@@ -349,6 +349,7 @@ initPhotoSwipeFromDOM = (gallerySelector) ->
 		points[i].events.add 'click', (e) ->
 			if $.inArray(e.originalEvent.target, open) == -1
 				e.originalEvent.target.options.set iconImageHref: '/layout/images/pin-white.png'
+				console.log point.url
 				showGeographyDetail "/ajax#{point.url}"
 				$('.geography__popup_close').one 'click', ->
 					$.each open, ->
