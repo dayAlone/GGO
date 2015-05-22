@@ -1,4 +1,8 @@
 <? $this->setFrameMode(true);
+use Bitrix\Main\Localization\Loc;
+use Bitrix\Sale\Location;
+Loc::loadMessages(__FILE__);
+
 if(count($arResult['ITEMS'])>0):?>
 <?foreach ($arResult['ITEMS'] as $key => $item):
 	?>
@@ -25,7 +29,7 @@ if(count($arResult['ITEMS'])>0):?>
 	  <?endif;?>
 	  <div class="row">
 	    <div class="col-sm-8">
-	      <h5 class="no-margin-top m-margin-bottom">Проект</h5>
+	      <h5 class="no-margin-top m-margin-bottom"><?=Loc::getMessage('PJ')?></h5>
 	      <h4 class="no-margin-top xl-margin-bottom"><strong><?=$item['NAME']?></strong></h4>
 	      <?if(strlen($item['PROPERTIES']['WORKTYPE']['VALUE']['TEXT'])>0):?>
 		    <h4><?=$item['PROPERTIES']['WORKTYPE']['NAME']?></h4>
