@@ -3,7 +3,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle('Partners');
 $APPLICATION->IncludeComponent("bitrix:news.list", "partners", 
 		array(
-		  "IBLOCK_ID"      => 32,
+		  "IBLOCK_ID"      => 33,
 		  "NEWS_COUNT"     => "6123123123123",
 		  "SORT_BY1"       => "IBLOCK_SECTION_ID",
 		  "SORT_ORDER1"    => "ASC",
