@@ -1,9 +1,9 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle('Clients');
-$APPLICATION->IncludeComponent("bitrix:news.list", "clients", 
+$APPLICATION->SetTitle('Partners');
+$APPLICATION->IncludeComponent("bitrix:news.list", "partners", 
 		array(
-		  "IBLOCK_ID"      => 33,
+		  "IBLOCK_ID"      => 32,
 		  "NEWS_COUNT"     => "6123123123123",
 		  "SORT_BY1"       => "IBLOCK_SECTION_ID",
 		  "SORT_ORDER1"    => "ASC",
@@ -12,7 +12,7 @@ $APPLICATION->IncludeComponent("bitrix:news.list", "clients",
 		  "DETAIL_URL"     => "/",
 		  "CACHE_TYPE"     => "A",
 		  "SET_TITLE"      => "N",
-		  "PROPERTY_CODE" => array("LINK")
+		  "PROPERTY_CODE" => array("COLOR", "LIST")
 		),
 		false
 );

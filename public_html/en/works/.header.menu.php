@@ -43,8 +43,15 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Our clients and partners", 
+		"Clients", 
 		"/en/works/clients/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Partners", 
+		"/en/works/partners/", 
 		Array(), 
 		Array(), 
 		"" 

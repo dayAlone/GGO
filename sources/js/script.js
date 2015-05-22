@@ -813,10 +813,16 @@
       $('#vacancyDetail .success').hide();
       if ($(e.relatedTarget).parents('.vacancy').length > 0) {
         $('#vacancyDetail h3').text($(e.relatedTarget).parents('.vacancy').elem('title').text());
-        $('#vacancyDetail h3').prepend("<span>Отклик на вакансию</span>");
+        if ($('body').hasClass('ru')) {
+          $('#vacancyDetail h3').prepend("<span>Отклик на вакансию</span>");
+        }
         return $('input[name="vacancy"]').val($(e.relatedTarget).parents('.vacancy').data('id'));
       } else {
-        $('#vacancyDetail h3').text('Отправка резюме в базу соискателей');
+        if ($('body').hasClass('ru')) {
+          $('#vacancyDetail h3').text('Отправка резюме в базу соискателей');
+        } else {
+          $('#vacancyDetail h3').text('To submit your résumé to be included in our prospective employee database, please fill out the fields below: ');
+        }
         $('#vacancyDetail h3 span').remove();
         return $('input[name="vacancy"]').val(false).removeAttr('value');
       }
