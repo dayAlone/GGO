@@ -33,7 +33,7 @@ if(count($arResult['ITEMS'])>0):?>
 		  <?endif;?>
 	      <?if($item['PROPERTIES']['TABLE']['VALUE']):?>
 	      	<div class="project__divider"></div>
-	        <h5>Показатели</h5>
+	        <h5><?=Loc::getMessage('NUMBERS')?></h5>
 	      <?endif;?>
 	    </div>
 	    <div class="col-xs-4 hidden-xs right">
@@ -45,9 +45,9 @@ if(count($arResult['ITEMS'])>0):?>
 	  <?if($item['PROPERTIES']['TABLE']['VALUE']):?>
 	  <div class="project__table">
 	    <div class="row project__table-title hidden-xs">
-	      <div class="col-xs-4">Технологии проекта</div>
-	      <div class="col-xs-4">Производительность</div>
-	      <div class="col-xs-4">Технологические показатели</div>
+	      <div class="col-xs-4"><?=Loc::getMessage('TECH')?></div>
+	      <div class="col-xs-4"><?=Loc::getMessage('SPEED')?></div>
+	      <div class="col-xs-4"><?=Loc::getMessage('TOOLS')?></div>
 	    </div>
 	    <? foreach($item['PROPERTIES']['TABLE']['VALUE'] as $row):?>
 	      <?if(strlen($row['t0'])>0):?>
@@ -57,14 +57,14 @@ if(count($arResult['ITEMS'])>0):?>
 	      <?endif;?>
 	      <div class="row">
 	        <div class="col-sm-4">
-	        <small class="visible-xs">Технология</small>
+	        <small class="visible-xs"><?=Loc::getMessage('T')?></small>
 	        <span class="project__table-tech"><?=html_entity_decode($row['t0'])?></span>
 	        
 	          <?if(strlen($row['t0'])>0):?>
 	          <div class="visible-xs project__table-sub-title">
 	            <div class="row">
-	              <div class="col-xs-6">Производительность</div>
-	              <div class="col-xs-6">Технологические показатели</div>
+	              <div class="col-xs-6"><?=Loc::getMessage('P')?></div>
+	              <div class="col-xs-6"><?=Loc::getMessage('N')?></div>
 	            </div>
 	            <div class="project__divider"></div>
 	          </div>
@@ -79,7 +79,7 @@ if(count($arResult['ITEMS'])>0):?>
 	  <?endif;?>
 
 	  <div class="page__divider page__divider--small"></div>
-	    <h3>Особенности проекта</h3>
+	    <h3><?=Loc::getMessage('DETAILS')?></h3>
 	  	<?=$item["~DETAIL_TEXT"]?>
 	</div>
 
