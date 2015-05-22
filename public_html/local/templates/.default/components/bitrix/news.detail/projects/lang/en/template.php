@@ -1,12 +1,12 @@
 <?
 $MESS["NUMBERS"] = "Показатели";
-$MESS["TECH"] = "Технологии проекта";
-$MESS["SPEED"] = "Производительность";
-$MESS["TOOLS"] = "Технологические показатели";
-$MESS['DETAILS'] = 'Особенности проекта';
+$MESS["TECH"] = "Processes and technologies";
+$MESS["SPEED"] = "Capcity";
+$MESS["TOOLS"] = "Processes perfomance";
+$MESS['DETAILS'] = 'Distinctive features of the Project';
 
-$MESS['T'] = 'Технология';
-$MESS['P'] = 'Производительность';
-$MESS['N'] = 'Технологические показатели';
+$MESS['T'] = 'Technologies';
+$MESS['P'] = 'Capcity';
+$MESS['N'] = 'Process performance ';
 $MESS['BACK'] = 'Back to the list of projects';
 ?>
