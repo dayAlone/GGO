@@ -54,13 +54,13 @@
 	foreach ($arResult['SECTIONS'] as $key=>$item):
 		usort($item['ELEMENTS'], "reference_sort");
 	endforeach;
-	
-	usort($arResult['SECTIONS'], "reference_sort");
 
 	$arFilter = array('IBLOCK_ID' => $arResult['ID'], 'ID'=>array_keys($arResult['SECTIONS']));
    	$rsSect = CIBlockSection::GetList(array('left_margin' => 'asc'),$arFilter);
    	while ($arSect = $rsSect->Fetch()) {
    		$arResult['SECTIONS'][$arSect['ID']]['NAME'] = $arSect['NAME'];
    		$arResult['SECTIONS'][$arSect['ID']]['CODE'] = $arSect['CODE'];
+   		$arResult['SECTIONS'][$arSect['ID']]['SORT'] = $arSect['SORT'];
    	}
+   		usort($arResult['SECTIONS'], "reference_sort");
 ?>
