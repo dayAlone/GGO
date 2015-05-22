@@ -8,6 +8,7 @@ if(isset($_REQUEST['ELEMENT_CODE'])):
       "ELEMENT_CODE"  => $_REQUEST['ELEMENT_CODE'],
       "CHECK_DATES"   => "N",
       "IBLOCK_TYPE"   => "content_en",
+      "DETAIL_URL"     => "/en/works/industries/#ELEMENT_CODE#/",
       "SET_TITLE"     => "Y",
       "CACHE_TYPE"    => "A",
       "FIELD_CODE"    => array("PREVIEW_PICTURE"),

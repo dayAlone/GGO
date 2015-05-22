@@ -24,18 +24,17 @@
 	            			<div class="list__divider"></div>
 	            		<?endif;?>
 	            		<small>заказчик:</small> <br><?=$info['client']?><br>
-						<div class="row xs-margin-top">
-							<div class="col-xs-6">
-								<small>период:</small> <br><?=str_replace("по н.в.", "<nobr>по н.в.</nobr>", $info['period'])?><br>
-							</div>
-							<div class="col-xs-6">										
-								<small>страна, регион:</small> <br><?=$info['region']?><br>
-							</div>
-							
-						</div>
-						<small>наименование проекта, объект:</small> <br><?=$info['object']?><br>
-						<small>вид работ:</small><br> <?=$info['works']?><br>
-						<small>Виды работ EPsCm:</small> <br><?=$info['epscm']?><br>
+      						<div class="row xs-margin-top">
+      							<div class="col-xs-6">
+      								<small>период:</small> <br><?=str_replace("по н.в.", "<nobr>по н.в.</nobr>", $info['period'])?><br>
+      							</div>
+      							<div class="col-xs-6">										
+      								<small>страна, регион:</small> <br><?=$info['region']?><br>
+      							</div>
+      							
+      						</div>
+      						<small>наименование проекта, объект:</small> <br><?=$info['object']?><br>
+      						<small>Виды работ EPsCm:</small> <br><?=$info['epscm']?><br>
 	                <?endforeach;?>
             					
             	</div>
@@ -43,12 +42,11 @@
                 <thead>
                   <tr>
                   	<th width="20%">заказчик</th>
-                    <th width="7%" class="hidden-xs">регион, <br>страна</th>
-					<th width="10%" class="hidden-xs">период</th>
+                    <th width="10%" class="hidden-xs">регион, <br>страна</th>
+					         <th width="10%" class="hidden-xs">период</th>
                     
-                    <th width="25%">наименование проекта, <br>объект</th>
+                    <th width="45%">наименование проекта, <br>объект</th>
                     
-                    <th width="25%">вид работ</th>
                     <th width="10%"><nobr>вид работ</nobr><br>EPsCm</th>
                   </tr>
                 </thead>
@@ -66,7 +64,7 @@
                     	</div>
                     </td>
                     
-                    <td><?=$info['works']?></td>
+                    <?/*<td><?=$info['works']?></td>*/?>
                     <td><?=$info['epscm']?></td>
                   </tr>
                 <?endforeach;?>
