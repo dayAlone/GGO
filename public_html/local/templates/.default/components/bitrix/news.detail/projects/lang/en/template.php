@@ -1,5 +1,5 @@
 <?
-$MESS["NUMBERS"] = "Показатели";
+$MESS["NUMBERS"] = "Project details ";
 $MESS["TECH"] = "Processes and technologies";
 $MESS["SPEED"] = "Capcity";
 $MESS["TOOLS"] = "Processes perfomance";
