@@ -47,7 +47,7 @@
                     
                     <th width="45%">наименование проекта, <br>объект</th>
                     
-                    <th width="10%"><nobr>вид работ</nobr><br>EPsCm</th>
+                    <th width="10%"><nobr>вид работ</nobr></th>
                   </tr>
                 </thead>
                 <tbody>
