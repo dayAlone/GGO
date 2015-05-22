@@ -10,12 +10,13 @@ if(isset($_REQUEST['ELEMENT_CODE'])):
       "IBLOCK_TYPE"   => "content_en",
       "SET_TITLE"     => "Y",
       "CACHE_TYPE"    => "A",
+      "DETAIL_URL"     => "/en/works/depths/#ELEMENT_CODE#/",
       "FIELD_CODE"    => array("PREVIEW_PICTURE"),
       "PROPERTY_CODE" => array('ICON'),
       "CACHE_TIME"    => "3600",
     ));
 else:
-  LocalRedirect("/works/industries/");
+  LocalRedirect("/en/works/depth/");
 endif;
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
 ?>
