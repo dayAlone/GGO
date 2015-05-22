@@ -34,7 +34,7 @@
       							
       						</div>
       						<small>наименование проекта, объект:</small> <br><?=$info['object']?><br>
-      						<small>Виды работ EPsCm:</small> <br><?=$info['epscm']?><br>
+      						<small>Виды работ:</small> <br><?=$info['epscm']?><br>
 	             <?endforeach;?>
             					
             	</div>
