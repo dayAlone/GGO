@@ -59,7 +59,7 @@ Loc::loadMessages(__FILE__);
       <?endif;?>
       <div class="row">
         <div class="col-sm-4">
-        <small class="visible-xs"><?=Loc::getMessage('T')?>small>
+        <small class="visible-xs"><?=Loc::getMessage('T')?></small>
         <span class="project__table-tech"><?=html_entity_decode($row['t0'])?></span>
         
           <?if(strlen($row['t0'])>0):?>
