@@ -19,8 +19,8 @@
           	<a href="#" class="reference__trigger"><?=svg('next')?><?=$section['NAME']?></a>
             <div class="reference__content">
             	<div class="list">
-	            	<?foreach ($section['ELEMENTS'] as $info):?>
-	            		<?if($key>0):?>
+	            	<?foreach ($section['ELEMENTS'] as $k => $info):?>
+	            		<?if($k>0):?>
 	            			<div class="list__divider"></div>
 	            		<?endif;?>
 	            		<small>заказчик:</small> <br><?=$info['client']?><br>
@@ -35,7 +35,7 @@
       						</div>
       						<small>наименование проекта, объект:</small> <br><?=$info['object']?><br>
       						<small>Виды работ EPsCm:</small> <br><?=$info['epscm']?><br>
-	                <?endforeach;?>
+	             <?endforeach;?>
             					
             	</div>
               <table cellpadding="10" class="table">
