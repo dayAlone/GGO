@@ -829,8 +829,14 @@
       }
     });
     $('#Map').on('show.bs.modal', function() {
+      var lang;
       if (!$('#Map').data('map')) {
-        return $.getScript('//api-maps.yandex.ru/2.1/?lang=ru_RU', function() {
+        if ($('body').hasClass('ru')) {
+          lang = 'ru_RU';
+        } else {
+          lang = "en_US";
+        }
+        return $.getScript('//api-maps.yandex.ru/2.1/?lang=' + lang, function() {
           return ymaps.ready(initContacts);
         });
       }

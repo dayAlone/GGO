@@ -76,7 +76,7 @@ autoHeight = (el, selector='', height_selector = false, use_padding=false, debug
 initContacts = ->
 	myMap = new ymaps.Map 'contacts-map', {
 		center : [55.79331828, 37.82019650],
-		zoom	 : 15
+		zoom   : 15
 	}
 	myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
 	}, {
@@ -727,7 +727,11 @@ $(document).ready ->
 	$('#Map')
 		.on 'show.bs.modal', ->
 			if !$('#Map').data('map')
-				$.getScript '//api-maps.yandex.ru/2.1/?lang=ru_RU', ->
+				if $('body').hasClass 'ru'
+					lang = 'ru_RU'
+				else
+					lang = "en_US"
+				$.getScript '//api-maps.yandex.ru/2.1/?lang=' + lang, ->
 					ymaps.ready initContacts
 
 

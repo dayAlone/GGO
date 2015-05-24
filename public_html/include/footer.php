@@ -9,7 +9,7 @@
 <div id="Feedback" tabindex="-1" role="dialog" aria-hidden="true" data-parsley-validate class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content"><a data-dismiss="modal" href="#" class="close"><?=svg('close')?></a>
-      <?require($_SERVER['DOCUMENT_ROOT'].'/include/form.php');?>
+      <?require($_SERVER['DOCUMENT_ROOT'].'/include/form-'.LANGUAGE_ID.'.php');?>
     </div>
   </div>
 </div>
