@@ -35,8 +35,8 @@ in Russia and across the world</div>
     <div class="row">
         <div class="col-xs-12">
           <big class="m-line-height">Over</big>
-          <div class="number__value number__value--m">700 <small>тыс. км</small></div>
-          <em class="left bigger">трубопроводов, ГГО разработаны с помощью инструментов трехмерного проектирования</em>
+          <div class="number__value number__value--m">1  <small>million</small></div>
+          <em class="left bigger">kilometers of pipelines have been designed using 3D engineering systems</em>
         </div>
       </div>
   </div>
@@ -193,8 +193,8 @@ in Russia and across the world</div>
       <div class="row">
         <div class="col-xs-12">
           <big class="m-line-height">Over</big>
-          <div class="number__value number__value--big">700</div>
-          <em class="left bigger">thousand kilometers of pipelines have been designed using 3D engineering tools </em>
+          <div class="number__value number__value--big">1 <small>million</small></div>
+          <em class="left bigger">kilometers of pipelines have been designed using 3D engineering systems</em>
         
         </div>
       </div>
@@ -390,8 +390,8 @@ in Russia and across the world</div>
       <div class="row">
         <div class="col-xs-12">
           <big class="m-line-height">Over</big>
-          <div class="number__value number__value--big">700</div>
-          <em class="left bigger">thousand kilometers of pipelines have been designed using 3D engineering tools </em>
+          <div class="number__value number__value--big">1 <small>million</small></div>
+          <em class="left bigger">kilometers of pipelines have been designed using 3D engineering systems </em>
         </div>
       </div>
     </div>

@@ -55,29 +55,29 @@ $APPLICATION->SetPageProperty('body_class', 'index')
     <div class="row">
       <div class="col-sm-6 col-md-4"><span>Already</span>
         <div class="number__value">86</div>
-        <div class="page__divider page__divider--small float-none"></div><br>years of successful operation in Russia <br>and across the world 
+        <div class="page__divider page__divider--small float-none"></div><br>years of successful operation  in Russia<br> and across the world 
       </div>
       <div class="visible-xs page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Over</span>
         <div class="number__value">4 000</div>
-        <div class="page__divider page__divider--small float-none"></div><br>completed projects 
+        <div class="page__divider page__divider--small float-none"></div><br>facilities put into operation 
       </div>
       <div class="visible-xs visible-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Over</span>
         <div class="number__value">2 million</div>
-        <div class="page__divider page__divider--small float-none"></div><br>man-hours of engineering services yearly provided to the Clients
+        <div class="page__divider page__divider--small float-none"></div><br>man-hours of engineering services annually provided to the Clients 
       </div>
 
       <div class="hidden-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Over</span>
-        <div class="number__value">700 </div>
-        <div class="page__divider page__divider--small float-none"></div><br>thousand kilometers of pipelines have been designed by GGO using 3D modelling tools
+        <div class="number__value">1 million </div>
+        <div class="page__divider page__divider--small float-none"></div><br>kilometers of pipelines have been designed using 3D engineering systems 
       </div>
 
       <div class="visible-xs visible-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>We have supplied over</span>
         <div class="number__value">3 000</div>
-        <div class="page__divider page__divider--small float-none"></div><br>tons of equipment in the past 3 years 
+        <div class="page__divider page__divider--small float-none"></div><br>tons of process equipment have been procured and supplied to the Clients in the past 3 years 
       </div>
       <div class="visible-xs page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Our process units produce over</span>
@@ -95,7 +95,7 @@ $APPLICATION->SetPageProperty('body_class', 'index')
       <h1 class="m-padding-bottom">Map of projects </h1>
       <div class="map__text">
         <div class="xs-margin-bottom">Over </div>
-        <div class="number__value">4000</div>000 process units <br>
+        <div class="number__value">4000</div>facilities have been put into operation <br>
         <div class="page__divider page__divider--small"></div><br>in
         <div class="number__value">16</div>countries across the globe 
       </div><a href="/en/works/index.php" class="more"><?=svg('steps-arrow')?><br>Read more</a>
