@@ -26,7 +26,6 @@ Loc::loadMessages(__FILE__);
 		    "CACHE_TYPE"   => "A",
 		    "CACHE_TIME"   => "36000",
 		    "CACHE_NOTES"  => $arParams["PARENT_SECTION"],
-
 		),
 		false
 		);
