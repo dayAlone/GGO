@@ -12,12 +12,12 @@ if(count($arResult['SECTIONS'])>1):?>
 		<?foreach ($arResult['SECTIONS'] as $key => &$item):
 
 		?>
-		<a href="<?=$item['SECTION_PAGE_URL']?>/" <?=($arParams["CACHE_NOTES"]==$item['ID']?'style="display:none"':'')?> class="dropdown__item"><?=$item['NAME']?></a>
+		<a href="<?=$item['SECTION_PAGE_URL']?>" <?=($arParams["CACHE_NOTES"]==$item['ID']?'style="display:none"':'')?> class="dropdown__item"><?=$item['NAME']?></a>
 		<?endforeach;?>
 	</span>
 	<select class="dropdown__select">
 		<?foreach ($arResult['SECTIONS'] as $key => &$item):?>
-		<option value="<?=$item['SECTION_PAGE_URL']?>/"><?=$item['NAME']?></a>
+		<option value="<?=$item['SECTION_PAGE_URL']?>"><?=$item['NAME']?></a>
 		<?endforeach;?>
 	</select>
 </div>
