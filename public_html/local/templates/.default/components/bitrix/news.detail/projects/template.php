@@ -79,9 +79,9 @@ Loc::loadMessages(__FILE__);
     <div class="project__divider project__divider--blue"></div>
   </div>
   <?endif;?>
-
+<?/*
   <div class="page__divider page__divider--small"></div>
-    <?/*<h3><?=Loc::getMessage('DETAILS')?></h3>
+    <h3><?=Loc::getMessage('DETAILS')?></h3>
   	<?=$item["~DETAIL_TEXT"]?>
       */?>
   <?if(count($item['PROPERTIES']['PROJECTS']['VALUE'])>0&&$item['PROPERTIES']['PROJECTS']['VALUE']):?>

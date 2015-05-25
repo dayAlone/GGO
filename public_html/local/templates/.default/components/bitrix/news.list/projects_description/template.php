@@ -81,9 +81,9 @@ if(count($arResult['ITEMS'])>0):?>
 	    <div class="project__divider project__divider--blue"></div>
 	  </div>
 	  <?endif;?>
-
+		<?/*
 	  <div class="page__divider page__divider--small"></div>
-	    <?/*<h3><?=Loc::getMessage('DETAILS')?></h3>
+	    <h3><?=Loc::getMessage('DETAILS')?></h3>
 	  	<?=$item["~DETAIL_TEXT"]?>*/?>
 	</div>
 
