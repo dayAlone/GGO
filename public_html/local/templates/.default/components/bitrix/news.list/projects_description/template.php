@@ -83,8 +83,8 @@ if(count($arResult['ITEMS'])>0):?>
 	  <?endif;?>
 
 	  <div class="page__divider page__divider--small"></div>
-	    <h3><?=Loc::getMessage('DETAILS')?></h3>
-	  	<?=$item["~DETAIL_TEXT"]?>
+	    <?/*<h3><?=Loc::getMessage('DETAILS')?></h3>
+	  	<?=$item["~DETAIL_TEXT"]?>*/?>
 	</div>
 
 <?endforeach;?>
