@@ -1,0 +1,8 @@
+<?
+$MESS["CLIENT"] = "CUSTOMER, PLANT";
+$MESS['PERIOD'] = 'YEAR';
+$MESS['TIME']   = "till present time";
+$MESS['REGION'] = "COUNTRY, REGION";
+$MESS['OBJECT'] = "NAME OF PROJECT, PLANT";
+$MESS['WORKS']  = "ACTIVITIES";
+?>
