@@ -46,7 +46,7 @@
 			'region' => $item['PROPERTIES']['REGION']['VALUE'],
 			'period' => $item['PROPERTIES']['PERIOD']['VALUE'],
 			'works'  => html_entity_decode($item['PROPERTIES']['WORKS']['VALUE']['TEXT']),
-			'epscm'  => '<span data-toggle="tooltip" data-placement="top" title="'.$tooltip.'">'.$item['PROPERTIES']['EPSCM']['VALUE'].'</span>',
+			'epscm'  => (strlen($tooltip)>0?'<span data-toggle="tooltip" data-placement="top" title="'.$tooltip.'">'.$item['PROPERTIES']['EPSCM']['VALUE'].'</span>':$item['PROPERTIES']['EPSCM']['VALUE']),
 			'coords' => $item['PROPERTIES']['COORDS']['VALUE'],
 			);
 	endforeach;

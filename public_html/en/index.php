@@ -80,7 +80,7 @@ $APPLICATION->SetPageProperty('body_class', 'index')
         <div class="page__divider page__divider--small float-none"></div><br>tons of process equipment have been procured and supplied to the Clients in the past 3 years 
       </div>
       <div class="visible-xs page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
-      <div class="col-sm-6 col-md-4"><span>Our process units produce over</span>
+      <div class="col-sm-6 col-md-4"><span>Our process units annually produce over</span>
         <div class="number__value"> 10 million  </div>
         <div class="page__divider page__divider--small float-none"></div><br>tons of finished product 
       </div>
