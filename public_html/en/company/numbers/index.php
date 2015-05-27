@@ -27,7 +27,7 @@ in Russia and across the world</div>
     </div>
     <div class="col-xs-6">
       <div class="number__value number__value--big">4000</div>
-      <big>completed projects</big>
+      <small>facilities put into operation</small>
     </div>
   </div>
   <div class="page__divider l-margin-top l-margin-bottom"> </div>
@@ -47,10 +47,10 @@ in Russia and across the world</div>
         <div class="m--margin-bottom s-line-height"><em>Over</em></div>
       </div>
       <div class="number__value number__value--xs">2 <small>million</small></div>
-      <div class="s--margin-top xs-line-height"><em>man-hours of engineering services per year provided to the clients </em></div>
+      <div class="s--margin-top xs-line-height"><em>man-hours of engineering services annually provided to the Clients </em></div>
     </div>
     <div class="col-xs-5 center">
-      <div class="number__value number__value--s">10</div><div class="s-line-height"><em>ВИНК среди наших клиентов</em></div>
+      <div class="number__value number__value--s">10</div><div class="xs-line-height"><u>vertically integrated companies among our clients </u></div>
     </div>
   </div>
   <div class="page__divider l-margin-top xl-margin-bottom"> </div>
@@ -111,7 +111,7 @@ in Russia and across the world</div>
       </div>
     </div>
     <div class="col-xs-12 center">
-      <div class="s-margin-top s-line-height"><small>Within the past 3 years only, we have procured and supplied to our clients, with the biggest batch of procured equipment weighing 
+      <div class="s-margin-top s-line-height"><small>of process equipment, within the past 3 years, we have procured and supplied to the Clients, with the biggest batch of procured equipment weighing
           <nobr><strong>716</strong> tons</nobr></small></div>
     </div>
   </div>
@@ -148,7 +148,7 @@ in Russia and across the world</div>
   <div class="row">
     <div class="col-xs-2"><svg width="44" height="65" viewBox="0 0 44 65" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="n-8" fill="#0082DC"><path d="M22.01 43.806C10.13 43.806.47 34.056.47 22.068.47 10.082 10.13.33 22.01.33c11.876 0 21.54 9.752 21.54 21.738 0 11.987-9.664 21.738-21.54 21.738zm0-40.9c-10.472 0-18.99 8.596-18.99 19.162 0 10.567 8.518 19.164 18.99 19.164 10.47 0 18.988-8.597 18.988-19.163 0-10.567-8.518-19.165-18.99-19.165z" id="Fill-1"/><path d="M11.57 64.748c-.203 0-.41-.05-.596-.15-.418-.223-.68-.66-.68-1.137V45.603c0-.71.573-1.287 1.277-1.287.705 0 1.276.577 1.276 1.287V61.03l8.446-5.793c.433-.297 1-.297 1.434 0l8.447 5.793V45.602c0-.71.57-1.287 1.275-1.287.704 0 1.276.577 1.276 1.287v17.86c0 .476-.26.913-.68 1.137-.415.222-.92.194-1.312-.074l-9.723-6.668-9.723 6.668c-.215.147-.466.222-.716.222" id="Fill-2"/><path d="M22.733 32.476c-.704 0-1.275-.577-1.275-1.288V16.265l-3.053 2.183c-.576.412-1.37.273-1.778-.307-.408-.578-.272-1.382.303-1.793l5.066-3.622c.39-.278.9-.313 1.323-.093.422.22.69.66.69 1.143v17.413c0 .712-.572 1.288-1.277 1.288" id="Fill-3"/></g></g></svg>
     </div>
-    <div class="col-xs-10 right"><em>Our design documentation gets approved by the State Expert Review Commission (Glavgosexpertiza) on the first try. </em></div>
+    <div class="col-xs-10 right"><em>Our design documentation gets approved by the State Expert Review Commission (Glavgosexpertiza). </em></div>
   </div>
   <div class="page__divider m-margin-top m-margin-bottom"></div>
   <div class="row">
@@ -210,7 +210,7 @@ in Russia and across the world</div>
         </div>
         <div class="col-xs-9">
           <div class="number__value number__value--big">4000</div>
-          <big>completed projects</big>
+          <small>facilities put into operation</small>
         </div>
       </div>
       <div class="page__divider xl-margin-top l-margin-bottom"> </div>
@@ -220,10 +220,10 @@ in Russia and across the world</div>
             <div class="xs--margin-bottom s-line-height"><em>Over</em></div>
           </div>
           <div class="number__value number__value--xs">2 <small>million</small></div>
-          <div class="xxs--margin-top xs-line-height"><em>man-hours of engineering services per year provided to the clients </em></div>
+          <div class="xxs--margin-top xs-line-height"><em>man-hours of engineering services annually provided to the Clients </em></div>
         </div>
         <div class="col-xs-5 center">
-          <div class="number__value number__value--s">10</div><div class="s-line-height"><em>ВИНК среди наших клиентов</em></div>
+          <div class="number__value number__value--s">10</div><div class="xs-line-height"><u>vertically integrated companies among our clients </u></div>
         </div>
       </div>
     </div>
@@ -321,7 +321,7 @@ in Russia and across the world</div>
           </div>
         </div>
         <div class="col-xs-12">
-          <div class="s-margin-top m-line-height"><small>Within the past 3 years only, we have procured and supplied to our clients, with the biggest batch of procured equipment weighing 
+          <div class="s-margin-top m-line-height"><small>of process equipment, within the past 3 years, we have procured and supplied to the Clients, with the biggest batch of procured equipment weighing
               <nobr><strong>716</strong> tons</nobr></small></div>
         </div>
       </div>
@@ -334,7 +334,7 @@ in Russia and across the world</div>
         <div class="col-xs-2"><svg width="44" height="65" viewBox="0 0 44 65" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="n-8" fill="#0082DC"><path d="M22.01 43.806C10.13 43.806.47 34.056.47 22.068.47 10.082 10.13.33 22.01.33c11.876 0 21.54 9.752 21.54 21.738 0 11.987-9.664 21.738-21.54 21.738zm0-40.9c-10.472 0-18.99 8.596-18.99 19.162 0 10.567 8.518 19.164 18.99 19.164 10.47 0 18.988-8.597 18.988-19.163 0-10.567-8.518-19.165-18.99-19.165z" id="Fill-1"/><path d="M11.57 64.748c-.203 0-.41-.05-.596-.15-.418-.223-.68-.66-.68-1.137V45.603c0-.71.573-1.287 1.277-1.287.705 0 1.276.577 1.276 1.287V61.03l8.446-5.793c.433-.297 1-.297 1.434 0l8.447 5.793V45.602c0-.71.57-1.287 1.275-1.287.704 0 1.276.577 1.276 1.287v17.86c0 .476-.26.913-.68 1.137-.415.222-.92.194-1.312-.074l-9.723-6.668-9.723 6.668c-.215.147-.466.222-.716.222" id="Fill-2"/><path d="M22.733 32.476c-.704 0-1.275-.577-1.275-1.288V16.265l-3.053 2.183c-.576.412-1.37.273-1.778-.307-.408-.578-.272-1.382.303-1.793l5.066-3.622c.39-.278.9-.313 1.323-.093.422.22.69.66.69 1.143v17.413c0 .712-.572 1.288-1.277 1.288" id="Fill-3"/></g></g></svg>
         </div>
         <div class="col-xs-10 right">
-          <div class="s-margin-right"><em>Our design documentation gets approved by the State Expert Review Commission (Glavgosexpertiza) on the first try. </em></div>
+          <div class="s-margin-right"><em>Our design documentation gets approved by the State Expert Review Commission (Glavgosexpertiza). </em></div>
         </div>
       </div>
     </div>
@@ -408,7 +408,7 @@ in Russia and across the world</div>
             </div>
             <div class="col-xs-9">
               <div class="number__value number__value--big">4000</div>
-              <big>completed projects</big>
+              <small>facilities put into operation</small>
             </div>
           </div>
           <div class="page__divider l-margin-top m-margin-bottom"> </div>
@@ -438,10 +438,10 @@ in Russia and across the world</div>
                 <div class="xs--margin-bottom s-line-height"><em>Over</em></div>
               </div>
               <div class="number__value number__value--xs">2 <small>million</small></div>
-              <div class="xxs--margin-top xs-line-height"><em>man-hours of engineering services per year provided to the clients </em></div>
+              <div class="xxs--margin-top xs-line-height"><em>man-hours of engineering services annually provided to the Clients </em></div>
             </div>
             <div class="col-xs-5 center">
-              <div class="number__value number__value--s">10</div><div class="s-line-height"><em>ВИНК среди наших клиентов</em></div>
+              <div class="number__value number__value--s">10</div><div class="xs-line-height"><u>vertically integrated companies among our clients </u></div>
             </div>
           </div>
           <div class="page__divider m-margin-top m-margin-bottom"> </div>
@@ -524,7 +524,7 @@ in Russia and across the world</div>
               </div>
             </div>
             <div class="col-xs-12">
-              <div class="s-margin-top m-line-height"><small>Within the past 3 years only, we have procured and supplied to our clients, with the biggest batch of procured equipment weighing 
+              <div class="s-margin-top m-line-height"><small>of process equipment, within the past 3 years, we have procured and supplied to the Clients, with the biggest batch of procured equipment weighing
                   <nobr><strong>716</strong> tons</nobr></small></div>
             </div>
           </div>
@@ -533,7 +533,7 @@ in Russia and across the world</div>
           <div class="row">
             <div class="col-xs-2"><svg width="44" height="65" viewBox="0 0 44 65" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="n-8" fill="#0082DC"><path d="M22.01 43.806C10.13 43.806.47 34.056.47 22.068.47 10.082 10.13.33 22.01.33c11.876 0 21.54 9.752 21.54 21.738 0 11.987-9.664 21.738-21.54 21.738zm0-40.9c-10.472 0-18.99 8.596-18.99 19.162 0 10.567 8.518 19.164 18.99 19.164 10.47 0 18.988-8.597 18.988-19.163 0-10.567-8.518-19.165-18.99-19.165z" id="Fill-1"/><path d="M11.57 64.748c-.203 0-.41-.05-.596-.15-.418-.223-.68-.66-.68-1.137V45.603c0-.71.573-1.287 1.277-1.287.705 0 1.276.577 1.276 1.287V61.03l8.446-5.793c.433-.297 1-.297 1.434 0l8.447 5.793V45.602c0-.71.57-1.287 1.275-1.287.704 0 1.276.577 1.276 1.287v17.86c0 .476-.26.913-.68 1.137-.415.222-.92.194-1.312-.074l-9.723-6.668-9.723 6.668c-.215.147-.466.222-.716.222" id="Fill-2"/><path d="M22.733 32.476c-.704 0-1.275-.577-1.275-1.288V16.265l-3.053 2.183c-.576.412-1.37.273-1.778-.307-.408-.578-.272-1.382.303-1.793l5.066-3.622c.39-.278.9-.313 1.323-.093.422.22.69.66.69 1.143v17.413c0 .712-.572 1.288-1.277 1.288" id="Fill-3"/></g></g></svg>
             </div>
-            <div class="col-xs-10 right"><em>Our design documentation gets approved by the State Expert Review Commission (Glavgosexpertiza) on the first try. </em></div>
+            <div class="col-xs-10 right"><em>Our design documentation gets approved by the State Expert Review Commission (Glavgosexpertiza). </em></div>
           </div>
           <div class="xl-margin-top s-line-height">
             <div class="row">

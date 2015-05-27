@@ -71,12 +71,12 @@ $APPLICATION->SetPageProperty('body_class', 'index')
       <div class="hidden-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
       <div class="col-sm-6 col-md-4"><span>Over</span>
         <div class="number__value">1 million </div>
-        <div class="page__divider page__divider--small float-none"></div><br>kilometers of pipelines have been designed using 3D engineering systems 
+        <div class="page__divider page__divider--small float-none"></div><br>kilometers of pipelines have been designed using 3D engineering systems
       </div>
 
       <div class="visible-xs visible-sm page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
-      <div class="col-sm-6 col-md-4"><span>We have supplied over</span>
-        <div class="number__value">3 000</div>
+      <div class="col-sm-6 col-md-4"><span>Over</span>
+        <div class="number__value">30 000</div>
         <div class="page__divider page__divider--small float-none"></div><br>tons of process equipment have been procured and supplied to the Clients in the past 3 years 
       </div>
       <div class="visible-xs page__divider xxl-margin-top xxl-margin-bottom float-left"></div>
