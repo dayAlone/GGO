@@ -49,7 +49,7 @@ Loc::loadMessages(__FILE__);
                     <th width="10%" class="hidden-xs"><?=Loc::getMessage('REGION')?></th>
 					         <th width="10%" class="hidden-xs"><?=Loc::getMessage('PERIOD')?></th>
                     
-                    <th width="45%"><?=Loc::getMessage('OBJECT')?></th>
+                    <th <?=($section['COUNTER']>0?'width="45%"':'width="35%"')?>><?=Loc::getMessage('OBJECT')?></th>
                     
                     <th <?=($section['COUNTER']>0?'width="10%"':'width="20%"')?>><nobr><?=Loc::getMessage('WORKS')?></nobr></th>
                   </tr>
