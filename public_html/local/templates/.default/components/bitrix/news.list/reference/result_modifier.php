@@ -14,7 +14,7 @@
     }	
 	foreach ($arResult['ITEMS'] as $key=>$item):
 		if(!isset($arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']]))
-			$arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']] = array('ELEMENTS' => array());
+			$arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']] = array('ELEMENTS' => array(), 'COUNTER'=>0);
 		$tooltip = "";
 		switch ($item['PROPERTIES']['EPSCM']['VALUE']) {
 			case 'E':
@@ -37,6 +37,8 @@
 				$tooltip = "Проектирование, поставка и строительство полностью";
 			break;
 		}
+		if(strlen($tooltip) > 0)
+			$arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']]['COUNTER']++;
 		$arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']]['ELEMENTS'][] = array(
 			'NAME'   => $item['NAME'],
 			'CODE'   => $item['CODE'],

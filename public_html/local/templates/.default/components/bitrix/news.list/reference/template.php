@@ -51,7 +51,7 @@ Loc::loadMessages(__FILE__);
                     
                     <th width="45%"><?=Loc::getMessage('OBJECT')?></th>
                     
-                    <th width="10%"><nobr><?=Loc::getMessage('WORKS')?></nobr></th>
+                    <th <?=($section['COUNTER']>0?'width="10%"':'width="20%"')?>><nobr><?=Loc::getMessage('WORKS')?></nobr></th>
                   </tr>
                 </thead>
                 <tbody>
