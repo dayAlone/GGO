@@ -9,9 +9,9 @@ $MESS['WORKS']  = "ACTIVITIES";
 $MESS['E']    = "Engineering";
 $MESS['EPs']  = "Engineering, procurement service";
 $MESS['EPsP'] = "Engineering, procurement service, procurement";
-$MESS['EP']   = "Engineering, procuremen";
-$MESS['EPCM'] = "Engineering, procuremen, construction management";
-$MESS['EPCm'] = "Engineering, procuremen, construction management";
-$MESS['EPC']  = "Engineering, procuremen, construction";
+$MESS['EP']   = "Engineering, procurement";
+$MESS['EPCM'] = "Engineering, procurement, construction management";
+$MESS['EPCm'] = "Engineering, procurement, construction management";
+$MESS['EPC']  = "Engineering, procurement, construction";
 
 ?>
