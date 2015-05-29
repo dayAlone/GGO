@@ -1,4 +1,7 @@
 <?
+	use Bitrix\Main\Localization\Loc;
+	use Bitrix\Sale\Location;
+	Loc::loadMessages(__FILE__);
 	$arResult['SECTIONS'] = array();
 	function reference_sort($a, $b)
     {
@@ -15,28 +18,7 @@
 	foreach ($arResult['ITEMS'] as $key=>$item):
 		if(!isset($arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']]))
 			$arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']] = array('ELEMENTS' => array(), 'COUNTER'=>0);
-		$tooltip = "";
-		switch ($item['PROPERTIES']['EPSCM']['VALUE']) {
-			case 'E':
-				$tooltip = "Проектирование";
-			break;
-			case 'EPs':
-				$tooltip = "Проектирование и сопровождение поставки";
-			break;
-			case 'EPsP':
-				$tooltip = "Проектирование, сопровождение поставки и частичная поставка";
-			break;
-			case 'EP':
-				$tooltip = "Проектирование и поставка полностью";
-			break;
-			case 'EPCM':
-			case 'EРCm':
-				$tooltip = "Проектирование, поставка и управление строительством";
-			break;
-			case 'EPC':
-				$tooltip = "Проектирование, поставка и строительство полностью";
-			break;
-		}
+		$tooltip = Loc::getMessage($item['PROPERTIES']['EPSCM']['VALUE']);
 		if(strlen($tooltip) > 0)
 			$arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']]['COUNTER']++;
 		$arResult['SECTIONS'][$item['IBLOCK_SECTION_ID']]['ELEMENTS'][] = array(
