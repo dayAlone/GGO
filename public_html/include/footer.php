@@ -139,7 +139,7 @@
       <?if($APPLICATION->GetCurDir()=="/en/" || $APPLICATION->GetPageProperty('hide_projects')==true):?>
       <div class="col-sm-8 col-md-6 footer__about">
         <h3>About the Сompany </h3> 
-        <p>JSC Giprogazoochistka is among the leaders in the engineering services market. The Company provides services for key industrial sectors and implements projects from design engineering through to commissioning of process units at oil and gas processing, petrochemical and oil and gas production facilities. </p>
+        <p>JSC Giprogazoochistka is among the leaders in the engineering services market. The Company provides services for key industrial sectors and implements projects whose scope ranges from design engineering through to commissioning of process units designated for oil and gas processing, petrochemical and oil and gas production facilities. </p>
         <p>Our company started out as a state design institute back in 1928. Today Giprogazoochistka remains committed to developing new technologies while increasing the scope and expanding the range of services and works it offers. </p>
         <p>The quality of technical solutions developed in the Company is evidenced by its many patents and inventions. The Company develops technical documentation based on its own basic design packages for gas treatment and oil and gas processing facilities and also uses licensed technologies from its leading overseas partners. </p>
         <p>All-around automation of work processes and top notch productivity of the Company's personnel are the key factors that drive the Company's performance.</p> 

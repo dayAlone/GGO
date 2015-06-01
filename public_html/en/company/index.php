@@ -2,7 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Who we are");
 ?><p class="highlight">
-	JSC Giprogazoochistka is among the leaders in the engineering services market. The Company provides services for key industrial sectors and implements projects from design engineering through to commissioning of process units designated for oil and gas processing, petrochemi- cal and oil and gas production facilities. 
+	JSC Giprogazoochistka is among the leaders in the engineering services market. The Company provides services for key industrial sectors and implements projects from whose scope ranges design engineering through to commissioning of process units designated for oil and gas processing, petrochemical and oil and gas production facilities. 
 </p>
 <p>
 	Our company started out as a state design institute back in 1928. Today Giprogazoochistka remains committed to developing new technologies while increasing the scope and expanding the range of services and works it offers. The Company boasts a wide range of competencies and can offer a line of innovative state-of-the-art solutions for technical tasks of various levels of complexity, with full 3D imaging of designed facilities in AVEVA Plant and Intergraph SmartPlant Enterprise and issuance of design documentation. 

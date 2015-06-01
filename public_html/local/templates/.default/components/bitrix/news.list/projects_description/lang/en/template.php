@@ -1,8 +1,8 @@
 <?
 $MESS["NUMBERS"] = "Project details ";
 $MESS["TECH"] = "Processes and technologies";
-$MESS["SPEED"] = "Capcity";
-$MESS["TOOLS"] = "Processes perfomance";
+$MESS["SPEED"] = "Capacity";
+$MESS["TOOLS"] = "Process perfomance";
 $MESS['DETAILS'] = 'Distinctive features of the Project';
 
 $MESS['PCT'] = 'Project';

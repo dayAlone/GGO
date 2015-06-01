@@ -15,7 +15,7 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Career", 
+		"Careers", 
 		"/en/career/", 
 		Array(), 
 		Array(), 
