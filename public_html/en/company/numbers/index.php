@@ -136,7 +136,7 @@ $APPLICATION->SetTitle('GGO in figures');
           </div>
           <div class="col-xs-12">
             <div class="xs-line-height xxs--margin-top">
-              <u>разрешений РТН/заключений экспертиз промышленной безопасности</u>
+              <u>Rostehnadzor permits/ approvals from industrial safety expert review</u>
             </div>
           </div>
         </div>
@@ -152,7 +152,7 @@ $APPLICATION->SetTitle('GGO in figures');
   <div class="page__divider m-margin-top m-margin-bottom"></div>
   <div class="row">
     <div class="col-xs-9">
-      <u>Starting from 16.02.2008 when Russian Federal Government Decree № 87 was put into effect, <br><big style="font-weight:bold;color:black;">more than</big><br> of our projects<br> have been <br>granted such<br> an approval  </u>
+      <u>Starting from 16.02.2008 when Russian Federal Government Decree № 87 was put into effect, <big style="font-weight:bold;color:black;">more than</big> of our projects have been granted such an approval  </u>
     </div>
     <div class="col-xs-3">
       <div class="number__value number__value--m float-right s--margin-top">20</div>
@@ -486,7 +486,7 @@ $APPLICATION->SetTitle('GGO in figures');
               <div class="number__value float-right number__value--xs">40</div>
             </div>
           </div>
-          <div class="row m-margin-top">
+          <div class="row xs-margin-top">
             <div class="col-xs-6">
               <div class="number__value number__value--xs">34</div>
             </div>
@@ -527,9 +527,9 @@ $APPLICATION->SetTitle('GGO in figures');
         </div>
         <div class="col-xs-5">
           <div class="row">
-            <div class="col-xs-2"><svg width="44" height="65" viewBox="0 0 44 65" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="n-8" fill="#0082DC"><path d="M22.01 43.806C10.13 43.806.47 34.056.47 22.068.47 10.082 10.13.33 22.01.33c11.876 0 21.54 9.752 21.54 21.738 0 11.987-9.664 21.738-21.54 21.738zm0-40.9c-10.472 0-18.99 8.596-18.99 19.162 0 10.567 8.518 19.164 18.99 19.164 10.47 0 18.988-8.597 18.988-19.163 0-10.567-8.518-19.165-18.99-19.165z" id="Fill-1"/><path d="M11.57 64.748c-.203 0-.41-.05-.596-.15-.418-.223-.68-.66-.68-1.137V45.603c0-.71.573-1.287 1.277-1.287.705 0 1.276.577 1.276 1.287V61.03l8.446-5.793c.433-.297 1-.297 1.434 0l8.447 5.793V45.602c0-.71.57-1.287 1.275-1.287.704 0 1.276.577 1.276 1.287v17.86c0 .476-.26.913-.68 1.137-.415.222-.92.194-1.312-.074l-9.723-6.668-9.723 6.668c-.215.147-.466.222-.716.222" id="Fill-2"/><path d="M22.733 32.476c-.704 0-1.275-.577-1.275-1.288V16.265l-3.053 2.183c-.576.412-1.37.273-1.778-.307-.408-.578-.272-1.382.303-1.793l5.066-3.622c.39-.278.9-.313 1.323-.093.422.22.69.66.69 1.143v17.413c0 .712-.572 1.288-1.277 1.288" id="Fill-3"/></g></g></svg>
+            <div class="col-xs-3"><svg width="44" height="65" viewBox="0 0 44 65" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="n-8" fill="#0082DC"><path d="M22.01 43.806C10.13 43.806.47 34.056.47 22.068.47 10.082 10.13.33 22.01.33c11.876 0 21.54 9.752 21.54 21.738 0 11.987-9.664 21.738-21.54 21.738zm0-40.9c-10.472 0-18.99 8.596-18.99 19.162 0 10.567 8.518 19.164 18.99 19.164 10.47 0 18.988-8.597 18.988-19.163 0-10.567-8.518-19.165-18.99-19.165z" id="Fill-1"/><path d="M11.57 64.748c-.203 0-.41-.05-.596-.15-.418-.223-.68-.66-.68-1.137V45.603c0-.71.573-1.287 1.277-1.287.705 0 1.276.577 1.276 1.287V61.03l8.446-5.793c.433-.297 1-.297 1.434 0l8.447 5.793V45.602c0-.71.57-1.287 1.275-1.287.704 0 1.276.577 1.276 1.287v17.86c0 .476-.26.913-.68 1.137-.415.222-.92.194-1.312-.074l-9.723-6.668-9.723 6.668c-.215.147-.466.222-.716.222" id="Fill-2"/><path d="M22.733 32.476c-.704 0-1.275-.577-1.275-1.288V16.265l-3.053 2.183c-.576.412-1.37.273-1.778-.307-.408-.578-.272-1.382.303-1.793l5.066-3.622c.39-.278.9-.313 1.323-.093.422.22.69.66.69 1.143v17.413c0 .712-.572 1.288-1.277 1.288" id="Fill-3"/></g></g></svg>
             </div>
-            <div class="col-xs-10 right"><em>Our design documentation gets approved by the State Expert Review  Commission (Glavgosexpertiza).</em></div>
+            <div class="col-xs-9 right s-line-height"><em>Our design documentation gets approved by the State Expert Review  Commission (Glavgosexpertiza).</em></div>
           </div>
           <div class="xl-margin-top s-line-height">
             <div class="row">
