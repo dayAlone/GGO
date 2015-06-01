@@ -50,7 +50,7 @@ $APPLICATION->SetTitle('Vacancies');
   </div>
   <div class="col-md-4 col-md-pull-8 page__side">
     <div class="page__side-divider hidden-md hidden-lg"></div>
-    <p>Giprogazoochistka Group is a team of professionals with strong competencies and a wealth of experience in gas purification and ecology of air. The engineering company has attained international acclaim through the use of innovative approaches, cutting edge technologies and high quality of works it performs. Please send your detailed résumés at job@ggo.ru </p>
+    <p>Giprogazoochistka Group is a team of professionals with strong competencies and a wealth of experience in gas purification and ecology of air. The engineering company has attained international acclaim through the use of innovative approaches, cutting-edge technologies and high quality of works it performs. Please send your detailed résumés at job@ggo.ru </p>
 	<p>For additional information, please contact our Human Resource Department at +7 (495) 231-30-40. </p>
 	<div class="page__side-divider"></div>
 	<p>Dear colleagues! We are pleased to announce that JSC Giprogazoochistka is seeking to contract out some design and engineering works to freelance engineering professionals. To be considered for a freelance position, please open the <a data-toggle="modal" data-target="#vacancyDetail" href="#vacancyDetail">link</a> and fill out the application form. </p>
