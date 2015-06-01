@@ -14,8 +14,7 @@ $APPLICATION->SetTitle('GGO in figures');
       <div class="number__value">86</div>
     </div>
     <div class="col-xs-5">
-      <div class="s-margin-top">years of successful operation 
-in Russia and across the world</div>
+      <div class="s-margin-top">years of successful operation in Russia and across the world</div>
     </div>
   </div>
   <div class="page__divider s-margin-top l-margin-bottom"> </div>
@@ -107,11 +106,11 @@ in Russia and across the world</div>
     <div class="col-xs-8">
       <div class="number__value">30000</div>
       <div class="xs--margin-top">
-        <big>tons of equipment </big>
+        <small>tons of process equipment</small>
       </div>
     </div>
     <div class="col-xs-12 center">
-      <div class="s-margin-top s-line-height"><small>of process equipment, within the past 3 years, we have procured and supplied to the Clients, with the biggest batch of procured equipment weighing
+      <div class="s-margin-top s-line-height"><small>have been procured and supplied to the Clients over the past 3 years, with the biggest batch of equipment weighing
           <nobr><strong>716</strong> tons</nobr></small></div>
     </div>
   </div>
@@ -120,7 +119,7 @@ in Russia and across the world</div>
     <div class="col-xs-6 border-right">
       <div class="number__value number__value--xs xs-margin-right">40</div>
       <div class="xs-line-height">
-        <u><nobr>Over the past several years</nobr> <nobr>we have received</nobr> over certificates and declarations as well as</u>
+        <u><nobr>Over the past several years</nobr> <nobr>we have received over</nobr> certificates and declarations as well as</u>
       </div>
     </div>
     <div class="col-xs-6">
@@ -148,28 +147,27 @@ in Russia and across the world</div>
   <div class="row">
     <div class="col-xs-2"><svg width="44" height="65" viewBox="0 0 44 65" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="n-8" fill="#0082DC"><path d="M22.01 43.806C10.13 43.806.47 34.056.47 22.068.47 10.082 10.13.33 22.01.33c11.876 0 21.54 9.752 21.54 21.738 0 11.987-9.664 21.738-21.54 21.738zm0-40.9c-10.472 0-18.99 8.596-18.99 19.162 0 10.567 8.518 19.164 18.99 19.164 10.47 0 18.988-8.597 18.988-19.163 0-10.567-8.518-19.165-18.99-19.165z" id="Fill-1"/><path d="M11.57 64.748c-.203 0-.41-.05-.596-.15-.418-.223-.68-.66-.68-1.137V45.603c0-.71.573-1.287 1.277-1.287.705 0 1.276.577 1.276 1.287V61.03l8.446-5.793c.433-.297 1-.297 1.434 0l8.447 5.793V45.602c0-.71.57-1.287 1.275-1.287.704 0 1.276.577 1.276 1.287v17.86c0 .476-.26.913-.68 1.137-.415.222-.92.194-1.312-.074l-9.723-6.668-9.723 6.668c-.215.147-.466.222-.716.222" id="Fill-2"/><path d="M22.733 32.476c-.704 0-1.275-.577-1.275-1.288V16.265l-3.053 2.183c-.576.412-1.37.273-1.778-.307-.408-.578-.272-1.382.303-1.793l5.066-3.622c.39-.278.9-.313 1.323-.093.422.22.69.66.69 1.143v17.413c0 .712-.572 1.288-1.277 1.288" id="Fill-3"/></g></g></svg>
     </div>
-    <div class="col-xs-10 right"><em>Our design documentation gets approved by the State Expert Review  Commission (Glavgosexpertiza).
- </em></div>
+    <div class="col-xs-10 right"><em>Our design documentation gets approved by the State Expert Review  Commission (Glavgosexpertiza).</em></div>
   </div>
   <div class="page__divider m-margin-top m-margin-bottom"></div>
   <div class="row">
     <div class="col-xs-9">
-      <u>Starting from 16.02.2008 when Russian Federal Government Decree № 87 was put into effect, <br><big style="font-weight:bold;color:black;">more than</big><br> of our projects<br> have been <br>granted such<br> an approval  
-</u>
+      <u>Starting from 16.02.2008 when Russian Federal Government Decree № 87 was put into effect, <br><big style="font-weight:bold;color:black;">more than</big><br> of our projects<br> have been <br>granted such<br> an approval  </u>
     </div>
     <div class="col-xs-3">
       <div class="number__value number__value--m float-right s--margin-top">20</div>
     </div>
   </div>
   <div class="page__divider m-margin-top l-margin-bottom"></div>
+  <small>Our equipment has travelled</small>
   <div class="row xxl-margin-bottom">
     <div class="col-xs-2 xs-margin-top"><svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><path d="M30 1c16.016 0 29 12.984 29 29S46.016 59 30 59 1 46.016 1 30 13.984 1 30 1zm21.436 9.47s-1.262 6.922-6.305 9.444c-5.042-1.26-10.087 2.522-8.825 2.522 1.26 0 2.52 5.043 2.52 5.043 1.263 1.26 3.784 0 3.784 0 3.15 3.15-5.044 8.825-5.044 10.086 0 1.26 3.15 1.89 1.26 3.782-1.89 1.89-3.783 2.522-3.783 2.522 0 6.304-6.303 6.304-7.564 6.304-1.262 0-3.784-5.043-3.784-6.304 0-1.26 1.262-2.522 1.262-3.783 0-1.26-2.52-3.782-2.52-3.782 0-5.044-3.784-3.782-7.567-3.782-3.78 0-3.78-5.044-3.78-5.044s0-8.827 6.303-10.088c6.305-1.26 6.305 1.26 6.305 1.26 2.52 2.522 7.566 0 10.088 0 0 0 1.26-8.824-1.263-7.564-2.52 1.26-4.78.286-5.042-2.52-.366-3.943 11.004-6.306 11.004-6.306" id="n-9" stroke="#0082DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
     </div>
     <div class="col-xs-6">
+      
       <div class="number__value m-margin-left">384 467</div>
     </div>
-    <div class="col-xs-12 center"><small>km our equipment has travelled which equals the distance between the Earth and the moon and is 10 times the distance around the globe, over the past 3 years.
-</small></div>
+    <div class="col-xs-12 center"><small>km over the past 3 years which equals the distance between the Earth and the moon and is 10 times the distance around the globe.</small></div>
   </div>
 </div>
 <div class="numbers visible-sm">
@@ -186,8 +184,7 @@ in Russia and across the world</div>
           <div class="number__value s-margin-left-sm xxs-margin-left-lg">86</div>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <div class="xs-margin-top-sm no-margin-top-lg xs-margin-left-sm">years of successful operation 
-in Russia and across the world</div>
+          <div class="xs-margin-top-sm no-margin-top-lg xs-margin-left-sm">years of successful operation in Russia and across the world</div>
         </div>
       </div>
       <div class="page__divider m-margin-top l-margin-bottom"> </div>
@@ -284,9 +281,9 @@ in Russia and across the world</div>
       <div class="xs-margin-left">
         <div class="row">
           <div class="col-xs-8 s-line-height"><em>
-          <nobr>Over the past several years</nobr> <nobr>we have received</nobr> over certificates and declarations as well as
+          <nobr>Over the past several years</nobr> <nobr>we have received over</nobr> certificates and declarations as well as
           </em></div>
-          <div class="col-xs-4 s-margin-top">
+          <div class="col-xs-4 l-margin-top">
             <div class="number__value float-right number__value--xs xs-margin-right">40</div>
           </div>
         </div>
@@ -318,11 +315,11 @@ in Russia and across the world</div>
         <div class="col-xs-8">
           <div class="number__value number__value--xxs">30000</div>
           <div class="xs--margin-top">
-            <big>tons <br>of equipment </big>
+            <small>tons of process equipment</small>
           </div>
         </div>
         <div class="col-xs-12">
-          <div class="s-margin-top m-line-height"><small>of process equipment, within the past 3 years, we have procured and supplied to the Clients, with the biggest batch of procured equipment weighing
+          <div class="s-margin-top m-line-height"><small>have been procured and supplied to the Clients over the past 3 years, with the biggest batch of equipment weighing
               <nobr><strong>716</strong> tons</nobr></small></div>
         </div>
       </div>
@@ -335,8 +332,7 @@ in Russia and across the world</div>
         <div class="col-xs-2"><svg width="44" height="65" viewBox="0 0 44 65" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="n-8" fill="#0082DC"><path d="M22.01 43.806C10.13 43.806.47 34.056.47 22.068.47 10.082 10.13.33 22.01.33c11.876 0 21.54 9.752 21.54 21.738 0 11.987-9.664 21.738-21.54 21.738zm0-40.9c-10.472 0-18.99 8.596-18.99 19.162 0 10.567 8.518 19.164 18.99 19.164 10.47 0 18.988-8.597 18.988-19.163 0-10.567-8.518-19.165-18.99-19.165z" id="Fill-1"/><path d="M11.57 64.748c-.203 0-.41-.05-.596-.15-.418-.223-.68-.66-.68-1.137V45.603c0-.71.573-1.287 1.277-1.287.705 0 1.276.577 1.276 1.287V61.03l8.446-5.793c.433-.297 1-.297 1.434 0l8.447 5.793V45.602c0-.71.57-1.287 1.275-1.287.704 0 1.276.577 1.276 1.287v17.86c0 .476-.26.913-.68 1.137-.415.222-.92.194-1.312-.074l-9.723-6.668-9.723 6.668c-.215.147-.466.222-.716.222" id="Fill-2"/><path d="M22.733 32.476c-.704 0-1.275-.577-1.275-1.288V16.265l-3.053 2.183c-.576.412-1.37.273-1.778-.307-.408-.578-.272-1.382.303-1.793l5.066-3.622c.39-.278.9-.313 1.323-.093.422.22.69.66.69 1.143v17.413c0 .712-.572 1.288-1.277 1.288" id="Fill-3"/></g></g></svg>
         </div>
         <div class="col-xs-10 right">
-          <div class="s-margin-right"><em>Our design documentation gets approved by the State Expert Review  Commission (Glavgosexpertiza).
- </em></div>
+          <div class="s-margin-right"><em>Our design documentation gets approved by the State Expert Review  Commission (Glavgosexpertiza).</em></div>
         </div>
       </div>
     </div>
@@ -345,8 +341,7 @@ in Russia and across the world</div>
         <div class="row">
           <div class="col-xs-9">
             <div class="s-margin-left">
-              <u>Starting from 16.02.2008 when Russian Federal Government Decree № 87 was put into effect, <br><big style="font-weight:bold;color:black;">more than</big><br> of our projects<br> have been <br>granted such<br> an approval  
-</u>
+              <u>Starting from 16.02.2008 when Russian Federal Government Decree № 87 was put into effect, <br><big style="font-weight:bold;color:black;">more than</big><br> of our projects<br> have been <br>granted such<br> an approval  </u>
             </div>
           </div>
           <div class="col-xs-3">
@@ -357,6 +352,7 @@ in Russia and across the world</div>
     </div>
   </div>
   <div class="page__divider xs-margin-top l-margin-bottom"> </div>
+  <small>Our equipment has travelled</small>
   <div class="row">
     <div class="col-xs-1 xs-margin-top"><svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><path d="M30 1c16.016 0 29 12.984 29 29S46.016 59 30 59 1 46.016 1 30 13.984 1 30 1zm21.436 9.47s-1.262 6.922-6.305 9.444c-5.042-1.26-10.087 2.522-8.825 2.522 1.26 0 2.52 5.043 2.52 5.043 1.263 1.26 3.784 0 3.784 0 3.15 3.15-5.044 8.825-5.044 10.086 0 1.26 3.15 1.89 1.26 3.782-1.89 1.89-3.783 2.522-3.783 2.522 0 6.304-6.303 6.304-7.564 6.304-1.262 0-3.784-5.043-3.784-6.304 0-1.26 1.262-2.522 1.262-3.783 0-1.26-2.52-3.782-2.52-3.782 0-5.044-3.784-3.782-7.567-3.782-3.78 0-3.78-5.044-3.78-5.044s0-8.827 6.303-10.088c6.305-1.26 6.305 1.26 6.305 1.26 2.52 2.522 7.566 0 10.088 0 0 0 1.26-8.824-1.263-7.564-2.52 1.26-4.78.286-5.042-2.52-.366-3.943 11.004-6.306 11.004-6.306" id="n-9" stroke="#0082DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
     </div>
@@ -364,8 +360,7 @@ in Russia and across the world</div>
       <div class="number__value number__value--big m-margin-left">384 467</div>
     </div>
     <div class="col-xs-5">
-      <div class="s-margin-left">km our equipment has travelled which equals the distance between the Earth and the moon and is 10 times the distance around the globe, over the past 3 years.
-</div>
+      <div class="s-margin-left">km over the past 3 years which equals the distance between the Earth and the moon and is 10 times the distance around the globe.</div>
     </div>
   </div>
   <div class="page__divider m-margin-top l-margin-bottom"> </div>
@@ -384,8 +379,7 @@ in Russia and across the world</div>
           <div class="number__value s-margin-left-sm no-margin-left-lg">86</div>
         </div>
         <div class="col-sm-6 col-lg-7">
-          <div class="xs-margin-top-sm no-margin-top-lg xs-margin-left-lg no-margin-left-sm">years of successful operation 
-in Russia and across the world</div>
+          <div class="xs-margin-top-sm no-margin-top-lg xs-margin-left-lg no-margin-left-sm">years of successful operation in Russia and across the world</div>
         </div>
       </div>
       <div class="page__divider m-margin-top l-margin-bottom"> </div>
@@ -486,9 +480,9 @@ in Russia and across the world</div>
         <div class="col-xs-5">
           <div class="row">
             <div class="col-xs-8 s-line-height">
-              <u><nobr>Over the past several years</nobr> <nobr>we have received</nobr> over certificates and declarations as well as</u>
+              <u><nobr>Over the past several years</nobr> <nobr>we have received over</nobr> certificates and declarations as well as</u>
             </div>
-            <div class="col-xs-4 s-margin-top">
+            <div class="col-xs-4 l-margin-top">
               <div class="number__value float-right number__value--xs">40</div>
             </div>
           </div>
@@ -522,11 +516,11 @@ in Russia and across the world</div>
             <div class="col-xs-9">
               <div class="number__value number__value--s">30000</div>
               <div class="xs--margin-top">
-                <big>tons of equipment </big>
+                <small>tons of process equipment</small>
               </div>
             </div>
             <div class="col-xs-12">
-              <div class="s-margin-top m-line-height"><small>of process equipment, within the past 3 years, we have procured and supplied to the Clients, with the biggest batch of procured equipment weighing
+              <div class="s-margin-top m-line-height"><small>have been procured and supplied to the Clients over the past 3 years, with the biggest batch of equipment weighing
                   <nobr><strong>716</strong> tons</nobr></small></div>
             </div>
           </div>
@@ -535,22 +529,21 @@ in Russia and across the world</div>
           <div class="row">
             <div class="col-xs-2"><svg width="44" height="65" viewBox="0 0 44 65" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="n-8" fill="#0082DC"><path d="M22.01 43.806C10.13 43.806.47 34.056.47 22.068.47 10.082 10.13.33 22.01.33c11.876 0 21.54 9.752 21.54 21.738 0 11.987-9.664 21.738-21.54 21.738zm0-40.9c-10.472 0-18.99 8.596-18.99 19.162 0 10.567 8.518 19.164 18.99 19.164 10.47 0 18.988-8.597 18.988-19.163 0-10.567-8.518-19.165-18.99-19.165z" id="Fill-1"/><path d="M11.57 64.748c-.203 0-.41-.05-.596-.15-.418-.223-.68-.66-.68-1.137V45.603c0-.71.573-1.287 1.277-1.287.705 0 1.276.577 1.276 1.287V61.03l8.446-5.793c.433-.297 1-.297 1.434 0l8.447 5.793V45.602c0-.71.57-1.287 1.275-1.287.704 0 1.276.577 1.276 1.287v17.86c0 .476-.26.913-.68 1.137-.415.222-.92.194-1.312-.074l-9.723-6.668-9.723 6.668c-.215.147-.466.222-.716.222" id="Fill-2"/><path d="M22.733 32.476c-.704 0-1.275-.577-1.275-1.288V16.265l-3.053 2.183c-.576.412-1.37.273-1.778-.307-.408-.578-.272-1.382.303-1.793l5.066-3.622c.39-.278.9-.313 1.323-.093.422.22.69.66.69 1.143v17.413c0 .712-.572 1.288-1.277 1.288" id="Fill-3"/></g></g></svg>
             </div>
-            <div class="col-xs-10 right"><em>Our design documentation gets approved by the State Expert Review  Commission (Glavgosexpertiza).
- </em></div>
+            <div class="col-xs-10 right"><em>Our design documentation gets approved by the State Expert Review  Commission (Glavgosexpertiza).</em></div>
           </div>
           <div class="xl-margin-top s-line-height">
             <div class="row">
               <div class="col-xs-9"></div>
             </div>
-            <u>Starting from 16.02.2008 when Russian Federal Government Decree № 87 was put into effect, <br><big style="font-weight:bold;color:black;">more than</big><br> of our projects<br> have been <br>granted such<br> an approval  
-</u>
-            <div class="number__value number__value--m float-right xl--margin-top">20</div>
+            <u>Starting from 16.02.2008 when Russian Federal Government Decree № 87 was put into effect, <br><big style="font-weight:bold;color:black;">more than</big><br> of our projects<br> have been <br>granted such<br> an approval  </u>
+            <div class="number__value number__value--m float-right" style="margin-top: -55px;">20</div>
           </div>
         </div>
       </div>
     </div>
     <div class="col-xs-9 number__position">
       <div class="page__divider no-margin-top l-margin-bottom content-box xxl-padding-left"></div>
+      <small>Our equipment has travelled</small>
       <div class="row">
         <div class="col-xs-1 m-margin-top-lg s-margin-top-sm"><svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><path d="M30 1c16.016 0 29 12.984 29 29S46.016 59 30 59 1 46.016 1 30 13.984 1 30 1zm21.436 9.47s-1.262 6.922-6.305 9.444c-5.042-1.26-10.087 2.522-8.825 2.522 1.26 0 2.52 5.043 2.52 5.043 1.263 1.26 3.784 0 3.784 0 3.15 3.15-5.044 8.825-5.044 10.086 0 1.26 3.15 1.89 1.26 3.782-1.89 1.89-3.783 2.522-3.783 2.522 0 6.304-6.303 6.304-7.564 6.304-1.262 0-3.784-5.043-3.784-6.304 0-1.26 1.262-2.522 1.262-3.783 0-1.26-2.52-3.782-2.52-3.782 0-5.044-3.784-3.782-7.567-3.782-3.78 0-3.78-5.044-3.78-5.044s0-8.827 6.303-10.088c6.305-1.26 6.305 1.26 6.305 1.26 2.52 2.522 7.566 0 10.088 0 0 0 1.26-8.824-1.263-7.564-2.52 1.26-4.78.286-5.042-2.52-.366-3.943 11.004-6.306 11.004-6.306" id="n-9" stroke="#0082DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
         </div>
@@ -558,8 +551,7 @@ in Russia and across the world</div>
           <div class="number__value number__value--big s-margin-left">384 467</div>
         </div>
         <div class="col-xs-5">
-          <div class="s-margin-left">km our equipment has travelled which equals the distance between the Earth and the moon and is 10 times the distance around the globe, over the past 3 years.
-</div>
+          <div class="s-margin-left">km over the past 3 years which equals the distance between the Earth and the moon and is 10 times the distance around the globe.</div>
         </div>
       </div>
     </div>
