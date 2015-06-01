@@ -45,10 +45,12 @@
       <div class="hidden-xs col-sm-8">
         <div class="header__nav">
           <div class="right">
+            <?/*
               <span class="header__lang">
                 <a href="/" class="header__lang__item <? if(LANGUAGE_ID == "ru"): ?>header__lang__item--active<?endif;?>">RU</a>
                 <a href="/en/" class="header__lang__item <? if(LANGUAGE_ID == "en"): ?>header__lang__item--active<?endif;?>">EN</a>
               </span>
+            */?>
             <span class="search">
               <a href="#" class="search__trigger"><?=svg('seach')?></a>
               <form class="search__form" action="<?=(LANGUAGE_ID == "ru"?"":"/en")?>/search/">
