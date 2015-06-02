@@ -5580,9 +5580,15 @@ ul.nav-tabs li.active a {
 .number__position {
   margin-top: -100px;
 }
+.en .number__position {
+  margin-top: -50px;
+}
 @media (min-width: 1200px) {
   .number__position {
     margin-top: -130px;
+  }
+  .en .number__position {
+    margin-top: -80px;
   }
 }
 .number__value {
