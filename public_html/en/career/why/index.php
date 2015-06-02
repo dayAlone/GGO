@@ -20,12 +20,12 @@ $APPLICATION->SetTitle('Why work at Giprogazoochistka?');
           <div class="number__value number__value--big xs--margin-top xxs-margin-left">15</div>
         </div>
         <div class="col-xs-6">
-          <div class="s-line-height"><small>study programs our Corporate University offers </small></div>
+          <div class="s-line-height"><small>study programs are offered by our Corporate University </small></div>
         </div>
       </div>
       <div class="page__divider l-margin-top m-margin-bottom"> </div>
       <div class="center">
-        <big>The company employs over</big>  
+        <big>The Company employs over</big>  
       </div>
       
       <div class="row m-margin-top">
@@ -72,7 +72,7 @@ $APPLICATION->SetTitle('Why work at Giprogazoochistka?');
         </div>
       </div>
       <div class="page__divider l-margin-top l-margin-bottom"> </div>
-      <small class="bigger">The company runs over </small>
+      <small class="bigger">The Company runs over </small>
       <div class="row">
         <div class="col-xs-2 m-margin-top"><?=svg('w-8')?>
         </div>
@@ -126,7 +126,7 @@ $APPLICATION->SetTitle('Why work at Giprogazoochistka?');
             <div class="col-xs-3">
               <div class="number__value s--margin-left xxs-margin-bottom">15</div>
             </div>
-            <div class="col-xs-6"><em>study programs our Corporate University offers </em></div>
+            <div class="col-xs-6"><em>study programs are offered by our Corporate University </em></div>
           </div>
           <div class="page__divider xs-margin-bottom"></div>
           <div class="row">
@@ -139,7 +139,7 @@ $APPLICATION->SetTitle('Why work at Giprogazoochistka?');
           </div>
         </div>
         <div class="col-xs-7">
-          <big>The company employs over</big>
+          <big>The Company employs over</big>
           <div class="row">
             <div class="col-xs-7 border-right">
               <div class="row">
@@ -190,7 +190,7 @@ $APPLICATION->SetTitle('Why work at Giprogazoochistka?');
       <div class="page__divider s-margin-top s-margin-bottom"> </div>
       <div class="row">
         <div class="col-xs-8 border-right border-right--xs">
-          <small class="bigger">The company runs over </small>
+          <small class="bigger">The Company runs over </small>
           <div class="row">
             <div class="col-xs-2 s-margin-top"><?=svg('w-8')?>
             </div>
@@ -251,7 +251,7 @@ $APPLICATION->SetTitle('Why work at Giprogazoochistka?');
             <div class="col-xs-3">
               <div class="number__value s--margin-left xxs-margin-bottom">15</div>
             </div>
-            <div class="col-xs-6"><em>study programs our Corporate University offers </em></div>
+            <div class="col-xs-6"><em>study programs are offered by our Corporate University </em></div>
           </div>
           <div class="page__divider xs-margin-bottom"></div>
           <div class="row">
@@ -266,7 +266,7 @@ $APPLICATION->SetTitle('Why work at Giprogazoochistka?');
         <div class="col-xs-8">
           <div class="row row--padding">
             <div class="col-xs-6 border-right">
-              <big>The company employs over</big>
+              <big>The Company employs over</big>
               <div class="row">
                 <div class="col-xs-3">
                   <svg width="62" height="95" viewBox="0 0 62 95" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="w-2" fill="#0082DC"><path d="M61.047 92.237l-13.744-29.33c3.6-2.067 6.644-4.705 8.86-7.814.542-.76.368-1.82-.39-2.367-.757-.544-1.812-.37-2.353.393-1.892 2.65-4.478 4.924-7.55 6.73l-7.988-17.046c5.365-3.29 8.967-9.214 8.967-15.98-.002-9.755-7.46-17.78-16.942-18.644V2.54c0-.937-.756-1.697-1.687-1.697-.932 0-1.687.76-1.687 1.696v5.64c-9.485.86-16.945 8.888-16.945 18.643 0 6.554 3.372 12.323 8.457 15.67L11.65 60.375c-3.472-2.027-6.338-4.713-8.24-7.89-.483-.803-1.52-1.062-2.317-.58-.8.485-1.057 1.528-.575 2.33 2.327 3.885 5.785 7.08 9.963 9.412L.206 92.383c-.315.882.14 1.852 1.017 2.17.19.068.38.1.57.1.692 0 1.34-.43 1.59-1.122L13.53 65.15c4.225 1.79 9.007 2.775 14.028 2.775 6.022 0 11.78-1.24 16.738-3.472l13.698 29.23c.288.615.894.973 1.528.973.24 0 .486-.052.717-.16.843-.4 1.204-1.41.807-2.26zM12.964 26.823c0-8.05 6.207-14.658 14.06-15.275.306.31.73.5 1.197.5.468 0 .89-.19 1.197-.5 7.852.618 14.056 7.226 14.056 15.275 0 5.8-3.22 10.856-7.954 13.462-.207.012-.414.06-.61.153-.215.1-.397.242-.544.41-1.884.837-3.96 1.31-6.148 1.31-8.41 0-15.255-6.88-15.255-15.335zm14.594 37.71c-4.576 0-8.99-.942-12.87-2.626l6.367-17.8c2.207.93 4.625 1.444 7.163 1.444 2.34 0 4.57-.453 6.636-1.248l8.008 17.09c-4.506 2.017-9.772 3.14-15.304 3.14z" id="Fill-1"/><path d="M37.315 26.823c0-5.043-4.08-9.145-9.098-9.145-5.016 0-9.096 4.102-9.096 9.145 0 5.044 4.08 9.147 9.097 9.147 5.017 0 9.098-4.103 9.098-9.147zm-9.098 5.754c-3.154 0-5.72-2.582-5.72-5.754 0-3.173 2.566-5.752 5.72-5.752 3.156 0 5.723 2.58 5.723 5.753 0 3.172-2.567 5.754-5.723 5.754z" id="Fill-2"/></g></g></svg>
@@ -285,7 +285,7 @@ $APPLICATION->SetTitle('Why work at Giprogazoochistka?');
                   </div>
                 </div>
                 <div class="col-xs-6">
-                  <small class="bigger">The company runs over </small>
+                  <small class="bigger">The Company runs over </small>
                   <div class="row m-margin-top">
                     <div class="col-xs-3 col-lg-4">
                       <div id="w-4"><?=svg('w-8')?>
@@ -330,7 +330,7 @@ $APPLICATION->SetTitle('Why work at Giprogazoochistka?');
                     </div>
                     <div class="col-xs-7 s-line-height">
                       <div class="s-margin-left">
-                        <u>of employees have been promoted after completing the Talen Pool Program </u>
+                        <u>of employees have been promoted after completing the Talent Pool Program </u>
                       </div>
                     </div>
                   </div>
