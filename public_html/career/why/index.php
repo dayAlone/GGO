@@ -65,7 +65,7 @@ $APPLICATION->SetTitle('Карьера');
         <div class="col-xs-5 center">
           <div class="number__value number__value--big">39</div>
           <div class="s-line-height">
-            <u>года – средний  возраст инженерного состава</u>
+            <u>лет – средний  возраст инженерного состава</u>
           </div>
         </div>
       </div>
@@ -151,7 +151,7 @@ $APPLICATION->SetTitle('Карьера');
             <div class="col-xs-5 center">
               <div class="number__value number__value--big">39</div>
               <div class="s-line-height">
-                <u>года — средний  возраст инженерного состава</u>
+                <u>лет — средний  возраст инженерного состава</u>
               </div>
             </div>
           </div>
@@ -269,7 +269,7 @@ $APPLICATION->SetTitle('Карьера');
                 <div class="col-xs-6 center border-right border-right--l">
                   <div class="number__value number__value--big">39</div>
                   <div class="s-line-height">
-                    <u>года — средний  возраст инженерного состава</u>
+                    <u>лет — средний  возраст инженерного состава</u>
                   </div>
                 </div>
                 <div class="col-xs-6">
