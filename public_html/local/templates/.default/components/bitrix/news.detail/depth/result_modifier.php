@@ -39,7 +39,7 @@ foreach ($arResult["PROPERTIES"] as $key => $prop):
         break;
     endswitch;
 endforeach;
-if($arResult['CODE'] == "postavka-oborudovaniya"):
+if(in_array($arResult['CODE'], array("postavka-oborudovaniya", "equipment-supply"))):
     ob_start();
 
     $APPLICATION->IncludeComponent("bitrix:news.list", "reference_equip", 
