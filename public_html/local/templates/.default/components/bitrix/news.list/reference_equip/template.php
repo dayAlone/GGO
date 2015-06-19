@@ -1,7 +1,7 @@
 <? $this->setFrameMode(true);?>
 
 <div class="reference-wrap">
-<a href="#" class="reference-wrap__trigger"><?=(LANGUAGE_ID=='ru'?"Референс по поставкам оборудования":"Reference of equipment supply")?> <?=svg('steps-arrow')?></a>
+<a href="#" class="reference-wrap__trigger"><?=(LANGUAGE_ID=='ru'?"Референс по поставкам оборудования":"Reference list of equipment procurement projects")?> <?=svg('steps-arrow')?></a>
   <div class="reference-wrap__content">
   	<?foreach ($arResult['SECTIONS'] as $key=>$section):?>
     	<div class="reference reference--small">
