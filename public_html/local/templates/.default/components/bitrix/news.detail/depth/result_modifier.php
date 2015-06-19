@@ -44,7 +44,7 @@ if($arResult['CODE'] == "postavka-oborudovaniya"):
 
     $APPLICATION->IncludeComponent("bitrix:news.list", "reference_equip", 
         array(
-          "IBLOCK_ID"      => 31,
+          "IBLOCK_ID"      => (LANGUAGE_ID=='ru'?31:34),
           "NEWS_COUNT"     => "100",
           "SORT_BY1"       => "SORT",
           "SORT_ORDER1"    => "ASC",

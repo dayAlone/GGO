@@ -10,10 +10,10 @@
           	<table cellpadding="10" class="table" valign="middle">
               <thead>
                 <tr>
-                	<th width="40%">Наименование оборудования</th>
-                  <th width="20%" class="year">год</th>
+                	<th width="40%"><?=(LANGUAGE_ID=='ru'?"Наименование оборудования":"Equipment")?></th>
+                  <th width="20%" class="year"><?=(LANGUAGE_ID=='ru'?"год":"Year")?></th>
                   
-                  <th width="40%">объект</th>
+                  <th width="40%"><?=(LANGUAGE_ID=='ru'?"объект":"Customer, project, plant")?></th>
                 </tr>
               </thead>
               <tbody>
