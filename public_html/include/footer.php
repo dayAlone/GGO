@@ -219,7 +219,7 @@
     <div class="row copyright">
       <div class="col-xs-6 col-sm-3">© <?=date('Y')?> JSC Giprogazoochistka</div>
       <div class="col-xs-6 col-sm-4">126, Pervomayskaya St., Moscow, Russia <br><a href="mailto:ggo@ggo.ru">ggo@ggo.ru</a></div>
-      <div class="col-xs-2 hidden-xs"><a href="/sitemap/">Site map</a></div>
+      <div class="col-xs-2 hidden-xs"><a href="/en/sitemap/">Site map</a></div>
       <div class="col-xs-3 hidden-xs right">
         <a href="http://radia.ru" target="_blank" class="radia"><?=svg('radia')?><div class="radia__content">Website developed by <br>RADIA Interactive</div></a>
       </div>
