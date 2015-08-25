@@ -38,7 +38,7 @@ if(isset($_REQUEST['ELEMENT_CODE'])):
     ));
   endif;
 else:
-	LocalRedirect("/works/");
+	LocalRedirect("/en/works/");
 endif;
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
 ?>
