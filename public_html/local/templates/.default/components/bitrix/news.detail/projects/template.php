@@ -111,4 +111,4 @@ Loc::loadMessages(__FILE__);
     $APPLICATION->SetPageProperty('sub_title', html_entity_decode($item['PROPERTIES']['TITLE']['VALUE']));
   ?>
 </div>
-<a href="/works/projects/" class="back"><?=svg('back')?> <?=Loc::getMessage('BACK')?></a>
+<a href="<?=(LANGUAGE_ID=='en'?"/en":"")?>/works/projects/" class="back"><?=svg('back')?> <?=Loc::getMessage('BACK')?></a>
