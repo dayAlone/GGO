@@ -7,12 +7,21 @@ $item = $arResult;
   <h2><?=html_entity_decode($item['PROPERTIES']['CLIENT']['VALUE'])?></h2>
 
 <?
-$data = array(
-  'Объект'    => $item['PROPERTIES']['OBJECT']['VALUE']['TEXT'],
-  'Регион'    => $item['PROPERTIES']['REGION']['VALUE'],
-  'Период'    => $item['PROPERTIES']['PERIOD']['VALUE'],
-  'Вид работ' => $item['PROPERTIES']['WORKS']['VALUE']['TEXT'],
-);
+if(LANGUAGE_ID=='ru'):
+  $data = array(
+    'Объект'    => $item['PROPERTIES']['OBJECT']['VALUE']['TEXT'],
+    'Регион'    => $item['PROPERTIES']['REGION']['VALUE'],
+    'Период'    => $item['PROPERTIES']['PERIOD']['VALUE'],
+    'Вид работ' => $item['PROPERTIES']['WORKS']['VALUE']['TEXT'],
+  );
+else:
+  $data = array(
+    'Object'    => $item['PROPERTIES']['OBJECT']['VALUE']['TEXT'],
+    'Region'    => $item['PROPERTIES']['REGION']['VALUE'],
+    'Period'    => $item['PROPERTIES']['PERIOD']['VALUE'],
+    'Description' => $item['PROPERTIES']['WORKS']['VALUE']['TEXT'],
+  );
+endif;
 foreach ($data as $key=>$el):
   if(strlen($el)>0):
   ?>
