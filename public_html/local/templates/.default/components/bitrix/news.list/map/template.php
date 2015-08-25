@@ -3,7 +3,7 @@
 <div class="geography">
       <div class="geography__popup">
         <div class="geography__popup_toolbar">
-        	<a href="#" class="geography__popup_close"><?=svg('close')?> Закрыть</a></div>
+        	<a href="#" class="geography__popup_close"><?=svg('close')?> <?=(LANGUAGE_ID=='ru'?"Закрыть":"Close")?></a></div>
         <div class="geography__popup_content">
           
         </div>
