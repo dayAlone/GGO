@@ -1,13 +1,12 @@
-
 <?
 $item = $arResult;
 ?>
 <div class="scroll">
-  <h4><span>Клиент</span></h4>
+  <h4><span><?=($arProps['LANG']=='ru'?"Клиент":"Client")?></span></h4>
   <h2><?=html_entity_decode($item['PROPERTIES']['CLIENT']['VALUE'])?></h2>
 
 <?
-if(LANGUAGE_ID=='ru'):
+if($arProps['LANG']=='ru'):
   $data = array(
     'Объект'    => $item['PROPERTIES']['OBJECT']['VALUE']['TEXT'],
     'Регион'    => $item['PROPERTIES']['REGION']['VALUE'],

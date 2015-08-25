@@ -8,6 +8,7 @@ $APPLICATION->IncludeComponent("bitrix:news.detail","reference",Array(
   "SET_TITLE"     => "N",
   "PROPERTY_CODE" => array('CLIENT','OBJECT','REGION','PERIOD','WORKS','EPSCM','COORDS'),
   "CACHE_TYPE"    => "A",
-  "CACHE_NOTES"    => $_REQUEST['ROW']
+  "CACHE_NOTES"    => $_REQUEST['ROW'],
+  "LANG"          => "en"
 ));
 ?>
