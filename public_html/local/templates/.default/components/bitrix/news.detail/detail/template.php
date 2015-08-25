@@ -23,4 +23,8 @@ $s = end($arResult['SECTION']['PATH']);
     </div>
 	
 </div>
+<?if(LANGUAGE_ID=='ru'):?>
 <a href="/press/news/" class="back"><?=svg('back')?> К списку новостей</a>
+<?else:?>
+<a href="/en/press/news/" class="back"><?=svg('back')?> Back to news list</a>
+<?endif;?>
