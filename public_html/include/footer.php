@@ -174,7 +174,7 @@
               "NEWS_COUNT"     => "8",
               "SORT_BY1"       => "RAND",
               "SORT_ORDER1"    => "ASC",
-              "DETAIL_URL"     => "/works/projects/#ELEMENT_CODE#/",
+              "DETAIL_URL"     => "/en/works/projects/#ELEMENT_CODE#/",
               "CACHE_TYPE"     => "A",
               "CACHE_NOTES"    => $APPLICATION->GetCurDir(),
               "SET_TITLE"      => "N",
